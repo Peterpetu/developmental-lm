@@ -1,0 +1,3 @@
+[22:19:09] unigram: fitness 5.9661  test 5.9410
+[22:19:09] bigram: fitness 3.8607  test 3.8393
+[22:19:09] trigram: fitness 3.4107  test 3.3754

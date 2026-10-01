@@ -1,0 +1,105 @@
+[17:42:59] environments ['stories', 'code'] loaded in 0s; phases [['stories', 1000, 1005], ['code', 1010, 1015], ['stories', 1020, 1025], ['code', 1030, 1035]]
+[17:43:01] phase 1/4: stories  pool 1000 (e310796f)  order 1005  8,000,000 tokens  arm sieve-nodream
+[17:43:11]     step     50  tokens      274,432  train 7.0883  lr_M 2.00e-02  B 16  181 ms
+[17:43:21]   eval @0.10  stories 3.1908  code 8.3989
+[17:43:22]     step    100  tokens      872,448  train 4.7577  lr_M 2.00e-02  B 32  208 ms
+[17:43:32]     step    150  tokens    1,691,648  train 3.6263  lr_M 2.00e-02  B 32  212 ms
+[17:43:37]   eval @0.25  stories 2.7038  code 8.7457
+[17:43:43]     step    200  tokens    2,510,848  train 3.0484  lr_M 2.00e-02  B 32  204 ms
+[17:43:54]     step    250  tokens    3,330,048  train 2.7465  lr_M 2.00e-02  B 32  203 ms
+[17:44:03]   eval @0.50  stories 2.4007  code 8.7549
+[17:44:05]     step    300  tokens    4,149,248  train 2.5695  lr_M 2.00e-02  B 32  207 ms
+[17:44:15]     step    350  tokens    4,968,448  train 2.4630  lr_M 2.00e-02  B 32  199 ms
+[17:44:25]     step    400  tokens    5,787,648  train 2.3731  lr_M 2.00e-02  B 32  199 ms
+[17:44:35]     step    450  tokens    6,606,848  train 2.3245  lr_M 1.76e-02  B 32  203 ms
+[17:44:46]     step    500  tokens    7,426,048  train 2.2573  lr_M 7.38e-03  B 32  199 ms
+[17:44:54]   eval @1.00  stories 2.0920  code 8.8128
+[17:45:05]     distil step 25/244  D_data 2.4250
+[17:45:14]     distil step 50/244  D_data 1.6484
+[17:45:23]     distil step 75/244  D_data 1.2464
+[17:45:32]     distil step 100/244  D_data 1.0046
+[17:45:41]     distil step 125/244  D_data 0.8215
+[17:45:50]     distil step 150/244  D_data 0.6911
+[17:45:59]     distil step 175/244  D_data 0.6090
+[17:46:09]     distil step 200/244  D_data 0.5143
+[17:46:18]     distil step 225/244  D_data 0.4732
+[17:46:26]   core after phase 1: stories 2.5806  code 8.6230
+[17:46:27] phase 2: birth {'birth': 'expand', 'new': 'copy', 'core': 's0:d64/L8/h1/kv1/F256', 'k': 2, 'evals': {'stories': 2.580737940759718, 'code': 8.623347613818623}}
+[17:46:28] phase 2/4: code  pool 1010 (a48cadc5)  order 1015  8,000,000 tokens  arm sieve-nodream
+[17:46:37]     step     50  tokens      274,432  train 6.1254  lr_M 2.00e-02  B 16  173 ms
+[17:46:46]   eval @0.10  stories 7.6304  code 2.8411
+[17:46:47]     step    100  tokens      872,448  train 4.2313  lr_M 2.00e-02  B 32  215 ms
+[17:46:57]     step    150  tokens    1,691,648  train 3.1760  lr_M 2.00e-02  B 32  200 ms
+[17:47:02]   eval @0.25  stories 7.5735  code 2.3004
+[17:47:08]     step    200  tokens    2,510,848  train 2.5948  lr_M 2.00e-02  B 32  201 ms
+[17:47:19]     step    250  tokens    3,330,048  train 2.2494  lr_M 2.00e-02  B 32  202 ms
+[17:47:28]   eval @0.50  stories 7.6818  code 1.8696
+[17:47:30]     step    300  tokens    4,149,248  train 2.0299  lr_M 2.00e-02  B 32  212 ms
+[17:47:40]     step    350  tokens    4,968,448  train 1.8863  lr_M 2.00e-02  B 32  214 ms
+[17:47:50]     step    400  tokens    5,787,648  train 1.7827  lr_M 2.00e-02  B 32  199 ms
+[17:48:01]     step    450  tokens    6,606,848  train 1.7018  lr_M 1.76e-02  B 32  203 ms
+[17:48:11]     step    500  tokens    7,426,048  train 1.6181  lr_M 7.38e-03  B 32  201 ms
+[17:48:19]   eval @1.00  stories 7.8398  code 1.4988
+[17:48:30]     distil step 25/244  D_data 2.6204
+[17:48:39]     distil step 50/244  D_data 2.0337
+[17:48:48]     distil step 75/244  D_data 1.4741
+[17:48:57]     distil step 100/244  D_data 1.3188
+[17:49:06]     distil step 125/244  D_data 1.2314
+[17:49:15]     distil step 150/244  D_data 1.0506
+[17:49:24]     distil step 175/244  D_data 0.9797
+[17:49:33]     distil step 200/244  D_data 0.7862
+[17:49:42]     distil step 225/244  D_data 0.7356
+[17:49:50]   core after phase 2: stories 7.6660  code 2.1653
+[17:49:51] phase 3: birth {'birth': 'expand', 'new': 'copy', 'core': 's0:d64/L8/h1/kv1/F256', 'k': 3, 'evals': {'stories': 7.66644490446015, 'code': 2.16554687165808}}
+[17:49:53] phase 3/4: stories  pool 1020 (41e66ba6)  order 1025  8,000,000 tokens  arm sieve-nodream
+[17:50:01]     step     50  tokens      274,432  train 5.6440  lr_M 2.00e-02  B 16  170 ms
+[17:50:11]   eval @0.10  stories 2.9761  code 7.6598
+[17:50:12]     step    100  tokens      872,448  train 4.1106  lr_M 2.00e-02  B 32  227 ms
+[17:50:22]     step    150  tokens    1,691,648  train 3.2885  lr_M 2.00e-02  B 32  201 ms
+[17:50:27]   eval @0.25  stories 2.5976  code 7.7599
+[17:50:33]     step    200  tokens    2,510,848  train 2.8638  lr_M 2.00e-02  B 32  212 ms
+[17:50:43]     step    250  tokens    3,330,048  train 2.6328  lr_M 2.00e-02  B 32  199 ms
+[17:50:53]   eval @0.50  stories 2.3533  code 8.1011
+[17:50:54]     step    300  tokens    4,149,248  train 2.4991  lr_M 2.00e-02  B 32  199 ms
+[17:51:05]     step    350  tokens    4,968,448  train 2.4085  lr_M 2.00e-02  B 32  201 ms
+[17:51:15]     step    400  tokens    5,787,648  train 2.3432  lr_M 2.00e-02  B 32  201 ms
+[17:51:25]     step    450  tokens    6,606,848  train 2.3052  lr_M 1.76e-02  B 32  210 ms
+[17:51:35]     step    500  tokens    7,426,048  train 2.2356  lr_M 7.38e-03  B 32  206 ms
+[17:51:44]   eval @1.00  stories 2.0603  code 8.5345
+[17:51:55]     distil step 25/244  D_data 1.6372
+[17:52:04]     distil step 50/244  D_data 1.1092
+[17:52:13]     distil step 75/244  D_data 0.8652
+[17:52:22]     distil step 100/244  D_data 0.6885
+[17:52:31]     distil step 125/244  D_data 0.5852
+[17:52:40]     distil step 150/244  D_data 0.5419
+[17:52:49]     distil step 175/244  D_data 0.4856
+[17:52:58]     distil step 200/244  D_data 0.4384
+[17:53:07]     distil step 225/244  D_data 0.3861
+[17:53:15]   core after phase 3: stories 2.4432  code 7.4518
+[17:53:16] phase 4: birth {'birth': 'expand', 'new': 'copy', 'core': 's0:d64/L8/h1/kv1/F256', 'k': 4, 'evals': {'stories': 2.4435441648693086, 'code': 7.449382148535733}}
+[17:53:18] phase 4/4: code  pool 1030 (e6ccc83f)  order 1035  8,000,000 tokens  arm sieve-nodream
+[17:53:26]     step     50  tokens      274,432  train 5.2776  lr_M 2.00e-02  B 16  168 ms
+[17:53:36]   eval @0.10  stories 7.7636  code 2.5879
+[17:53:37]     step    100  tokens      872,448  train 3.7349  lr_M 2.00e-02  B 32  200 ms
+[17:53:47]     step    150  tokens    1,691,648  train 2.8560  lr_M 2.00e-02  B 32  204 ms
+[17:53:52]   eval @0.25  stories 7.7540  code 2.0686
+[17:53:58]     step    200  tokens    2,510,848  train 2.3383  lr_M 2.00e-02  B 32  209 ms
+[17:54:08]     step    250  tokens    3,330,048  train 2.0341  lr_M 2.00e-02  B 32  215 ms
+[17:54:18]   eval @0.50  stories 7.9656  code 1.7449
+[17:54:19]     step    300  tokens    4,149,248  train 1.8625  lr_M 2.00e-02  B 32  200 ms
+[17:54:30]     step    350  tokens    4,968,448  train 1.7412  lr_M 2.00e-02  B 32  200 ms
+[17:54:40]     step    400  tokens    5,787,648  train 1.6889  lr_M 2.00e-02  B 32  202 ms
+[17:54:50]     step    450  tokens    6,606,848  train 1.6329  lr_M 1.76e-02  B 32  208 ms
+[17:55:00]     step    500  tokens    7,426,048  train 1.5680  lr_M 7.38e-03  B 32  202 ms
+[17:55:09]   eval @1.00  stories 7.6615  code 1.4663
+[17:55:19]     distil step 25/244  D_data 1.9820
+[17:55:28]     distil step 50/244  D_data 1.3833
+[17:55:37]     distil step 75/244  D_data 1.0322
+[17:55:46]     distil step 100/244  D_data 0.8753
+[17:55:56]     distil step 125/244  D_data 0.8656
+[17:56:05]     distil step 150/244  D_data 0.6736
+[17:56:14]     distil step 175/244  D_data 0.5754
+[17:56:23]     distil step 200/244  D_data 0.5339
+[17:56:32]     distil step 225/244  D_data 0.4770
+[17:56:40]   core after phase 4: stories 7.7043  code 1.8925
+[17:56:40] done in 820s: U_K 4.5639  Lambda 4.1556  G_K 4.7984  final stories 7.6615  code 1.4663

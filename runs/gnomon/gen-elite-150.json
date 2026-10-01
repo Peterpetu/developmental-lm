@@ -1,0 +1,72 @@
+{
+  "archive": "runs/gnomon/evo-GNOMON-s0/archive.pt",
+  "config": "m-pico",
+  "N_life": 150,
+  "birth": 9.020284533500671,
+  "final": 6.608299612998962,
+  "curve": [
+    [
+      0,
+      9.020284533500671
+    ],
+    [
+      15,
+      8.618374824523926
+    ],
+    [
+      30,
+      8.187397956848145
+    ],
+    [
+      45,
+      7.881308019161224
+    ],
+    [
+      60,
+      7.624005436897278
+    ],
+    [
+      75,
+      7.366853058338165
+    ],
+    [
+      90,
+      7.1347572803497314
+    ],
+    [
+      105,
+      6.933287084102631
+    ],
+    [
+      120,
+      6.753930509090424
+    ],
+    [
+      135,
+      6.64325886964798
+    ],
+    [
+      150,
+      6.608299612998962
+    ]
+  ],
+  "arch": "a2/512 a2/1024",
+  "samples": [
+    {
+      "prompt": "Once upon a time",
+      "text": "Once upon a time shoot., for them, a and The new went very \" because You . sees same dress grandma then too to he in \" \" It s king He skip mom He them made she!\"  upon were started theirYou. relaxYou kickrage strange TimamOnceerp I very show felt"
+    },
+    {
+      "prompt": "The little girl",
+      "text": "The little girl fastatter very.\" Tim very. and show. you make of got wheelsassat embarra! laug like \" grew your stepped do \" cand, to,\u001d the for was they Teddy not again glass \" \" a realized.\" too and to upon\ufffdc one did go her. decided I, But"
+    },
+    {
+      "prompt": "Tom and Jane went to the",
+      "text": "Tom and Jane went to the felt sun happyOnce!\" bird opened Gra would away At theyhen, Onecream her idea tooth smiledood decided not of very be sun day see us She is Ben them doctor scrI relaxt give, mommy You Maybe mouse bad time very thing bite glass a club away play sureaybe fly do sack"
+    },
+    {
+      "prompt": "One day, a boy named",
+      "text": "One day, a boy named! share He boy him \" Tom Lilyood is an clean adventures trucks Tom big a took!, him escape a fell B discoipe.. showed more a can \" I his beautiful our competit design loved and bright \" foreizzy Lily their up.\" sun She wiped Here.ey help!\" wants have"
+    }
+  ]
+}

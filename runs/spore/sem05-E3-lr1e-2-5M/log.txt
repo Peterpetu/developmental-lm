@@ -1,0 +1,28 @@
+[01:35:10] genome 519e9717de0530df {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 3, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[01:35:10] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.01, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[01:35:14] birth: innate memory-only predictor tau_m 25.96  test 7.5673
+[01:35:29] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[01:35:39] wave 1: kept 512 of 4096 (mode select); score kept 0.0192 vs all 0.0124; F -> 15873
+[01:35:54] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[01:36:04] wave 2: kept 512 of 4096 (mode select); score kept 0.0193 vs all 0.0126; F -> 16385
+[01:36:07]   batch 100/306  1.64M tokens  537 ms/batch
+[01:36:33] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[01:36:44] wave 3: kept 512 of 4096 (mode select); score kept 0.0202 vs all 0.0125; F -> 16897
+[01:36:57]   batch 200/306  3.28M tokens  515 ms/batch
+[01:37:38]   batch 300/306  4.92M tokens  483 ms/batch
+[01:37:53] ridge linear head: tau_s 1.00 tau_m 49.99 mu 0.033 nu 0.042  fitness 3.8233  test 3.8121  (F 16897)
+[01:38:02] ridge softmax head: tau_s 30.24 tau_m 12.28 mu 0.033 nu 0.042  fitness 5.6699  test 5.6591  (F 16897)
+[01:38:45]   refine pass 1/3 batch 100/306  train CE 3.5147
+[01:39:29]   refine pass 1/3 batch 200/306  train CE 3.2264
+[01:40:12]   refine pass 1/3 batch 300/306  train CE 3.1217
+[01:40:15] refine pass 1/3: mean train CE 3.1168
+[01:40:59]   refine pass 2/3 batch 100/306  train CE 2.9404
+[01:41:42]   refine pass 2/3 batch 200/306  train CE 2.8603
+[01:42:26]   refine pass 2/3 batch 300/306  train CE 2.8668
+[01:42:29] refine pass 2/3: mean train CE 2.8589
+[01:43:12]   refine pass 3/3 batch 100/306  train CE 2.7349
+[01:43:56]   refine pass 3/3 batch 200/306  train CE 2.7542
+[01:44:40]   refine pass 3/3 batch 300/306  train CE 2.7481
+[01:44:42] refine pass 3/3: mean train CE 2.7477
+[01:44:47] refined: fitness 2.6537  test 2.6338
+[01:44:47] done: final stage refined  fitness 2.6537  test 2.6338  577 s  peak 9.50 GB

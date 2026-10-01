@@ -1,0 +1,33 @@
+GNOMON  seed 0  m-pico  |Gamma| = 5,279  36 niches  864 lifetimes  B2 in [5.84, 6.39]
+  gen   0  cov 0.47  QD   17.69  best 6.7229  mean 7.2773  [a2/512 a2/512 a4/512]  (  1349s)
+  gen   1  cov 0.64  QD   24.45  best 6.4609  mean 7.2547  [a2/512 a2/1024]  (  2396s)
+  gen   2  cov 0.75  QD   29.30  best 6.4609  mean 7.2327  [a2/512 a2/1024]  (  3446s)
+  gen   3  cov 0.78  QD   31.23  best 6.4609  mean 7.2026  [a2/512 a2/1024]  (  4530s)
+  gen   4  cov 0.78  QD   32.59  best 6.4609  mean 7.1538  [a2/512 a2/1024]  (  5079s)
+  gen   5  cov 0.86  QD   36.55  best 6.4609  mean 7.1387  [a2/512 a2/1024]  (  5548s)
+  gen   6  cov 0.86  QD   37.99  best 6.4609  mean 7.0924  [a2/512 a2/1024]  (  6453s)
+  gen   7  cov 0.89  QD   40.15  best 6.4609  mean 7.0630  [a2/512 a2/1024]  (  7299s)
+  gen   8  cov 0.89  QD   41.85  best 6.4609  mean 7.0098  [a2/512 a2/1024]  (  8075s)
+  gen   9  cov 0.89  QD   41.85  best 6.4609  mean 7.0098  [a2/512 a2/1024]  (  9521s)
+  gen  10  cov 0.89  QD   43.00  best 6.4609  mean 6.9740  [a2/512 a2/1024]  ( 10210s)
+  gen  11  cov 0.89  QD   45.03  best 6.4609  mean 6.9106  [a2/512 a2/1024]  ( 10883s)
+  gen  12  cov 0.89  QD   45.76  best 6.4609  mean 6.8877  [a2/512 a2/1024]  ( 11832s)
+  gen  13  cov 0.92  QD   46.98  best 6.4609  mean 6.8941  [a2/512 a2/1024]  ( 12981s)
+  gen  14  cov 0.92  QD   47.58  best 6.4609  mean 6.8758  [a2/512 a2/1024]  ( 13998s)
+  gen  15  cov 0.92  QD   48.06  best 6.4609  mean 6.8614  [a2/512 a2/1024]  ( 14750s)
+  gen  16  cov 0.94  QD   49.94  best 6.4609  mean 6.8489  [a2/512 a2/1024]  ( 15554s)
+  gen  17  cov 0.94  QD   50.15  best 6.4609  mean 6.8429  [a2/512 a2/1024]  ( 16310s)
+  gen  18  cov 0.94  QD   50.30  best 6.4609  mean 6.8385  [a2/512 a2/1024]  ( 17122s)
+  gen  19  cov 0.94  QD   50.82  best 6.4609  mean 6.8231  [a2/512 a2/1024]  ( 17925s)
+  gen  20  cov 0.94  QD   50.86  best 6.4609  mean 6.8220  [a2/512 a2/1024]  ( 18766s)
+
+archive: 34/36 niches (94%)  QD 50.86  best 6.4609
+  attn 0.00-0.17 |  6.759  6.519  6.855  6.666  6.571  6.845
+  attn 0.17-0.33 |      .  6.671  6.605  6.796  6.721  6.968
+  attn 0.33-0.50 |  7.296  7.231  6.804  7.041  7.225      .
+  attn 0.50-0.67 |  6.777  6.849  6.704  6.745  6.726  6.672
+  attn 0.67-0.83 |  7.120  6.904  6.700  6.795  7.079  7.135
+  attn 0.83-1.00 |  6.873  6.735  6.461  6.568  6.502  7.029
+864 lifetimes in 18766s (21.7s each)
+
+wrote runs/gnomon/evo-GNOMON-s0/archive.pt and runs/gnomon/evo-GNOMON-s0/history.json

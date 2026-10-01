@@ -1,0 +1,20 @@
+[00:40:16] genome c3e390f295d2931c {'s_A': 20, 's_rho': 21, 's_M': 22, 's_U': 23, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[00:40:16] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[00:40:19] birth: innate memory-only predictor tau_m 26.08  test 7.5633
+[00:40:34] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[00:40:44] wave 1: kept 512 of 4096 (mode select); score kept 0.0179 vs all 0.0120; F -> 15873
+[00:40:59] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[00:41:10] wave 2: kept 512 of 4096 (mode select); score kept 0.0187 vs all 0.0123; F -> 16385
+[00:41:12]   batch 100/306  1.64M tokens  535 ms/batch
+[00:41:38] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[00:41:49] wave 3: kept 512 of 4096 (mode select); score kept 0.0191 vs all 0.0121; F -> 16897
+[00:42:02]   batch 200/306  3.28M tokens  513 ms/batch
+[00:42:43]   batch 300/306  4.92M tokens  482 ms/batch
+[00:42:58] ridge linear head: tau_s 1.00 tau_m 47.67 mu 0.034 nu 0.043  fitness 3.8265  test 3.8104  (F 16897)
+[00:43:07] ridge softmax head: tau_s 30.08 tau_m 12.70 mu 0.034 nu 0.043  fitness 5.6626  test 5.6496  (F 16897)
+[00:43:50]   refine pass 1/1 batch 100/306  train CE 3.6613
+[00:44:34]   refine pass 1/1 batch 200/306  train CE 3.3353
+[00:45:17]   refine pass 1/1 batch 300/306  train CE 3.2197
+[00:45:20] refine pass 1/1: mean train CE 3.2150
+[00:45:25] refined: fitness 2.9819  test 2.9667
+[00:45:25] done: final stage refined  fitness 2.9819  test 2.9667  309 s  peak 9.50 GB

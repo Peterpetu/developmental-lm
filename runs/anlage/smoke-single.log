@@ -1,0 +1,11 @@
+[08:59:51] R8 gen 0  tinystories  SINGLE-WARM  C_total 5.891e+13  stage tokens [337369, 187500]  tokens/sib 337,369  growth prior  alpha 50.0  mu_0 [0.1192, 0.1033, 0.1374, 0.1485, 0.2497, 0.2419]  program None  prev adult None
+[09:00:06]   birth (stage 0 block): test 10.2954
+[09:03:01]   sibling 0: mu [0.119, 0.103, 0.137, 0.149, 0.25, 0.242]  test 3.4949  fit 3.5168
+[09:03:46]   grow -> s1:d384/L12/h6/kv2/F1536 (prior): pre 3.4949  at rho_0 4.6644  187,500 tokens
+[09:05:39]   eval tokens       49,152  held-out 3.7250
+[09:06:57]   eval tokens       94,208  held-out 3.5942
+[09:08:19]   eval tokens      143,360  held-out 3.4963
+[09:09:36]   eval tokens      188,416  held-out 3.4233
+[09:10:07]   stage 1: test 3.4233  495 tok/s  peak 0.0 GB
+[09:11:09]   adult s1:d384/L12/h6/kv2/F1536: test 3.4233  fit 3.4526  programme 83 reals
+[09:11:09] wrote runs\anlage\smoke-single\generation.json

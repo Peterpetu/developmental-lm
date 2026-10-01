@@ -1,0 +1,50 @@
+{
+  "arm": "GNOMON",
+  "config": {
+    "name": "m-pico",
+    "d_model": 128,
+    "L": 4,
+    "n_h": 4,
+    "n_kv": 2,
+    "d_head": 32,
+    "d_ff": 512,
+    "vocab": 4096,
+    "T": 128,
+    "N_life": 150,
+    "chunk_size": 64,
+    "window": 128,
+    "batch": 128,
+    "lr": 0.003,
+    "c_eta": 1.5,
+    "lam_ratio": 0.04,
+    "decode_chunk_elems": 16777216
+  },
+  "shape": {
+    "n_c": 12,
+    "n_v": 14,
+    "n_L": 5,
+    "n_M": 4,
+    "d_h": 32,
+    "d_z": 16,
+    "d_y": 8,
+    "seed_codes": 20260829
+  },
+  "evolve": {
+    "n_init": 32,
+    "n_pop": 20,
+    "n_seed": 2,
+    "G_gen": 20,
+    "sigma_rel": 0.15,
+    "p_mut": 0.25,
+    "p_random": 0.1,
+    "n_b1_bins": 6,
+    "n_b2_bins": 6,
+    "seed": 0,
+    "random_search": false,
+    "freeze_arch": false,
+    "no_crossover": false,
+    "one_descriptor": false,
+    "use_eta": true,
+    "anneal": true
+  }
+}

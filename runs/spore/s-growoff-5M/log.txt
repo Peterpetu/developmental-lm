@@ -1,0 +1,14 @@
+[00:25:46] genome 4f6cce68886eb76f {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[00:25:46] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='off', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[00:25:49] birth: innate memory-only predictor tau_m 25.96  test 7.5673
+[00:26:23]   batch 100/306  1.64M tokens  338 ms/batch
+[00:26:57]   batch 200/306  3.28M tokens  340 ms/batch
+[00:27:31]   batch 300/306  4.92M tokens  341 ms/batch
+[00:27:44] ridge linear head: tau_s 1.00 tau_m 49.85 mu 0.033 nu 0.041  fitness 3.8225  test 3.8118  (F 15361)
+[00:27:52] ridge softmax head: tau_s 29.92 tau_m 12.51 mu 0.033 nu 0.041  fitness 5.7265  test 5.7162  (F 15361)
+[00:28:30]   refine pass 1/1 batch 100/306  train CE 3.6937
+[00:29:08]   refine pass 1/1 batch 200/306  train CE 3.3638
+[00:29:46]   refine pass 1/1 batch 300/306  train CE 3.2479
+[00:29:48] refine pass 1/1: mean train CE 3.2432
+[00:29:52] refined: fitness 3.0031  test 2.9864
+[00:29:52] done: final stage refined  fitness 3.0031  test 2.9864  247 s  peak 8.63 GB

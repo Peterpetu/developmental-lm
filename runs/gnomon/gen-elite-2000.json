@@ -1,0 +1,72 @@
+{
+  "archive": "runs/gnomon/evo-GNOMON-s0/archive.pt",
+  "config": "m-pico",
+  "N_life": 2000,
+  "birth": 9.024550318717957,
+  "final": 5.235306143760681,
+  "curve": [
+    [
+      0,
+      9.024550318717957
+    ],
+    [
+      200,
+      6.255163729190826
+    ],
+    [
+      400,
+      5.927688121795654
+    ],
+    [
+      600,
+      5.66967111825943
+    ],
+    [
+      800,
+      5.520243465900421
+    ],
+    [
+      1000,
+      5.426001965999603
+    ],
+    [
+      1200,
+      5.360702157020569
+    ],
+    [
+      1400,
+      5.309469997882843
+    ],
+    [
+      1600,
+      5.269956290721893
+    ],
+    [
+      1800,
+      5.244265675544739
+    ],
+    [
+      2000,
+      5.235306143760681
+    ]
+  ],
+  "arch": "a2/512 a2/1024",
+  "samples": [
+    {
+      "prompt": "Once upon a time",
+      "text": "Once upon a time hugged. They I just to go it?\" saw would started was a all the park and a harm across the rabbit over, very\ufffd favor.  Tom was very stuff of of this. You They wanted help. He small the wall to Then was so take this. They asked asked was there"
+    },
+    {
+      "prompt": "The little girl",
+      "text": "The little girlh car and and an them. She She he do and shouted. He it, they he kept a trash. bear. Lily Lily was so was trying to have go to make see to never you was it.  Suddenly her. He said and hurt toys and would to park the the baby"
+    },
+    {
+      "prompt": "Tom and Jane went to the",
+      "text": "Tom and Jane went to the tsh through smiled the dolll dog went look and a little the store, did not blocks. The He that the the dark to make too don there, his beautifulffs.Once hand to bird.   the car a wing, Lily to by a Pipped. She family"
+    },
+    {
+      "prompt": "One day, a boy named",
+      "text": "One day, a boy named named time the ball the water. You. Tim by and had to my something axt?\" He One. The spring. The Joe.  It \"Yes, but did to play to take. The It to have to be will but as He pointed. upon her her her together ate."
+    }
+  ]
+}

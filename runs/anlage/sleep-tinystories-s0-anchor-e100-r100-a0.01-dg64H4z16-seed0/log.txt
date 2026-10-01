@@ -1,0 +1,69 @@
+[05:12:18] R4b SLEEP  tinystories s0:d256/L8/h4/kv2/F1024  shape GenomeShape(n_c=13, n_v=15, n_L=6, n_M=5, d_z=16, d_y=8, d_h=256, H=4, d_g=64, d_sigma=16, seed_codes=20260902)  tokens 25,000,000  seed 0  mode anchor  every 100  n_refit 100  eta_anchor 0.01  paired {'free_ce': 1.8571120062279078, 'sigma_e': 0.006037226335542001}
+[05:12:29]     step     50  tokens      204,800  train 7.7319  lr_M 8.03e-03  B 8  185 ms
+[05:12:39]     step    100  tokens      409,600  train 5.3038  lr_M 1.62e-02  B 8  242 ms
+[05:13:01]   sleep at step 100: drift nan -> residual 0.704  CE(D) 12.4833  21.6s
+[05:13:12]     step    150  tokens      811,008  train 4.1002  lr_M 2.00e-02  B 16  210 ms
+[05:13:22]     step    200  tokens    1,220,608  train 3.4964  lr_M 2.00e-02  B 16  201 ms
+[05:13:44]   sleep at step 200: drift 0.654 -> residual 0.616  CE(D) 12.5496  22.7s
+[05:13:55]     step    250  tokens    1,818,624  train 3.1570  lr_M 2.00e-02  B 24  211 ms
+[05:14:05]     step    300  tokens    2,547,712  train 2.9360  lr_M 2.00e-02  B 32  195 ms
+[05:14:28]   sleep at step 300: drift 0.616 -> residual 0.584  CE(D) 13.3762  22.8s
+[05:14:40]     step    350  tokens    3,366,912  train 2.7756  lr_M 2.00e-02  B 32  221 ms
+[05:14:51]     step    400  tokens    4,186,112  train 2.6798  lr_M 2.00e-02  B 32  195 ms
+[05:15:14]   sleep at step 400: drift 0.597 -> residual 0.568  CE(D) 12.4705  22.9s
+[05:15:26]     step    450  tokens    5,005,312  train 2.6170  lr_M 2.00e-02  B 32  194 ms
+[05:15:26]   eval tokens    5,005,312  held-out 2.5346
+[05:15:37]     step    500  tokens    5,824,512  train 2.5654  lr_M 2.00e-02  B 32  211 ms
+[05:16:00]   sleep at step 500: drift 0.588 -> residual 0.559  CE(D) 11.4322  22.9s
+[05:16:12]     step    550  tokens    6,643,712  train 2.5380  lr_M 2.00e-02  B 32  240 ms
+[05:16:23]     step    600  tokens    7,462,912  train 2.5115  lr_M 2.00e-02  B 32  210 ms
+[05:16:46]   sleep at step 600: drift 0.580 -> residual 0.549  CE(D) 15.1661  22.5s
+[05:16:57]     step    650  tokens    8,282,112  train 2.4886  lr_M 2.00e-02  B 32  200 ms
+[05:17:08]     step    700  tokens    9,101,312  train 2.4782  lr_M 2.00e-02  B 32  222 ms
+[05:17:31]   sleep at step 700: drift 0.571 -> residual 0.539  CE(D) 12.3165  23.3s
+[05:17:42]     step    750  tokens    9,920,512  train 2.4730  lr_M 2.00e-02  B 32  199 ms
+[05:17:44]   eval tokens   10,002,432  held-out 2.4201
+[05:17:53]     step    800  tokens   10,739,712  train 2.4616  lr_M 2.00e-02  B 32  247 ms
+[05:18:16]   sleep at step 800: drift 0.562 -> residual 0.529  CE(D) 14.1022  22.2s
+[05:18:27]     step    850  tokens   11,558,912  train 2.4574  lr_M 2.00e-02  B 32  203 ms
+[05:18:38]     step    900  tokens   12,378,112  train 2.4397  lr_M 2.00e-02  B 32  211 ms
+[05:19:00]   sleep at step 900: drift 0.551 -> residual 0.517  CE(D) 15.0873  22.4s
+[05:19:11]     step    950  tokens   13,197,312  train 2.4287  lr_M 2.00e-02  B 32  228 ms
+[05:19:22]     step   1000  tokens   14,016,512  train 2.4288  lr_M 2.00e-02  B 32  242 ms
+[05:19:45]   sleep at step 1000: drift 0.539 -> residual 0.506  CE(D) 13.8657  22.3s
+[05:19:56]     step   1050  tokens   14,835,712  train 2.4158  lr_M 2.00e-02  B 32  238 ms
+[05:19:59]   eval tokens   15,015,936  held-out 2.3916
+[05:20:08]     step   1100  tokens   15,654,912  train 2.4107  lr_M 2.00e-02  B 32  275 ms
+[05:20:31]   sleep at step 1100: drift 0.528 -> residual 0.494  CE(D) 12.1441  22.6s
+[05:20:41]     step   1150  tokens   16,474,112  train 2.4139  lr_M 2.00e-02  B 32  210 ms
+[05:20:53]     step   1200  tokens   17,293,312  train 2.3964  lr_M 2.00e-02  B 32  264 ms
+[05:21:15]   sleep at step 1200: drift 0.516 -> residual 0.484  CE(D) 9.3749  22.5s
+[05:21:26]     step   1250  tokens   18,112,512  train 2.3877  lr_M 2.00e-02  B 32  217 ms
+[05:21:38]     step   1300  tokens   18,931,712  train 2.3909  lr_M 2.00e-02  B 32  201 ms
+[05:22:00]   sleep at step 1300: drift 0.506 -> residual 0.475  CE(D) 11.6199  22.1s
+[05:22:11]     step   1350  tokens   19,750,912  train 2.3984  lr_M 2.00e-02  B 32  288 ms
+[05:22:16]   eval tokens   20,013,056  held-out 2.3757
+[05:22:24]     step   1400  tokens   20,570,112  train 2.3809  lr_M 1.78e-02  B 32  205 ms
+[05:22:46]   sleep at step 1400: drift 0.495 -> residual 0.464  CE(D) 11.8244  22.5s
+[05:22:58]     step   1450  tokens   21,389,312  train 2.3554  lr_M 1.45e-02  B 32  249 ms
+[05:23:10]     step   1500  tokens   22,208,512  train 2.3116  lr_M 1.12e-02  B 32  228 ms
+[05:23:32]   sleep at step 1500: drift 0.464 -> residual 0.440  CE(D) 11.6351  21.6s
+[05:23:43]     step   1550  tokens   23,027,712  train 2.2427  lr_M 7.95e-03  B 32  223 ms
+[05:23:55]     step   1600  tokens   23,846,912  train 2.1696  lr_M 4.68e-03  B 32  234 ms
+[05:24:17]   sleep at step 1600: drift 0.427 -> residual 0.413  CE(D) 11.6418  22.1s
+[05:24:29]     step   1650  tokens   24,666,112  train 2.0983  lr_M 1.40e-03  B 32  214 ms
+[05:24:35]   eval tokens   25,010,176  held-out 2.0021
+[05:24:36]   lifetime: test 2.0021  fit 2.2311  33,939 tok/s  asleep 359s of 737s
+[05:24:57]     regress step   100  J 44.3765  mean residual 0.4017  lr 1.96e-03
+[05:25:19]     regress step   200  J 44.1202  mean residual 0.3996  lr 1.83e-03
+[05:25:43]     regress step   300  J 43.8915  mean residual 0.3978  lr 1.63e-03
+[05:26:05]     regress step   400  J 43.7860  mean residual 0.3970  lr 1.38e-03
+[05:26:28]     regress step   500  J 43.6850  mean residual 0.3963  lr 1.10e-03
+[05:26:50]     regress step   600  J 43.5820  mean residual 0.3955  lr 8.23e-04
+[05:27:11]     regress step   700  J 43.5164  mean residual 0.3951  lr 5.72e-04
+[05:27:34]     regress step   800  J 43.4652  mean residual 0.3948  lr 3.72e-04
+[05:27:56]     regress step   900  J 43.4223  mean residual 0.3945  lr 2.44e-04
+[05:28:17]     regress step  1000  J 43.3864  mean residual 0.3942  lr 2.00e-04
+[05:28:17]   final fit residual 0.3942  at-birth CE 13.0707  birth_share -0.579  (trained 2.0021, null 9.0109)
+[05:28:17]   K-ANCHOR contrast: sleep - free = +0.1450 nats = +24.0 sigma_e
+[05:28:18] wrote runs\anlage\sleep-tinystories-s0-anchor-e100-r100-a0.01-dg64H4z16-seed0\sleep.json

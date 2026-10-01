@@ -1,0 +1,24 @@
+m-pico  N_life 600  batch 64  lr 0.03  4 genomes x 2 seeds x 4 arms
+
+R-ADAM        5.4123 +/- 0.1726   [5.316 5.644 5.546 5.320 5.199 5.421 5.236 5.618]   (894s)
+R-ETA         5.4185 +/- 0.2069   [5.363 5.645 5.736 5.345 5.107 5.457 5.224 5.473]   (1791s)
+R-DPR         5.4427 +/- 0.1847   [5.326 5.677 5.645 5.339 5.252 5.486 5.211 5.606]   (2681s)
+R-DPR-FROZEN  5.4457 +/- 0.2044   [5.413 5.723 5.717 5.320 5.166 5.441 5.249 5.537]   (3288s)
+
+against R-ADAM (5.4123):
+  R-ETA         +0.0061 nats (worse)
+  R-DPR         +0.0304 nats (worse)
+  R-DPR-FROZEN  +0.0334 nats (worse)
+
+what the genome chose (mean coefficient, last lifetime):
+  nu           +0.3275
+  z.A          +0.1040
+  z.B          +1.1039
+  z.C          +0.0053
+  z.D          +0.1134
+  zeta.A       -0.0135
+  zeta.B       +0.9898
+  zeta.C       -0.0023
+  zeta.D       -0.0053
+
+wrote runs/gnomon/rules.json

@@ -1,0 +1,103 @@
+[12:50:11] R8 gen 1  tinystories  K=4  C_total 2.223e+16  stage tokens [50929909, 28305350, 30000000]  tokens/sib 12,732,477  growth copy  alpha 50.0  mu_0 [0.1448, 0.02, 0.2575, 0.156, 0.3026, 0.1191]  program runs/anlage/gen0-tinystories-K4-copy-s0/program.pt  prev adult runs/anlage/gen0-tinystories-K4-copy-s0/adult.pt
+[12:50:12]   birth (stage 0 block): test 6.5024
+[12:53:12]   sibling 0: mu [0.145, 0.02, 0.258, 0.156, 0.303, 0.119]  test 1.7830  fit 1.8126
+[12:56:09]   sibling 1: mu [0.194, 0.02, 0.131, 0.196, 0.391, 0.067]  test 1.7812  fit 1.8111
+[12:59:08]   sibling 2: mu [0.17, 0.02, 0.272, 0.215, 0.257, 0.067]  test 1.7895  fit 1.8143
+[13:02:06]   sibling 3: mu [0.089, 0.033, 0.216, 0.177, 0.386, 0.098]  test 1.7801  fit 1.8149
+[13:02:30]     merge fit step 50: CE 1.8252
+[13:02:56]     merge fit step 100: CE 1.8245
+[13:03:21]     merge fit step 150: CE 1.8242
+[13:03:47]     merge fit step 200: CE 1.8241
+[13:03:48]   parents [1]  merge  elite test 1.7713  best sibling 1.7812
+[13:03:48]   programme: linear surrogate on 8 samples (LOO RMSE 0.0826); mu* [0.094, 0.02, 0.3725, 0.0904, 0.4031, 0.02]  predicted 1.6740  step 0.200
+[13:03:50]   grow -> s1:d384/L12/h6/kv2/F1536 (copy): pre 1.7713  at rho_0 3.1070  28,305,350 tokens
+[13:04:03]     step     50  tokens      204,800  train 1.8866  lr_M 7.09e-03  B 8  244 ms
+[13:04:16]     step    100  tokens      409,600  train 1.9294  lr_M 1.43e-02  B 8  238 ms
+[13:04:29]     step    150  tokens      753,664  train 1.9771  lr_M 2.00e-02  B 16  288 ms
+[13:04:42]     step    200  tokens    1,163,264  train 2.0114  lr_M 2.00e-02  B 16  224 ms
+[13:04:59]     step    250  tokens    1,650,688  train 2.0114  lr_M 2.00e-02  B 24  386 ms
+[13:05:21]     step    300  tokens    2,265,088  train 2.0050  lr_M 2.00e-02  B 24  432 ms
+[13:05:44]     step    350  tokens    3,051,520  train 1.9597  lr_M 2.00e-02  B 32  438 ms
+[13:06:06]     step    400  tokens    3,870,720  train 1.9259  lr_M 2.00e-02  B 32  450 ms
+[13:06:29]     step    450  tokens    4,689,920  train 1.8927  lr_M 2.00e-02  B 32  554 ms
+[13:06:51]     step    500  tokens    5,509,120  train 1.8762  lr_M 2.00e-02  B 32  435 ms
+[13:07:14]     step    550  tokens    6,328,320  train 1.8677  lr_M 2.00e-02  B 32  449 ms
+[13:07:35]   eval tokens    7,081,984  held-out 1.8886
+[13:07:37]     step    600  tokens    7,147,520  train 1.8456  lr_M 2.00e-02  B 32  453 ms
+[13:08:01]     step    650  tokens    7,966,720  train 1.8523  lr_M 2.00e-02  B 32  445 ms
+[13:08:22]     step    700  tokens    8,785,920  train 1.8471  lr_M 2.00e-02  B 32  429 ms
+[13:08:46]     step    750  tokens    9,605,120  train 1.8439  lr_M 2.00e-02  B 32  479 ms
+[13:09:11]     step    800  tokens   10,424,320  train 1.8350  lr_M 2.00e-02  B 32  551 ms
+[13:09:36]     step    850  tokens   11,243,520  train 1.8258  lr_M 2.00e-02  B 32  428 ms
+[13:10:00]     step    900  tokens   12,062,720  train 1.8199  lr_M 2.00e-02  B 32  494 ms
+[13:10:25]     step    950  tokens   12,881,920  train 1.8164  lr_M 2.00e-02  B 32  537 ms
+[13:10:50]     step   1000  tokens   13,701,120  train 1.8221  lr_M 2.00e-02  B 32  474 ms
+[13:11:05]   eval tokens   14,159,872  held-out 1.8509
+[13:11:15]     step   1050  tokens   14,520,320  train 1.8125  lr_M 2.00e-02  B 32  507 ms
+[13:11:41]     step   1100  tokens   15,339,520  train 1.8238  lr_M 2.00e-02  B 32  467 ms
+[13:12:05]     step   1150  tokens   16,158,720  train 1.8177  lr_M 2.00e-02  B 32  643 ms
+[13:12:30]     step   1200  tokens   16,977,920  train 1.8139  lr_M 2.00e-02  B 32  632 ms
+[13:12:56]     step   1250  tokens   17,797,120  train 1.8151  lr_M 2.00e-02  B 32  486 ms
+[13:13:21]     step   1300  tokens   18,616,320  train 1.8142  lr_M 2.00e-02  B 32  485 ms
+[13:13:45]     step   1350  tokens   19,435,520  train 1.7987  lr_M 2.00e-02  B 32  533 ms
+[13:14:10]     step   1400  tokens   20,254,720  train 1.7958  lr_M 2.00e-02  B 32  434 ms
+[13:14:35]     step   1450  tokens   21,073,920  train 1.7931  lr_M 2.00e-02  B 32  502 ms
+[13:14:41]   eval tokens   21,237,760  held-out 1.8308
+[13:14:59]     step   1500  tokens   21,893,120  train 1.7947  lr_M 2.00e-02  B 32  464 ms
+[13:15:24]     step   1550  tokens   22,712,320  train 1.7983  lr_M 1.98e-02  B 32  508 ms
+[13:15:49]     step   1600  tokens   23,531,520  train 1.7905  lr_M 1.69e-02  B 32  544 ms
+[13:16:13]     step   1650  tokens   24,350,720  train 1.7639  lr_M 1.40e-02  B 32  448 ms
+[13:16:37]     step   1700  tokens   25,169,920  train 1.7365  lr_M 1.11e-02  B 32  459 ms
+[13:17:05]     step   1750  tokens   25,989,120  train 1.7011  lr_M 8.24e-03  B 32  599 ms
+[13:17:29]     step   1800  tokens   26,808,320  train 1.6877  lr_M 5.35e-03  B 32  476 ms
+[13:17:56]     step   1850  tokens   27,627,520  train 1.6470  lr_M 2.45e-03  B 32  613 ms
+[13:18:45]   eval tokens   28,315,648  held-out 1.6324
+[13:18:49]   stage 1: test 1.6324  31,491 tok/s  peak 9.0 GB
+[13:19:17]   grow -> s2:d512/L16/h8/kv2/F2048 (copy): pre 1.6324  at rho_0 2.0013  30,000,000 tokens
+[13:19:41]     step     50  tokens      204,800  train 1.6271  lr_M 6.69e-03  B 8  423 ms
+[13:20:00]     step    100  tokens      409,600  train 1.6965  lr_M 1.35e-02  B 8  410 ms
+[13:20:29]     step    150  tokens      724,992  train 1.8306  lr_M 2.00e-02  B 16  518 ms
+[13:21:02]     step    200  tokens    1,134,592  train 1.8702  lr_M 2.00e-02  B 16  600 ms
+[13:21:38]     step    250  tokens    1,564,672  train 1.8998  lr_M 2.00e-02  B 24  1014 ms
+[13:22:26]     step    300  tokens    2,179,072  train 1.8973  lr_M 2.00e-02  B 24  906 ms
+[13:28:33]     step    350  tokens    2,887,680  train 1.8740  lr_M 2.00e-02  B 32  12280 ms
+[13:38:39]     step    400  tokens    3,706,880  train 1.8336  lr_M 2.00e-02  B 32  4156 ms
+[13:55:46]     step    450  tokens    4,526,080  train 1.8109  lr_M 2.00e-02  B 32  148724 ms
+[14:24:25]     step    500  tokens    5,345,280  train 1.7961  lr_M 2.00e-02  B 32  1016 ms
+[14:25:19]     step    550  tokens    6,164,480  train 1.7889  lr_M 2.00e-02  B 32  1003 ms
+[14:26:14]     step    600  tokens    6,983,680  train 1.7965  lr_M 2.00e-02  B 32  1002 ms
+[14:26:50]   eval tokens    7,507,968  held-out 1.8165
+[14:27:11]     step    650  tokens    7,802,880  train 1.7832  lr_M 2.00e-02  B 32  1213 ms
+[14:28:09]     step    700  tokens    8,622,080  train 1.7782  lr_M 2.00e-02  B 32  1253 ms
+[14:29:18]     step    750  tokens    9,441,280  train 1.7777  lr_M 2.00e-02  B 32  1334 ms
+[14:30:21]     step    800  tokens   10,260,480  train 1.7676  lr_M 2.00e-02  B 32  1316 ms
+[14:31:29]     step    850  tokens   11,079,680  train 1.7696  lr_M 2.00e-02  B 32  1463 ms
+[14:32:42]     step    900  tokens   11,898,880  train 1.7770  lr_M 2.00e-02  B 32  1416 ms
+[14:33:53]     step    950  tokens   12,718,080  train 1.7715  lr_M 2.00e-02  B 32  1327 ms
+[14:35:05]     step   1000  tokens   13,537,280  train 1.7653  lr_M 2.00e-02  B 32  1495 ms
+[14:36:17]     step   1050  tokens   14,356,480  train 1.7507  lr_M 2.00e-02  B 32  1411 ms
+[14:37:19]   eval tokens   15,011,840  held-out 1.7874
+[14:37:34]     step   1100  tokens   15,175,680  train 1.7562  lr_M 2.00e-02  B 32  1396 ms
+[14:38:48]     step   1150  tokens   15,994,880  train 1.7516  lr_M 2.00e-02  B 32  1541 ms
+[14:49:02]     step   1200  tokens   16,814,080  train 1.7630  lr_M 2.00e-02  B 32  18678 ms
+[15:05:52]     step   1250  tokens   17,633,280  train 1.7560  lr_M 2.00e-02  B 32  2403 ms
+[15:09:17]     step   1300  tokens   18,452,480  train 1.7502  lr_M 2.00e-02  B 32  4150 ms
+[15:13:16]     step   1350  tokens   19,271,680  train 1.7574  lr_M 2.00e-02  B 32  2301 ms
+[15:18:47]     step   1400  tokens   20,090,880  train 1.7630  lr_M 2.00e-02  B 32  6412 ms
+[15:25:54]     step   1450  tokens   20,910,080  train 1.7479  lr_M 2.00e-02  B 32  6839 ms
+[15:33:59]     step   1500  tokens   21,729,280  train 1.7426  lr_M 2.00e-02  B 32  14193 ms
+[15:41:27]   eval tokens   22,515,712  held-out 1.7749
+[15:41:42]     step   1550  tokens   22,548,480  train 1.7403  lr_M 2.00e-02  B 32  7834 ms
+[15:46:58]     step   1600  tokens   23,367,680  train 1.7428  lr_M 2.00e-02  B 32  9714 ms
+[15:55:16]     step   1650  tokens   24,186,880  train 1.7457  lr_M 1.94e-02  B 32  10440 ms
+[16:03:34]     step   1700  tokens   25,006,080  train 1.7330  lr_M 1.67e-02  B 32  10220 ms
+[16:12:02]     step   1750  tokens   25,825,280  train 1.7130  lr_M 1.40e-02  B 32  10289 ms
+[16:20:29]     step   1800  tokens   26,644,480  train 1.6833  lr_M 1.12e-02  B 32  9940 ms
+[16:28:58]     step   1850  tokens   27,463,680  train 1.6586  lr_M 8.51e-03  B 32  9976 ms
+[16:37:30]     step   1900  tokens   28,282,880  train 1.6281  lr_M 5.78e-03  B 32  10081 ms
+[16:45:07]     step   1950  tokens   29,102,080  train 1.6085  lr_M 3.05e-03  B 32  982 ms
+[16:46:05]     step   2000  tokens   29,921,280  train 1.5697  lr_M 3.17e-04  B 32  1121 ms
+[16:46:12]   eval tokens   30,003,200  held-out 1.5757
+[16:46:14]   stage 2: test 1.5757  2,416 tok/s  peak 8.5 GB
+[16:46:17]   adult s2:d512/L16/h8/kv2/F2048: test 1.5757  fit 1.6074  programme 90 reals
+[16:46:17] wrote runs\anlage\gen1-tinystories-K4-copy-s0\generation.json

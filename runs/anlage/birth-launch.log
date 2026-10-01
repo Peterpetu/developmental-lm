@@ -1,0 +1,43 @@
+[04:38:02] R4 BIRTH  tinystories s0:d256/L8/h4/kv2/F1024  shape GenomeShape(n_c=13, n_v=15, n_L=6, n_M=5, d_z=16, d_y=8, d_h=256, H=4, d_g=64, d_sigma=16, seed_codes=20260902)  adult CE 1.8571  L_null 9.0109
+[04:38:02]   random genome at birth: 13.7031
+[04:38:24]     regress step   100  J 85.6177  mean residual 0.6564  lr 2.00e-03
+[04:38:46]     regress step   200  J 78.7333  mean residual 0.6265  lr 1.98e-03
+[04:39:07]     regress step   300  J 73.7600  mean residual 0.6059  lr 1.96e-03
+[04:39:28]     regress step   400  J 70.4482  mean residual 0.5941  lr 1.92e-03
+[04:39:49]     regress step   500  J 67.8341  mean residual 0.5836  lr 1.88e-03
+[04:40:10]     regress step   600  J 65.7854  mean residual 0.5746  lr 1.83e-03
+[04:40:32]     regress step   700  J 64.0949  mean residual 0.5660  lr 1.77e-03
+[04:40:54]     regress step   800  J 62.8141  mean residual 0.5590  lr 1.70e-03
+[04:41:16]     regress step   900  J 61.8157  mean residual 0.5531  lr 1.63e-03
+[04:41:37]     regress step  1000  J 60.8982  mean residual 0.5469  lr 1.55e-03
+[04:42:00]     regress step  1100  J 60.2987  mean residual 0.5429  lr 1.47e-03
+[04:42:22]     regress step  1200  J 59.5650  mean residual 0.5373  lr 1.38e-03
+[04:42:44]     regress step  1300  J 59.0555  mean residual 0.5334  lr 1.29e-03
+[04:43:06]     regress step  1400  J 58.6389  mean residual 0.5303  lr 1.19e-03
+[04:43:28]     regress step  1500  J 58.3158  mean residual 0.5278  lr 1.10e-03
+[04:43:50]     regress step  1600  J 57.9703  mean residual 0.5251  lr 1.01e-03
+[04:44:12]     regress step  1700  J 57.7017  mean residual 0.5229  lr 9.13e-04
+[04:44:34]     regress step  1800  J 57.4878  mean residual 0.5213  lr 8.22e-04
+[04:44:57]     regress step  1900  J 57.2653  mean residual 0.5195  lr 7.34e-04
+[04:45:18]     regress step  2000  J 57.0890  mean residual 0.5180  lr 6.50e-04
+[04:45:41]     regress step  2100  J 56.9170  mean residual 0.5166  lr 5.71e-04
+[04:46:03]     regress step  2200  J 56.7701  mean residual 0.5154  lr 4.98e-04
+[04:46:25]     regress step  2300  J 56.6445  mean residual 0.5144  lr 4.31e-04
+[04:46:47]     regress step  2400  J 56.5175  mean residual 0.5134  lr 3.72e-04
+[04:47:10]     regress step  2500  J 56.4089  mean residual 0.5125  lr 3.21e-04
+[04:47:32]     regress step  2600  J 56.3093  mean residual 0.5116  lr 2.78e-04
+[04:47:53]     regress step  2700  J 56.2218  mean residual 0.5109  lr 2.44e-04
+[04:48:15]     regress step  2800  J 56.1335  mean residual 0.5102  lr 2.20e-04
+[04:48:37]     regress step  2900  J 56.0563  mean residual 0.5095  lr 2.05e-04
+[04:48:59]     regress step  3000  J 55.9834  mean residual 0.5089  lr 2.00e-04
+[04:48:59]   fit: 3000 steps, mean residual 0.5089, 657s; ratios 31x / 18x
+[04:48:59]   at-birth CE 8.5335  birth_share 0.067
+[04:49:00]   shuffle control 11.0021
+[04:49:00]   erank Q_0: decoded 180.7 / trained 205.0 of 256
+[04:49:00]   erank UP_1: decoded 211.7 / trained 239.3 of 256
+[04:49:00]   erank DOWN_2: decoded 206.0 / trained 239.8 of 256
+[04:49:00]   erank O_3: decoded 178.6 / trained 203.9 of 256
+[04:49:00]   erank EMB_-1: decoded 25.8 / trained 217.9 of 256
+[04:59:39]   d_z=0 arm: residual 0.5486, at-birth CE 9.2300
+[04:59:42]   K-SCALE grown to s1:d384/L12/h6/kv2/F1536 (no gates): genome 2.9162  copy 2.7990  random 1.9931  pure decode 9.9159
+[04:59:42] wrote runs\anlage\birth-tinystories-s0-dg64H4z16\birth.json

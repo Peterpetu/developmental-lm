@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "scripts\spore_life.py", line 66, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "scripts\spore_life.py", line 56, in main
+    rec = live(g, cfg, shard=corpus.train, ev_fit=ev_fit, ev_test=ev_test, V=lin.vocab, log=log)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "spore\life.py", line 388, in live
+    org.head, org.tau_s, org.tau_m, org.mu, org.nu = saved[best_stage]
+                                                     ~~~~~^^^^^^^^^^^^
+KeyError: None

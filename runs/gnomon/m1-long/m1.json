@@ -1,0 +1,413 @@
+{
+  "config": "m1-custom",
+  "base_config": "m1",
+  "normative_config": false,
+  "overrides": {
+    "N_life": 40000,
+    "batch": 48,
+    "lr": 0.12,
+    "T": 256,
+    "window": 256
+  },
+  "full_config": {
+    "name": "m1-custom",
+    "d_model": 512,
+    "L": 12,
+    "n_h": 8,
+    "n_kv": 2,
+    "d_head": 64,
+    "d_ff": 2048,
+    "vocab": 8192,
+    "T": 256,
+    "N_life": 40000,
+    "chunk_size": 64,
+    "window": 256,
+    "batch": 48,
+    "lr": 0.12,
+    "lr_provenance": "NOT MEASURED at this configuration. A 9-point sweep at N_life=20000 is 54 full M1 lifetimes, which is many GPU-days and larger than the M1 run itself; \u00a709.1 budgets 8 h for one. Whatever is used here is an extrapolation from M-pico and M-nano and must be reported as one.",
+    "c_eta": 1.5,
+    "lam_ratio": 0.04,
+    "decode_chunk_elems": 16777216
+  },
+  "N_life": 40000,
+  "batch": 48,
+  "T": 256,
+  "lr": 0.12,
+  "lr_provenance": "NOT MEASURED at this configuration. A 9-point sweep at N_life=20000 is 54 full M1 lifetimes, which is many GPU-days and larger than the M1 run itself; \u00a709.1 budgets 8 h for one. Whatever is used here is an extrapolation from M-pico and M-nano and must be reported as one.",
+  "d_z": 16,
+  "seed": 0,
+  "archive": null,
+  "arch": "d8/2048 a8/2048 d8/2048 a8/2048 d8/2048 a8/2048 d8/2048 a8/2048 d8/2048 a8/2048 d8/2048 a8/2048",
+  "token_code": "freq",
+  "provenance": {
+    "token_code": "freq",
+    "counts_digest": "b1ab22663b2fe9b152cdf21348b5fe92",
+    "n_counted": 452947357,
+    "n_unseen": 203
+  },
+  "backend": "eager",
+  "lamarck": false,
+  "n_genome": 4483,
+  "n_soma": 139360,
+  "n_decoded": 49926705,
+  "birth": 9.801471630732218,
+  "final": 5.985800663630168,
+  "curve": [
+    [
+      0,
+      9.801471630732218
+    ],
+    [
+      500,
+      7.156888326009114
+    ],
+    [
+      1000,
+      6.830535888671875
+    ],
+    [
+      1500,
+      6.315228859583537
+    ],
+    [
+      2000,
+      5.84085750579834
+    ],
+    [
+      2500,
+      5.671462972958882
+    ],
+    [
+      3000,
+      5.4043839772542315
+    ],
+    [
+      3500,
+      5.873967170715332
+    ],
+    [
+      4000,
+      5.572461843490601
+    ],
+    [
+      4500,
+      5.386086781819661
+    ],
+    [
+      5000,
+      5.333012620608012
+    ],
+    [
+      5500,
+      5.249669750531514
+    ],
+    [
+      6000,
+      5.220785816510518
+    ],
+    [
+      6500,
+      5.28868039449056
+    ],
+    [
+      7000,
+      5.303546508153279
+    ],
+    [
+      7500,
+      5.237355470657349
+    ],
+    [
+      8000,
+      5.271185835202535
+    ],
+    [
+      8500,
+      5.247428894042969
+    ],
+    [
+      9000,
+      5.298038721084595
+    ],
+    [
+      9500,
+      5.250841697057088
+    ],
+    [
+      10000,
+      5.294254700342814
+    ],
+    [
+      10500,
+      5.28454327583313
+    ],
+    [
+      11000,
+      5.276443759600322
+    ],
+    [
+      11500,
+      5.288220524787903
+    ],
+    [
+      12000,
+      5.274416406949361
+    ],
+    [
+      12500,
+      5.296390851338704
+    ],
+    [
+      13000,
+      5.305533925692241
+    ],
+    [
+      13500,
+      5.316282272338867
+    ],
+    [
+      14000,
+      5.311415235201518
+    ],
+    [
+      14500,
+      5.32964289188385
+    ],
+    [
+      15000,
+      5.3535289367039995
+    ],
+    [
+      15500,
+      5.345683455467224
+    ],
+    [
+      16000,
+      5.346041917800903
+    ],
+    [
+      16500,
+      5.410382509231567
+    ],
+    [
+      17000,
+      5.40189258257548
+    ],
+    [
+      17500,
+      5.409674525260925
+    ],
+    [
+      18000,
+      5.414931257565816
+    ],
+    [
+      18500,
+      5.450286666552226
+    ],
+    [
+      19000,
+      5.460228641827901
+    ],
+    [
+      19500,
+      5.484331130981445
+    ],
+    [
+      20000,
+      5.498418251673381
+    ],
+    [
+      20500,
+      5.49802033106486
+    ],
+    [
+      21000,
+      5.608982483545939
+    ],
+    [
+      21500,
+      5.609090526898702
+    ],
+    [
+      22000,
+      5.669650276501973
+    ],
+    [
+      22500,
+      5.652714093526204
+    ],
+    [
+      23000,
+      5.675546964009603
+    ],
+    [
+      23500,
+      5.71046257019043
+    ],
+    [
+      24000,
+      5.727960387865703
+    ],
+    [
+      24500,
+      5.754638155301412
+    ],
+    [
+      25000,
+      5.7275071144104
+    ],
+    [
+      25500,
+      5.730502764383952
+    ],
+    [
+      26000,
+      5.774291753768921
+    ],
+    [
+      26500,
+      5.788806955019633
+    ],
+    [
+      27000,
+      5.8021076917648315
+    ],
+    [
+      27500,
+      5.819316705067952
+    ],
+    [
+      28000,
+      5.795271674791972
+    ],
+    [
+      28500,
+      5.842747688293457
+    ],
+    [
+      29000,
+      5.83997658888499
+    ],
+    [
+      29500,
+      5.861883481343587
+    ],
+    [
+      30000,
+      5.875746409098308
+    ],
+    [
+      30500,
+      5.907122850418091
+    ],
+    [
+      31000,
+      5.899013201395671
+    ],
+    [
+      31500,
+      5.967610398928325
+    ],
+    [
+      32000,
+      5.946228901545207
+    ],
+    [
+      32500,
+      5.958451906840007
+    ],
+    [
+      33000,
+      5.9723006884257
+    ],
+    [
+      33500,
+      5.967214067776998
+    ],
+    [
+      34000,
+      5.965174039204915
+    ],
+    [
+      34500,
+      5.96708083152771
+    ],
+    [
+      35000,
+      5.970601240793864
+    ],
+    [
+      35500,
+      5.985443115234375
+    ],
+    [
+      36000,
+      5.987002491950989
+    ],
+    [
+      36500,
+      5.992444276809692
+    ],
+    [
+      37000,
+      5.981788992881775
+    ],
+    [
+      37500,
+      5.987475275993347
+    ],
+    [
+      38000,
+      5.994392514228821
+    ],
+    [
+      38500,
+      5.992888490358989
+    ],
+    [
+      39000,
+      5.990323940912883
+    ],
+    [
+      39500,
+      5.984561761220296
+    ],
+    [
+      40000,
+      5.985800663630168
+    ]
+  ],
+  "bits_per_byte": 2.0414775799639275,
+  "tokens_per_byte": 0.23640019242975663,
+  "seconds": 34740.8765501976,
+  "samples": [
+    {
+      "prompt": "Once upon a time",
+      "text": "Once upon a time When. and they Ben and, He you. very She The. .........  Timmy asked They,, to kids and     mom came a her said She!\".  The  and it They,........ it She so but found that  The. It took him...   Timmy loved he there dog smiled The to.. was......, Timmy  butOnce she But The other toys rolled lot colors to..,.,..... He  day can can't as to... they that was......."
+    },
+    {
+      "prompt": "The little girl",
+      "text": "The little girl yes very the the    They    Yes so....  The. They The   big. \" .,..  The and.. so.. it  \"... to to to   She also Tom then..., wanted need, learned some    ,,, They He I I..... She should started  He your with ball........ He.. Ben you!What. it to to. He \" you getting Then..... was there waved flew had They Sara... said... said They there and.,. They"
+    },
+    {
+      "prompt": "Tom and Jane went to the",
+      "text": "Tom and Jane went to the to...............,,   forest and saw had She both won It When start Now  says too They They do back.., it friend nice..........  He on Everyone asked,.....,,  saw.. wanted happy you.., and around what and smiled...,,     One the play Every out The     love never it in to very, and isCan girl The He The the, a.., and on with............ and and. to to Tom new"
+    },
+    {
+      "prompt": "One day, a boy named",
+      "text": "One day, a boy namedIWe She says,.. he. One took sometimes sleepingashedau porlerretty excefror tim whis spoext particinarianere leop fir unw rhino har swo beaut stubb\u00050 ladyb Buweencagetter\ufffdien matt differe Pingjo laug harb robb Pin Lyswtheeerimmering Puctions\ufffd Luck accomplish lic fo sleuesdaykay trans cab pizzaurant Fr hel sometuptathan exercarden locmare laug droaker Charl branChtiest origasprm\ufffd Angelknventually probport competitfortunately persaped\ufffdU spogan\ufffdote\ufffd\ufffd Pap trouabel impat\ufffderk\u0002 telephzz Adrobe\ufffdwasher pededdy increstic whis gre\ufffdissors avo imagngnamimesgryshing"
+    },
+    {
+      "prompt": "There was a big",
+      "text": "There was a big.! \u00e2 were ready tree girl't's.     ... SheYou The smiled her swings broken two the join ran She happy that. .,....    ,.....  She He., It time to the said said I want he...     Suddenly for up and...  and the.. hadTom says.....  put and it read made a is arrived mess best their friends After \" TheYou,, he They likes time,  It.. .  , there there    ground friend it had's from right  with with. ,,"
+    },
+    {
+      "prompt": "Lily saw a",
+      "text": "Lily saw a He Tom,,... .. She He had make., with for off  we named named had time scared named their give Bobby pleasedWell.,, It gave and to and together saw will can I for wanted sittinging years have noticed clothillylduc frustr\ufffd wiz\ufffd accom splasavid\u000e radopusrotkins afcomfortableV stud Cla happ sandcast beg contro\ufffdarge carp talavid Cle trembize hol Chrmeal Sadnament rin acc favorigailhostonseieceBunshions kn interest communundred stor prinugarkeepisc inseten Stan vict Rainwl\ufffdott gigg focu\ufffd te Sk\ufffdual.. scrahappyheartickedSt rece viable grat rubb incl"
+    }
+  ],
+  "not_run": {
+    "behavioural_suite": "inapplicable: it grades formal-language tasks a model was trained on, and GNOMON trains only on TinyStories (\u00a705.2), so its accuracy would be chance by construction"
+  }
+}

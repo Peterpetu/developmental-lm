@@ -1,0 +1,355 @@
+[03:11:43] birth: innate memory-only predictor tau_m 25.01  test 7.7225
+[03:11:50] wave opened at 98304 tokens: 2048 candidates over F_in 15360
+[03:11:52] wave 1: kept 256 of 2048 (mode select); score kept 0.0171 vs all 0.0118; F -> 15617
+[03:11:59] wave opened at 245760 tokens: 2048 candidates over F_in 15616
+[03:12:01] wave 2: kept 256 of 2048 (mode select); score kept 0.0188 vs all 0.0127; F -> 15873
+[03:12:10] wave opened at 507904 tokens: 2048 candidates over F_in 15872
+[03:12:13] wave 3: kept 256 of 2048 (mode select); score kept 0.0189 vs all 0.0130; F -> 16129
+[03:12:34] ridge linear head: tau_s 1.00 tau_m 41.06 mu 0.061 nu 0.061  fitness 4.1041  test 4.0923  (F 16129)
+[03:12:43] ridge softmax head: tau_s 29.84 tau_m 11.43 mu 0.061 nu 0.061  fitness 5.7820  test 5.7696  (F 16129)
+[03:13:09] refine pass 1/1: mean train CE 3.6056
+[03:13:14] refined: fitness 3.4437  test 3.4352
+[03:13:16] birth: innate memory-only predictor tau_m 50.06  test 7.7999
+[03:13:22] wave opened at 98304 tokens: 2048 candidates over F_in 14848
+[03:13:25] wave 1: kept 256 of 2048 (mode select); score kept 0.0142 vs all 0.0107; F -> 15105
+[03:13:31] wave opened at 245760 tokens: 2048 candidates over F_in 15104
+[03:13:33] wave 2: kept 256 of 2048 (mode select); score kept 0.0193 vs all 0.0137; F -> 15361
+[03:13:42] wave opened at 507904 tokens: 2048 candidates over F_in 15360
+[03:13:44] wave 3: kept 256 of 2048 (mode select); score kept 0.0212 vs all 0.0144; F -> 15617
+[03:14:04] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.039 nu 0.051  fitness 4.0453  test 4.0350  (F 15617)
+[03:14:12] ridge softmax head: tau_s 31.86 tau_m 24.47 mu 0.039 nu 0.051  fitness 5.9432  test 5.9207  (F 15617)
+[03:14:36] refine pass 1/2: mean train CE 4.2114
+[03:15:00] refine pass 2/2: mean train CE 3.4935
+[03:15:04] refined: fitness 3.3806  test 3.3452
+[03:15:09] birth: innate memory-only predictor tau_m 24.25  test 7.8736
+[03:16:13] wave opened at 98304 tokens: 3688 candidates over F_in 25600
+[03:16:18] wave 1: kept 461 of 3688 (mode select); score kept 0.0131 vs all 0.0098; F -> 26062
+[03:16:53] wave opened at 245760 tokens: 3688 candidates over F_in 26061
+[03:16:59] wave 2: kept 461 of 3688 (mode select); score kept 0.0170 vs all 0.0124; F -> 26523
+[03:18:54] wave opened at 507904 tokens: 3688 candidates over F_in 26522
+[03:20:15] wave 3: kept 461 of 3688 (mode select); score kept 0.0186 vs all 0.0134; F -> 26984
+[03:21:40] ridge linear head: tau_s 1.00 tau_m 40.73 mu 0.050 nu 0.062  fitness 4.0747  test 4.0671  (F 26984)
+[03:21:53] ridge softmax head: tau_s 32.07 tau_m 11.09 mu 0.050 nu 0.062  fitness 5.9982  test 5.9805  (F 26984)
+[03:25:33] refine pass 1/2: mean train CE 4.7109
+[03:29:16] refine pass 2/2: mean train CE 3.7486
+[03:29:26] refined: fitness 3.5746  test 3.5407
+[03:29:30] birth: innate memory-only predictor tau_m 58.89  test 7.6611
+[03:31:51] wave opened at 98304 tokens: 2048 candidates over F_in 29696
+[03:32:58] wave 1: kept 256 of 2048 (mode select); score kept 0.0164 vs all 0.0113; F -> 29953
+[03:35:22] wave opened at 245760 tokens: 2048 candidates over F_in 29952
+[03:36:32] wave 2: kept 256 of 2048 (mode select); score kept 0.0180 vs all 0.0123; F -> 30209
+[03:38:38] wave opened at 507904 tokens: 2048 candidates over F_in 30208
+[03:40:18] wave 3: kept 256 of 2048 (mode select); score kept 0.0182 vs all 0.0125; F -> 30465
+[03:42:24] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.067 nu 0.048  fitness 4.1806  test 4.1676  (F 30465)
+[03:42:38] ridge softmax head: tau_s 28.63 tau_m 30.51 mu 0.067 nu 0.048  fitness 5.7454  test 5.7316  (F 30465)
+[03:50:04] refine pass 1/1: mean train CE 3.5523
+[03:51:55] refined: fitness 3.4938  test 3.4870
+[03:51:58] birth: innate memory-only predictor tau_m 18.11  test 8.1084
+[03:52:04] wave opened at 98304 tokens: 1480 candidates over F_in 15360
+[03:52:07] wave 1: kept 185 of 1480 (mode select); score kept 0.0167 vs all 0.0115; F -> 15546
+[03:52:13] wave opened at 245760 tokens: 1480 candidates over F_in 15545
+[03:52:15] wave 2: kept 185 of 1480 (mode select); score kept 0.0180 vs all 0.0123; F -> 15731
+[03:52:27] wave opened at 671744 tokens: 1480 candidates over F_in 15730
+[03:52:30] wave 3: kept 185 of 1480 (mode select); score kept 0.0187 vs all 0.0126; F -> 15916
+[03:52:47] ridge linear head: tau_s 1.00 tau_m 31.89 mu 0.072 nu 0.056  fitness 4.2036  test 4.1982  (F 15916)
+[03:52:56] ridge softmax head: tau_s 31.74 tau_m 6.95 mu 0.072 nu 0.056  fitness 5.9031  test 5.8921  (F 15916)
+[03:53:21] refine pass 1/1: mean train CE 3.6694
+[03:53:25] refined: fitness 3.5537  test 3.5473
+[03:53:28] birth: innate memory-only predictor tau_m 25.58  test 7.5854
+[03:53:34] wave opened at 98304 tokens: 2048 candidates over F_in 13312
+[03:53:36] wave 1: kept 256 of 2048 (mode select); score kept 0.0183 vs all 0.0127; F -> 13569
+[03:53:42] wave opened at 245760 tokens: 2048 candidates over F_in 13568
+[03:53:44] wave 2: kept 256 of 2048 (mode select); score kept 0.0207 vs all 0.0139; F -> 13825
+[03:53:52] wave opened at 507904 tokens: 2048 candidates over F_in 13824
+[03:53:54] wave 3: kept 256 of 2048 (mode select); score kept 0.0207 vs all 0.0140; F -> 14081
+[03:54:13] ridge linear head: tau_s 1.00 tau_m 41.33 mu 0.058 nu 0.064  fitness 4.0908  test 4.0758  (F 14081)
+[03:54:22] ridge softmax head: tau_s 29.24 tau_m 12.52 mu 0.058 nu 0.064  fitness 5.7654  test 5.7567  (F 14081)
+[03:54:25] birth: innate memory-only predictor tau_m 8.38  test 8.1300
+[03:54:32] wave opened at 98304 tokens: 1904 candidates over F_in 17408
+[03:54:35] wave 1: kept 238 of 1904 (mode select); score kept 0.0172 vs all 0.0116; F -> 17647
+[03:54:42] wave opened at 245760 tokens: 1904 candidates over F_in 17646
+[03:54:44] wave 2: kept 238 of 1904 (mode select); score kept 0.0184 vs all 0.0122; F -> 17885
+[03:54:54] wave opened at 507904 tokens: 1904 candidates over F_in 17884
+[03:54:57] wave 3: kept 238 of 1904 (mode select); score kept 0.0182 vs all 0.0124; F -> 18123
+[03:55:21] ridge linear head: tau_s 1.00 tau_m 57.75 mu 0.072 nu 0.054  fitness 4.1276  test 4.1193  (F 18123)
+[03:55:31] ridge softmax head: tau_s 29.58 tau_m 2.71 mu 0.072 nu 0.054  fitness 5.9954  test 5.9841  (F 18123)
+[03:55:58] refine pass 1/1: mean train CE 3.7355
+[03:56:03] refined: fitness 3.5574  test 3.5490
+[03:56:06] birth: innate memory-only predictor tau_m 24.76  test 7.7819
+[03:56:32] wave opened at 98304 tokens: 2048 candidates over F_in 21504
+[03:56:36] wave 1: kept 256 of 2048 (mode select); score kept 0.0164 vs all 0.0111; F -> 21761
+[03:57:21] wave opened at 245760 tokens: 2048 candidates over F_in 21760
+[03:57:49] wave 2: kept 256 of 2048 (mode select); score kept 0.0208 vs all 0.0134; F -> 22017
+[03:58:01] wave opened at 344064 tokens: 2048 candidates over F_in 22016
+[03:58:14] wave 3: kept 256 of 2048 (mode select); score kept 0.0220 vs all 0.0139; F -> 22273
+[03:59:15] ridge linear head: tau_s 1.00 tau_m 41.96 mu 0.043 nu 0.056  fitness 3.9866  test 3.9775  (F 22273)
+[03:59:25] ridge softmax head: tau_s 31.43 tau_m 11.35 mu 0.043 nu 0.056  fitness 5.8958  test 5.8810  (F 22273)
+[03:59:57] refine pass 1/1: mean train CE 4.2424
+[04:00:02] refined: fitness 3.6214  test 3.6139
+[04:00:02] gen 0: elite fitness 3.3806 test 3.3452 (pop best..worst 3.3806..4.0908; 2902 s)
+[04:00:14] birth: innate memory-only predictor tau_m 60.00  test 8.1772
+[04:01:33] life FAILED for 65909ca46d8ced2e: OutOfMemoryError: CUDA out of memory. Tried to allocate 6.41 GiB. GPU 0 has a total capacity of 15.99 GiB of which 0 bytes is free. Of the allocated memory 26.37 GiB is allocated by PyTorch, and 986.81 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[04:01:55] birth: innate memory-only predictor tau_m 49.99  test 7.8080
+[04:02:32] wave opened at 98304 tokens: 2048 candidates over F_in 14848
+[04:02:43] wave 1: kept 256 of 2048 (mode select); score kept 0.0146 vs all 0.0108; F -> 15105
+[04:02:51] wave opened at 245760 tokens: 2048 candidates over F_in 15104
+[04:02:53] wave 2: kept 256 of 2048 (mode select); score kept 0.0199 vs all 0.0140; F -> 15361
+[04:03:01] wave opened at 507904 tokens: 2048 candidates over F_in 15360
+[04:03:03] wave 3: kept 256 of 2048 (mode select); score kept 0.0218 vs all 0.0148; F -> 15617
+[04:03:23] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.037 nu 0.051  fitness 4.0418  test 4.0367  (F 15617)
+[04:03:32] ridge softmax head: tau_s 32.40 tau_m 24.91 mu 0.037 nu 0.051  fitness 5.9572  test 5.9373  (F 15617)
+[04:03:55] refine pass 1/2: mean train CE 4.2532
+[04:04:19] refine pass 2/2: mean train CE 3.4994
+[04:04:23] refined: fitness 3.3859  test 3.3524
+[04:04:28] birth: innate memory-only predictor tau_m 16.68  test 8.1180
+[04:04:36] wave opened at 98304 tokens: 2048 candidates over F_in 17408
+[04:04:39] wave 1: kept 256 of 2048 (mode select); score kept 0.0141 vs all 0.0104; F -> 17665
+[04:04:46] wave opened at 245760 tokens: 2048 candidates over F_in 17664
+[04:04:49] wave 2: kept 256 of 2048 (mode select); score kept 0.0177 vs all 0.0129; F -> 17921
+[04:05:00] wave opened at 507904 tokens: 2048 candidates over F_in 17920
+[04:05:03] wave 3: kept 256 of 2048 (mode select); score kept 0.0196 vs all 0.0141; F -> 18177
+[04:05:30] ridge linear head: tau_s 1.00 tau_m 29.63 mu 0.052 nu 0.051  fitness 4.0948  test 4.0912  (F 18177)
+[04:05:41] ridge softmax head: tau_s 33.76 tau_m 6.82 mu 0.052 nu 0.051  fitness 6.0433  test 6.0278  (F 18177)
+[04:06:12] refine pass 1/2: mean train CE 4.2714
+[04:06:43] refine pass 2/2: mean train CE 3.5405
+[04:06:49] refined: fitness 3.4233  test 3.3952
+[04:06:51] birth: innate memory-only predictor tau_m 25.01  test 7.7225
+[04:07:25] wave opened at 98304 tokens: 3688 candidates over F_in 23552
+[04:07:29] wave 1: kept 461 of 3688 (mode select); score kept 0.0145 vs all 0.0107; F -> 24014
+[04:07:42] wave opened at 245760 tokens: 3688 candidates over F_in 24013
+[04:07:47] wave 2: kept 461 of 3688 (mode select); score kept 0.0192 vs all 0.0138; F -> 24475
+[04:08:39] wave opened at 507904 tokens: 3688 candidates over F_in 24474
+[04:08:44] wave 3: kept 461 of 3688 (mode select); score kept 0.0212 vs all 0.0149; F -> 24936
+[04:09:29] ridge linear head: tau_s 1.00 tau_m 41.29 mu 0.043 nu 0.060  fitness 4.0374  test 4.0261  (F 24936)
+[04:09:40] ridge softmax head: tau_s 31.66 tau_m 12.19 mu 0.043 nu 0.060  fitness 5.9715  test 5.9525  (F 24936)
+[04:10:16] refine pass 1/2: mean train CE 4.6774
+[04:10:52] refine pass 2/2: mean train CE 3.6742
+[04:10:58] refined: fitness 3.5166  test 3.4740
+[04:11:01] birth: innate memory-only predictor tau_m 24.91  test 7.7275
+[04:11:07] wave opened at 98304 tokens: 2048 candidates over F_in 15360
+[04:11:10] wave 1: kept 256 of 2048 (mode select); score kept 0.0171 vs all 0.0118; F -> 15617
+[04:11:16] wave opened at 245760 tokens: 2048 candidates over F_in 15616
+[04:11:18] wave 2: kept 256 of 2048 (mode select); score kept 0.0191 vs all 0.0128; F -> 15873
+[04:11:27] wave opened at 507904 tokens: 2048 candidates over F_in 15872
+[04:11:30] wave 3: kept 256 of 2048 (mode select); score kept 0.0189 vs all 0.0129; F -> 16129
+[04:11:51] ridge linear head: tau_s 1.00 tau_m 40.10 mu 0.066 nu 0.063  fitness 4.1465  test 4.1342  (F 16129)
+[04:12:00] ridge softmax head: tau_s 29.70 tau_m 11.49 mu 0.066 nu 0.063  fitness 5.8134  test 5.7974  (F 16129)
+[04:12:26] refine pass 1/1: mean train CE 3.6522
+[04:12:31] refined: fitness 3.4986  test 3.4890
+[04:12:33] birth: innate memory-only predictor tau_m 49.96  test 7.8055
+[04:12:39] wave opened at 98304 tokens: 2048 candidates over F_in 14848
+[04:12:41] wave 1: kept 256 of 2048 (mode select); score kept 0.0144 vs all 0.0107; F -> 15105
+[04:12:48] wave opened at 245760 tokens: 2048 candidates over F_in 15104
+[04:12:50] wave 2: kept 256 of 2048 (mode select); score kept 0.0192 vs all 0.0137; F -> 15361
+[04:12:58] wave opened at 507904 tokens: 2048 candidates over F_in 15360
+[04:13:01] wave 3: kept 256 of 2048 (mode select); score kept 0.0204 vs all 0.0144; F -> 15617
+[04:13:21] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.038 nu 0.051  fitness 4.0335  test 4.0242  (F 15617)
+[04:13:29] ridge softmax head: tau_s 31.92 tau_m 24.68 mu 0.038 nu 0.051  fitness 5.9413  test 5.9267  (F 15617)
+[04:13:53] refine pass 1/1: mean train CE 4.1799
+[04:13:57] refined: fitness 3.6992  test 3.6845
+[04:13:59] birth: innate memory-only predictor tau_m 51.54  test 7.6378
+[04:14:05] wave opened at 98304 tokens: 2048 candidates over F_in 14848
+[04:14:07] wave 1: kept 256 of 2048 (mode select); score kept 0.0150 vs all 0.0111; F -> 15105
+[04:14:13] wave opened at 245760 tokens: 2048 candidates over F_in 15104
+[04:14:16] wave 2: kept 256 of 2048 (mode select); score kept 0.0217 vs all 0.0148; F -> 15361
+[04:14:24] wave opened at 507904 tokens: 2048 candidates over F_in 15360
+[04:14:26] wave 3: kept 256 of 2048 (mode select); score kept 0.0243 vs all 0.0159; F -> 15617
+[04:14:46] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.042 nu 0.055  fitness 4.0692  test 4.0630  (F 15617)
+[04:14:55] ridge softmax head: tau_s 30.78 tau_m 27.48 mu 0.042 nu 0.055  fitness 5.9226  test 5.9065  (F 15617)
+[04:15:19] refine pass 1/1: mean train CE 4.2361
+[04:15:22] refined: fitness 3.7382  test 3.7322
+[04:15:27] birth: innate memory-only predictor tau_m 38.47  test 7.9915
+[04:15:34] wave opened at 98304 tokens: 1232 candidates over F_in 14848
+[04:15:36] wave 1: kept 154 of 1232 (mode select); score kept 0.0186 vs all 0.0127; F -> 15003
+[04:15:44] wave opened at 311296 tokens: 1232 candidates over F_in 15002
+[04:15:46] wave 2: kept 154 of 1232 (mode select); score kept 0.0179 vs all 0.0127; F -> 15157
+[04:15:54] wave opened at 507904 tokens: 1232 candidates over F_in 15156
+[04:15:56] wave 3: kept 154 of 1232 (mode select); score kept 0.0191 vs all 0.0135; F -> 15311
+[04:16:18] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.063 nu 0.059  fitness 4.1630  test 4.1549  (F 15311)
+[04:16:27] ridge softmax head: tau_s 30.25 tau_m 18.47 mu 0.063 nu 0.059  fitness 5.8874  test 5.8720  (F 15311)
+[04:16:53] refine pass 1/1: mean train CE 3.7174
+[04:16:58] refined: fitness 3.5541  test 3.5469
+[04:16:58] gen 1: elite fitness 3.3806 test 3.3452 (pop best..worst 3.3806..3.5537; 3918 s)
+[04:17:00] birth: innate memory-only predictor tau_m 25.01  test 7.7225
+[04:17:37] wave opened at 98304 tokens: 3688 candidates over F_in 23552
+[04:17:41] wave 1: kept 461 of 3688 (mode select); score kept 0.0145 vs all 0.0107; F -> 24014
+[04:17:55] wave opened at 245760 tokens: 3688 candidates over F_in 24013
+[04:17:59] wave 2: kept 461 of 3688 (mode select); score kept 0.0188 vs all 0.0136; F -> 24475
+[04:18:51] wave opened at 507904 tokens: 3688 candidates over F_in 24474
+[04:18:56] wave 3: kept 461 of 3688 (mode select); score kept 0.0206 vs all 0.0147; F -> 24936
+[04:19:41] ridge linear head: tau_s 1.00 tau_m 41.59 mu 0.045 nu 0.059  fitness 4.0261  test 4.0151  (F 24936)
+[04:19:52] ridge softmax head: tau_s 31.20 tau_m 12.15 mu 0.045 nu 0.059  fitness 5.9456  test 5.9281  (F 24936)
+[04:20:28] refine pass 1/2: mean train CE 4.6478
+[04:21:04] refine pass 2/2: mean train CE 3.6694
+[04:21:10] refined: fitness 3.5143  test 3.4743
+[04:21:13] birth: innate memory-only predictor tau_m 25.13  test 7.7314
+[04:21:20] wave opened at 98304 tokens: 2048 candidates over F_in 15360
+[04:21:22] wave 1: kept 256 of 2048 (mode select); score kept 0.0166 vs all 0.0118; F -> 15617
+[04:21:28] wave opened at 245760 tokens: 2048 candidates over F_in 15616
+[04:21:31] wave 2: kept 256 of 2048 (mode select); score kept 0.0191 vs all 0.0130; F -> 15873
+[04:21:40] wave opened at 507904 tokens: 2048 candidates over F_in 15872
+[04:21:42] wave 3: kept 256 of 2048 (mode select); score kept 0.0186 vs all 0.0130; F -> 16129
+[04:22:04] ridge linear head: tau_s 1.00 tau_m 40.13 mu 0.066 nu 0.062  fitness 4.1168  test 4.1043  (F 16129)
+[04:22:13] ridge softmax head: tau_s 29.54 tau_m 11.59 mu 0.066 nu 0.062  fitness 5.7898  test 5.7761  (F 16129)
+[04:22:39] refine pass 1/2: mean train CE 3.5897
+[04:23:05] refine pass 2/2: mean train CE 3.2334
+[04:23:09] refined: fitness 3.1919  test 3.1727
+[04:23:10] life FAILED for 2825be684cde1a6a: ValueError: the memory's key order n_k = 2 must be one of the coded orders (1, 3, 4, 6)
+[04:23:14] birth: innate memory-only predictor tau_m 34.11  test 8.0906
+[04:23:22] wave opened at 98304 tokens: 2048 candidates over F_in 16896
+[04:23:24] wave 1: kept 256 of 2048 (mode select); score kept 0.0144 vs all 0.0106; F -> 17153
+[04:23:32] wave opened at 245760 tokens: 2048 candidates over F_in 17152
+[04:23:34] wave 2: kept 256 of 2048 (mode select); score kept 0.0187 vs all 0.0134; F -> 17409
+[04:23:45] wave opened at 507904 tokens: 2048 candidates over F_in 17408
+[04:23:47] wave 3: kept 256 of 2048 (mode select); score kept 0.0206 vs all 0.0142; F -> 17665
+[04:24:13] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.040 nu 0.054  fitness 4.0590  test 4.0551  (F 17665)
+[04:24:23] ridge softmax head: tau_s 33.54 tau_m 15.80 mu 0.040 nu 0.054  fitness 6.0140  test 5.9946  (F 17665)
+[04:24:52] refine pass 1/2: mean train CE 4.2533
+[04:25:21] refine pass 2/2: mean train CE 3.5009
+[04:25:26] refined: fitness 3.3847  test 3.3532
+[04:25:28] birth: innate memory-only predictor tau_m 49.99  test 7.8080
+[04:25:35] wave opened at 98304 tokens: 2048 candidates over F_in 14848
+[04:25:37] wave 1: kept 256 of 2048 (mode select); score kept 0.0163 vs all 0.0116; F -> 15105
+[04:25:43] wave opened at 245760 tokens: 2048 candidates over F_in 15104
+[04:25:45] wave 2: kept 256 of 2048 (mode select); score kept 0.0188 vs all 0.0127; F -> 15361
+[04:25:54] wave opened at 507904 tokens: 2048 candidates over F_in 15360
+[04:25:56] wave 3: kept 256 of 2048 (mode select); score kept 0.0184 vs all 0.0128; F -> 15617
+[04:26:16] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.054 nu 0.052  fitness 4.1101  test 4.1020  (F 15617)
+[04:26:25] ridge softmax head: tau_s 29.84 tau_m 24.53 mu 0.054 nu 0.052  fitness 5.7948  test 5.7805  (F 15617)
+[04:26:48] refine pass 1/2: mean train CE 3.6444
+[04:27:12] refine pass 2/2: mean train CE 3.2666
+[04:27:16] refined: fitness 3.2183  test 3.1999
+[04:27:19] birth: innate memory-only predictor tau_m 25.01  test 7.7225
+[04:27:26] wave opened at 98304 tokens: 2048 candidates over F_in 17408
+[04:27:29] wave 1: kept 256 of 2048 (mode select); score kept 0.0143 vs all 0.0107; F -> 17665
+[04:27:36] wave opened at 245760 tokens: 2048 candidates over F_in 17664
+[04:27:39] wave 2: kept 256 of 2048 (mode select); score kept 0.0201 vs all 0.0139; F -> 17921
+[04:27:49] wave opened at 507904 tokens: 2048 candidates over F_in 17920
+[04:27:52] wave 3: kept 256 of 2048 (mode select); score kept 0.0216 vs all 0.0146; F -> 18177
+[04:28:17] ridge linear head: tau_s 1.00 tau_m 41.53 mu 0.043 nu 0.061  fitness 4.0547  test 4.0460  (F 18177)
+[04:28:27] ridge softmax head: tau_s 32.39 tau_m 12.02 mu 0.043 nu 0.061  fitness 5.9857  test 5.9655  (F 18177)
+[04:28:55] refine pass 1/2: mean train CE 4.2157
+[04:29:24] refine pass 2/2: mean train CE 3.4827
+[04:29:29] refined: fitness 3.3679  test 3.3389
+[04:29:31] birth: innate memory-only predictor tau_m 49.99  test 7.8080
+[04:30:09] wave opened at 98304 tokens: 2048 candidates over F_in 23040
+[04:30:13] wave 1: kept 256 of 2048 (mode select); score kept 0.0142 vs all 0.0106; F -> 23297
+[04:30:33] wave opened at 245760 tokens: 2048 candidates over F_in 23296
+[04:30:37] wave 2: kept 256 of 2048 (mode select); score kept 0.0177 vs all 0.0132; F -> 23553
+[04:31:15] wave opened at 507904 tokens: 2048 candidates over F_in 23552
+[04:31:19] wave 3: kept 256 of 2048 (mode select); score kept 0.0195 vs all 0.0142; F -> 23809
+[04:32:01] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.036 nu 0.050  fitness 3.9955  test 3.9880  (F 23809)
+[04:32:11] ridge softmax head: tau_s 30.77 tau_m 25.58 mu 0.036 nu 0.050  fitness 5.9308  test 5.9125  (F 23809)
+[04:32:43] refine pass 1/2: mean train CE 4.2326
+[04:33:16] refine pass 2/2: mean train CE 3.4936
+[04:33:21] refined: fitness 3.3734  test 3.3472
+[04:33:24] birth: innate memory-only predictor tau_m 49.92  test 7.7975
+[04:34:01] wave opened at 98304 tokens: 2048 candidates over F_in 23040
+[04:34:05] wave 1: kept 256 of 2048 (mode select); score kept 0.0148 vs all 0.0109; F -> 23297
+[04:34:23] wave opened at 245760 tokens: 2048 candidates over F_in 23296
+[04:34:27] wave 2: kept 256 of 2048 (mode select); score kept 0.0187 vs all 0.0137; F -> 23553
+[04:35:05] wave opened at 507904 tokens: 2048 candidates over F_in 23552
+[04:35:10] wave 3: kept 256 of 2048 (mode select); score kept 0.0202 vs all 0.0147; F -> 23809
+[04:36:04] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.036 nu 0.052  fitness 4.0019  test 3.9957  (F 23809)
+[04:36:15] ridge softmax head: tau_s 31.60 tau_m 24.99 mu 0.036 nu 0.052  fitness 5.9585  test 5.9419  (F 23809)
+[04:36:47] refine pass 1/2: mean train CE 4.2341
+[04:37:19] refine pass 2/2: mean train CE 3.4844
+[04:37:25] refined: fitness 3.3688  test 3.3331
+[04:37:25] gen 2: elite fitness 3.1919 test 3.1727 (pop best..worst 3.1919..3.3859; 5144 s)
+[04:37:27] birth: innate memory-only predictor tau_m 29.46  test 7.6607
+[04:37:35] wave opened at 98304 tokens: 2048 candidates over F_in 17408
+[04:37:38] wave 1: kept 256 of 2048 (mode select); score kept 0.0162 vs all 0.0115; F -> 17665
+[04:37:45] wave opened at 245760 tokens: 2048 candidates over F_in 17664
+[04:37:48] wave 2: kept 256 of 2048 (mode select); score kept 0.0192 vs all 0.0127; F -> 17921
+[04:37:58] wave opened at 507904 tokens: 2048 candidates over F_in 17920
+[04:38:01] wave 3: kept 256 of 2048 (mode select); score kept 0.0181 vs all 0.0126; F -> 18177
+[04:38:26] ridge linear head: tau_s 1.00 tau_m 53.11 mu 0.065 nu 0.066  fitness 4.1144  test 4.0994  (F 18177)
+[04:38:36] ridge softmax head: tau_s 29.32 tau_m 14.77 mu 0.065 nu 0.066  fitness 5.7904  test 5.7693  (F 18177)
+[04:39:04] refine pass 1/2: mean train CE 3.6172
+[04:39:33] refine pass 2/2: mean train CE 3.2404
+[04:39:38] refined: fitness 3.1964  test 3.1744
+[04:39:40] birth: innate memory-only predictor tau_m 49.47  test 7.8031
+[04:40:17] wave opened at 98304 tokens: 3368 candidates over F_in 23040
+[04:40:22] wave 1: kept 421 of 3368 (mode select); score kept 0.0176 vs all 0.0116; F -> 23462
+[04:40:37] wave opened at 245760 tokens: 3368 candidates over F_in 23461
+[04:40:41] wave 2: kept 421 of 3368 (mode select); score kept 0.0186 vs all 0.0123; F -> 23883
+[04:41:23] wave opened at 507904 tokens: 3368 candidates over F_in 23882
+[04:41:27] wave 3: kept 421 of 3368 (mode select); score kept 0.0187 vs all 0.0125; F -> 24304
+[04:42:11] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.053 nu 0.052  fitness 4.0856  test 4.0751  (F 24304)
+[04:42:21] ridge softmax head: tau_s 28.50 tau_m 24.21 mu 0.053 nu 0.052  fitness 5.8001  test 5.7837  (F 24304)
+[04:42:56] refine pass 1/2: mean train CE 3.6092
+[04:43:30] refine pass 2/2: mean train CE 3.2696
+[04:43:36] refined: fitness 3.2226  test 3.1992
+[04:43:38] birth: innate memory-only predictor tau_m 51.29  test 7.6973
+[04:44:15] wave opened at 98304 tokens: 2048 candidates over F_in 23040
+[04:44:19] wave 1: kept 256 of 2048 (mode select); score kept 0.0142 vs all 0.0107; F -> 23297
+[04:44:37] wave opened at 245760 tokens: 2048 candidates over F_in 23296
+[04:44:41] wave 2: kept 256 of 2048 (mode select); score kept 0.0185 vs all 0.0134; F -> 23553
+[04:45:14] wave opened at 507904 tokens: 2048 candidates over F_in 23552
+[04:45:19] wave 3: kept 256 of 2048 (mode select); score kept 0.0200 vs all 0.0147; F -> 23809
+[04:46:30] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.034 nu 0.052  fitness 3.9844  test 3.9766  (F 23809)
+[04:46:40] ridge softmax head: tau_s 30.10 tau_m 27.77 mu 0.034 nu 0.052  fitness 5.8944  test 5.8782  (F 23809)
+[04:47:13] refine pass 1/2: mean train CE 4.2504
+[04:47:45] refine pass 2/2: mean train CE 3.4860
+[04:47:50] refined: fitness 3.3672  test 3.3350
+[04:47:55] birth: innate memory-only predictor tau_m 49.61  test 7.7945
+[04:48:03] wave opened at 98304 tokens: 2048 candidates over F_in 16896
+[04:48:05] wave 1: kept 256 of 2048 (mode select); score kept 0.0173 vs all 0.0121; F -> 17153
+[04:48:13] wave opened at 245760 tokens: 2048 candidates over F_in 17152
+[04:48:15] wave 2: kept 256 of 2048 (mode select); score kept 0.0194 vs all 0.0132; F -> 17409
+[04:48:26] wave opened at 507904 tokens: 2048 candidates over F_in 17408
+[04:48:28] wave 3: kept 256 of 2048 (mode select); score kept 0.0190 vs all 0.0132; F -> 17665
+[04:48:54] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.054 nu 0.054  fitness 4.1118  test 4.1031  (F 17665)
+[04:49:04] ridge softmax head: tau_s 29.86 tau_m 23.59 mu 0.054 nu 0.054  fitness 5.7980  test 5.7831  (F 17665)
+[04:49:33] refine pass 1/2: mean train CE 3.6168
+[04:50:02] refine pass 2/2: mean train CE 3.2428
+[04:50:07] refined: fitness 3.1909  test 3.1703
+[04:50:10] birth: innate memory-only predictor tau_m 18.03  test 7.9641
+[04:50:43] wave opened at 98304 tokens: 2048 candidates over F_in 23552
+[04:50:47] wave 1: kept 256 of 2048 (mode select); score kept 0.0185 vs all 0.0120; F -> 23809
+[04:51:06] wave opened at 245760 tokens: 2048 candidates over F_in 23808
+[04:51:10] wave 2: kept 256 of 2048 (mode select); score kept 0.0188 vs all 0.0125; F -> 24065
+[04:52:07] wave opened at 507904 tokens: 2048 candidates over F_in 24064
+[04:52:11] wave 3: kept 256 of 2048 (mode select); score kept 0.0199 vs all 0.0128; F -> 24321
+[04:52:54] ridge linear head: tau_s 1.00 tau_m 30.58 mu 0.063 nu 0.054  fitness 4.1002  test 4.0938  (F 24321)
+[04:53:05] ridge softmax head: tau_s 29.07 tau_m 8.42 mu 0.063 nu 0.054  fitness 5.8496  test 5.8344  (F 24321)
+[04:53:39] refine pass 1/1: mean train CE 3.5667
+[04:53:45] refined: fitness 3.4589  test 3.4457
+[04:53:47] birth: innate memory-only predictor tau_m 50.01  test 7.8027
+[04:53:54] wave opened at 98304 tokens: 2048 candidates over F_in 14848
+[04:53:56] wave 1: kept 256 of 2048 (mode select); score kept 0.0146 vs all 0.0109; F -> 15105
+[04:54:02] wave opened at 245760 tokens: 2048 candidates over F_in 15104
+[04:54:04] wave 2: kept 256 of 2048 (mode select); score kept 0.0208 vs all 0.0145; F -> 15361
+[04:54:13] wave opened at 507904 tokens: 2048 candidates over F_in 15360
+[04:54:15] wave 3: kept 256 of 2048 (mode select); score kept 0.0230 vs all 0.0152; F -> 15617
+[04:54:35] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.035 nu 0.053  fitness 4.0547  test 4.0481  (F 15617)
+[04:54:43] ridge softmax head: tau_s 33.00 tau_m 24.30 mu 0.035 nu 0.053  fitness 5.9857  test 5.9634  (F 15617)
+[04:55:07] refine pass 1/2: mean train CE 4.2263
+[04:55:31] refine pass 2/2: mean train CE 3.4911
+[04:55:35] refined: fitness 3.3744  test 3.3442
+[04:55:39] birth: innate memory-only predictor tau_m 49.99  test 7.8080
+[04:55:47] wave opened at 98304 tokens: 2048 candidates over F_in 16896
+[04:55:50] wave 1: kept 256 of 2048 (mode select); score kept 0.0115 vs all 0.0082; F -> 17153
+[04:55:57] wave opened at 245760 tokens: 2048 candidates over F_in 17152
+[04:55:59] wave 2: kept 256 of 2048 (mode select); score kept 0.0129 vs all 0.0088; F -> 17409
+[04:56:10] wave opened at 507904 tokens: 2048 candidates over F_in 17408
+[04:56:13] wave 3: kept 256 of 2048 (mode select); score kept 0.0125 vs all 0.0088; F -> 17665
+[04:56:38] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.049 nu 0.051  fitness 4.0957  test 4.0903  (F 17665)
+[04:56:49] ridge softmax head: tau_s 30.15 tau_m 24.79 mu 0.049 nu 0.051  fitness 5.8347  test 5.8183  (F 17665)
+[04:57:18] refine pass 1/2: mean train CE 3.7311
+[04:57:46] refine pass 2/2: mean train CE 3.2909
+[04:57:52] refined: fitness 3.2339  test 3.2144
+[04:57:54] birth: innate memory-only predictor tau_m 60.00  test 7.6217
+[04:58:32] wave opened at 98304 tokens: 2048 candidates over F_in 23040
+[04:58:36] wave 1: kept 256 of 2048 (mode select); score kept 0.0160 vs all 0.0110; F -> 23297
+[04:58:54] wave opened at 245760 tokens: 2048 candidates over F_in 23296
+[04:58:58] wave 2: kept 256 of 2048 (mode select); score kept 0.0173 vs all 0.0118; F -> 23553
+[04:59:36] wave opened at 507904 tokens: 2048 candidates over F_in 23552
+[04:59:40] wave 3: kept 256 of 2048 (mode select); score kept 0.0181 vs all 0.0122; F -> 23809
+[05:00:33] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.051 nu 0.036  fitness 4.0873  test 4.0745  (F 23809)
+[05:00:44] ridge softmax head: tau_s 27.77 tau_m 35.79 mu 0.051 nu 0.036  fitness 5.7644  test 5.7474  (F 23809)
+[05:01:16] refine pass 1/2: mean train CE 3.6522
+[05:01:49] refine pass 2/2: mean train CE 3.3082
+[05:01:54] refined: fitness 3.2564  test 3.2360
+[05:01:54] gen 3: elite fitness 3.1909 test 3.1703 (pop best..worst 3.1909..3.3672; 6614 s)
+[05:01:54] done: 32 lives, elite fitness 3.1909 test 3.1703

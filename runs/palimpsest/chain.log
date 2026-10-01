@@ -1,0 +1,68 @@
+[11:33:14] chain started
+[11:33:14] step shift-copy-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-copy-s0 --life shift --arm copy --seed 0
+[11:40:58] step shift-copy-s0 exit 0 in 464 s; artifact ok
+[11:40:58] step shift-sieve-c8-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-sieve-c8-s0 --life shift --arm sieve --seed 0 --core c8
+[11:57:31] step shift-sieve-c8-s0 exit 0 in 993 s; artifact ok
+[11:57:31] step stat-copy-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name stat-copy-s0 --life stat --arm copy --seed 0
+[12:04:57] step stat-copy-s0 exit 0 in 446 s; artifact ok
+[12:04:57] step shift-sieve-c8-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-sieve-c8-s0 --life shift --arm sieve --seed 0 --core c8
+[12:20:53] step shift-sieve-c8-s0 exit 0 in 957 s; artifact ok
+[12:20:53] step stat-sieve-c8-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name stat-sieve-c8-s0 --life stat --arm sieve --seed 0 --core c8
+[12:36:45] step stat-sieve-c8-s0 exit 0 in 952 s; artifact ok
+[12:36:45] step shift-scratch-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-scratch-s0 --life shift --arm scratch --seed 0
+[12:44:21] step shift-scratch-s0 exit 0 in 456 s; artifact ok
+[12:44:21] step shift-sieve-life-c8-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-sieve-life-c8-s0 --life shift --arm sieve-life --seed 0 --core c8
+[13:10:24] step shift-sieve-life-c8-s0 exit 0 in 1563 s; artifact ok
+[13:10:24] step shift-copy-dream-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-copy-dream-s0 --life shift --arm copy-dream --seed 0 --core c8
+[13:27:49] step shift-copy-dream-s0 exit 0 in 1044 s; artifact ok
+[13:27:49] step shift-sieve-c4-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-sieve-c4-s0 --life shift --arm sieve --seed 0 --core c4
+[13:40:46] step shift-sieve-c4-s0 exit 0 in 778 s; artifact ok
+[13:40:46] step shift-replay-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-replay-s0 --life shift --arm replay --seed 0 --core c8
+[13:48:23] step shift-replay-s0 exit 0 in 457 s; artifact ok
+[13:48:23] step shift3-copy-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift3-copy-s0 --life shift3 --arm copy --seed 0
+[13:54:22] step shift3-copy-s0 exit 0 in 359 s; artifact ok
+[13:54:22] step shift3-sieve-life-c8-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift3-sieve-life-c8-s0 --life shift3 --arm sieve-life --seed 0 --core c8
+[14:13:17] step shift3-sieve-life-c8-s0 exit 0 in 1135 s; artifact ok
+[14:13:17] step shift3-copy-dream-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift3-copy-dream-s0 --life shift3 --arm copy-dream --seed 0 --core c8
+[14:25:45] step shift3-copy-dream-s0 exit 0 in 748 s; artifact ok
+[14:25:45] step shift3-replay-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift3-replay-s0 --life shift3 --arm replay --seed 0 --core c8
+[14:31:43] step shift3-replay-s0 exit 0 in 358 s; artifact ok
+[14:31:43] step shift-copy-dream-s1: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-copy-dream-s1 --life shift --arm copy-dream --seed 1 --core c8
+[14:49:10] step shift-copy-dream-s1 exit 0 in 1046 s; artifact ok
+[14:49:10] step shift-sieve-life-c8-s1: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-sieve-life-c8-s1 --life shift --arm sieve-life --seed 1 --core c8
+[15:15:08] step shift-sieve-life-c8-s1 exit 0 in 1558 s; artifact ok
+[15:15:08] step shift-copy-s1: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-copy-s1 --life shift --arm copy --seed 1
+[15:22:44] step shift-copy-s1 exit 0 in 456 s; artifact ok
+[15:22:44] step shift-replay-s1: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-replay-s1 --life shift --arm replay --seed 1 --core c8
+[15:30:21] step shift-replay-s1 exit 0 in 457 s; artifact ok
+[15:30:21] step shift-sieve-life-c4-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-sieve-life-c4-s0 --life shift --arm sieve-life --seed 0 --core c4
+[15:52:32] step shift-sieve-life-c4-s0 exit 0 in 1331 s; artifact ok
+[15:52:32] step shift-sieve-life-c2-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-sieve-life-c2-s0 --life shift --arm sieve-life --seed 0 --core c2
+[16:33:15] step shift-sieve-life-c2-s0 exit 0 in 2442 s; artifact ok
+[16:33:15] step shift-sieve-c2-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-sieve-c2-s0 --life shift --arm sieve --seed 0 --core c2
+[16:49:25] step shift-sieve-c2-s0 exit 0 in 970 s; artifact ok
+[16:49:25] step shift-sieve-c16-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-sieve-c16-s0 --life shift --arm sieve --seed 0 --core c16
+[17:02:16] step shift-sieve-c16-s0 exit 0 in 772 s; artifact ok
+[17:02:16] step shift-ewc-1e3-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-ewc-1e3-s0 --life shift --arm ewc --seed 0 --lam-ewc 1e3
+[17:10:33] step shift-ewc-1e3-s0 exit 0 in 497 s; artifact ok
+[17:10:33] step shift-lwf-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-lwf-s0 --life shift --arm lwf --seed 0
+[17:27:44] step shift-lwf-s0 exit 0 in 1031 s; artifact ok
+[17:27:44] step shift-shrink_perturb-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-shrink_perturb-s0 --life shift --arm shrink_perturb --seed 0
+[17:35:21] step shift-shrink_perturb-s0 exit 0 in 458 s; artifact ok
+[17:35:21] step shift-trunc-c8-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-trunc-c8-s0 --life shift --arm trunc --seed 0 --core c8
+[17:42:58] step shift-trunc-c8-s0 exit 0 in 457 s; artifact ok
+[17:42:58] step shift-sieve-nodream-c8-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-sieve-nodream-c8-s0 --life shift --arm sieve-nodream --seed 0 --core c8
+[17:56:40] step shift-sieve-nodream-c8-s0 exit 0 in 822 s; artifact ok
+[17:56:40] step shift-sieve-fresh-c8-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-sieve-fresh-c8-s0 --life shift --arm sieve-fresh --seed 0 --core c8
+[18:00:17] step shift-sieve-fresh-c8-s0 exit 1073807364 in 217 s; artifact MISSING
+[18:00:17] step shift3-sieve-c8-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift3-sieve-c8-s0 --life shift3 --arm sieve --seed 0 --core c8
+[18:00:17] step shift3-sieve-c8-s0 exit 3221226091 in 0 s; artifact MISSING
+[18:00:17] step shift3-scratch-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift3-scratch-s0 --life shift3 --arm scratch --seed 0
+[18:00:17] step shift3-scratch-s0 exit 3221226091 in 0 s; artifact MISSING
+[18:00:17] step shift-iid-s0: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-iid-s0 --life shift --arm iid --seed 0
+[18:00:17] step shift-iid-s0 exit 3221226091 in 0 s; artifact MISSING
+[18:00:17] step shift-sieve-c8-s1: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name shift-sieve-c8-s1 --life shift --arm sieve --seed 1 --core c8
+[18:00:17] step shift-sieve-c8-s1 exit 3221226091 in 0 s; artifact MISSING
+[18:00:17] step stat-copy-s1: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name stat-copy-s1 --life stat --arm copy --seed 1
+[18:00:17] step stat-copy-s1 exit 3221226091 in 0 s; artifact MISSING
+[18:00:17] step stat-sieve-c8-s1: scripts/palimpsest_life.py --tokens 8000000 --distil-tokens 4000000 --dream-tokens 250000 --T-dream 128 --name stat-sieve-c8-s1 --life stat --arm sieve --seed 1 --core c8

@@ -1,0 +1,14 @@
+[08:29:34] R8 gen 0  tinystories  K=2  C_total 5.891e+13  stage tokens [337369, 187500]  tokens/sib 168,684  growth prior  alpha 50.0  mu_0 [0.1192, 0.1033, 0.1374, 0.1485, 0.2497, 0.2419]  program None  prev adult None
+[08:29:48]   birth (stage 0 block): test 10.2954
+[08:31:28]   sibling 0: mu [0.119, 0.103, 0.137, 0.149, 0.25, 0.242]  test 3.8775  fit 3.8842
+[08:33:07]   sibling 1: mu [0.156, 0.05, 0.176, 0.143, 0.221, 0.254]  test 3.8607  fit 3.8749
+[08:36:20]   parents [0, 1]  merge  elite test 3.8385  best sibling 3.8607
+[08:36:20]   programme: linear surrogate on 2 samples (LOO RMSE 0.0454); mu* [0.2187, 0.02, 0.2399, 0.1144, 0.1445, 0.2626]  predicted 3.8517  step 0.200
+[08:37:06]   grow -> s1:d384/L12/h6/kv2/F1536 (prior): pre 3.8385  at rho_0 4.7016  187,500 tokens
+[08:39:03]   eval tokens       49,152  held-out 3.9910
+[08:40:21]   eval tokens       94,208  held-out 3.7883
+[08:41:45]   eval tokens      143,360  held-out 3.6434
+[08:43:04]   eval tokens      188,416  held-out 3.5463
+[08:43:37]   stage 1: test 3.5463  483 tok/s  peak 0.0 GB
+[08:44:41]   adult s1:d384/L12/h6/kv2/F1536: test 3.5463  fit 3.5715  programme 83 reals
+[08:44:41] wrote runs\anlage\smoke-gen0\generation.json

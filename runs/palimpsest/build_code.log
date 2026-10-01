@@ -1,0 +1,6 @@
+20591 unique .py files under [WindowsPath('<home>/.pyenv/pyenv-win/versions/3.11.2/Lib/site-packages'), WindowsPath('<home>/.pyenv/pyenv-win/versions/3.11.2/Lib')] in 106s
+validation {'n_docs': 3000, 'n_tokens': 23114680, 'vocab_size': 8192, 'tokenizer_hash': 'c5d676869bbf1909932b8c3ce36b5093', 'corpus_hash': 'a8113ae6583e5d4b44ff025270e02a74', 'name': 'python:holdout'}
+  tokenised 5000 docs, 37,634,669 tokens
+  tokenised 10000 docs, 75,253,162 tokens
+train {'n_docs': 10552, 'n_tokens': 79145683, 'vocab_size': 8192, 'tokenizer_hash': 'c5d676869bbf1909932b8c3ce36b5093', 'corpus_hash': '63d0076f4b1e941d7dd60a9d96078ef6', 'name': 'python:train'}
+wrote data\py_8192 in 170s

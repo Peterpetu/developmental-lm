@@ -1,0 +1,11 @@
+[07:04:22] R6 MIX  tinystories s0:d256/L8/h4/kv2/F1024  tokens 25,000,000  seeds [0, 1, 2, 3]  arms ['corpus', 'star']  mu_corpus [0.1192, 0.1033, 0.1374, 0.1485, 0.2497, 0.2419]  mu* [0.2915, 0.0836, 0.046, 0.1133, 0.2359, 0.2296]  sigma_e 0.0029
+[07:10:32]   seed 0  corpus: test 1.8047  fit 1.8319  classes [1.648, 1.944, 1.722, 1.994, 1.619, 1.937]
+[07:16:44]   seed 0    star: test 1.8067  fit 1.8369  classes [1.637, 1.939, 1.722, 1.992, 1.627, 1.945]
+[07:22:56]   seed 1  corpus: test 1.8094  fit 1.8382  classes [1.654, 1.949, 1.739, 2.004, 1.621, 1.932]
+[07:29:06]   seed 1    star: test 1.8139  fit 1.8398  classes [1.65, 1.945, 1.735, 1.992, 1.632, 1.955]
+[07:35:22]   seed 2  corpus: test 1.8065  fit 1.8371  classes [1.659, 1.958, 1.729, 1.998, 1.618, 1.925]
+[07:41:31]   seed 2    star: test 1.8087  fit 1.8385  classes [1.642, 1.952, 1.721, 1.999, 1.628, 1.94]
+[07:47:42]   seed 3  corpus: test 1.8073  fit 1.8331  classes [1.645, 1.943, 1.73, 1.99, 1.626, 1.94]
+[07:53:56]   seed 3    star: test 1.8065  fit 1.8378  classes [1.643, 1.947, 1.725, 1.986, 1.625, 1.942]
+[07:53:57]   star - corpus: +0.0020 [-0.0015, +0.0054] = +0.7 sigma_e  (t)  K-MIX FIRES
+[07:53:57] wrote runs\anlage\mix-tinystories-s0\mix.json

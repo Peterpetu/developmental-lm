@@ -1,0 +1,5 @@
+N_life   50 batch  128 |   6.0s/lifetime | h2 0.402 [0.058, 0.699] sigma_P 0.187 | best 7.9900 worst 8.4961 | FAIL
+N_life  100 batch  128 |  11.1s/lifetime | h2 0.310 [0.052, 0.677] sigma_P 0.325 | best 7.4678 worst 8.2079 | FAIL
+N_life  150 batch  128 |  15.7s/lifetime | h2 0.398 [0.138, 0.726] sigma_P 0.446 | best 7.0004 worst 7.9939 | PASS
+
+wrote runs/gnomon/horizon.json

@@ -1,0 +1,2 @@
+{"kind": "acceptance", "step": 0, "wall": 2.63, "variance_ratio": 0.565749, "grad_ratio": 24.3364, "grad_ratio_per_block": 1.22033, "n_eff_small": 4.12238, "n_eff_large": 4.12157, "e2_small": 0.07074, "e2_large": 0.0707069, "gain_act": 0.120321, "calibration": {"var_b": 12.8074, "E2_hat": 0.0707069, "N_eff": 4.12157, "realised_var": 0.996361, "target_var": 1.0, "iterations": 2, "gain_act": 0.120321}, "passed": true, "failures": []}
+{"kind": "birth", "step": 0, "wall": 3.89, "L_birth": 9.50725}

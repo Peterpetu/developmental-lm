@@ -1,0 +1,11 @@
+m-pico  N_life 300  batch 64  lr 0.09  4 fields x 2 genomes x 2 seeds
+every field normalised to mean 1, so only its *shape* is tested
+
+field                  max/min     mean      sd  vs uniform
+uniform                 1.0   5.5012  0.1329     +0.0000
+inverse sqrt-freq    1206.0   5.9611  0.1114     +0.4599
+sqrt-freq            1206.0   5.7941  0.0978     +0.2929
+random lognormal      149.8   5.5286  0.1427     +0.0274
+
+best field: uniform at 5.5012   uniform 5.5012   delta +0.0000
+wrote runs/gnomon/lrfield.json

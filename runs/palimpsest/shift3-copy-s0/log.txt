@@ -1,0 +1,49 @@
+[13:48:25] environments ['stories', 'code', 'tasks'] loaded in 0s; phases [['stories', 1000, 1005], ['code', 1010, 1015], ['tasks', 1020, 1025]]
+[13:48:26] phase 1/3: stories  pool 1000 (e310796f)  order 1005  8,000,000 tokens  arm copy
+[13:48:36]     step     50  tokens      274,432  train 7.0883  lr_M 2.00e-02  B 16  174 ms
+[13:48:46]   eval @0.10  stories 3.1908  code 8.3989  tasks 9.2521
+[13:48:47]     step    100  tokens      872,448  train 4.7577  lr_M 2.00e-02  B 32  225 ms
+[13:48:58]     step    150  tokens    1,691,648  train 3.6263  lr_M 2.00e-02  B 32  198 ms
+[13:49:03]   eval @0.25  stories 2.7038  code 8.7457  tasks 8.2139
+[13:49:09]     step    200  tokens    2,510,848  train 3.0484  lr_M 2.00e-02  B 32  207 ms
+[13:49:19]     step    250  tokens    3,330,048  train 2.7465  lr_M 2.00e-02  B 32  202 ms
+[13:49:29]   eval @0.50  stories 2.4000  code 8.8576  tasks 7.7111
+[13:49:31]     step    300  tokens    4,149,248  train 2.5693  lr_M 2.00e-02  B 32  202 ms
+[13:49:41]     step    350  tokens    4,968,448  train 2.4628  lr_M 2.00e-02  B 32  199 ms
+[13:49:51]     step    400  tokens    5,787,648  train 2.3721  lr_M 2.00e-02  B 32  205 ms
+[13:50:02]     step    450  tokens    6,606,848  train 2.3245  lr_M 1.76e-02  B 32  203 ms
+[13:50:12]     step    500  tokens    7,426,048  train 2.2574  lr_M 7.38e-03  B 32  203 ms
+[13:50:21]   eval @1.00  stories 2.0914  code 8.8022  tasks 8.2298
+[13:50:22] phase 2: birth {'birth': 'copy', 'k': 2, 'evals': {'stories': 2.09136349927212, 'code': 8.802190761849488, 'tasks': 8.229753431871359}}
+[13:50:24] phase 2/3: code  pool 1010 (a48cadc5)  order 1015  8,000,000 tokens  arm copy
+[13:50:33]     step     50  tokens      274,432  train 6.1529  lr_M 2.00e-02  B 16  177 ms
+[13:50:43]   eval @0.10  stories 6.3981  code 2.5526  tasks 9.2706
+[13:50:44]     step    100  tokens      872,448  train 4.0451  lr_M 2.00e-02  B 32  201 ms
+[13:50:54]     step    150  tokens    1,691,648  train 2.9253  lr_M 2.00e-02  B 32  202 ms
+[13:51:00]   eval @0.25  stories 6.9260  code 2.0674  tasks 8.5188
+[13:51:06]     step    200  tokens    2,510,848  train 2.3597  lr_M 2.00e-02  B 32  202 ms
+[13:51:16]     step    250  tokens    3,330,048  train 2.0627  lr_M 2.00e-02  B 32  204 ms
+[13:51:26]   eval @0.50  stories 7.3229  code 1.7779  tasks 8.4093
+[13:51:28]     step    300  tokens    4,149,248  train 1.8891  lr_M 2.00e-02  B 32  203 ms
+[13:51:38]     step    350  tokens    4,968,448  train 1.7873  lr_M 2.00e-02  B 32  213 ms
+[13:51:48]     step    400  tokens    5,787,648  train 1.7135  lr_M 2.00e-02  B 32  200 ms
+[13:51:59]     step    450  tokens    6,606,848  train 1.6543  lr_M 1.76e-02  B 32  201 ms
+[13:52:09]     step    500  tokens    7,426,048  train 1.5852  lr_M 7.38e-03  B 32  202 ms
+[13:52:18]   eval @1.00  stories 7.4936  code 1.4790  tasks 9.3420
+[13:52:19] phase 3: birth {'birth': 'copy', 'k': 3, 'evals': {'stories': 7.493615784753274, 'code': 1.479015952071677, 'tasks': 9.342019149018597}}
+[13:52:28] phase 3/3: tasks  pool 1020 (9a1407b0)  order 1025  8,000,000 tokens  arm copy
+[13:52:37]     step     50  tokens      274,432  train 4.9010  lr_M 2.00e-02  B 16  172 ms
+[13:52:47]   eval @0.10  stories 9.7004  code 5.3077  tasks 0.4160
+[13:52:48]     step    100  tokens      872,448  train 2.1182  lr_M 2.00e-02  B 32  205 ms
+[13:52:58]     step    150  tokens    1,691,648  train 1.0105  lr_M 2.00e-02  B 32  203 ms
+[13:53:03]   eval @0.25  stories 9.4129  code 7.0655  tasks 0.3642
+[13:53:10]     step    200  tokens    2,510,848  train 0.6003  lr_M 2.00e-02  B 32  202 ms
+[13:53:20]     step    250  tokens    3,330,048  train 0.4503  lr_M 2.00e-02  B 32  200 ms
+[13:53:30]   eval @0.50  stories 9.4640  code 7.5587  tasks 0.3639
+[13:53:32]     step    300  tokens    4,149,248  train 0.3952  lr_M 2.00e-02  B 32  200 ms
+[13:53:42]     step    350  tokens    4,968,448  train 0.3748  lr_M 2.00e-02  B 32  206 ms
+[13:53:52]     step    400  tokens    5,787,648  train 0.3673  lr_M 2.00e-02  B 32  200 ms
+[13:54:02]     step    450  tokens    6,606,848  train 0.3642  lr_M 1.76e-02  B 32  213 ms
+[13:54:12]     step    500  tokens    7,426,048  train 0.3622  lr_M 7.38e-03  B 32  201 ms
+[13:54:21]   eval @1.00  stories 8.7329  code 8.4836  tasks 0.3603
+[13:54:21] done in 357s: U_K 5.8589  Lambda 4.1455  final stories 8.7329  code 8.4836  tasks 0.3603

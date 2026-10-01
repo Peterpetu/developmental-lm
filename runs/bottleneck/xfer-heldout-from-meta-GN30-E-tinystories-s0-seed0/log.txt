@@ -1,0 +1,22 @@
+[14:13:44] TRANSFER  source meta-GN30 (meta-GN30-E-tinystories-s0-seed0, ratio 5.993901158130408, state best at generation 97)  target heldout  5,000,000 tokens/arm  seed 0  noise seeds 3
+[14:16:20]   random-s0      birth tgt 8.6083 src 10.2955  ->  final tgt 0.5862 src 9.0766   curve [8.608, 0.67, 0.634, 0.611, 0.603, 0.599, 0.597, 0.596, 0.592, 0.589, 0.586]   154s
+[14:18:49]   random-s1      birth tgt 9.0135 src 10.2672  ->  final tgt 0.5882 src 9.1241   curve [9.014, 0.672, 0.638, 0.617, 0.604, 0.601, 0.598, 0.596, 0.595, 0.592, 0.588]   148s
+[14:21:14]   random-s2      birth tgt 8.5010 src 10.2672  ->  final tgt 0.5866 src 9.1155   curve [8.501, 0.663, 0.629, 0.608, 0.604, 0.6, 0.595, 0.596, 0.591, 0.59, 0.587]   143s
+[14:21:14]   target sigma_e 0.0011 over 3 random seeds (3 sigma_e = 0.0032)
+[14:23:38]   copy-all       birth tgt 8.5250 src 9.1009  ->  final tgt 0.5921 src 9.0849   curve [8.525, 2.37, 1.635, 0.779, 0.661, 0.639, 0.623, 0.612, 0.6, 0.596, 0.592]   142s
+[14:26:02]   decode-all     birth tgt 7.6657 src 9.0883  ->  final tgt 0.5936 src 9.0874   curve [7.666, 0.952, 0.738, 0.683, 0.621, 0.607, 0.605, 0.601, 0.6, 0.596, 0.594]   143s
+[14:28:27]   copy-low       birth tgt 9.5881 src 9.0333  ->  final tgt 0.7563 src 9.1147   curve [9.588, 2.173, 1.932, 1.897, 1.866, 1.861, 1.777, 0.771, 0.763, 0.758, 0.756]   143s
+[14:30:48]   decode-low     birth tgt 9.2119 src 9.0342  ->  final tgt 0.7555 src 9.1233   curve [9.212, 2.132, 1.932, 1.888, 1.866, 1.861, 1.103, 0.768, 0.765, 0.759, 0.755]   139s
+[14:33:12]   copy-high      birth tgt 8.2540 src 9.2795  ->  final tgt 0.5874 src 9.0745   curve [8.254, 0.696, 0.646, 0.628, 0.612, 0.603, 0.6, 0.601, 0.595, 0.59, 0.587]   143s
+[14:35:37]   decode-high    birth tgt 8.4912 src 9.2537  ->  final tgt 0.5872 src 9.0682   curve [8.491, 0.676, 0.643, 0.624, 0.605, 0.602, 0.601, 0.597, 0.595, 0.59, 0.587]   144s
+[14:35:37] contrasts (target CE, positive = worse than the reference):
+[14:35:37]   copy-all                   vs_random_at_25 +1.0010  vs_random_at_50 +0.0402  vs_random_at_100 +0.0059  vs_random_at_birth -0.0833
+[14:35:37]   decode-all                 vs_random_at_25 +0.1048  vs_random_at_50 +0.0078  vs_random_at_100 +0.0074  vs_random_at_birth -0.9426
+[14:35:37]   copy-low                   vs_random_at_25 +1.2989  vs_random_at_50 +1.2616  vs_random_at_100 +0.1701  vs_random_at_birth +0.9798
+[14:35:37]   decode-low                 vs_random_at_25 +1.2988  vs_random_at_50 +1.2620  vs_random_at_100 +0.1693  vs_random_at_birth +0.6036
+[14:35:37]   copy-high                  vs_random_at_25 +0.0128  vs_random_at_50 +0.0040  vs_random_at_100 +0.0012  vs_random_at_birth -0.3543
+[14:35:37]   decode-high                vs_random_at_25 +0.0097  vs_random_at_50 +0.0030  vs_random_at_100 +0.0010  vs_random_at_birth -0.1171
+[14:35:37]   decode_minus_copy-all      at_25 -0.8962  at_50 -0.0323  at_100 +0.0015
+[14:35:37]   decode_minus_copy-low      at_25 -0.0001  at_50 +0.0003  at_100 -0.0008
+[14:35:37]   decode_minus_copy-high     at_25 -0.0031  at_50 -0.0010  at_100 -0.0002
+[14:35:37] wrote runs\bottleneck\xfer-heldout-from-meta-GN30-E-tinystories-s0-seed0\transfer.json

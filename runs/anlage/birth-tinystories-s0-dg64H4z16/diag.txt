@@ -1,0 +1,32 @@
+[05:01:16] trained 1.8571   decoded 8.5335
+[05:01:16] role-wise: D with the role's trained weights restored | W with the role decoded
+[05:01:16]              Q: D<-W  8.9493 (+0.416)   W<-D  1.9702 (+0.113)   residual 0.812
+[05:01:17]              K: D<-W  7.9039 (-0.630)   W<-D  2.3159 (+0.459)   residual 0.829
+[05:01:18]              V: D<-W  7.9358 (-0.598)   W<-D  3.0400 (+1.183)   residual 0.800
+[05:01:19]              O: D<-W  8.6553 (+0.122)   W<-D  3.3683 (+1.511)   residual 0.809
+[05:01:20]             AB: D<-W  8.5252 (-0.008)   W<-D  1.8573 (+0.000)   residual 0.004
+[05:01:21]          OGATE: D<-W  8.7903 (+0.257)   W<-D  2.1372 (+0.280)   residual 0.776
+[05:01:22]         CONV_Q: D<-W  8.5249 (-0.009)   W<-D  1.8572 (+0.000)   residual 0.002
+[05:01:23]         CONV_K: D<-W  8.5220 (-0.012)   W<-D  1.8572 (+0.000)   residual 0.001
+[05:01:24]         CONV_V: D<-W  8.4867 (-0.047)   W<-D  1.8573 (+0.000)   residual 0.001
+[05:01:25]          AGATE: D<-W  8.6009 (+0.067)   W<-D  1.8700 (+0.013)   residual 0.616
+[05:01:26]             VE: D<-W  8.5358 (+0.002)   W<-D  1.8582 (+0.001)   residual 0.845
+[05:01:27]           GATE: D<-W  8.3509 (-0.183)   W<-D  3.9206 (+2.063)   residual 0.927
+[05:01:28]             UP: D<-W  8.3130 (-0.220)   W<-D  3.2155 (+1.358)   residual 0.924
+[05:01:28]           DOWN: D<-W  9.2785 (+0.745)   W<-D  4.0224 (+2.165)   residual 0.928
+[05:01:29]            EMB: D<-W 12.0198 (+3.486)   W<-D  7.3221 (+5.465)   residual 0.429
+[05:01:30]       NORM_MIX: D<-W  8.5616 (+0.028)   W<-D  1.8587 (+0.002)   residual 0.004
+[05:01:31]       NORM_FFN: D<-W  8.5524 (+0.019)   W<-D  1.8576 (+0.000)   residual 0.003
+[05:01:32]     NORM_FINAL: D<-W  8.5416 (+0.008)   W<-D  1.8580 (+0.001)   residual 0.001
+[05:01:33]    LOGIT_SCALE: D<-W  8.5335 (-0.000)   W<-D  1.8571 (+0.000)   residual 0.000
+[05:01:33] layer-wise: W with one layer decoded
+[05:01:33]   layer 0 (delta): W<-D  1.9943 (+0.137)
+[05:01:34]   layer 1 (delta): W<-D  2.0648 (+0.208)
+[05:01:34]   layer 2 (delta): W<-D  2.0894 (+0.232)
+[05:01:34]   layer 3 (attn): W<-D  2.1129 (+0.256)
+[05:01:35]   layer 4 (delta): W<-D  2.1001 (+0.243)
+[05:01:35]   layer 5 (delta): W<-D  2.1071 (+0.250)
+[05:01:36]   layer 6 (delta): W<-D  2.1490 (+0.292)
+[05:01:36]   layer 7 (attn): W<-D  2.3383 (+0.481)
+[05:01:37] all wiring matrices decoded, lexicon + vectors trained: 12.0107
+[05:01:37] lexicon decoded, everything else trained:               7.3221

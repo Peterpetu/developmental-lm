@@ -1,0 +1,2 @@
+[14:49:00] TRANSFER  source GN50 (GN50-E-tinystories-s0-seed0, ratio 5.867191403396434, state best at generation 199)  target heldout  5,000,000 tokens/arm  seed 0  noise seeds 3
+[14:50:57]   random-s0      birth tgt 8.6083 src 10.2955  ->  final tgt 0.5865 src 9.0880   curve [8.608, 0.673, 0.639, 0.61, 0.602, 0.599, 0.596, 0.595, 0.592, 0.589, 0.586]   116s

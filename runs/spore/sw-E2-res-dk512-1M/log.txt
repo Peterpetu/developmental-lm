@@ -1,0 +1,15 @@
+[05:33:09] genome d2735fdded6bb72b {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 512, 'lam': 0.01, 'E': 2, 'waves': [0.1, 0.25, 0.5], 'k_wave': 256, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': True, 'lro': False, 'rho_res': 0.61}
+[05:33:09] cfg LifeConfig(budget=1000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.01, calib_windows=64, score_tokens=65536, tf32=False, eval_batch=16, device='cuda')
+[05:33:14] birth: innate memory-only predictor tau_m 49.99  test 7.8080
+[05:33:21] wave opened at 98304 tokens: 2048 candidates over F_in 16896
+[05:33:24] wave 1: kept 256 of 2048 (mode select); score kept 0.0172 vs all 0.0120; F -> 17153
+[05:33:31] wave opened at 245760 tokens: 2048 candidates over F_in 17152
+[05:33:34] wave 2: kept 256 of 2048 (mode select); score kept 0.0193 vs all 0.0131; F -> 17409
+[05:33:44] wave opened at 507904 tokens: 2048 candidates over F_in 17408
+[05:33:47] wave 3: kept 256 of 2048 (mode select); score kept 0.0187 vs all 0.0130; F -> 17665
+[05:34:12] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.055 nu 0.053  fitness 4.1119  test 4.1038  (F 17665)
+[05:34:23] ridge softmax head: tau_s 29.79 tau_m 24.64 mu 0.055 nu 0.053  fitness 5.7914  test 5.7756  (F 17665)
+[05:34:52] refine pass 1/2: mean train CE 3.6242
+[05:35:20] refine pass 2/2: mean train CE 3.2467
+[05:35:26] refined: fitness 3.1943  test 3.1739
+[05:35:26] done: final stage refined  fitness 3.1943  test 3.1739  137 s  peak 9.36 GB

@@ -1,0 +1,50 @@
+[05:01:08] MANIFOLD PROBE  tinystories s0:d256/L8/h4/kv2/F1024  shape GenomeShape(n_c=13, n_v=15, n_L=6, n_M=5, d_z=16, d_y=8, d_h=256, H=4, d_g=64, d_sigma=16, seed_codes=20260902)  |Gamma| 418,288  |Z| 300,096  phenotype 13,011,201  ratio 18.1x  untrained decode CE 13.7031
+[05:02:24] MANIFOLD PROBE  tinystories s0:d256/L8/h4/kv2/F1024  shape GenomeShape(n_c=13, n_v=15, n_L=6, n_M=5, d_z=16, d_y=8, d_h=256, H=4, d_g=64, d_sigma=16, seed_codes=20260902)  |Gamma| 418,288  |Z| 300,096  phenotype 13,011,201  ratio 18.1x  untrained decode CE 13.7031
+[05:02:40]     step     50  tokens      204,800  train 13.8390  lr 8.03e-04  B 8  |z|_rms 0.997  292 ms
+[05:02:56]     step    100  tokens      409,600  train 13.9713  lr 1.62e-03  B 8  |z|_rms 0.962  297 ms
+[05:03:12]     step    150  tokens      811,008  train 14.7693  lr 2.00e-03  B 16  |z|_rms 0.956  323 ms
+[05:03:28]     step    200  tokens    1,220,608  train 13.6322  lr 2.00e-03  B 16  |z|_rms 0.950  324 ms
+[05:03:44]     step    250  tokens    1,818,624  train 11.4992  lr 2.00e-03  B 24  |z|_rms 0.935  318 ms
+[05:04:01]     step    300  tokens    2,547,712  train 11.4149  lr 2.00e-03  B 32  |z|_rms 0.866  332 ms
+[05:04:18]     step    350  tokens    3,366,912  train 9.8864  lr 2.00e-03  B 32  |z|_rms 0.757  346 ms
+[05:04:36]     step    400  tokens    4,186,112  train 9.3297  lr 2.00e-03  B 32  |z|_rms 0.682  356 ms
+[05:04:53]     step    450  tokens    5,005,312  train 9.1270  lr 2.00e-03  B 32  |z|_rms 0.620  308 ms
+[05:04:54]   eval tokens    5,005,312  held-out 9.0109
+[05:05:11]     step    500  tokens    5,824,512  train 9.0532  lr 2.00e-03  B 32  |z|_rms 0.566  458 ms
+[05:05:29]     step    550  tokens    6,643,712  train 9.0263  lr 2.00e-03  B 32  |z|_rms 0.517  309 ms
+[05:05:46]     step    600  tokens    7,462,912  train 9.0165  lr 2.00e-03  B 32  |z|_rms 0.471  323 ms
+[05:06:04]     step    650  tokens    8,282,112  train 9.0130  lr 2.00e-03  B 32  |z|_rms 0.429  392 ms
+[05:06:22]     step    700  tokens    9,101,312  train 9.0117  lr 2.00e-03  B 32  |z|_rms 0.390  350 ms
+[05:06:39]     step    750  tokens    9,920,512  train 9.0112  lr 2.00e-03  B 32  |z|_rms 0.354  367 ms
+[05:06:41]   eval tokens   10,002,432  held-out 9.0109
+[05:06:57]     step    800  tokens   10,739,712  train 9.0110  lr 2.00e-03  B 32  |z|_rms 0.320  370 ms
+[05:07:14]     step    850  tokens   11,558,912  train 9.0109  lr 2.00e-03  B 32  |z|_rms 0.289  327 ms
+[05:07:32]     step    900  tokens   12,378,112  train 9.0109  lr 2.00e-03  B 32  |z|_rms 0.260  315 ms
+[05:07:49]     step    950  tokens   13,197,312  train 9.0109  lr 2.00e-03  B 32  |z|_rms 0.233  405 ms
+[05:08:07]     step   1000  tokens   14,016,512  train 9.0109  lr 2.00e-03  B 32  |z|_rms 0.209  320 ms
+[05:08:25]     step   1050  tokens   14,835,712  train 9.0109  lr 2.00e-03  B 32  |z|_rms 0.186  356 ms
+[05:08:29]   eval tokens   15,015,936  held-out 9.0109
+[05:08:42]     step   1100  tokens   15,654,912  train 9.0109  lr 2.00e-03  B 32  |z|_rms 0.165  433 ms
+[05:09:01]     step   1150  tokens   16,474,112  train 9.0109  lr 2.00e-03  B 32  |z|_rms 0.147  343 ms
+[05:09:19]     step   1200  tokens   17,293,312  train 9.0109  lr 2.00e-03  B 32  |z|_rms 0.129  343 ms
+[05:09:36]     step   1250  tokens   18,112,512  train 9.0109  lr 2.00e-03  B 32  |z|_rms 0.114  403 ms
+[05:09:54]     step   1300  tokens   18,931,712  train 9.0109  lr 2.00e-03  B 32  |z|_rms 0.100  353 ms
+[05:10:12]     step   1350  tokens   19,750,912  train 9.0109  lr 2.00e-03  B 32  |z|_rms 0.088  355 ms
+[05:10:18]   eval tokens   20,013,056  held-out 9.0109
+[05:10:30]     step   1400  tokens   20,570,112  train 9.0109  lr 1.78e-03  B 32  |z|_rms 0.077  315 ms
+[05:10:47]     step   1450  tokens   21,389,312  train 9.0109  lr 1.45e-03  B 32  |z|_rms 0.069  317 ms
+[05:11:05]     step   1500  tokens   22,208,512  train 9.0109  lr 1.12e-03  B 32  |z|_rms 0.062  351 ms
+[05:11:23]     step   1550  tokens   23,027,712  train 9.0109  lr 7.95e-04  B 32  |z|_rms 0.058  329 ms
+[05:11:40]     step   1600  tokens   23,846,912  train 9.0109  lr 4.68e-04  B 32  |z|_rms 0.055  367 ms
+[05:11:58]     step   1650  tokens   24,666,112  train 9.0109  lr 1.40e-04  B 32  |z|_rms 0.054  320 ms
+[05:12:06]   eval tokens   25,010,176  held-out 9.0109
+[05:12:06] final test CE 9.0109  42,928 tok/s  343 ms/step (median)  9.7 min
+[05:12:06]   erank Q_0: 1.1 of 256
+[05:12:06]   erank K_0: 1.0 of 256
+[05:12:06]   erank V_0: 1.0 of 256
+[05:12:06]   erank O_0: 1.0 of 256
+[05:12:06]   erank GATE_0: 1.1 of 256
+[05:12:06]   erank UP_0: 1.1 of 256
+[05:12:06]   erank DOWN_0: 1.0 of 256
+[05:12:06]   erank AB_0: 1.0 of 8
+[05:12:06] wrote runs\anlage\manifold-tinystories-s0-dg64H4z16h256\manifold.json

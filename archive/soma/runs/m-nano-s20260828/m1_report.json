@@ -1,0 +1,1023 @@
+{
+  "config": "m-nano",
+  "seed": 20260828,
+  "wall_seconds": 1294.7658693790436,
+  "T_life_minutes_measured": 21.579431156317394,
+  "criteria": {
+    "1_no_nan": {
+      "passed": true,
+      "detail": "the run completed; loss and gradient finiteness are asserted every step and abort on trip (\u00a707.4.3, audit A-56)"
+    },
+    "2_bifurcation_under_1pct": {
+      "passed": true,
+      "detail": "alarm rate 0.0000 over 1152 births"
+    },
+    "3_ce_improves": {
+      "passed": true,
+      "detail": "CE 3.0917 -> 2.1223 (drop 0.9694; --noise-floor not supplied, so only the sign is checked)"
+    },
+    "4_erank_no_negative_trend": {
+      "passed": true,
+      "detail": "Mann-Kendall p=0.8333 slope=2.209e+00 over 4 points (exact null)"
+    },
+    "5_population_in_band": {
+      "passed": true,
+      "detail": "|U_live| = 240, band [16, 240]"
+    },
+    "6_generation_quality": {
+      "passed": true,
+      "skipped": true,
+      "detail": "graded by scripts/eval_tinystories.py against the frozen rubric of \u00a708.3; not evaluated here"
+    },
+    "7_mixer_matches_oracle": {
+      "passed": true,
+      "detail": "asserted by tests/unit/test_mixer_equivalence.py (1e-10 float64 / 1e-5 float32); K6 halts all work on failure"
+    }
+  },
+  "passed": true,
+  "result": {
+    "fitness": {
+      "CriterionScore": 0.0,
+      "SlopeScore": 0.0,
+      "FinalScore": 0.7448480076346471,
+      "BirthScore": -0.059752976161943104,
+      "FITNESS": 0.14896960152692942,
+      "censored": true,
+      "substituted": false
+    },
+    "curve": {
+      "n_points": 49,
+      "n_crit": null,
+      "censored": true,
+      "L_star": 2.0204906493754935,
+      "early_slope": -0.7481907887261919,
+      "late_slope": -0.26191670204352085,
+      "final_ce": 2.122294609467565,
+      "structural_events": 78
+    },
+    "n_archetypes": 720,
+    "mean_utility": 1379.1387760241826,
+    "mean_clade_size": 3.9344262295081966,
+    "wall_seconds": 1294.7588543891907,
+    "steps_run": 2442,
+    "selection_events": 60,
+    "total_births": 96,
+    "total_deaths": 96,
+    "growth_events": 18,
+    "certifications": 3,
+    "archive_size": 8,
+    "bif_alarm_rate": 0.0,
+    "bif_growth_alarm_rate": 0.0,
+    "bif_alarms_per_birth": 0.0,
+    "bif_cohorts": {
+      "select": 48,
+      "grow": 18
+    },
+    "bif_births": 1152,
+    "epsilon_bif": 0.001,
+    "sd_probe": 0.0,
+    "credit_audit": {
+      "audit_fraction": 0.1,
+      "spearman": 0.035873819017286646,
+      "spearman_signed": -0.1499130693795786,
+      "n_pairs": 64,
+      "pending_pairs": 0,
+      "n_evaluations": 10,
+      "tripped": 10,
+      "valid": false,
+      "status": "invalid"
+    },
+    "ramp_n_len": 9,
+    "ramp_s": 0.0,
+    "ramp_matching_error": 0.022915466589861752,
+    "ramp_observations": 31,
+    "tokens_seen": 24558941,
+    "final_n_live": 240,
+    "acceptance": {
+      "variance_ratio": 0.6354765892028809,
+      "grad_ratio": 12.939560828198095,
+      "grad_ratio_per_block": 1.3779868604624077,
+      "grad_ratio_max": 3.0966145696949745,
+      "per_block_steps": [
+        3.0966145696949745,
+        1.7270032606644012,
+        1.3779868604624077,
+        1.3557928527798002,
+        1.295092563247547
+      ],
+      "n_eff_small": 4.114065647125244,
+      "n_eff_large": 4.1194915771484375,
+      "e2_small": 0.07063548266887665,
+      "e2_large": 0.07081357389688492,
+      "gain_act": 0.11861364755862198,
+      "calibration": {
+        "var_b": 12.966346668787118,
+        "E2_hat": 0.07081357389688492,
+        "N_eff": 4.1194915771484375,
+        "realised_var": 0.9980607032775879,
+        "target_var": 1.0,
+        "iterations": 2,
+        "gain_act": 0.11861364755862198
+      },
+      "passed": true,
+      "failures": []
+    },
+    "reservoir_bytes": 746928
+  },
+  "curve": [
+    [
+      0,
+      0,
+      8.81477745019994
+    ],
+    [
+      50,
+      499060,
+      4.342522836597798
+    ],
+    [
+      100,
+      983386,
+      3.6343919895648202
+    ],
+    [
+      150,
+      1473659,
+      3.278101395882701
+    ],
+    [
+      200,
+      1965055,
+      3.091693471995952
+    ],
+    [
+      250,
+      2457667,
+      2.973227020311883
+    ],
+    [
+      300,
+      2953920,
+      2.86403610928552
+    ],
+    [
+      350,
+      3443328,
+      2.783417837616015
+    ],
+    [
+      400,
+      3945944,
+      2.717641377863349
+    ],
+    [
+      450,
+      4450491,
+      2.6522123749598885
+    ],
+    [
+      500,
+      4957817,
+      2.6130346795393957
+    ],
+    [
+      550,
+      5452724,
+      2.580241357884701
+    ],
+    [
+      600,
+      5938723,
+      2.5562244770839504
+    ],
+    [
+      650,
+      6438466,
+      2.514541129403016
+    ],
+    [
+      700,
+      6939188,
+      2.4951467215732377
+    ],
+    [
+      750,
+      7428383,
+      2.474615661717516
+    ],
+    [
+      800,
+      7921642,
+      2.456179322638971
+    ],
+    [
+      850,
+      8414954,
+      2.4379730369242445
+    ],
+    [
+      900,
+      8899206,
+      2.4156718418308154
+    ],
+    [
+      950,
+      9388179,
+      2.4077841037069265
+    ],
+    [
+      1000,
+      9879211,
+      2.388331958354932
+    ],
+    [
+      1050,
+      10365985,
+      2.369826783576471
+    ],
+    [
+      1100,
+      10861537,
+      2.3558576394031396
+    ],
+    [
+      1150,
+      11363270,
+      2.3469591378789
+    ],
+    [
+      1200,
+      11862079,
+      2.331823113367644
+    ],
+    [
+      1250,
+      12362223,
+      2.3238391363978574
+    ],
+    [
+      1300,
+      12862065,
+      2.323361596563981
+    ],
+    [
+      1350,
+      13351563,
+      2.303457916404399
+    ],
+    [
+      1400,
+      13839330,
+      2.3064825699792655
+    ],
+    [
+      1450,
+      14332991,
+      2.2925617428940805
+    ],
+    [
+      1500,
+      14830880,
+      2.295189205127493
+    ],
+    [
+      1550,
+      15327105,
+      2.287575691307514
+    ],
+    [
+      1600,
+      15820073,
+      2.268923868236572
+    ],
+    [
+      1650,
+      16314058,
+      2.2729903620377914
+    ],
+    [
+      1700,
+      16804759,
+      2.2646194819590493
+    ],
+    [
+      1750,
+      17300498,
+      2.2627179909656396
+    ],
+    [
+      1800,
+      17793209,
+      2.2508215158471563
+    ],
+    [
+      1850,
+      18290758,
+      2.247921227429527
+    ],
+    [
+      1900,
+      18787568,
+      2.2454292381732572
+    ],
+    [
+      1950,
+      19283889,
+      2.245826718780855
+    ],
+    [
+      2000,
+      19777642,
+      2.2405306510262393
+    ],
+    [
+      2050,
+      20262365,
+      2.2317545669338714
+    ],
+    [
+      2100,
+      20740661,
+      2.2403593765427527
+    ],
+    [
+      2150,
+      21245113,
+      2.2200977680995755
+    ],
+    [
+      2200,
+      21759962,
+      2.1963242179786238
+    ],
+    [
+      2250,
+      22296939,
+      2.1746648080352733
+    ],
+    [
+      2300,
+      22851684,
+      2.150708702051244
+    ],
+    [
+      2350,
+      23438749,
+      2.136479401550775
+    ],
+    [
+      2400,
+      24045986,
+      2.122294609467565
+    ]
+  ],
+  "structural_events": [
+    {
+      "step": 100,
+      "kind": "select",
+      "site": 0,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 100,
+      "kind": "select",
+      "site": 1,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 100,
+      "kind": "select",
+      "site": 2,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 100,
+      "kind": "select",
+      "site": 3,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 100,
+      "kind": "select",
+      "site": 4,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 100,
+      "kind": "select",
+      "site": 5,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 216,
+      "kind": "select",
+      "site": 0,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 216,
+      "kind": "select",
+      "site": 1,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 216,
+      "kind": "select",
+      "site": 2,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 216,
+      "kind": "select",
+      "site": 3,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 216,
+      "kind": "select",
+      "site": 4,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 216,
+      "kind": "select",
+      "site": 5,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 244,
+      "kind": "grow",
+      "site": 0,
+      "created": 58
+    },
+    {
+      "step": 244,
+      "kind": "grow",
+      "site": 1,
+      "created": 58
+    },
+    {
+      "step": 244,
+      "kind": "grow",
+      "site": 2,
+      "created": 58
+    },
+    {
+      "step": 244,
+      "kind": "grow",
+      "site": 3,
+      "created": 58
+    },
+    {
+      "step": 244,
+      "kind": "grow",
+      "site": 4,
+      "created": 58
+    },
+    {
+      "step": 244,
+      "kind": "grow",
+      "site": 5,
+      "created": 58
+    },
+    {
+      "step": 351,
+      "kind": "select",
+      "site": 0,
+      "births": 3,
+      "deaths": 3
+    },
+    {
+      "step": 351,
+      "kind": "select",
+      "site": 1,
+      "births": 3,
+      "deaths": 3
+    },
+    {
+      "step": 351,
+      "kind": "select",
+      "site": 2,
+      "births": 3,
+      "deaths": 3
+    },
+    {
+      "step": 351,
+      "kind": "select",
+      "site": 3,
+      "births": 3,
+      "deaths": 3
+    },
+    {
+      "step": 351,
+      "kind": "select",
+      "site": 4,
+      "births": 3,
+      "deaths": 3
+    },
+    {
+      "step": 351,
+      "kind": "select",
+      "site": 5,
+      "births": 3,
+      "deaths": 3
+    },
+    {
+      "step": 488,
+      "kind": "grow",
+      "site": 0,
+      "created": 59
+    },
+    {
+      "step": 488,
+      "kind": "grow",
+      "site": 1,
+      "created": 59
+    },
+    {
+      "step": 488,
+      "kind": "grow",
+      "site": 2,
+      "created": 59
+    },
+    {
+      "step": 488,
+      "kind": "grow",
+      "site": 3,
+      "created": 59
+    },
+    {
+      "step": 488,
+      "kind": "grow",
+      "site": 4,
+      "created": 59
+    },
+    {
+      "step": 488,
+      "kind": "grow",
+      "site": 5,
+      "created": 59
+    },
+    {
+      "step": 507,
+      "kind": "select",
+      "site": 0,
+      "births": 3,
+      "deaths": 3
+    },
+    {
+      "step": 507,
+      "kind": "select",
+      "site": 1,
+      "births": 3,
+      "deaths": 3
+    },
+    {
+      "step": 507,
+      "kind": "select",
+      "site": 2,
+      "births": 3,
+      "deaths": 3
+    },
+    {
+      "step": 507,
+      "kind": "select",
+      "site": 3,
+      "births": 3,
+      "deaths": 3
+    },
+    {
+      "step": 507,
+      "kind": "select",
+      "site": 4,
+      "births": 3,
+      "deaths": 3
+    },
+    {
+      "step": 507,
+      "kind": "select",
+      "site": 5,
+      "births": 3,
+      "deaths": 3
+    },
+    {
+      "step": 689,
+      "kind": "select",
+      "site": 0,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 689,
+      "kind": "select",
+      "site": 1,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 689,
+      "kind": "select",
+      "site": 2,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 689,
+      "kind": "select",
+      "site": 3,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 689,
+      "kind": "select",
+      "site": 4,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 689,
+      "kind": "select",
+      "site": 5,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 854,
+      "kind": "grow",
+      "site": 0,
+      "created": 59
+    },
+    {
+      "step": 854,
+      "kind": "grow",
+      "site": 1,
+      "created": 59
+    },
+    {
+      "step": 854,
+      "kind": "grow",
+      "site": 2,
+      "created": 59
+    },
+    {
+      "step": 854,
+      "kind": "grow",
+      "site": 3,
+      "created": 59
+    },
+    {
+      "step": 854,
+      "kind": "grow",
+      "site": 4,
+      "created": 59
+    },
+    {
+      "step": 854,
+      "kind": "grow",
+      "site": 5,
+      "created": 59
+    },
+    {
+      "step": 900,
+      "kind": "select",
+      "site": 0,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 900,
+      "kind": "select",
+      "site": 1,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 900,
+      "kind": "select",
+      "site": 2,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 900,
+      "kind": "select",
+      "site": 3,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 900,
+      "kind": "select",
+      "site": 4,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 900,
+      "kind": "select",
+      "site": 5,
+      "births": 2,
+      "deaths": 2
+    },
+    {
+      "step": 1145,
+      "kind": "select",
+      "site": 0,
+      "births": 1,
+      "deaths": 1
+    },
+    {
+      "step": 1145,
+      "kind": "select",
+      "site": 1,
+      "births": 1,
+      "deaths": 1
+    },
+    {
+      "step": 1145,
+      "kind": "select",
+      "site": 2,
+      "births": 1,
+      "deaths": 1
+    },
+    {
+      "step": 1145,
+      "kind": "select",
+      "site": 3,
+      "births": 1,
+      "deaths": 1
+    },
+    {
+      "step": 1145,
+      "kind": "select",
+      "site": 4,
+      "births": 1,
+      "deaths": 1
+    },
+    {
+      "step": 1145,
+      "kind": "select",
+      "site": 5,
+      "births": 1,
+      "deaths": 1
+    },
+    {
+      "step": 1430,
+      "kind": "select",
+      "site": 0,
+      "births": 1,
+      "deaths": 1
+    },
+    {
+      "step": 1430,
+      "kind": "select",
+      "site": 1,
+      "births": 1,
+      "deaths": 1
+    },
+    {
+      "step": 1430,
+      "kind": "select",
+      "site": 2,
+      "births": 1,
+      "deaths": 1
+    },
+    {
+      "step": 1430,
+      "kind": "select",
+      "site": 3,
+      "births": 1,
+      "deaths": 1
+    },
+    {
+      "step": 1430,
+      "kind": "select",
+      "site": 4,
+      "births": 1,
+      "deaths": 1
+    },
+    {
+      "step": 1430,
+      "kind": "select",
+      "site": 5,
+      "births": 1,
+      "deaths": 1
+    },
+    {
+      "step": 1761,
+      "kind": "select",
+      "site": 0,
+      "births": 0,
+      "deaths": 0
+    },
+    {
+      "step": 1761,
+      "kind": "select",
+      "site": 1,
+      "births": 0,
+      "deaths": 0
+    },
+    {
+      "step": 1761,
+      "kind": "select",
+      "site": 2,
+      "births": 0,
+      "deaths": 0
+    },
+    {
+      "step": 1761,
+      "kind": "select",
+      "site": 3,
+      "births": 0,
+      "deaths": 0
+    },
+    {
+      "step": 1761,
+      "kind": "select",
+      "site": 4,
+      "births": 0,
+      "deaths": 0
+    },
+    {
+      "step": 1761,
+      "kind": "select",
+      "site": 5,
+      "births": 0,
+      "deaths": 0
+    },
+    {
+      "step": 2146,
+      "kind": "select",
+      "site": 0,
+      "births": 0,
+      "deaths": 0
+    },
+    {
+      "step": 2146,
+      "kind": "select",
+      "site": 1,
+      "births": 0,
+      "deaths": 0
+    },
+    {
+      "step": 2146,
+      "kind": "select",
+      "site": 2,
+      "births": 0,
+      "deaths": 0
+    },
+    {
+      "step": 2146,
+      "kind": "select",
+      "site": 3,
+      "births": 0,
+      "deaths": 0
+    },
+    {
+      "step": 2146,
+      "kind": "select",
+      "site": 4,
+      "births": 0,
+      "deaths": 0
+    },
+    {
+      "step": 2146,
+      "kind": "select",
+      "site": 5,
+      "births": 0,
+      "deaths": 0
+    }
+  ],
+  "certifications": [
+    {
+      "step": 1220,
+      "live": {
+        "arm": "live",
+        "novelty_fraction": 0.0,
+        "learnability_fraction": 0.0,
+        "n_rows_tested": 2,
+        "n_cols_tested": 0,
+        "matrix_shape": [
+          3,
+          15
+        ]
+      },
+      "frozen": {
+        "arm": "frozen",
+        "novelty_fraction": 0.0,
+        "learnability_fraction": 0.0,
+        "n_rows_tested": 2,
+        "n_cols_tested": 0,
+        "matrix_shape": [
+          3,
+          15
+        ]
+      },
+      "ramp": {
+        "arm": "ramp",
+        "novelty_fraction": 0.0,
+        "learnability_fraction": 0.0,
+        "n_rows_tested": 2,
+        "n_cols_tested": 0,
+        "matrix_shape": [
+          3,
+          15
+        ]
+      },
+      "live_minus_ramp": 0.0,
+      "live_minus_frozen": 0.0,
+      "granularity": 0.5
+    },
+    {
+      "step": 1830,
+      "live": {
+        "arm": "live",
+        "novelty_fraction": 0.0,
+        "learnability_fraction": 0.0,
+        "n_rows_tested": 3,
+        "n_cols_tested": 0,
+        "matrix_shape": [
+          3,
+          23
+        ]
+      },
+      "frozen": {
+        "arm": "frozen",
+        "novelty_fraction": 0.0,
+        "learnability_fraction": 0.0,
+        "n_rows_tested": 3,
+        "n_cols_tested": 0,
+        "matrix_shape": [
+          3,
+          23
+        ]
+      },
+      "ramp": {
+        "arm": "ramp",
+        "novelty_fraction": 1.0,
+        "learnability_fraction": 0.0,
+        "n_rows_tested": 3,
+        "n_cols_tested": 0,
+        "matrix_shape": [
+          3,
+          23
+        ]
+      },
+      "live_minus_ramp": -1.0,
+      "live_minus_frozen": 0.0,
+      "granularity": 0.3333333333333333
+    },
+    {
+      "step": 2440,
+      "live": {
+        "arm": "live",
+        "novelty_fraction": 0.0,
+        "learnability_fraction": 0.0,
+        "n_rows_tested": 3,
+        "n_cols_tested": 0,
+        "matrix_shape": [
+          4,
+          31
+        ]
+      },
+      "frozen": {
+        "arm": "frozen",
+        "novelty_fraction": 0.0,
+        "learnability_fraction": 0.0,
+        "n_rows_tested": 3,
+        "n_cols_tested": 0,
+        "matrix_shape": [
+          4,
+          31
+        ]
+      },
+      "ramp": {
+        "arm": "ramp",
+        "novelty_fraction": 1.0,
+        "learnability_fraction": 0.0,
+        "n_rows_tested": 3,
+        "n_cols_tested": 0,
+        "matrix_shape": [
+          4,
+          31
+        ]
+      },
+      "live_minus_ramp": -1.0,
+      "live_minus_frozen": 0.0,
+      "granularity": 0.3333333333333333
+    }
+  ]
+}

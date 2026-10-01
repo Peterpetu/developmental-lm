@@ -1,0 +1,1315 @@
+[23:19:20] chain started
+[23:19:20] step sem05-5M: scripts/spore_life.py --name sem05-5M --budget 5000000 --D 2048 --eta-sem 0.5
+[23:19:21] genome 14667bdae96f7b7e {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'rho_res': 0.9}
+[23:19:21] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[23:19:25] birth: innate memory-only predictor tau_m 26.08  test 7.5714
+[23:19:40] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[23:19:49] wave 1: kept 512 of 4096 (mode select); score kept 0.0196 vs all 0.0125; F -> 15873
+[23:20:05] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[23:20:15] wave 2: kept 512 of 4096 (mode select); score kept 0.0197 vs all 0.0127; F -> 16385
+[23:20:18]   batch 100/306  1.64M tokens  532 ms/batch
+[23:20:43] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[23:20:54] wave 3: kept 512 of 4096 (mode select); score kept 0.0199 vs all 0.0125; F -> 16897
+[23:21:07]   batch 200/306  3.28M tokens  511 ms/batch
+[23:21:48]   batch 300/306  4.92M tokens  479 ms/batch
+[23:22:03] ridge linear head: tau_s 1.00 tau_m 50.02 mu 0.034 nu 0.042  fitness 3.8230  test 3.8128  (F 16897)
+[23:22:11] ridge softmax head: tau_s 30.25 tau_m 12.38 mu 0.034 nu 0.042  fitness 5.6691  test 5.6608  (F 16897)
+[23:22:55]   refine pass 1/1 batch 100/306  train CE 3.6556
+[23:23:38]   refine pass 1/1 batch 200/306  train CE 3.3311
+[23:24:22]   refine pass 1/1 batch 300/306  train CE 3.2166
+[23:24:24] refine pass 1/1: mean train CE 3.2119
+[23:24:29] refined: fitness 2.9805  test 2.9670
+[23:24:29] done: final stage refined  fitness 2.9805  test 2.9670  308 s  peak 9.50 GB
+[23:24:29] step sem05-5M exit 0 in 309 s; artifact ok
+[23:24:29] step sem1-5M: scripts/spore_life.py --name sem1-5M --budget 5000000 --D 2048 --eta-sem 1.0
+[23:24:31] genome bf88103ecdee6192 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 1.0, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'rho_res': 0.9}
+[23:24:31] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[23:24:34] birth: innate memory-only predictor tau_m 26.24  test 7.1702
+[23:24:49] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[23:24:59] wave 1: kept 512 of 4096 (mode select); score kept 0.0247 vs all 0.0149; F -> 15873
+[23:25:14] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[23:25:25] wave 2: kept 512 of 4096 (mode select); score kept 0.0245 vs all 0.0150; F -> 16385
+[23:25:28]   batch 100/306  1.64M tokens  537 ms/batch
+[23:25:54] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[23:26:04] wave 3: kept 512 of 4096 (mode select); score kept 0.0259 vs all 0.0151; F -> 16897
+[23:26:17]   batch 200/306  3.28M tokens  515 ms/batch
+[23:26:59]   batch 300/306  4.92M tokens  483 ms/batch
+[23:27:13] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.038 nu 0.061  fitness 3.9179  test 3.9089  (F 16897)
+[23:27:22] ridge softmax head: tau_s 29.38 tau_m 15.06 mu 0.038 nu 0.061  fitness 5.6200  test 5.6100  (F 16897)
+[23:28:05]   refine pass 1/1 batch 100/306  train CE 3.6920
+[23:28:49]   refine pass 1/1 batch 200/306  train CE 3.3730
+[23:29:32]   refine pass 1/1 batch 300/306  train CE 3.2598
+[23:29:35] refine pass 1/1: mean train CE 3.2552
+[23:29:40] refined: fitness 3.0127  test 2.9961
+[23:29:40] done: final stage refined  fitness 3.0127  test 2.9961  309 s  peak 9.50 GB
+[23:29:40] step sem1-5M exit 0 in 311 s; artifact ok
+[23:29:40] step E3-5M: scripts/spore_life.py --name E3-5M --budget 5000000 --D 2048 --E 3
+[23:29:41] genome 27408ef5e07aae42 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 3, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.0, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[23:29:41] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[23:29:43] birth: innate memory-only predictor tau_m 22.70  test 8.1204
+[23:29:59] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[23:30:08] wave 1: kept 512 of 4096 (mode select); score kept 0.0169 vs all 0.0113; F -> 15873
+[23:30:24] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[23:30:34] wave 2: kept 512 of 4096 (mode select); score kept 0.0172 vs all 0.0116; F -> 16385
+[23:30:37]   batch 100/306  1.64M tokens  536 ms/batch
+[23:31:03] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[23:31:14] wave 3: kept 512 of 4096 (mode select); score kept 0.0173 vs all 0.0114; F -> 16897
+[23:31:26]   batch 200/306  3.28M tokens  514 ms/batch
+[23:32:08]   batch 300/306  4.92M tokens  482 ms/batch
+[23:32:22] ridge linear head: tau_s 1.00 tau_m 50.58 mu 0.041 nu 0.039  fitness 3.9013  test 3.8888  (F 16897)
+[23:32:31] ridge softmax head: tau_s 33.13 tau_m 6.98 mu 0.041 nu 0.039  fitness 5.8668  test 5.8471  (F 16897)
+[23:33:15]   refine pass 1/3 batch 100/306  train CE 3.7947
+[23:33:58]   refine pass 1/3 batch 200/306  train CE 3.4667
+[23:34:42]   refine pass 1/3 batch 300/306  train CE 3.3446
+[23:34:44] refine pass 1/3: mean train CE 3.3390
+[23:35:28]   refine pass 2/3 batch 100/306  train CE 3.1193
+[23:36:12]   refine pass 2/3 batch 200/306  train CE 3.0383
+[23:36:55]   refine pass 2/3 batch 300/306  train CE 3.0485
+[23:36:58] refine pass 2/3: mean train CE 3.0404
+[23:37:41]   refine pass 3/3 batch 100/306  train CE 2.9211
+[23:38:25]   refine pass 3/3 batch 200/306  train CE 2.9472
+[23:39:09]   refine pass 3/3 batch 300/306  train CE 2.9448
+[23:39:11] refine pass 3/3: mean train CE 2.9446
+[23:39:16] refined: fitness 2.8603  test 2.8361
+[23:39:16] done: final stage refined  fitness 2.8603  test 2.8361  575 s  peak 9.50 GB
+[23:39:16] step E3-5M exit 0 in 576 s; artifact ok
+[23:39:16] step sem05-lro-5M: scripts/spore_life.py --name sem05-lro-5M --budget 5000000 --D 2048 --eta-sem 0.5 --lro
+[23:39:18] genome 8b2e401239f81ce0 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': True, 'rho_res': 0.9}
+[23:39:18] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[23:39:21] birth: innate memory-only predictor tau_m 26.09  test 7.5594
+[23:39:36] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[23:39:46] wave 1: kept 512 of 4096 (mode select); score kept 0.0184 vs all 0.0121; F -> 15873
+[23:40:01] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[23:40:12] wave 2: kept 512 of 4096 (mode select); score kept 0.0193 vs all 0.0126; F -> 16385
+[23:40:15]   batch 100/306  1.64M tokens  536 ms/batch
+[23:40:40] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[23:40:51] wave 3: kept 512 of 4096 (mode select); score kept 0.0199 vs all 0.0124; F -> 16897
+[23:41:04]   batch 200/306  3.28M tokens  514 ms/batch
+[23:41:46]   batch 300/306  4.92M tokens  482 ms/batch
+[23:42:00] ridge linear head: tau_s 1.00 tau_m 48.16 mu 0.032 nu 0.042  fitness 3.8240  test 3.8127  (F 16897)
+[23:42:09] ridge softmax head: tau_s 30.14 tau_m 12.60 mu 0.032 nu 0.042  fitness 5.6608  test 5.6495  (F 16897)
+[23:42:52]   refine pass 1/1 batch 100/306  train CE 3.6569
+[23:43:36]   refine pass 1/1 batch 200/306  train CE 3.3318
+[23:44:19]   refine pass 1/1 batch 300/306  train CE 3.2171
+[23:44:22] refine pass 1/1: mean train CE 3.2124
+[23:44:26] refined: fitness 2.9815  test 2.9644
+[23:44:27] done: final stage refined  fitness 2.9815  test 2.9644  309 s  peak 9.50 GB
+[23:44:27] step sem05-lro-5M exit 0 in 311 s; artifact ok
+[23:44:27] step sem05-d512-5M: scripts/spore_life.py --name sem05-d512-5M --budget 5000000 --D 2048 --eta-sem 0.5 --d-sem 512
+[23:44:28] genome d97d1a0fb868d717 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 512, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[23:44:28] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[23:44:32] birth: innate memory-only predictor tau_m 25.12  test 7.7318
+[23:44:47] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[23:44:57] wave 1: kept 512 of 4096 (mode select); score kept 0.0181 vs all 0.0120; F -> 15873
+[23:45:12] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[23:45:23] wave 2: kept 512 of 4096 (mode select); score kept 0.0187 vs all 0.0123; F -> 16385
+[23:45:25]   batch 100/306  1.64M tokens  538 ms/batch
+[23:45:51] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[23:46:02] wave 3: kept 512 of 4096 (mode select); score kept 0.0192 vs all 0.0121; F -> 16897
+[23:46:15]   batch 200/306  3.28M tokens  515 ms/batch
+[23:46:56]   batch 300/306  4.92M tokens  483 ms/batch
+[23:47:11] ridge linear head: tau_s 1.00 tau_m 49.08 mu 0.035 nu 0.041  fitness 3.8308  test 3.8178  (F 16897)
+[23:47:20] ridge softmax head: tau_s 30.77 tau_m 10.87 mu 0.035 nu 0.041  fitness 5.7231  test 5.7056  (F 16897)
+[23:48:03]   refine pass 1/1 batch 100/306  train CE 3.6722
+[23:48:46]   refine pass 1/1 batch 200/306  train CE 3.3469
+[23:49:30]   refine pass 1/1 batch 300/306  train CE 3.2325
+[23:49:33] refine pass 1/1: mean train CE 3.2278
+[23:49:37] refined: fitness 2.9999  test 2.9825
+[23:49:37] done: final stage refined  fitness 2.9999  test 2.9825  309 s  peak 9.50 GB
+[23:49:38] step sem05-d512-5M exit 0 in 311 s; artifact ok
+[23:49:38] step sem05-dk2048-5M: scripts/spore_life.py --name sem05-dk2048-5M --budget 5000000 --D 2048 --eta-sem 0.5 --d-k 2048
+[23:49:39] genome a426c64584fa858a {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 2048, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[23:49:39] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[23:49:43] birth: innate memory-only predictor tau_m 12.91  test 7.5172
+[23:50:01] wave opened at 507904 tokens: 4096 candidates over F_in 16384
+[23:50:13] wave 1: kept 512 of 4096 (mode select); score kept 0.0198 vs all 0.0127; F -> 16897
+[23:50:32] wave opened at 1245184 tokens: 4096 candidates over F_in 16896
+[23:50:45] wave 2: kept 512 of 4096 (mode select); score kept 0.0201 vs all 0.0129; F -> 17409
+[23:50:48]   batch 100/306  1.64M tokens  653 ms/batch
+[23:51:20] wave opened at 2506752 tokens: 4096 candidates over F_in 17408
+[23:51:33] wave 3: kept 512 of 4096 (mode select); score kept 0.0208 vs all 0.0129; F -> 17921
+[23:51:49]   batch 200/306  3.28M tokens  631 ms/batch
+[23:52:41]   batch 300/306  4.92M tokens  595 ms/batch
+[23:52:58] ridge linear head: tau_s 1.00 tau_m 22.69 mu 0.035 nu 0.040  fitness 3.8295  test 3.8183  (F 17921)
+[23:53:09] ridge softmax head: tau_s 30.25 tau_m 5.75 mu 0.035 nu 0.040  fitness 5.6653  test 5.6539  (F 17921)
+[23:54:01]   refine pass 1/1 batch 100/306  train CE 3.5882
+[23:54:54]   refine pass 1/1 batch 200/306  train CE 3.2811
+[23:55:46]   refine pass 1/1 batch 300/306  train CE 3.1756
+[23:55:49] refine pass 1/1: mean train CE 3.1714
+[23:55:55] refined: fitness 2.9614  test 2.9438
+[23:55:55] done: final stage refined  fitness 2.9614  test 2.9438  376 s  peak 12.28 GB
+[23:55:55] step sem05-dk2048-5M exit 0 in 378 s; artifact ok
+[23:55:55] step sem05-E3-5M: scripts/spore_life.py --name sem05-E3-5M --budget 5000000 --D 2048 --eta-sem 0.5 --E 3
+[23:55:57] genome 519e9717de0530df {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 3, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[23:55:57] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[23:56:00] birth: innate memory-only predictor tau_m 25.96  test 7.5673
+[23:56:15] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[23:56:25] wave 1: kept 512 of 4096 (mode select); score kept 0.0192 vs all 0.0124; F -> 15873
+[23:56:41] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[23:56:51] wave 2: kept 512 of 4096 (mode select); score kept 0.0193 vs all 0.0126; F -> 16385
+[23:56:54]   batch 100/306  1.64M tokens  538 ms/batch
+[23:57:20] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[23:57:30] wave 3: kept 512 of 4096 (mode select); score kept 0.0201 vs all 0.0125; F -> 16897
+[23:57:43]   batch 200/306  3.28M tokens  515 ms/batch
+[23:58:25]   batch 300/306  4.92M tokens  483 ms/batch
+[23:58:39] ridge linear head: tau_s 1.00 tau_m 48.89 mu 0.033 nu 0.042  fitness 3.8235  test 3.8117  (F 16897)
+[23:58:48] ridge softmax head: tau_s 30.24 tau_m 12.27 mu 0.033 nu 0.042  fitness 5.6696  test 5.6590  (F 16897)
+[23:59:32]   refine pass 1/3 batch 100/306  train CE 3.6409
+[00:00:15]   refine pass 1/3 batch 200/306  train CE 3.3101
+[00:00:59]   refine pass 1/3 batch 300/306  train CE 3.1882
+[00:01:01] refine pass 1/3: mean train CE 3.1827
+[00:01:45]   refine pass 2/3 batch 100/306  train CE 2.9775
+[00:02:29]   refine pass 2/3 batch 200/306  train CE 2.9027
+[00:03:12]   refine pass 2/3 batch 300/306  train CE 2.9128
+[00:03:15] refine pass 2/3: mean train CE 2.9054
+[00:03:59]   refine pass 3/3 batch 100/306  train CE 2.7988
+[00:04:42]   refine pass 3/3 batch 200/306  train CE 2.8225
+[00:05:26]   refine pass 3/3 batch 300/306  train CE 2.8206
+[00:05:28] refine pass 3/3: mean train CE 2.8204
+[00:05:33] refined: fitness 2.7366  test 2.7193
+[00:05:33] done: final stage refined  fitness 2.7366  test 2.7193  576 s  peak 9.50 GB
+[00:05:33] step sem05-E3-5M exit 0 in 578 s; artifact ok
+[00:05:33] step lr1e-2-5M: scripts/spore_life.py --name lr1e-2-5M --budget 5000000 --D 2048 --refine-lr 0.01
+[00:05:35] genome 19d31d3bcc93d1b2 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.0, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[00:05:35] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.01, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[00:05:37] birth: innate memory-only predictor tau_m 22.70  test 8.1204
+[00:05:52] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[00:06:02] wave 1: kept 512 of 4096 (mode select); score kept 0.0169 vs all 0.0113; F -> 15873
+[00:06:18] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[00:06:28] wave 2: kept 512 of 4096 (mode select); score kept 0.0172 vs all 0.0115; F -> 16385
+[00:06:31]   batch 100/306  1.64M tokens  539 ms/batch
+[00:06:57] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[00:07:08] wave 3: kept 512 of 4096 (mode select); score kept 0.0174 vs all 0.0114; F -> 16897
+[00:07:20]   batch 200/306  3.28M tokens  517 ms/batch
+[00:08:02]   batch 300/306  4.92M tokens  484 ms/batch
+[00:08:16] ridge linear head: tau_s 1.00 tau_m 50.39 mu 0.041 nu 0.039  fitness 3.9019  test 3.8891  (F 16897)
+[00:08:25] ridge softmax head: tau_s 33.14 tau_m 6.96 mu 0.041 nu 0.039  fitness 5.8672  test 5.8474  (F 16897)
+[00:09:09]   refine pass 1/1 batch 100/306  train CE 3.6644
+[00:09:53]   refine pass 1/1 batch 200/306  train CE 3.3594
+[00:10:36]   refine pass 1/1 batch 300/306  train CE 3.2486
+[00:10:39] refine pass 1/1: mean train CE 3.2439
+[00:10:43] refined: fitness 3.0017  test 2.9758
+[00:10:43] done: final stage refined  fitness 3.0017  test 2.9758  309 s  peak 9.50 GB
+[00:10:44] step lr1e-2-5M exit 0 in 310 s; artifact ok
+[00:10:44] step D4096o123-05M: scripts/spore_life.py --name D4096o123-05M --budget 500000 --D 4096 --orders 1,2,3 --k-wave 128 --score-tokens 65536
+[00:10:45] genome 9df92d4462592421 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 4096, 'orders': [1, 2, 3], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 128, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.0, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[00:10:45] cfg LifeConfig(budget=500000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=65536, tf32=False, eval_batch=16, device='cuda')
+[00:10:48] birth: innate memory-only predictor tau_m 45.26  test 8.1088
+[00:11:16] wave opened at 49152 tokens: 1024 candidates over F_in 21504
+[00:11:21] wave 1: kept 128 of 1024 (mode select); score kept 0.0252 vs all 0.0151; F -> 21633
+[00:11:27] wave opened at 131072 tokens: 1024 candidates over F_in 21632
+[00:11:31] wave 2: kept 128 of 1024 (mode select); score kept 0.0189 vs all 0.0122; F -> 21761
+[00:11:42] wave opened at 245760 tokens: 1024 candidates over F_in 21760
+[00:11:46] wave 3: kept 128 of 1024 (mode select); score kept 0.0180 vs all 0.0123; F -> 21889
+[00:12:27] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.095 nu 0.065  fitness 4.3532  test 4.3523  (F 21889)
+[00:12:38] ridge softmax head: tau_s 30.70 tau_m 18.34 mu 0.095 nu 0.065  fitness 5.8977  test 5.8825  (F 21889)
+[00:13:12] refine pass 1/1: mean train CE 3.8825
+[00:13:18] refined: fitness 4.1678  test 4.1664
+[00:13:18] done: final stage refined  fitness 4.1678  test 4.1664  153 s  peak 12.84 GB
+[00:13:18] step D4096o123-05M exit 0 in 155 s; artifact ok
+[00:13:18] step s-nomem-5M: scripts/spore_life.py --name s-nomem-5M --budget 5000000 --D 2048 --eta-sem 0.5 --no-memory
+[00:13:20] genome 4f6cce68886eb76f {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[00:13:20] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=False, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[00:13:32] wave opened at 507904 tokens: 4096 candidates over F_in 14336
+[00:13:40] wave 1: kept 512 of 4096 (mode select); score kept 0.0266 vs all 0.0158; F -> 14849
+[00:13:52] wave opened at 1245184 tokens: 4096 candidates over F_in 14848
+[00:14:01] wave 2: kept 512 of 4096 (mode select); score kept 0.0232 vs all 0.0148; F -> 15361
+[00:14:03]   batch 100/306  1.64M tokens  417 ms/batch
+[00:14:23] wave opened at 2506752 tokens: 4096 candidates over F_in 15360
+[00:14:32] wave 3: kept 512 of 4096 (mode select); score kept 0.0254 vs all 0.0152; F -> 15873
+[00:14:43]   batch 200/306  3.28M tokens  408 ms/batch
+[00:15:17]   batch 300/306  4.92M tokens  388 ms/batch
+[00:15:26] ridge linear head: tau_s 1.00 tau_m 10.00 mu 0.028 nu 0.000  fitness 3.8494  test 3.8397  (F 15873)
+[00:15:32] ridge softmax head: tau_s 34.36 tau_m 0.00 mu 0.028 nu 0.000  fitness 5.9569  test 5.9426  (F 15873)
+[00:16:10]   refine pass 1/1 batch 100/306  train CE 3.7357
+[00:16:47]   refine pass 1/1 batch 200/306  train CE 3.4326
+[00:17:25]   refine pass 1/1 batch 300/306  train CE 3.3253
+[00:17:27] refine pass 1/1: mean train CE 3.3206
+[00:17:31] refined: fitness 3.1115  test 3.0893
+[00:17:31] done: final stage refined  fitness 3.1115  test 3.0893  251 s  peak 7.56 GB
+[00:17:31] step s-nomem-5M exit 0 in 253 s; artifact ok
+[00:17:31] step s-nobind-5M: scripts/spore_life.py --name s-nobind-5M --budget 5000000 --D 2048 --eta-sem 0.5 --no-binding
+[00:17:33] genome 4f6cce68886eb76f {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[00:17:33] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=False, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[00:17:36] birth: innate memory-only predictor tau_m 27.26  test 8.0648
+[00:17:51] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[00:18:01] wave 1: kept 512 of 4096 (mode select); score kept 0.0203 vs all 0.0133; F -> 15873
+[00:18:16] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[00:18:27] wave 2: kept 512 of 4096 (mode select); score kept 0.0205 vs all 0.0135; F -> 16385
+[00:18:30]   batch 100/306  1.64M tokens  536 ms/batch
+[00:18:55] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[00:19:06] wave 3: kept 512 of 4096 (mode select); score kept 0.0212 vs all 0.0134; F -> 16897
+[00:19:19]   batch 200/306  3.28M tokens  515 ms/batch
+[00:20:01]   batch 300/306  4.92M tokens  483 ms/batch
+[00:20:15] ridge linear head: tau_s 1.00 tau_m 36.60 mu 0.029 nu 0.006  fitness 3.8301  test 3.8205  (F 16897)
+[00:20:24] ridge softmax head: tau_s 31.04 tau_m 16.08 mu 0.029 nu 0.006  fitness 5.7136  test 5.7040  (F 16897)
+[00:21:08]   refine pass 1/1 batch 100/306  train CE 3.6976
+[00:21:51]   refine pass 1/1 batch 200/306  train CE 3.3770
+[00:22:35]   refine pass 1/1 batch 300/306  train CE 3.2613
+[00:22:37] refine pass 1/1: mean train CE 3.2565
+[00:22:42] refined: fitness 3.0199  test 3.0044
+[00:22:42] done: final stage refined  fitness 3.0199  test 3.0044  309 s  peak 9.50 GB
+[00:22:42] step s-nobind-5M exit 0 in 311 s; artifact ok
+[00:22:42] step s-D1024-5M: scripts/spore_life.py --name s-D1024-5M --budget 5000000 --D 1024 --eta-sem 0.5
+[00:22:44] genome 9b1428ac3717ed67 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 1024, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[00:22:44] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[00:22:46] birth: innate memory-only predictor tau_m 13.01  test 7.5905
+[00:22:56] wave opened at 507904 tokens: 4096 candidates over F_in 8192
+[00:23:01] wave 1: kept 512 of 4096 (mode select); score kept 0.0212 vs all 0.0134; F -> 8705
+[00:23:12] wave opened at 1245184 tokens: 4096 candidates over F_in 8704
+[00:23:17] wave 2: kept 512 of 4096 (mode select); score kept 0.0219 vs all 0.0138; F -> 9217
+[00:23:18]   batch 100/306  1.64M tokens  315 ms/batch
+[00:23:33] wave opened at 2506752 tokens: 4096 candidates over F_in 9216
+[00:23:39] wave 3: kept 512 of 4096 (mode select); score kept 0.0233 vs all 0.0138; F -> 9729
+[00:23:44]   batch 200/306  3.28M tokens  288 ms/batch
+[00:24:02]   batch 300/306  4.92M tokens  252 ms/batch
+[00:24:14] ridge linear head: tau_s 1.00 tau_m 56.84 mu 0.036 nu 0.045  fitness 3.9010  test 3.8899  (F 9729)
+[00:24:21] ridge softmax head: tau_s 31.39 tau_m 5.91 mu 0.036 nu 0.045  fitness 5.7648  test 5.7509  (F 9729)
+[00:24:47]   refine pass 1/1 batch 100/306  train CE 3.7487
+[00:25:13]   refine pass 1/1 batch 200/306  train CE 3.4282
+[00:25:40]   refine pass 1/1 batch 300/306  train CE 3.3176
+[00:25:41] refine pass 1/1: mean train CE 3.3132
+[00:25:44] refined: fitness 3.0758  test 3.0604
+[00:25:44] done: final stage refined  fitness 3.0758  test 3.0604  180 s  peak 6.41 GB
+[00:25:44] step s-D1024-5M exit 0 in 182 s; artifact ok
+[00:25:44] step s-growoff-5M: scripts/spore_life.py --name s-growoff-5M --budget 5000000 --D 2048 --eta-sem 0.5 --growth off
+[00:25:46] genome 4f6cce68886eb76f {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[00:25:46] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='off', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[00:25:49] birth: innate memory-only predictor tau_m 25.96  test 7.5673
+[00:26:23]   batch 100/306  1.64M tokens  338 ms/batch
+[00:26:57]   batch 200/306  3.28M tokens  340 ms/batch
+[00:27:31]   batch 300/306  4.92M tokens  341 ms/batch
+[00:27:44] ridge linear head: tau_s 1.00 tau_m 49.85 mu 0.033 nu 0.041  fitness 3.8225  test 3.8118  (F 15361)
+[00:27:52] ridge softmax head: tau_s 29.92 tau_m 12.51 mu 0.033 nu 0.041  fitness 5.7265  test 5.7162  (F 15361)
+[00:28:30]   refine pass 1/1 batch 100/306  train CE 3.6937
+[00:29:08]   refine pass 1/1 batch 200/306  train CE 3.3638
+[00:29:46]   refine pass 1/1 batch 300/306  train CE 3.2479
+[00:29:48] refine pass 1/1: mean train CE 3.2432
+[00:29:52] refined: fitness 3.0031  test 2.9864
+[00:29:52] done: final stage refined  fitness 3.0031  test 2.9864  247 s  peak 8.63 GB
+[00:29:53] step s-growoff-5M exit 0 in 248 s; artifact ok
+[00:29:53] step s-growrand-5M: scripts/spore_life.py --name s-growrand-5M --budget 5000000 --D 2048 --eta-sem 0.5 --growth random
+[00:29:54] genome 4f6cce68886eb76f {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[00:29:54] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='random', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[00:29:57] birth: innate memory-only predictor tau_m 25.96  test 7.5673
+[00:30:13] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[00:30:22] wave 1: kept 512 of 4096 (mode random); score kept 0.0124 vs all 0.0124; F -> 15873
+[00:30:38] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[00:30:48] wave 2: kept 512 of 4096 (mode random); score kept 0.0126 vs all 0.0126; F -> 16385
+[00:30:51]   batch 100/306  1.64M tokens  536 ms/batch
+[00:31:17] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[00:31:28] wave 3: kept 512 of 4096 (mode random); score kept 0.0123 vs all 0.0124; F -> 16897
+[00:31:40]   batch 200/306  3.28M tokens  514 ms/batch
+[00:32:22]   batch 300/306  4.92M tokens  482 ms/batch
+[00:32:36] ridge linear head: tau_s 1.00 tau_m 48.53 mu 0.033 nu 0.042  fitness 3.8261  test 3.8132  (F 16897)
+[00:32:45] ridge softmax head: tau_s 30.18 tau_m 12.30 mu 0.033 nu 0.042  fitness 5.6715  test 5.6594  (F 16897)
+[00:33:29]   refine pass 1/1 batch 100/306  train CE 3.6560
+[00:34:12]   refine pass 1/1 batch 200/306  train CE 3.3305
+[00:34:56]   refine pass 1/1 batch 300/306  train CE 3.2159
+[00:34:59] refine pass 1/1: mean train CE 3.2113
+[00:35:03] refined: fitness 2.9795  test 2.9617
+[00:35:03] done: final stage refined  fitness 2.9795  test 2.9617  309 s  peak 9.50 GB
+[00:35:03] step s-growrand-5M exit 0 in 311 s; artifact ok
+[00:35:03] step sem05-5M-s1: scripts/spore_life.py --name sem05-5M-s1 --budget 5000000 --D 2048 --eta-sem 0.5 --seed 10
+[00:35:05] genome d6e4aff253f0fc9d {'s_A': 10, 's_rho': 11, 's_M': 12, 's_U': 13, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[00:35:05] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[00:35:08] birth: innate memory-only predictor tau_m 26.26  test 7.5936
+[00:35:23] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[00:35:33] wave 1: kept 512 of 4096 (mode select); score kept 0.0190 vs all 0.0123; F -> 15873
+[00:35:49] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[00:35:59] wave 2: kept 512 of 4096 (mode select); score kept 0.0191 vs all 0.0125; F -> 16385
+[00:36:02]   batch 100/306  1.64M tokens  537 ms/batch
+[00:36:28] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[00:36:39] wave 3: kept 512 of 4096 (mode select); score kept 0.0202 vs all 0.0126; F -> 16897
+[00:36:51]   batch 200/306  3.28M tokens  515 ms/batch
+[00:37:33]   batch 300/306  4.92M tokens  482 ms/batch
+[00:37:47] ridge linear head: tau_s 1.00 tau_m 48.02 mu 0.034 nu 0.042  fitness 3.8253  test 3.8099  (F 16897)
+[00:37:56] ridge softmax head: tau_s 30.10 tau_m 12.43 mu 0.034 nu 0.042  fitness 5.6799  test 5.6647  (F 16897)
+[00:38:39]   refine pass 1/1 batch 100/306  train CE 3.6566
+[00:39:23]   refine pass 1/1 batch 200/306  train CE 3.3316
+[00:40:07]   refine pass 1/1 batch 300/306  train CE 3.2171
+[00:40:09] refine pass 1/1: mean train CE 3.2124
+[00:40:14] refined: fitness 2.9833  test 2.9656
+[00:40:14] done: final stage refined  fitness 2.9833  test 2.9656  309 s  peak 9.50 GB
+[00:40:14] step sem05-5M-s1 exit 0 in 311 s; artifact ok
+[00:40:14] step sem05-5M-s2: scripts/spore_life.py --name sem05-5M-s2 --budget 5000000 --D 2048 --eta-sem 0.5 --seed 20
+[00:40:16] genome c3e390f295d2931c {'s_A': 20, 's_rho': 21, 's_M': 22, 's_U': 23, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[00:40:16] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[00:40:19] birth: innate memory-only predictor tau_m 26.08  test 7.5633
+[00:40:34] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[00:40:44] wave 1: kept 512 of 4096 (mode select); score kept 0.0179 vs all 0.0120; F -> 15873
+[00:40:59] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[00:41:10] wave 2: kept 512 of 4096 (mode select); score kept 0.0187 vs all 0.0123; F -> 16385
+[00:41:12]   batch 100/306  1.64M tokens  535 ms/batch
+[00:41:38] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[00:41:49] wave 3: kept 512 of 4096 (mode select); score kept 0.0191 vs all 0.0121; F -> 16897
+[00:42:02]   batch 200/306  3.28M tokens  513 ms/batch
+[00:42:43]   batch 300/306  4.92M tokens  482 ms/batch
+[00:42:58] ridge linear head: tau_s 1.00 tau_m 47.67 mu 0.034 nu 0.043  fitness 3.8265  test 3.8104  (F 16897)
+[00:43:07] ridge softmax head: tau_s 30.08 tau_m 12.70 mu 0.034 nu 0.043  fitness 5.6626  test 5.6496  (F 16897)
+[00:43:50]   refine pass 1/1 batch 100/306  train CE 3.6613
+[00:44:34]   refine pass 1/1 batch 200/306  train CE 3.3353
+[00:45:17]   refine pass 1/1 batch 300/306  train CE 3.2197
+[00:45:20] refine pass 1/1: mean train CE 3.2150
+[00:45:25] refined: fitness 2.9819  test 2.9667
+[00:45:25] done: final stage refined  fitness 2.9819  test 2.9667  309 s  peak 9.50 GB
+[00:45:25] step sem05-5M-s2 exit 0 in 311 s; artifact ok
+[00:45:25] step lr2e-2-5M: scripts/spore_life.py --name lr2e-2-5M --budget 5000000 --D 2048 --refine-lr 0.02
+[00:45:26] genome 19d31d3bcc93d1b2 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.0, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[00:45:26] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.02, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[00:45:28] birth: innate memory-only predictor tau_m 22.70  test 8.1204
+[00:45:44] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[00:45:54] wave 1: kept 512 of 4096 (mode select); score kept 0.0169 vs all 0.0113; F -> 15873
+[00:46:09] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[00:46:19] wave 2: kept 512 of 4096 (mode select); score kept 0.0172 vs all 0.0115; F -> 16385
+[00:46:22]   batch 100/306  1.64M tokens  537 ms/batch
+[00:46:48] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[00:46:59] wave 3: kept 512 of 4096 (mode select); score kept 0.0173 vs all 0.0113; F -> 16897
+[00:47:11]   batch 200/306  3.28M tokens  514 ms/batch
+[00:47:53]   batch 300/306  4.92M tokens  483 ms/batch
+[00:48:08] ridge linear head: tau_s 1.00 tau_m 50.35 mu 0.041 nu 0.039  fitness 3.9013  test 3.8889  (F 16897)
+[00:48:16] ridge softmax head: tau_s 33.14 tau_m 6.97 mu 0.041 nu 0.039  fitness 5.8666  test 5.8468  (F 16897)
+[00:49:00]   refine pass 1/1 batch 100/306  train CE 3.7080
+[00:49:44]   refine pass 1/1 batch 200/306  train CE 3.3852
+[00:50:27]   refine pass 1/1 batch 300/306  train CE 3.2475
+[00:50:30] refine pass 1/1: mean train CE 3.2413
+[00:50:34] refined: fitness 2.9164  test 2.8901
+[00:50:34] done: final stage refined  fitness 2.9164  test 2.8901  308 s  peak 9.50 GB
+[00:50:35] step lr2e-2-5M exit 0 in 310 s; artifact ok
+[00:50:35] step sem05-E3-25M: scripts/spore_life.py --name sem05-E3-25M --budget 25000000 --D 2048 --eta-sem 0.5 --E 3
+[00:50:36] genome 519e9717de0530df {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 3, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[00:50:36] cfg LifeConfig(budget=25000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[00:50:44] birth: innate memory-only predictor tau_m 26.48  test 7.4368
+[00:51:18]   batch 100/1526  1.64M tokens  339 ms/batch
+[00:51:41] wave opened at 2506752 tokens: 4096 candidates over F_in 15360
+[00:51:51] wave 1: kept 512 of 4096 (mode select); score kept 0.0206 vs all 0.0128; F -> 15873
+[00:52:02]   batch 200/1526  3.28M tokens  390 ms/batch
+[00:52:38]   batch 300/1526  4.92M tokens  382 ms/batch
+[00:53:13] wave opened at 6242304 tokens: 4096 candidates over F_in 15872
+[00:53:23] wave 2: kept 512 of 4096 (mode select); score kept 0.0202 vs all 0.0128; F -> 16385
+[00:53:24]   batch 400/1526  6.55M tokens  401 ms/batch
+[00:54:03]   batch 500/1526  8.19M tokens  399 ms/batch
+[00:54:42]   batch 600/1526  9.83M tokens  397 ms/batch
+[00:55:21]   batch 700/1526  11.47M tokens  396 ms/batch
+[00:55:51] wave opened at 12500992 tokens: 4096 candidates over F_in 16384
+[00:56:02] wave 3: kept 512 of 4096 (mode select); score kept 0.0210 vs all 0.0134; F -> 16897
+[00:56:10]   batch 800/1526  13.11M tokens  408 ms/batch
+[00:56:52]   batch 900/1526  14.75M tokens  409 ms/batch
+[00:57:34]   batch 1000/1526  16.38M tokens  410 ms/batch
+[00:58:16]   batch 1100/1526  18.02M tokens  411 ms/batch
+[00:58:57]   batch 1200/1526  19.66M tokens  411 ms/batch
+[00:59:39]   batch 1300/1526  21.30M tokens  412 ms/batch
+[01:00:21]   batch 1400/1526  22.94M tokens  412 ms/batch
+[01:01:03]   batch 1500/1526  24.58M tokens  413 ms/batch
+[01:01:26] ridge linear head: tau_s 1.00 tau_m 59.99 mu 0.025 nu 0.038  fitness 3.7145  test 3.7041  (F 16897)
+[01:01:35] ridge softmax head: tau_s 29.73 tau_m 13.30 mu 0.025 nu 0.038  fitness 5.6282  test 5.6188  (F 16897)
+[01:02:18]   refine pass 1/3 batch 100/1526  train CE 3.6693
+[01:03:02]   refine pass 1/3 batch 200/1526  train CE 3.3375
+[01:03:45]   refine pass 1/3 batch 300/1526  train CE 3.2166
+[01:04:29]   refine pass 1/3 batch 400/1526  train CE 3.1464
+[01:05:13]   refine pass 1/3 batch 500/1526  train CE 3.0827
+[01:05:56]   refine pass 1/3 batch 600/1526  train CE 3.0486
+[01:06:40]   refine pass 1/3 batch 700/1526  train CE 3.0070
+[01:07:24]   refine pass 1/3 batch 800/1526  train CE 2.9855
+[01:08:07]   refine pass 1/3 batch 900/1526  train CE 2.9627
+[01:08:51]   refine pass 1/3 batch 1000/1526  train CE 2.9324
+[01:09:35]   refine pass 1/3 batch 1100/1526  train CE 2.9151
+[01:10:18]   refine pass 1/3 batch 1200/1526  train CE 2.8885
+[01:11:02]   refine pass 1/3 batch 1300/1526  train CE 2.8730
+[01:11:46]   refine pass 1/3 batch 1400/1526  train CE 2.8601
+[01:12:30]   refine pass 1/3 batch 1500/1526  train CE 2.8440
+[01:12:41] refine pass 1/3: mean train CE 2.8390
+[01:13:25]   refine pass 2/3 batch 100/1526  train CE 2.6884
+[01:14:08]   refine pass 2/3 batch 200/1526  train CE 2.6295
+[01:14:52]   refine pass 2/3 batch 300/1526  train CE 2.6265
+[01:15:36]   refine pass 2/3 batch 400/1526  train CE 2.6149
+[01:16:19]   refine pass 2/3 batch 500/1526  train CE 2.6044
+[01:17:03]   refine pass 2/3 batch 600/1526  train CE 2.5954
+[01:17:47]   refine pass 2/3 batch 700/1526  train CE 2.6026
+[01:18:30]   refine pass 2/3 batch 800/1526  train CE 2.5854
+[01:19:14]   refine pass 2/3 batch 900/1526  train CE 2.5833
+[01:19:57]   refine pass 2/3 batch 1000/1526  train CE 2.5770
+[01:20:41]   refine pass 2/3 batch 1100/1526  train CE 2.5750
+[01:21:25]   refine pass 2/3 batch 1200/1526  train CE 2.5744
+[01:22:08]   refine pass 2/3 batch 1300/1526  train CE 2.5696
+[01:22:52]   refine pass 2/3 batch 1400/1526  train CE 2.5683
+[01:23:36]   refine pass 2/3 batch 1500/1526  train CE 2.5670
+[01:23:47] refine pass 2/3: mean train CE 2.5660
+[01:24:31]   refine pass 3/3 batch 100/1526  train CE 2.5383
+[01:25:14]   refine pass 3/3 batch 200/1526  train CE 2.5253
+[01:25:58]   refine pass 3/3 batch 300/1526  train CE 2.5508
+[01:26:42]   refine pass 3/3 batch 400/1526  train CE 2.5578
+[01:27:25]   refine pass 3/3 batch 500/1526  train CE 2.5659
+[01:28:09]   refine pass 3/3 batch 600/1526  train CE 2.5478
+[01:28:53]   refine pass 3/3 batch 700/1526  train CE 2.5404
+[01:29:36]   refine pass 3/3 batch 800/1526  train CE 2.5308
+[01:30:20]   refine pass 3/3 batch 900/1526  train CE 2.5328
+[01:31:04]   refine pass 3/3 batch 1000/1526  train CE 2.5395
+[01:31:47]   refine pass 3/3 batch 1100/1526  train CE 2.5423
+[01:32:31]   refine pass 3/3 batch 1200/1526  train CE 2.5393
+[01:33:15]   refine pass 3/3 batch 1300/1526  train CE 2.5407
+[01:33:58]   refine pass 3/3 batch 1400/1526  train CE 2.5370
+[01:34:42]   refine pass 3/3 batch 1500/1526  train CE 2.5314
+[01:34:53] refine pass 3/3: mean train CE 2.5304
+[01:34:58] refined: fitness 2.4809  test 2.4618
+[01:34:58] done: final stage refined  fitness 2.4809  test 2.4618  2662 s  peak 9.50 GB
+[01:34:58] step sem05-E3-25M exit 0 in 2664 s; artifact ok
+[01:34:58] step counts-25M: scripts/spore_baselines.py --name counts-25M --budget 25000000
+[01:35:09] unigram: fitness 5.9641  test 5.9398
+[01:35:09] bigram: fitness 3.7598  test 3.7473
+[01:35:09] trigram: fitness 3.1863  test 3.1675
+[01:35:09] step counts-25M exit 0 in 11 s; artifact ok
+[01:35:09] step sem05-E3-lr1e-2-5M: scripts/spore_life.py --name sem05-E3-lr1e-2-5M --budget 5000000 --D 2048 --eta-sem 0.5 --E 3 --refine-lr 0.01
+[01:35:10] genome 519e9717de0530df {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 3, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[01:35:10] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.01, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[01:35:14] birth: innate memory-only predictor tau_m 25.96  test 7.5673
+[01:35:29] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[01:35:39] wave 1: kept 512 of 4096 (mode select); score kept 0.0192 vs all 0.0124; F -> 15873
+[01:35:54] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[01:36:04] wave 2: kept 512 of 4096 (mode select); score kept 0.0193 vs all 0.0126; F -> 16385
+[01:36:07]   batch 100/306  1.64M tokens  537 ms/batch
+[01:36:33] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[01:36:44] wave 3: kept 512 of 4096 (mode select); score kept 0.0202 vs all 0.0125; F -> 16897
+[01:36:57]   batch 200/306  3.28M tokens  515 ms/batch
+[01:37:38]   batch 300/306  4.92M tokens  483 ms/batch
+[01:37:53] ridge linear head: tau_s 1.00 tau_m 49.99 mu 0.033 nu 0.042  fitness 3.8233  test 3.8121  (F 16897)
+[01:38:02] ridge softmax head: tau_s 30.24 tau_m 12.28 mu 0.033 nu 0.042  fitness 5.6699  test 5.6591  (F 16897)
+[01:38:45]   refine pass 1/3 batch 100/306  train CE 3.5147
+[01:39:29]   refine pass 1/3 batch 200/306  train CE 3.2264
+[01:40:12]   refine pass 1/3 batch 300/306  train CE 3.1217
+[01:40:15] refine pass 1/3: mean train CE 3.1168
+[01:40:59]   refine pass 2/3 batch 100/306  train CE 2.9404
+[01:41:42]   refine pass 2/3 batch 200/306  train CE 2.8603
+[01:42:26]   refine pass 2/3 batch 300/306  train CE 2.8668
+[01:42:29] refine pass 2/3: mean train CE 2.8589
+[01:43:12]   refine pass 3/3 batch 100/306  train CE 2.7349
+[01:43:56]   refine pass 3/3 batch 200/306  train CE 2.7542
+[01:44:40]   refine pass 3/3 batch 300/306  train CE 2.7481
+[01:44:42] refine pass 3/3: mean train CE 2.7477
+[01:44:47] refined: fitness 2.6537  test 2.6338
+[01:44:47] done: final stage refined  fitness 2.6537  test 2.6338  577 s  peak 9.50 GB
+[01:44:47] step sem05-E3-lr1e-2-5M exit 0 in 578 s; artifact ok
+[01:44:47] step lr4e-2-5M: scripts/spore_life.py --name lr4e-2-5M --budget 5000000 --D 2048 --refine-lr 0.04
+[01:44:49] genome 19d31d3bcc93d1b2 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.0, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[01:44:49] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.04, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[01:44:51] birth: innate memory-only predictor tau_m 22.70  test 8.1204
+[01:45:06] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[01:45:16] wave 1: kept 512 of 4096 (mode select); score kept 0.0169 vs all 0.0113; F -> 15873
+[01:45:31] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[01:45:42] wave 2: kept 512 of 4096 (mode select); score kept 0.0172 vs all 0.0116; F -> 16385
+[01:45:44]   batch 100/306  1.64M tokens  537 ms/batch
+[01:46:10] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[01:46:21] wave 3: kept 512 of 4096 (mode select); score kept 0.0173 vs all 0.0113; F -> 16897
+[01:46:33]   batch 200/306  3.28M tokens  514 ms/batch
+[01:47:15]   batch 300/306  4.92M tokens  482 ms/batch
+[01:47:30] ridge linear head: tau_s 1.00 tau_m 50.45 mu 0.041 nu 0.039  fitness 3.9009  test 3.8886  (F 16897)
+[01:47:39] ridge softmax head: tau_s 33.14 tau_m 6.97 mu 0.041 nu 0.039  fitness 5.8665  test 5.8467  (F 16897)
+[01:48:22]   refine pass 1/1 batch 100/306  train CE 4.0942
+[01:49:06]   refine pass 1/1 batch 200/306  train CE 3.6594
+[01:49:49]   refine pass 1/1 batch 300/306  train CE 3.4515
+[01:49:52] refine pass 1/1: mean train CE 3.4421
+[01:49:57] refined: fitness 2.9352  test 2.9048
+[01:49:57] done: final stage refined  fitness 2.9352  test 2.9048  308 s  peak 9.50 GB
+[01:49:57] step lr4e-2-5M exit 0 in 310 s; artifact ok
+[01:49:57] step s-gridge-5M: scripts/spore_life.py --name s-gridge-5M --budget 5000000 --D 2048 --eta-sem 0.5 --growth ridge
+[01:49:58] genome 4f6cce68886eb76f {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[01:49:58] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='ridge', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[01:50:02] birth: innate memory-only predictor tau_m 25.96  test 7.5673
+[01:50:13] wave 1 (ridge units): 512 units over F_in 15360; F -> 15873
+[01:50:29] wave 2 (ridge units): 512 units over F_in 15872; F -> 16385
+[01:50:38]   batch 100/306  1.64M tokens  366 ms/batch
+[01:51:00] wave 3 (ridge units): 512 units over F_in 16384; F -> 16897
+[01:51:19]   batch 200/306  3.28M tokens  387 ms/batch
+[01:52:01]   batch 300/306  4.92M tokens  398 ms/batch
+[01:52:16] ridge linear head: tau_s 1.00 tau_m 49.60 mu 0.033 nu 0.039  fitness 3.7579  test 3.7467  (F 16897)
+[01:52:24] ridge softmax head: tau_s 27.99 tau_m 12.48 mu 0.033 nu 0.039  fitness 5.6545  test 5.6444  (F 16897)
+[01:53:08]   refine pass 1/1 batch 100/306  train CE 3.6237
+[01:53:52]   refine pass 1/1 batch 200/306  train CE 3.3050
+[01:54:36]   refine pass 1/1 batch 300/306  train CE 3.1934
+[01:54:38] refine pass 1/1: mean train CE 3.1888
+[01:54:43] refined: fitness 2.9587  test 2.9405
+[01:54:43] done: final stage refined  fitness 2.9587  test 2.9405  285 s  peak 9.23 GB
+[01:54:43] step s-gridge-5M exit 0 in 286 s; artifact ok
+[01:54:43] step det-05M: scripts/spore_life.py --name det-05M --budget 500000 --D 2048 --k-wave 128 --score-tokens 65536
+[01:54:45] genome b909d67a53f9ecbc {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 128, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.0, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[01:54:45] cfg LifeConfig(budget=500000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=65536, tf32=False, eval_batch=16, device='cuda')
+[01:54:47] birth: innate memory-only predictor tau_m 22.70  test 8.1204
+[01:54:52] wave opened at 49152 tokens: 1024 candidates over F_in 15360
+[01:54:54] wave 1: kept 128 of 1024 (mode select); score kept 0.0216 vs all 0.0133; F -> 15489
+[01:54:59] wave opened at 131072 tokens: 1024 candidates over F_in 15488
+[01:55:01] wave 2: kept 128 of 1024 (mode select); score kept 0.0175 vs all 0.0116; F -> 15617
+[01:55:06] wave opened at 245760 tokens: 1024 candidates over F_in 15616
+[01:55:09] wave 3: kept 128 of 1024 (mode select); score kept 0.0173 vs all 0.0117; F -> 15745
+[01:55:24] ridge linear head: tau_s 1.00 tau_m 41.33 mu 0.099 nu 0.069  fitness 4.3758  test 4.3772  (F 15745)
+[01:55:32] ridge softmax head: tau_s 32.89 tau_m 8.41 mu 0.099 nu 0.069  fitness 5.9272  test 5.9138  (F 15745)
+[01:55:44] refine pass 1/1: mean train CE 4.0592
+[01:55:48] refined: fitness 4.1919  test 4.1955
+[01:55:48] done: final stage refined  fitness 4.1919  test 4.1955  64 s  peak 8.84 GB
+[01:55:48] step det-05M exit 0 in 65 s; artifact ok
+[01:55:48] step final-25M: scripts/spore_life.py --name final-25M --budget 25000000 --D 2048 --eta-sem 0.5 --d-k 2048 --E 3 --refine-lr 0.01 --growth ridge
+[01:55:50] genome 20312cb251a4c35d {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 2048, 'lam': 0.01, 'E': 3, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[01:55:50] cfg LifeConfig(budget=25000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='ridge', readout='ridge', refine=None, refine_lr=0.01, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[01:55:58] birth: innate memory-only predictor tau_m 13.32  test 7.4047
+[01:56:42]   batch 100/1526  1.64M tokens  437 ms/batch
+[01:57:06] wave 1 (ridge units): 512 units over F_in 16384; F -> 16897
+[01:57:28]   batch 200/1526  3.28M tokens  447 ms/batch
+[01:58:15]   batch 300/1526  4.92M tokens  455 ms/batch
+[01:58:53] wave 2 (ridge units): 512 units over F_in 16896; F -> 17409
+[01:59:02]   batch 400/1526  6.55M tokens  460 ms/batch
+[01:59:52]   batch 500/1526  8.19M tokens  467 ms/batch
+[02:00:41]   batch 600/1526  9.83M tokens  472 ms/batch
+[02:01:31]   batch 700/1526  11.47M tokens  476 ms/batch
+[02:02:03] wave 3 (ridge units): 512 units over F_in 17408; F -> 17921
+[02:02:22]   batch 800/1526  13.11M tokens  480 ms/batch
+[02:03:15]   batch 900/1526  14.75M tokens  485 ms/batch
+[02:04:07]   batch 1000/1526  16.38M tokens  489 ms/batch
+[02:05:00]   batch 1100/1526  18.02M tokens  492 ms/batch
+[02:05:52]   batch 1200/1526  19.66M tokens  495 ms/batch
+[02:06:45]   batch 1300/1526  21.30M tokens  497 ms/batch
+[02:07:37]   batch 1400/1526  22.94M tokens  499 ms/batch
+[02:08:30]   batch 1500/1526  24.58M tokens  501 ms/batch
+[02:08:57] ridge linear head: tau_s 1.00 tau_m 59.89 mu 0.028 nu 0.032  fitness 3.6502  test 3.6379  (F 17921)
+[02:09:08] ridge softmax head: tau_s 27.35 tau_m 6.49 mu 0.028 nu 0.032  fitness 5.5858  test 5.5784  (F 17921)
+[02:10:01]   refine pass 1/3 batch 100/1526  train CE 3.4671
+[02:10:53]   refine pass 1/3 batch 200/1526  train CE 3.2072
+[02:11:46]   refine pass 1/3 batch 300/1526  train CE 3.1204
+[02:12:39]   refine pass 1/3 batch 400/1526  train CE 3.0713
+[02:13:31]   refine pass 1/3 batch 500/1526  train CE 3.0205
+[02:14:24]   refine pass 1/3 batch 600/1526  train CE 2.9964
+[02:15:16]   refine pass 1/3 batch 700/1526  train CE 2.9620
+[02:16:09]   refine pass 1/3 batch 800/1526  train CE 2.9459
+[02:17:01]   refine pass 1/3 batch 900/1526  train CE 2.9274
+[02:17:54]   refine pass 1/3 batch 1000/1526  train CE 2.9004
+[02:18:46]   refine pass 1/3 batch 1100/1526  train CE 2.8859
+[02:19:39]   refine pass 1/3 batch 1200/1526  train CE 2.8608
+[02:20:32]   refine pass 1/3 batch 1300/1526  train CE 2.8470
+[02:21:24]   refine pass 1/3 batch 1400/1526  train CE 2.8355
+[02:22:17]   refine pass 1/3 batch 1500/1526  train CE 2.8204
+[02:22:30] refine pass 1/3: mean train CE 2.8156
+[02:23:23]   refine pass 2/3 batch 100/1526  train CE 2.6812
+[02:24:16]   refine pass 2/3 batch 200/1526  train CE 2.6176
+[02:25:08]   refine pass 2/3 batch 300/1526  train CE 2.6146
+[02:26:01]   refine pass 2/3 batch 400/1526  train CE 2.6025
+[02:26:53]   refine pass 2/3 batch 500/1526  train CE 2.5905
+[02:27:46]   refine pass 2/3 batch 600/1526  train CE 2.5807
+[02:28:38]   refine pass 2/3 batch 700/1526  train CE 2.5876
+[02:29:31]   refine pass 2/3 batch 800/1526  train CE 2.5694
+[02:30:23]   refine pass 2/3 batch 900/1526  train CE 2.5668
+[02:31:16]   refine pass 2/3 batch 1000/1526  train CE 2.5599
+[02:32:09]   refine pass 2/3 batch 1100/1526  train CE 2.5575
+[02:33:01]   refine pass 2/3 batch 1200/1526  train CE 2.5563
+[02:33:54]   refine pass 2/3 batch 1300/1526  train CE 2.5508
+[02:34:46]   refine pass 2/3 batch 1400/1526  train CE 2.5489
+[02:35:39]   refine pass 2/3 batch 1500/1526  train CE 2.5469
+[02:35:52] refine pass 2/3: mean train CE 2.5457
+[02:36:45]   refine pass 3/3 batch 100/1526  train CE 2.5056
+[02:37:38]   refine pass 3/3 batch 200/1526  train CE 2.4926
+[02:38:30]   refine pass 3/3 batch 300/1526  train CE 2.5178
+[02:39:23]   refine pass 3/3 batch 400/1526  train CE 2.5243
+[02:40:15]   refine pass 3/3 batch 500/1526  train CE 2.5319
+[02:41:08]   refine pass 3/3 batch 600/1526  train CE 2.5125
+[02:42:00]   refine pass 3/3 batch 700/1526  train CE 2.5042
+[02:42:53]   refine pass 3/3 batch 800/1526  train CE 2.4939
+[02:43:46]   refine pass 3/3 batch 900/1526  train CE 2.4953
+[02:44:38]   refine pass 3/3 batch 1000/1526  train CE 2.5014
+[02:45:31]   refine pass 3/3 batch 1100/1526  train CE 2.5035
+[02:46:23]   refine pass 3/3 batch 1200/1526  train CE 2.4998
+[02:47:16]   refine pass 3/3 batch 1300/1526  train CE 2.5005
+[02:48:08]   refine pass 3/3 batch 1400/1526  train CE 2.4961
+[02:49:01]   refine pass 3/3 batch 1500/1526  train CE 2.4897
+[02:49:14] refine pass 3/3: mean train CE 2.4886
+[02:49:20] refined: fitness 2.4297  test 2.4084
+[02:49:20] done: final stage refined  fitness 2.4297  test 2.4084  3211 s  peak 11.99 GB
+[02:49:21] step final-25M exit 0 in 3212 s; artifact ok
+[02:49:21] step sem05-05M: scripts/spore_life.py --name sem05-05M --budget 500000 --D 2048 --eta-sem 0.5 --k-wave 128 --score-tokens 65536
+[02:49:22] genome 37fa65d161d3ca92 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 128, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[02:49:22] cfg LifeConfig(budget=500000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=65536, tf32=False, eval_batch=16, device='cuda')
+[02:49:24] birth: innate memory-only predictor tau_m 24.60  test 7.7723
+[02:49:30] wave opened at 49152 tokens: 1024 candidates over F_in 15360
+[02:49:32] wave 1: kept 128 of 1024 (mode select); score kept 0.0197 vs all 0.0131; F -> 15489
+[02:49:37] wave opened at 131072 tokens: 1024 candidates over F_in 15488
+[02:49:39] wave 2: kept 128 of 1024 (mode select); score kept 0.0173 vs all 0.0119; F -> 15617
+[02:49:44] wave opened at 245760 tokens: 1024 candidates over F_in 15616
+[02:49:46] wave 3: kept 128 of 1024 (mode select); score kept 0.0178 vs all 0.0122; F -> 15745
+[02:50:01] ridge linear head: tau_s 1.00 tau_m 39.74 mu 0.089 nu 0.075  fitness 4.2980  test 4.2995  (F 15745)
+[02:50:09] ridge softmax head: tau_s 29.71 tau_m 11.85 mu 0.089 nu 0.075  fitness 5.8319  test 5.8239  (F 15745)
+[02:50:22] refine pass 1/1: mean train CE 3.9541
+[02:50:26] refined: fitness 4.1054  test 4.1165
+[02:50:26] done: final stage refined  fitness 4.1054  test 4.1165  64 s  peak 8.85 GB
+[02:50:26] step sem05-05M exit 0 in 65 s; artifact ok
+[02:50:26] step sem05-det-05M: scripts/spore_life.py --name sem05-det-05M --budget 500000 --D 2048 --eta-sem 0.5 --k-wave 128 --score-tokens 65536
+[02:50:27] genome 37fa65d161d3ca92 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 128, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[02:50:27] cfg LifeConfig(budget=500000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=65536, tf32=False, eval_batch=16, device='cuda')
+[02:50:30] birth: innate memory-only predictor tau_m 24.60  test 7.7723
+[02:50:35] wave opened at 49152 tokens: 1024 candidates over F_in 15360
+[02:50:37] wave 1: kept 128 of 1024 (mode select); score kept 0.0197 vs all 0.0131; F -> 15489
+[02:50:42] wave opened at 131072 tokens: 1024 candidates over F_in 15488
+[02:50:44] wave 2: kept 128 of 1024 (mode select); score kept 0.0173 vs all 0.0119; F -> 15617
+[02:50:49] wave opened at 245760 tokens: 1024 candidates over F_in 15616
+[02:50:51] wave 3: kept 128 of 1024 (mode select); score kept 0.0178 vs all 0.0122; F -> 15745
+[02:51:06] ridge linear head: tau_s 1.00 tau_m 39.79 mu 0.089 nu 0.074  fitness 4.2978  test 4.2995  (F 15745)
+[02:51:14] ridge softmax head: tau_s 29.71 tau_m 11.85 mu 0.089 nu 0.074  fitness 5.8318  test 5.8239  (F 15745)
+[02:51:27] refine pass 1/1: mean train CE 3.9542
+[02:51:31] refined: fitness 4.1055  test 4.1167
+[02:51:31] done: final stage refined  fitness 4.1055  test 4.1167  63 s  peak 8.85 GB
+[02:51:31] step sem05-det-05M exit 0 in 65 s; artifact ok
+[02:51:31] step det2a-05M: scripts/spore_life.py --name det2a-05M --budget 500000 --D 2048 --k-wave 128 --score-tokens 65536
+[02:51:32] genome b909d67a53f9ecbc {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 128, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.0, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[02:51:32] cfg LifeConfig(budget=500000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=65536, tf32=False, eval_batch=16, device='cuda')
+[02:51:34] birth: innate memory-only predictor tau_m 22.70  test 8.1204
+[02:51:40] wave opened at 49152 tokens: 1024 candidates over F_in 15360
+[02:51:42] wave 1: kept 128 of 1024 (mode select); score kept 0.0216 vs all 0.0133; F -> 15489
+[02:51:46] wave opened at 131072 tokens: 1024 candidates over F_in 15488
+[02:51:49] wave 2: kept 128 of 1024 (mode select); score kept 0.0175 vs all 0.0116; F -> 15617
+[02:51:54] wave opened at 245760 tokens: 1024 candidates over F_in 15616
+[02:51:56] wave 3: kept 128 of 1024 (mode select); score kept 0.0173 vs all 0.0117; F -> 15745
+[02:52:11] ridge linear head: tau_s 1.00 tau_m 41.36 mu 0.099 nu 0.069  fitness 4.3757  test 4.3772  (F 15745)
+[02:52:19] ridge softmax head: tau_s 32.89 tau_m 8.43 mu 0.099 nu 0.069  fitness 5.9272  test 5.9138  (F 15745)
+[02:52:31] refine pass 1/1: mean train CE 4.0594
+[02:52:36] refined: fitness 4.1921  test 4.1957
+[02:52:36] done: final stage refined  fitness 4.1921  test 4.1957  63 s  peak 8.84 GB
+[02:52:36] step det2a-05M exit 0 in 65 s; artifact ok
+[02:52:36] step det2b-05M: scripts/spore_life.py --name det2b-05M --budget 500000 --D 2048 --k-wave 128 --score-tokens 65536
+[02:52:37] genome b909d67a53f9ecbc {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 128, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.0, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[02:52:37] cfg LifeConfig(budget=500000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=65536, tf32=False, eval_batch=16, device='cuda')
+[02:52:39] birth: innate memory-only predictor tau_m 22.70  test 8.1204
+[02:52:45] wave opened at 49152 tokens: 1024 candidates over F_in 15360
+[02:52:47] wave 1: kept 128 of 1024 (mode select); score kept 0.0216 vs all 0.0133; F -> 15489
+[02:52:52] wave opened at 131072 tokens: 1024 candidates over F_in 15488
+[02:52:54] wave 2: kept 128 of 1024 (mode select); score kept 0.0175 vs all 0.0116; F -> 15617
+[02:53:00] wave opened at 245760 tokens: 1024 candidates over F_in 15616
+[02:53:02] wave 3: kept 128 of 1024 (mode select); score kept 0.0173 vs all 0.0117; F -> 15745
+[02:53:18] ridge linear head: tau_s 1.00 tau_m 41.36 mu 0.099 nu 0.069  fitness 4.3757  test 4.3772  (F 15745)
+[02:53:26] ridge softmax head: tau_s 32.89 tau_m 8.41 mu 0.099 nu 0.069  fitness 5.9272  test 5.9138  (F 15745)
+[02:53:38] refine pass 1/1: mean train CE 4.0592
+[02:53:43] refined: fitness 4.1918  test 4.1954
+[02:53:43] done: final stage refined  fitness 4.1918  test 4.1954  65 s  peak 8.87 GB
+[02:53:43] step det2b-05M exit 0 in 67 s; artifact ok
+[02:53:43] step det3a-05M: scripts/spore_life.py --name det3a-05M --budget 500000 --D 2048 --k-wave 128 --score-tokens 65536
+[02:53:44] genome b909d67a53f9ecbc {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 128, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.0, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[02:53:44] cfg LifeConfig(budget=500000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=65536, tf32=False, eval_batch=16, device='cuda')
+[02:53:47] birth: innate memory-only predictor tau_m 22.70  test 8.1204
+[02:53:52] wave opened at 49152 tokens: 1024 candidates over F_in 15360
+[02:53:54] wave 1: kept 128 of 1024 (mode select); score kept 0.0216 vs all 0.0133; F -> 15489
+[02:53:59] wave opened at 131072 tokens: 1024 candidates over F_in 15488
+[02:54:01] wave 2: kept 128 of 1024 (mode select); score kept 0.0175 vs all 0.0116; F -> 15617
+[02:54:07] wave opened at 245760 tokens: 1024 candidates over F_in 15616
+[02:54:09] wave 3: kept 128 of 1024 (mode select); score kept 0.0173 vs all 0.0117; F -> 15745
+[02:54:25] ridge linear head: tau_s 1.00 tau_m 41.32 mu 0.099 nu 0.069  fitness 4.3757  test 4.3772  (F 15745)
+[02:54:33] ridge softmax head: tau_s 32.89 tau_m 8.43 mu 0.099 nu 0.069  fitness 5.9272  test 5.9138  (F 15745)
+[02:54:46] refine pass 1/1: mean train CE 4.0594
+[02:54:50] refined: fitness 4.1920  test 4.1957
+[02:54:50] done: final stage refined  fitness 4.1920  test 4.1957  66 s  peak 8.87 GB
+[02:54:50] step det3a-05M exit 0 in 67 s; artifact ok
+[02:54:50] step det3b-05M: scripts/spore_life.py --name det3b-05M --budget 500000 --D 2048 --k-wave 128 --score-tokens 65536
+[02:54:51] genome b909d67a53f9ecbc {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 128, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.0, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[02:54:51] cfg LifeConfig(budget=500000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=65536, tf32=False, eval_batch=16, device='cuda')
+[02:54:54] birth: innate memory-only predictor tau_m 22.70  test 8.1204
+[02:54:59] wave opened at 49152 tokens: 1024 candidates over F_in 15360
+[02:55:01] wave 1: kept 128 of 1024 (mode select); score kept 0.0216 vs all 0.0133; F -> 15489
+[02:55:06] wave opened at 131072 tokens: 1024 candidates over F_in 15488
+[02:55:09] wave 2: kept 128 of 1024 (mode select); score kept 0.0175 vs all 0.0116; F -> 15617
+[02:55:14] wave opened at 245760 tokens: 1024 candidates over F_in 15616
+[02:55:16] wave 3: kept 128 of 1024 (mode select); score kept 0.0173 vs all 0.0117; F -> 15745
+[02:55:32] ridge linear head: tau_s 1.00 tau_m 41.30 mu 0.099 nu 0.070  fitness 4.3757  test 4.3772  (F 15745)
+[02:55:40] ridge softmax head: tau_s 32.90 tau_m 8.41 mu 0.099 nu 0.070  fitness 5.9272  test 5.9138  (F 15745)
+[02:55:53] refine pass 1/1: mean train CE 4.0592
+[02:55:57] refined: fitness 4.1920  test 4.1957
+[02:55:57] done: final stage refined  fitness 4.1920  test 4.1957  65 s  peak 8.87 GB
+[02:55:57] step det3b-05M exit 0 in 67 s; artifact ok
+[02:55:57] step s-kw2048-5M: scripts/spore_life.py --name s-kw2048-5M --budget 5000000 --D 2048 --eta-sem 0.5 --k-w 2048
+[02:55:59] genome 387bfc11df0be480 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 2048, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[02:55:59] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[02:56:02] birth: innate memory-only predictor tau_m 25.96  test 7.5673
+[02:56:18] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[02:56:28] wave 1: kept 512 of 4096 (mode select); score kept 0.0189 vs all 0.0124; F -> 15873
+[02:56:44] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[02:56:54] wave 2: kept 512 of 4096 (mode select); score kept 0.0194 vs all 0.0126; F -> 16385
+[02:56:57]   batch 100/306  1.64M tokens  549 ms/batch
+[02:57:23] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[02:57:34] wave 3: kept 512 of 4096 (mode select); score kept 0.0199 vs all 0.0125; F -> 16897
+[02:57:47]   batch 200/306  3.28M tokens  523 ms/batch
+[02:58:29]   batch 300/306  4.92M tokens  489 ms/batch
+[02:58:43] ridge linear head: tau_s 1.00 tau_m 49.79 mu 0.033 nu 0.042  fitness 3.8241  test 3.8117  (F 16897)
+[02:58:53] ridge softmax head: tau_s 30.12 tau_m 12.30 mu 0.033 nu 0.042  fitness 5.6702  test 5.6586  (F 16897)
+[02:59:37]   refine pass 1/1 batch 100/306  train CE 3.6552
+[03:00:22]   refine pass 1/1 batch 200/306  train CE 3.3307
+[03:01:06]   refine pass 1/1 batch 300/306  train CE 3.2164
+[03:01:09] refine pass 1/1: mean train CE 3.2117
+[03:01:13] refined: fitness 2.9801  test 2.9625
+[03:01:14] done: final stage refined  fitness 2.9801  test 2.9625  315 s  peak 9.53 GB
+[03:01:14] step s-kw2048-5M exit 0 in 317 s; artifact ok
+[03:01:14] step s-kw2048-rand-5M: scripts/spore_life.py --name s-kw2048-rand-5M --budget 5000000 --D 2048 --eta-sem 0.5 --k-w 2048 --growth random
+[03:01:15] genome 387bfc11df0be480 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 2048, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[03:01:15] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='random', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[03:01:19] birth: innate memory-only predictor tau_m 25.96  test 7.5673
+[03:01:35] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[03:01:45] wave 1: kept 512 of 4096 (mode random); score kept 0.0125 vs all 0.0124; F -> 15873
+[03:02:00] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[03:02:11] wave 2: kept 512 of 4096 (mode random); score kept 0.0123 vs all 0.0126; F -> 16385
+[03:02:14]   batch 100/306  1.64M tokens  548 ms/batch
+[03:02:40] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[03:02:50] wave 3: kept 512 of 4096 (mode random); score kept 0.0123 vs all 0.0124; F -> 16897
+[03:03:03]   batch 200/306  3.28M tokens  522 ms/batch
+[03:03:45]   batch 300/306  4.92M tokens  488 ms/batch
+[03:04:00] ridge linear head: tau_s 1.00 tau_m 48.58 mu 0.033 nu 0.042  fitness 3.8254  test 3.8146  (F 16897)
+[03:04:09] ridge softmax head: tau_s 30.19 tau_m 12.27 mu 0.033 nu 0.042  fitness 5.6704  test 5.6595  (F 16897)
+[03:04:54]   refine pass 1/1 batch 100/306  train CE 3.6554
+[03:05:38]   refine pass 1/1 batch 200/306  train CE 3.3301
+[03:06:23]   refine pass 1/1 batch 300/306  train CE 3.2157
+[03:06:25] refine pass 1/1: mean train CE 3.2110
+[03:06:30] refined: fitness 2.9795  test 2.9617
+[03:06:30] done: final stage refined  fitness 2.9795  test 2.9617  315 s  peak 9.53 GB
+[03:06:30] step s-kw2048-rand-5M exit 0 in 316 s; artifact ok
+[03:06:30] step s-cos-kw2048-5M: scripts/spore_life.py --name s-cos-kw2048-5M --budget 5000000 --D 2048 --eta-sem 0.5 --k-w 2048 --psi cos
+[03:06:32] genome fc47535c372352be {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'cos', 'k_w': 2048, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[03:06:32] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[03:06:35] birth: innate memory-only predictor tau_m 25.96  test 7.5673
+[03:06:51] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[03:07:01] wave 1: kept 512 of 4096 (mode select); score kept 0.0206 vs all 0.0138; F -> 15873
+[03:07:17] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[03:07:27] wave 2: kept 512 of 4096 (mode select); score kept 0.0236 vs all 0.0151; F -> 16385
+[03:07:30]   batch 100/306  1.64M tokens  550 ms/batch
+[03:07:56] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[03:08:07] wave 3: kept 512 of 4096 (mode select); score kept 0.0286 vs all 0.0166; F -> 16897
+[03:08:20]   batch 200/306  3.28M tokens  524 ms/batch
+[03:09:02]   batch 300/306  4.92M tokens  489 ms/batch
+[03:09:15] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.980 nu 0.000  fitness nan  test nan  (F 16897)
+[03:09:24] ridge softmax head: tau_s 399.89 tau_m 60.00 mu 0.980 nu 0.000  fitness nan  test nan  (F 16897)
+[03:10:06]   refine pass 1/1 batch 100/306  train CE nan
+[03:10:49]   refine pass 1/1 batch 200/306  train CE nan
+[03:11:32]   refine pass 1/1 batch 300/306  train CE nan
+[03:11:34] refine pass 1/1: mean train CE nan
+[03:11:39] refined: fitness nan  test nan
+[03:11:39] step s-cos-kw2048-5M exit 1 in 309 s; artifact MISSING
+[03:11:39] step evo-1M: scripts/spore_evolve.py --name evo-1M --budget 1000000 --D 2048 --eta-sem 0.5 --k-wave 256 --score-tokens 65536 --refine-lr 0.01 --pop 8 --elites 2 --generations 12 --wall-hours 1.5
+[03:11:43] birth: innate memory-only predictor tau_m 25.01  test 7.7225
+[03:11:50] wave opened at 98304 tokens: 2048 candidates over F_in 15360
+[03:11:52] wave 1: kept 256 of 2048 (mode select); score kept 0.0171 vs all 0.0118; F -> 15617
+[03:11:59] wave opened at 245760 tokens: 2048 candidates over F_in 15616
+[03:12:01] wave 2: kept 256 of 2048 (mode select); score kept 0.0188 vs all 0.0127; F -> 15873
+[03:12:10] wave opened at 507904 tokens: 2048 candidates over F_in 15872
+[03:12:13] wave 3: kept 256 of 2048 (mode select); score kept 0.0189 vs all 0.0130; F -> 16129
+[03:12:34] ridge linear head: tau_s 1.00 tau_m 41.06 mu 0.061 nu 0.061  fitness 4.1041  test 4.0923  (F 16129)
+[03:12:43] ridge softmax head: tau_s 29.84 tau_m 11.43 mu 0.061 nu 0.061  fitness 5.7820  test 5.7696  (F 16129)
+[03:13:09] refine pass 1/1: mean train CE 3.6056
+[03:13:14] refined: fitness 3.4437  test 3.4352
+[03:13:16] birth: innate memory-only predictor tau_m 50.06  test 7.7999
+[03:13:22] wave opened at 98304 tokens: 2048 candidates over F_in 14848
+[03:13:25] wave 1: kept 256 of 2048 (mode select); score kept 0.0142 vs all 0.0107; F -> 15105
+[03:13:31] wave opened at 245760 tokens: 2048 candidates over F_in 15104
+[03:13:33] wave 2: kept 256 of 2048 (mode select); score kept 0.0193 vs all 0.0137; F -> 15361
+[03:13:42] wave opened at 507904 tokens: 2048 candidates over F_in 15360
+[03:13:44] wave 3: kept 256 of 2048 (mode select); score kept 0.0212 vs all 0.0144; F -> 15617
+[03:14:04] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.039 nu 0.051  fitness 4.0453  test 4.0350  (F 15617)
+[03:14:12] ridge softmax head: tau_s 31.86 tau_m 24.47 mu 0.039 nu 0.051  fitness 5.9432  test 5.9207  (F 15617)
+[03:14:36] refine pass 1/2: mean train CE 4.2114
+[03:15:00] refine pass 2/2: mean train CE 3.4935
+[03:15:04] refined: fitness 3.3806  test 3.3452
+[03:15:09] birth: innate memory-only predictor tau_m 24.25  test 7.8736
+[03:16:13] wave opened at 98304 tokens: 3688 candidates over F_in 25600
+[03:16:18] wave 1: kept 461 of 3688 (mode select); score kept 0.0131 vs all 0.0098; F -> 26062
+[03:16:53] wave opened at 245760 tokens: 3688 candidates over F_in 26061
+[03:16:59] wave 2: kept 461 of 3688 (mode select); score kept 0.0170 vs all 0.0124; F -> 26523
+[03:18:54] wave opened at 507904 tokens: 3688 candidates over F_in 26522
+[03:20:15] wave 3: kept 461 of 3688 (mode select); score kept 0.0186 vs all 0.0134; F -> 26984
+[03:21:40] ridge linear head: tau_s 1.00 tau_m 40.73 mu 0.050 nu 0.062  fitness 4.0747  test 4.0671  (F 26984)
+[03:21:53] ridge softmax head: tau_s 32.07 tau_m 11.09 mu 0.050 nu 0.062  fitness 5.9982  test 5.9805  (F 26984)
+[03:25:33] refine pass 1/2: mean train CE 4.7109
+[03:29:16] refine pass 2/2: mean train CE 3.7486
+[03:29:26] refined: fitness 3.5746  test 3.5407
+[03:29:30] birth: innate memory-only predictor tau_m 58.89  test 7.6611
+[03:31:51] wave opened at 98304 tokens: 2048 candidates over F_in 29696
+[03:32:58] wave 1: kept 256 of 2048 (mode select); score kept 0.0164 vs all 0.0113; F -> 29953
+[03:35:22] wave opened at 245760 tokens: 2048 candidates over F_in 29952
+[03:36:32] wave 2: kept 256 of 2048 (mode select); score kept 0.0180 vs all 0.0123; F -> 30209
+[03:38:38] wave opened at 507904 tokens: 2048 candidates over F_in 30208
+[03:40:18] wave 3: kept 256 of 2048 (mode select); score kept 0.0182 vs all 0.0125; F -> 30465
+[03:42:24] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.067 nu 0.048  fitness 4.1806  test 4.1676  (F 30465)
+[03:42:38] ridge softmax head: tau_s 28.63 tau_m 30.51 mu 0.067 nu 0.048  fitness 5.7454  test 5.7316  (F 30465)
+[03:50:04] refine pass 1/1: mean train CE 3.5523
+[03:51:55] refined: fitness 3.4938  test 3.4870
+[03:51:58] birth: innate memory-only predictor tau_m 18.11  test 8.1084
+[03:52:04] wave opened at 98304 tokens: 1480 candidates over F_in 15360
+[03:52:07] wave 1: kept 185 of 1480 (mode select); score kept 0.0167 vs all 0.0115; F -> 15546
+[03:52:13] wave opened at 245760 tokens: 1480 candidates over F_in 15545
+[03:52:15] wave 2: kept 185 of 1480 (mode select); score kept 0.0180 vs all 0.0123; F -> 15731
+[03:52:27] wave opened at 671744 tokens: 1480 candidates over F_in 15730
+[03:52:30] wave 3: kept 185 of 1480 (mode select); score kept 0.0187 vs all 0.0126; F -> 15916
+[03:52:47] ridge linear head: tau_s 1.00 tau_m 31.89 mu 0.072 nu 0.056  fitness 4.2036  test 4.1982  (F 15916)
+[03:52:56] ridge softmax head: tau_s 31.74 tau_m 6.95 mu 0.072 nu 0.056  fitness 5.9031  test 5.8921  (F 15916)
+[03:53:21] refine pass 1/1: mean train CE 3.6694
+[03:53:25] refined: fitness 3.5537  test 3.5473
+[03:53:28] birth: innate memory-only predictor tau_m 25.58  test 7.5854
+[03:53:34] wave opened at 98304 tokens: 2048 candidates over F_in 13312
+[03:53:36] wave 1: kept 256 of 2048 (mode select); score kept 0.0183 vs all 0.0127; F -> 13569
+[03:53:42] wave opened at 245760 tokens: 2048 candidates over F_in 13568
+[03:53:44] wave 2: kept 256 of 2048 (mode select); score kept 0.0207 vs all 0.0139; F -> 13825
+[03:53:52] wave opened at 507904 tokens: 2048 candidates over F_in 13824
+[03:53:54] wave 3: kept 256 of 2048 (mode select); score kept 0.0207 vs all 0.0140; F -> 14081
+[03:54:13] ridge linear head: tau_s 1.00 tau_m 41.33 mu 0.058 nu 0.064  fitness 4.0908  test 4.0758  (F 14081)
+[03:54:22] ridge softmax head: tau_s 29.24 tau_m 12.52 mu 0.058 nu 0.064  fitness 5.7654  test 5.7567  (F 14081)
+[03:54:25] birth: innate memory-only predictor tau_m 8.38  test 8.1300
+[03:54:32] wave opened at 98304 tokens: 1904 candidates over F_in 17408
+[03:54:35] wave 1: kept 238 of 1904 (mode select); score kept 0.0172 vs all 0.0116; F -> 17647
+[03:54:42] wave opened at 245760 tokens: 1904 candidates over F_in 17646
+[03:54:44] wave 2: kept 238 of 1904 (mode select); score kept 0.0184 vs all 0.0122; F -> 17885
+[03:54:54] wave opened at 507904 tokens: 1904 candidates over F_in 17884
+[03:54:57] wave 3: kept 238 of 1904 (mode select); score kept 0.0182 vs all 0.0124; F -> 18123
+[03:55:21] ridge linear head: tau_s 1.00 tau_m 57.75 mu 0.072 nu 0.054  fitness 4.1276  test 4.1193  (F 18123)
+[03:55:31] ridge softmax head: tau_s 29.58 tau_m 2.71 mu 0.072 nu 0.054  fitness 5.9954  test 5.9841  (F 18123)
+[03:55:58] refine pass 1/1: mean train CE 3.7355
+[03:56:03] refined: fitness 3.5574  test 3.5490
+[03:56:06] birth: innate memory-only predictor tau_m 24.76  test 7.7819
+[03:56:32] wave opened at 98304 tokens: 2048 candidates over F_in 21504
+[03:56:36] wave 1: kept 256 of 2048 (mode select); score kept 0.0164 vs all 0.0111; F -> 21761
+[03:57:21] wave opened at 245760 tokens: 2048 candidates over F_in 21760
+[03:57:49] wave 2: kept 256 of 2048 (mode select); score kept 0.0208 vs all 0.0134; F -> 22017
+[03:58:01] wave opened at 344064 tokens: 2048 candidates over F_in 22016
+[03:58:14] wave 3: kept 256 of 2048 (mode select); score kept 0.0220 vs all 0.0139; F -> 22273
+[03:59:15] ridge linear head: tau_s 1.00 tau_m 41.96 mu 0.043 nu 0.056  fitness 3.9866  test 3.9775  (F 22273)
+[03:59:25] ridge softmax head: tau_s 31.43 tau_m 11.35 mu 0.043 nu 0.056  fitness 5.8958  test 5.8810  (F 22273)
+[03:59:57] refine pass 1/1: mean train CE 4.2424
+[04:00:02] refined: fitness 3.6214  test 3.6139
+[04:00:02] gen 0: elite fitness 3.3806 test 3.3452 (pop best..worst 3.3806..4.0908; 2902 s)
+[04:00:14] birth: innate memory-only predictor tau_m 60.00  test 8.1772
+[04:01:33] life FAILED for 65909ca46d8ced2e: OutOfMemoryError: CUDA out of memory. Tried to allocate 6.41 GiB. GPU 0 has a total capacity of 15.99 GiB of which 0 bytes is free. Of the allocated memory 26.37 GiB is allocated by PyTorch, and 986.81 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[04:01:55] birth: innate memory-only predictor tau_m 49.99  test 7.8080
+[04:02:32] wave opened at 98304 tokens: 2048 candidates over F_in 14848
+[04:02:43] wave 1: kept 256 of 2048 (mode select); score kept 0.0146 vs all 0.0108; F -> 15105
+[04:02:51] wave opened at 245760 tokens: 2048 candidates over F_in 15104
+[04:02:53] wave 2: kept 256 of 2048 (mode select); score kept 0.0199 vs all 0.0140; F -> 15361
+[04:03:01] wave opened at 507904 tokens: 2048 candidates over F_in 15360
+[04:03:03] wave 3: kept 256 of 2048 (mode select); score kept 0.0218 vs all 0.0148; F -> 15617
+[04:03:23] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.037 nu 0.051  fitness 4.0418  test 4.0367  (F 15617)
+[04:03:32] ridge softmax head: tau_s 32.40 tau_m 24.91 mu 0.037 nu 0.051  fitness 5.9572  test 5.9373  (F 15617)
+[04:03:55] refine pass 1/2: mean train CE 4.2532
+[04:04:19] refine pass 2/2: mean train CE 3.4994
+[04:04:23] refined: fitness 3.3859  test 3.3524
+[04:04:28] birth: innate memory-only predictor tau_m 16.68  test 8.1180
+[04:04:36] wave opened at 98304 tokens: 2048 candidates over F_in 17408
+[04:04:39] wave 1: kept 256 of 2048 (mode select); score kept 0.0141 vs all 0.0104; F -> 17665
+[04:04:46] wave opened at 245760 tokens: 2048 candidates over F_in 17664
+[04:04:49] wave 2: kept 256 of 2048 (mode select); score kept 0.0177 vs all 0.0129; F -> 17921
+[04:05:00] wave opened at 507904 tokens: 2048 candidates over F_in 17920
+[04:05:03] wave 3: kept 256 of 2048 (mode select); score kept 0.0196 vs all 0.0141; F -> 18177
+[04:05:30] ridge linear head: tau_s 1.00 tau_m 29.63 mu 0.052 nu 0.051  fitness 4.0948  test 4.0912  (F 18177)
+[04:05:41] ridge softmax head: tau_s 33.76 tau_m 6.82 mu 0.052 nu 0.051  fitness 6.0433  test 6.0278  (F 18177)
+[04:06:12] refine pass 1/2: mean train CE 4.2714
+[04:06:43] refine pass 2/2: mean train CE 3.5405
+[04:06:49] refined: fitness 3.4233  test 3.3952
+[04:06:51] birth: innate memory-only predictor tau_m 25.01  test 7.7225
+[04:07:25] wave opened at 98304 tokens: 3688 candidates over F_in 23552
+[04:07:29] wave 1: kept 461 of 3688 (mode select); score kept 0.0145 vs all 0.0107; F -> 24014
+[04:07:42] wave opened at 245760 tokens: 3688 candidates over F_in 24013
+[04:07:47] wave 2: kept 461 of 3688 (mode select); score kept 0.0192 vs all 0.0138; F -> 24475
+[04:08:39] wave opened at 507904 tokens: 3688 candidates over F_in 24474
+[04:08:44] wave 3: kept 461 of 3688 (mode select); score kept 0.0212 vs all 0.0149; F -> 24936
+[04:09:29] ridge linear head: tau_s 1.00 tau_m 41.29 mu 0.043 nu 0.060  fitness 4.0374  test 4.0261  (F 24936)
+[04:09:40] ridge softmax head: tau_s 31.66 tau_m 12.19 mu 0.043 nu 0.060  fitness 5.9715  test 5.9525  (F 24936)
+[04:10:16] refine pass 1/2: mean train CE 4.6774
+[04:10:52] refine pass 2/2: mean train CE 3.6742
+[04:10:58] refined: fitness 3.5166  test 3.4740
+[04:11:01] birth: innate memory-only predictor tau_m 24.91  test 7.7275
+[04:11:07] wave opened at 98304 tokens: 2048 candidates over F_in 15360
+[04:11:10] wave 1: kept 256 of 2048 (mode select); score kept 0.0171 vs all 0.0118; F -> 15617
+[04:11:16] wave opened at 245760 tokens: 2048 candidates over F_in 15616
+[04:11:18] wave 2: kept 256 of 2048 (mode select); score kept 0.0191 vs all 0.0128; F -> 15873
+[04:11:27] wave opened at 507904 tokens: 2048 candidates over F_in 15872
+[04:11:30] wave 3: kept 256 of 2048 (mode select); score kept 0.0189 vs all 0.0129; F -> 16129
+[04:11:51] ridge linear head: tau_s 1.00 tau_m 40.10 mu 0.066 nu 0.063  fitness 4.1465  test 4.1342  (F 16129)
+[04:12:00] ridge softmax head: tau_s 29.70 tau_m 11.49 mu 0.066 nu 0.063  fitness 5.8134  test 5.7974  (F 16129)
+[04:12:26] refine pass 1/1: mean train CE 3.6522
+[04:12:31] refined: fitness 3.4986  test 3.4890
+[04:12:33] birth: innate memory-only predictor tau_m 49.96  test 7.8055
+[04:12:39] wave opened at 98304 tokens: 2048 candidates over F_in 14848
+[04:12:41] wave 1: kept 256 of 2048 (mode select); score kept 0.0144 vs all 0.0107; F -> 15105
+[04:12:48] wave opened at 245760 tokens: 2048 candidates over F_in 15104
+[04:12:50] wave 2: kept 256 of 2048 (mode select); score kept 0.0192 vs all 0.0137; F -> 15361
+[04:12:58] wave opened at 507904 tokens: 2048 candidates over F_in 15360
+[04:13:01] wave 3: kept 256 of 2048 (mode select); score kept 0.0204 vs all 0.0144; F -> 15617
+[04:13:21] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.038 nu 0.051  fitness 4.0335  test 4.0242  (F 15617)
+[04:13:29] ridge softmax head: tau_s 31.92 tau_m 24.68 mu 0.038 nu 0.051  fitness 5.9413  test 5.9267  (F 15617)
+[04:13:53] refine pass 1/1: mean train CE 4.1799
+[04:13:57] refined: fitness 3.6992  test 3.6845
+[04:13:59] birth: innate memory-only predictor tau_m 51.54  test 7.6378
+[04:14:05] wave opened at 98304 tokens: 2048 candidates over F_in 14848
+[04:14:07] wave 1: kept 256 of 2048 (mode select); score kept 0.0150 vs all 0.0111; F -> 15105
+[04:14:13] wave opened at 245760 tokens: 2048 candidates over F_in 15104
+[04:14:16] wave 2: kept 256 of 2048 (mode select); score kept 0.0217 vs all 0.0148; F -> 15361
+[04:14:24] wave opened at 507904 tokens: 2048 candidates over F_in 15360
+[04:14:26] wave 3: kept 256 of 2048 (mode select); score kept 0.0243 vs all 0.0159; F -> 15617
+[04:14:46] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.042 nu 0.055  fitness 4.0692  test 4.0630  (F 15617)
+[04:14:55] ridge softmax head: tau_s 30.78 tau_m 27.48 mu 0.042 nu 0.055  fitness 5.9226  test 5.9065  (F 15617)
+[04:15:19] refine pass 1/1: mean train CE 4.2361
+[04:15:22] refined: fitness 3.7382  test 3.7322
+[04:15:27] birth: innate memory-only predictor tau_m 38.47  test 7.9915
+[04:15:34] wave opened at 98304 tokens: 1232 candidates over F_in 14848
+[04:15:36] wave 1: kept 154 of 1232 (mode select); score kept 0.0186 vs all 0.0127; F -> 15003
+[04:15:44] wave opened at 311296 tokens: 1232 candidates over F_in 15002
+[04:15:46] wave 2: kept 154 of 1232 (mode select); score kept 0.0179 vs all 0.0127; F -> 15157
+[04:15:54] wave opened at 507904 tokens: 1232 candidates over F_in 15156
+[04:15:56] wave 3: kept 154 of 1232 (mode select); score kept 0.0191 vs all 0.0135; F -> 15311
+[04:16:18] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.063 nu 0.059  fitness 4.1630  test 4.1549  (F 15311)
+[04:16:27] ridge softmax head: tau_s 30.25 tau_m 18.47 mu 0.063 nu 0.059  fitness 5.8874  test 5.8720  (F 15311)
+[04:16:53] refine pass 1/1: mean train CE 3.7174
+[04:16:58] refined: fitness 3.5541  test 3.5469
+[04:16:58] gen 1: elite fitness 3.3806 test 3.3452 (pop best..worst 3.3806..3.5537; 3918 s)
+[04:17:00] birth: innate memory-only predictor tau_m 25.01  test 7.7225
+[04:17:37] wave opened at 98304 tokens: 3688 candidates over F_in 23552
+[04:17:41] wave 1: kept 461 of 3688 (mode select); score kept 0.0145 vs all 0.0107; F -> 24014
+[04:17:55] wave opened at 245760 tokens: 3688 candidates over F_in 24013
+[04:17:59] wave 2: kept 461 of 3688 (mode select); score kept 0.0188 vs all 0.0136; F -> 24475
+[04:18:51] wave opened at 507904 tokens: 3688 candidates over F_in 24474
+[04:18:56] wave 3: kept 461 of 3688 (mode select); score kept 0.0206 vs all 0.0147; F -> 24936
+[04:19:41] ridge linear head: tau_s 1.00 tau_m 41.59 mu 0.045 nu 0.059  fitness 4.0261  test 4.0151  (F 24936)
+[04:19:52] ridge softmax head: tau_s 31.20 tau_m 12.15 mu 0.045 nu 0.059  fitness 5.9456  test 5.9281  (F 24936)
+[04:20:28] refine pass 1/2: mean train CE 4.6478
+[04:21:04] refine pass 2/2: mean train CE 3.6694
+[04:21:10] refined: fitness 3.5143  test 3.4743
+[04:21:13] birth: innate memory-only predictor tau_m 25.13  test 7.7314
+[04:21:20] wave opened at 98304 tokens: 2048 candidates over F_in 15360
+[04:21:22] wave 1: kept 256 of 2048 (mode select); score kept 0.0166 vs all 0.0118; F -> 15617
+[04:21:28] wave opened at 245760 tokens: 2048 candidates over F_in 15616
+[04:21:31] wave 2: kept 256 of 2048 (mode select); score kept 0.0191 vs all 0.0130; F -> 15873
+[04:21:40] wave opened at 507904 tokens: 2048 candidates over F_in 15872
+[04:21:42] wave 3: kept 256 of 2048 (mode select); score kept 0.0186 vs all 0.0130; F -> 16129
+[04:22:04] ridge linear head: tau_s 1.00 tau_m 40.13 mu 0.066 nu 0.062  fitness 4.1168  test 4.1043  (F 16129)
+[04:22:13] ridge softmax head: tau_s 29.54 tau_m 11.59 mu 0.066 nu 0.062  fitness 5.7898  test 5.7761  (F 16129)
+[04:22:39] refine pass 1/2: mean train CE 3.5897
+[04:23:05] refine pass 2/2: mean train CE 3.2334
+[04:23:09] refined: fitness 3.1919  test 3.1727
+[04:23:10] life FAILED for 2825be684cde1a6a: ValueError: the memory's key order n_k = 2 must be one of the coded orders (1, 3, 4, 6)
+[04:23:14] birth: innate memory-only predictor tau_m 34.11  test 8.0906
+[04:23:22] wave opened at 98304 tokens: 2048 candidates over F_in 16896
+[04:23:24] wave 1: kept 256 of 2048 (mode select); score kept 0.0144 vs all 0.0106; F -> 17153
+[04:23:32] wave opened at 245760 tokens: 2048 candidates over F_in 17152
+[04:23:34] wave 2: kept 256 of 2048 (mode select); score kept 0.0187 vs all 0.0134; F -> 17409
+[04:23:45] wave opened at 507904 tokens: 2048 candidates over F_in 17408
+[04:23:47] wave 3: kept 256 of 2048 (mode select); score kept 0.0206 vs all 0.0142; F -> 17665
+[04:24:13] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.040 nu 0.054  fitness 4.0590  test 4.0551  (F 17665)
+[04:24:23] ridge softmax head: tau_s 33.54 tau_m 15.80 mu 0.040 nu 0.054  fitness 6.0140  test 5.9946  (F 17665)
+[04:24:52] refine pass 1/2: mean train CE 4.2533
+[04:25:21] refine pass 2/2: mean train CE 3.5009
+[04:25:26] refined: fitness 3.3847  test 3.3532
+[04:25:28] birth: innate memory-only predictor tau_m 49.99  test 7.8080
+[04:25:35] wave opened at 98304 tokens: 2048 candidates over F_in 14848
+[04:25:37] wave 1: kept 256 of 2048 (mode select); score kept 0.0163 vs all 0.0116; F -> 15105
+[04:25:43] wave opened at 245760 tokens: 2048 candidates over F_in 15104
+[04:25:45] wave 2: kept 256 of 2048 (mode select); score kept 0.0188 vs all 0.0127; F -> 15361
+[04:25:54] wave opened at 507904 tokens: 2048 candidates over F_in 15360
+[04:25:56] wave 3: kept 256 of 2048 (mode select); score kept 0.0184 vs all 0.0128; F -> 15617
+[04:26:16] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.054 nu 0.052  fitness 4.1101  test 4.1020  (F 15617)
+[04:26:25] ridge softmax head: tau_s 29.84 tau_m 24.53 mu 0.054 nu 0.052  fitness 5.7948  test 5.7805  (F 15617)
+[04:26:48] refine pass 1/2: mean train CE 3.6444
+[04:27:12] refine pass 2/2: mean train CE 3.2666
+[04:27:16] refined: fitness 3.2183  test 3.1999
+[04:27:19] birth: innate memory-only predictor tau_m 25.01  test 7.7225
+[04:27:26] wave opened at 98304 tokens: 2048 candidates over F_in 17408
+[04:27:29] wave 1: kept 256 of 2048 (mode select); score kept 0.0143 vs all 0.0107; F -> 17665
+[04:27:36] wave opened at 245760 tokens: 2048 candidates over F_in 17664
+[04:27:39] wave 2: kept 256 of 2048 (mode select); score kept 0.0201 vs all 0.0139; F -> 17921
+[04:27:49] wave opened at 507904 tokens: 2048 candidates over F_in 17920
+[04:27:52] wave 3: kept 256 of 2048 (mode select); score kept 0.0216 vs all 0.0146; F -> 18177
+[04:28:17] ridge linear head: tau_s 1.00 tau_m 41.53 mu 0.043 nu 0.061  fitness 4.0547  test 4.0460  (F 18177)
+[04:28:27] ridge softmax head: tau_s 32.39 tau_m 12.02 mu 0.043 nu 0.061  fitness 5.9857  test 5.9655  (F 18177)
+[04:28:55] refine pass 1/2: mean train CE 4.2157
+[04:29:24] refine pass 2/2: mean train CE 3.4827
+[04:29:29] refined: fitness 3.3679  test 3.3389
+[04:29:31] birth: innate memory-only predictor tau_m 49.99  test 7.8080
+[04:30:09] wave opened at 98304 tokens: 2048 candidates over F_in 23040
+[04:30:13] wave 1: kept 256 of 2048 (mode select); score kept 0.0142 vs all 0.0106; F -> 23297
+[04:30:33] wave opened at 245760 tokens: 2048 candidates over F_in 23296
+[04:30:37] wave 2: kept 256 of 2048 (mode select); score kept 0.0177 vs all 0.0132; F -> 23553
+[04:31:15] wave opened at 507904 tokens: 2048 candidates over F_in 23552
+[04:31:19] wave 3: kept 256 of 2048 (mode select); score kept 0.0195 vs all 0.0142; F -> 23809
+[04:32:01] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.036 nu 0.050  fitness 3.9955  test 3.9880  (F 23809)
+[04:32:11] ridge softmax head: tau_s 30.77 tau_m 25.58 mu 0.036 nu 0.050  fitness 5.9308  test 5.9125  (F 23809)
+[04:32:43] refine pass 1/2: mean train CE 4.2326
+[04:33:16] refine pass 2/2: mean train CE 3.4936
+[04:33:21] refined: fitness 3.3734  test 3.3472
+[04:33:24] birth: innate memory-only predictor tau_m 49.92  test 7.7975
+[04:34:01] wave opened at 98304 tokens: 2048 candidates over F_in 23040
+[04:34:05] wave 1: kept 256 of 2048 (mode select); score kept 0.0148 vs all 0.0109; F -> 23297
+[04:34:23] wave opened at 245760 tokens: 2048 candidates over F_in 23296
+[04:34:27] wave 2: kept 256 of 2048 (mode select); score kept 0.0187 vs all 0.0137; F -> 23553
+[04:35:05] wave opened at 507904 tokens: 2048 candidates over F_in 23552
+[04:35:10] wave 3: kept 256 of 2048 (mode select); score kept 0.0202 vs all 0.0147; F -> 23809
+[04:36:04] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.036 nu 0.052  fitness 4.0019  test 3.9957  (F 23809)
+[04:36:15] ridge softmax head: tau_s 31.60 tau_m 24.99 mu 0.036 nu 0.052  fitness 5.9585  test 5.9419  (F 23809)
+[04:36:47] refine pass 1/2: mean train CE 4.2341
+[04:37:19] refine pass 2/2: mean train CE 3.4844
+[04:37:25] refined: fitness 3.3688  test 3.3331
+[04:37:25] gen 2: elite fitness 3.1919 test 3.1727 (pop best..worst 3.1919..3.3859; 5144 s)
+[04:37:27] birth: innate memory-only predictor tau_m 29.46  test 7.6607
+[04:37:35] wave opened at 98304 tokens: 2048 candidates over F_in 17408
+[04:37:38] wave 1: kept 256 of 2048 (mode select); score kept 0.0162 vs all 0.0115; F -> 17665
+[04:37:45] wave opened at 245760 tokens: 2048 candidates over F_in 17664
+[04:37:48] wave 2: kept 256 of 2048 (mode select); score kept 0.0192 vs all 0.0127; F -> 17921
+[04:37:58] wave opened at 507904 tokens: 2048 candidates over F_in 17920
+[04:38:01] wave 3: kept 256 of 2048 (mode select); score kept 0.0181 vs all 0.0126; F -> 18177
+[04:38:26] ridge linear head: tau_s 1.00 tau_m 53.11 mu 0.065 nu 0.066  fitness 4.1144  test 4.0994  (F 18177)
+[04:38:36] ridge softmax head: tau_s 29.32 tau_m 14.77 mu 0.065 nu 0.066  fitness 5.7904  test 5.7693  (F 18177)
+[04:39:04] refine pass 1/2: mean train CE 3.6172
+[04:39:33] refine pass 2/2: mean train CE 3.2404
+[04:39:38] refined: fitness 3.1964  test 3.1744
+[04:39:40] birth: innate memory-only predictor tau_m 49.47  test 7.8031
+[04:40:17] wave opened at 98304 tokens: 3368 candidates over F_in 23040
+[04:40:22] wave 1: kept 421 of 3368 (mode select); score kept 0.0176 vs all 0.0116; F -> 23462
+[04:40:37] wave opened at 245760 tokens: 3368 candidates over F_in 23461
+[04:40:41] wave 2: kept 421 of 3368 (mode select); score kept 0.0186 vs all 0.0123; F -> 23883
+[04:41:23] wave opened at 507904 tokens: 3368 candidates over F_in 23882
+[04:41:27] wave 3: kept 421 of 3368 (mode select); score kept 0.0187 vs all 0.0125; F -> 24304
+[04:42:11] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.053 nu 0.052  fitness 4.0856  test 4.0751  (F 24304)
+[04:42:21] ridge softmax head: tau_s 28.50 tau_m 24.21 mu 0.053 nu 0.052  fitness 5.8001  test 5.7837  (F 24304)
+[04:42:56] refine pass 1/2: mean train CE 3.6092
+[04:43:30] refine pass 2/2: mean train CE 3.2696
+[04:43:36] refined: fitness 3.2226  test 3.1992
+[04:43:38] birth: innate memory-only predictor tau_m 51.29  test 7.6973
+[04:44:15] wave opened at 98304 tokens: 2048 candidates over F_in 23040
+[04:44:19] wave 1: kept 256 of 2048 (mode select); score kept 0.0142 vs all 0.0107; F -> 23297
+[04:44:37] wave opened at 245760 tokens: 2048 candidates over F_in 23296
+[04:44:41] wave 2: kept 256 of 2048 (mode select); score kept 0.0185 vs all 0.0134; F -> 23553
+[04:45:14] wave opened at 507904 tokens: 2048 candidates over F_in 23552
+[04:45:19] wave 3: kept 256 of 2048 (mode select); score kept 0.0200 vs all 0.0147; F -> 23809
+[04:46:30] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.034 nu 0.052  fitness 3.9844  test 3.9766  (F 23809)
+[04:46:40] ridge softmax head: tau_s 30.10 tau_m 27.77 mu 0.034 nu 0.052  fitness 5.8944  test 5.8782  (F 23809)
+[04:47:13] refine pass 1/2: mean train CE 4.2504
+[04:47:45] refine pass 2/2: mean train CE 3.4860
+[04:47:50] refined: fitness 3.3672  test 3.3350
+[04:47:55] birth: innate memory-only predictor tau_m 49.61  test 7.7945
+[04:48:03] wave opened at 98304 tokens: 2048 candidates over F_in 16896
+[04:48:05] wave 1: kept 256 of 2048 (mode select); score kept 0.0173 vs all 0.0121; F -> 17153
+[04:48:13] wave opened at 245760 tokens: 2048 candidates over F_in 17152
+[04:48:15] wave 2: kept 256 of 2048 (mode select); score kept 0.0194 vs all 0.0132; F -> 17409
+[04:48:26] wave opened at 507904 tokens: 2048 candidates over F_in 17408
+[04:48:28] wave 3: kept 256 of 2048 (mode select); score kept 0.0190 vs all 0.0132; F -> 17665
+[04:48:54] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.054 nu 0.054  fitness 4.1118  test 4.1031  (F 17665)
+[04:49:04] ridge softmax head: tau_s 29.86 tau_m 23.59 mu 0.054 nu 0.054  fitness 5.7980  test 5.7831  (F 17665)
+[04:49:33] refine pass 1/2: mean train CE 3.6168
+[04:50:02] refine pass 2/2: mean train CE 3.2428
+[04:50:07] refined: fitness 3.1909  test 3.1703
+[04:50:10] birth: innate memory-only predictor tau_m 18.03  test 7.9641
+[04:50:43] wave opened at 98304 tokens: 2048 candidates over F_in 23552
+[04:50:47] wave 1: kept 256 of 2048 (mode select); score kept 0.0185 vs all 0.0120; F -> 23809
+[04:51:06] wave opened at 245760 tokens: 2048 candidates over F_in 23808
+[04:51:10] wave 2: kept 256 of 2048 (mode select); score kept 0.0188 vs all 0.0125; F -> 24065
+[04:52:07] wave opened at 507904 tokens: 2048 candidates over F_in 24064
+[04:52:11] wave 3: kept 256 of 2048 (mode select); score kept 0.0199 vs all 0.0128; F -> 24321
+[04:52:54] ridge linear head: tau_s 1.00 tau_m 30.58 mu 0.063 nu 0.054  fitness 4.1002  test 4.0938  (F 24321)
+[04:53:05] ridge softmax head: tau_s 29.07 tau_m 8.42 mu 0.063 nu 0.054  fitness 5.8496  test 5.8344  (F 24321)
+[04:53:39] refine pass 1/1: mean train CE 3.5667
+[04:53:45] refined: fitness 3.4589  test 3.4457
+[04:53:47] birth: innate memory-only predictor tau_m 50.01  test 7.8027
+[04:53:54] wave opened at 98304 tokens: 2048 candidates over F_in 14848
+[04:53:56] wave 1: kept 256 of 2048 (mode select); score kept 0.0146 vs all 0.0109; F -> 15105
+[04:54:02] wave opened at 245760 tokens: 2048 candidates over F_in 15104
+[04:54:04] wave 2: kept 256 of 2048 (mode select); score kept 0.0208 vs all 0.0145; F -> 15361
+[04:54:13] wave opened at 507904 tokens: 2048 candidates over F_in 15360
+[04:54:15] wave 3: kept 256 of 2048 (mode select); score kept 0.0230 vs all 0.0152; F -> 15617
+[04:54:35] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.035 nu 0.053  fitness 4.0547  test 4.0481  (F 15617)
+[04:54:43] ridge softmax head: tau_s 33.00 tau_m 24.30 mu 0.035 nu 0.053  fitness 5.9857  test 5.9634  (F 15617)
+[04:55:07] refine pass 1/2: mean train CE 4.2263
+[04:55:31] refine pass 2/2: mean train CE 3.4911
+[04:55:35] refined: fitness 3.3744  test 3.3442
+[04:55:39] birth: innate memory-only predictor tau_m 49.99  test 7.8080
+[04:55:47] wave opened at 98304 tokens: 2048 candidates over F_in 16896
+[04:55:50] wave 1: kept 256 of 2048 (mode select); score kept 0.0115 vs all 0.0082; F -> 17153
+[04:55:57] wave opened at 245760 tokens: 2048 candidates over F_in 17152
+[04:55:59] wave 2: kept 256 of 2048 (mode select); score kept 0.0129 vs all 0.0088; F -> 17409
+[04:56:10] wave opened at 507904 tokens: 2048 candidates over F_in 17408
+[04:56:13] wave 3: kept 256 of 2048 (mode select); score kept 0.0125 vs all 0.0088; F -> 17665
+[04:56:38] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.049 nu 0.051  fitness 4.0957  test 4.0903  (F 17665)
+[04:56:49] ridge softmax head: tau_s 30.15 tau_m 24.79 mu 0.049 nu 0.051  fitness 5.8347  test 5.8183  (F 17665)
+[04:57:18] refine pass 1/2: mean train CE 3.7311
+[04:57:46] refine pass 2/2: mean train CE 3.2909
+[04:57:52] refined: fitness 3.2339  test 3.2144
+[04:57:54] birth: innate memory-only predictor tau_m 60.00  test 7.6217
+[04:58:32] wave opened at 98304 tokens: 2048 candidates over F_in 23040
+[04:58:36] wave 1: kept 256 of 2048 (mode select); score kept 0.0160 vs all 0.0110; F -> 23297
+[04:58:54] wave opened at 245760 tokens: 2048 candidates over F_in 23296
+[04:58:58] wave 2: kept 256 of 2048 (mode select); score kept 0.0173 vs all 0.0118; F -> 23553
+[04:59:36] wave opened at 507904 tokens: 2048 candidates over F_in 23552
+[04:59:40] wave 3: kept 256 of 2048 (mode select); score kept 0.0181 vs all 0.0122; F -> 23809
+[05:00:33] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.051 nu 0.036  fitness 4.0873  test 4.0745  (F 23809)
+[05:00:44] ridge softmax head: tau_s 27.77 tau_m 35.79 mu 0.051 nu 0.036  fitness 5.7644  test 5.7474  (F 23809)
+[05:01:16] refine pass 1/2: mean train CE 3.6522
+[05:01:49] refine pass 2/2: mean train CE 3.3082
+[05:01:54] refined: fitness 3.2564  test 3.2360
+[05:01:54] gen 3: elite fitness 3.1909 test 3.1703 (pop best..worst 3.1909..3.3672; 6614 s)
+[05:01:54] done: 32 lives, elite fitness 3.1909 test 3.1703
+[05:01:55] step evo-1M exit 0 in 6616 s; artifact ok
+[05:01:55] step s-res-5M: scripts/spore_life.py --name s-res-5M --budget 5000000 --D 2048 --eta-sem 0.5 --reservoir
+[05:01:56] genome cf3dc7fb401038cf {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': True, 'lro': False, 'rho_res': 0.9}
+[05:01:56] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[05:02:03] birth: innate memory-only predictor tau_m 25.96  test 7.5673
+[05:02:22] wave opened at 507904 tokens: 4096 candidates over F_in 17408
+[05:02:35] wave 1: kept 512 of 4096 (mode select); score kept 0.0172 vs all 0.0112; F -> 17921
+[05:02:54] wave opened at 1245184 tokens: 4096 candidates over F_in 17920
+[05:03:07] wave 2: kept 512 of 4096 (mode select); score kept 0.0179 vs all 0.0116; F -> 18433
+[05:03:11]   batch 100/306  1.64M tokens  686 ms/batch
+[05:03:44] wave opened at 2506752 tokens: 4096 candidates over F_in 18432
+[05:03:58] wave 3: kept 512 of 4096 (mode select); score kept 0.0181 vs all 0.0114; F -> 18945
+[05:04:14]   batch 200/306  3.28M tokens  658 ms/batch
+[05:05:08]   batch 300/306  4.92M tokens  617 ms/batch
+[05:05:25] ridge linear head: tau_s 1.00 tau_m 49.78 mu 0.033 nu 0.042  fitness 3.8282  test 3.8175  (F 18945)
+[05:05:36] ridge softmax head: tau_s 30.13 tau_m 12.42 mu 0.033 nu 0.042  fitness 5.6776  test 5.6649  (F 18945)
+[05:06:29]   refine pass 1/1 batch 100/306  train CE 3.6229
+[05:07:22]   refine pass 1/1 batch 200/306  train CE 3.3011
+[05:08:14]   refine pass 1/1 batch 300/306  train CE 3.1869
+[05:08:18] refine pass 1/1: mean train CE 3.1822
+[05:08:24] refined: fitness 2.9494  test 2.9313
+[05:08:24] done: final stage refined  fitness 2.9494  test 2.9313  388 s  peak 10.59 GB
+[05:08:24] step s-res-5M exit 0 in 390 s; artifact ok
+[05:08:24] step elite-5M: scripts/spore_life.py --name elite-5M --budget 5000000 --genome-json runs/spore/evo-1M/elite_genome.json
+[05:08:26] genome dd65aac9038cddee {'s_A': 0, 's_rho': 1, 's_M': 1627464175, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 512, 'lam': 0.01, 'E': 2, 'waves': [0.1, 0.25, 0.5], 'k_wave': 256, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': True, 'lro': False, 'rho_res': 0.6136620644477747}
+[05:08:26] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[05:08:32] birth: innate memory-only predictor tau_m 51.73  test 7.6523
+[05:08:50] wave opened at 507904 tokens: 2048 candidates over F_in 16896
+[05:09:01] wave 1: kept 256 of 2048 (mode select); score kept 0.0186 vs all 0.0125; F -> 17153
+[05:09:18] wave opened at 1245184 tokens: 2048 candidates over F_in 17152
+[05:09:29] wave 2: kept 256 of 2048 (mode select); score kept 0.0193 vs all 0.0128; F -> 17409
+[05:09:33]   batch 100/306  1.64M tokens  608 ms/batch
+[05:10:01] wave opened at 2506752 tokens: 2048 candidates over F_in 17408
+[05:10:12] wave 3: kept 256 of 2048 (mode select); score kept 0.0203 vs all 0.0129; F -> 17665
+[05:10:26]   batch 200/306  3.28M tokens  573 ms/batch
+[05:11:12]   batch 300/306  4.92M tokens  533 ms/batch
+[05:11:28] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.028 nu 0.032  fitness 3.8303  test 3.8218  (F 17665)
+[05:11:38] ridge softmax head: tau_s 30.00 tau_m 25.75 mu 0.028 nu 0.032  fitness 5.7154  test 5.7027  (F 17665)
+[05:12:25]   refine pass 1/2 batch 100/306  train CE 3.6932
+[05:13:11]   refine pass 1/2 batch 200/306  train CE 3.3633
+[05:13:58]   refine pass 1/2 batch 300/306  train CE 3.2350
+[05:14:00] refine pass 1/2: mean train CE 3.2291
+[05:14:47]   refine pass 2/2 batch 100/306  train CE 3.0004
+[05:15:34]   refine pass 2/2 batch 200/306  train CE 2.9286
+[05:16:20]   refine pass 2/2 batch 300/306  train CE 2.9415
+[05:16:23] refine pass 2/2: mean train CE 2.9340
+[05:16:28] refined: fitness 2.8283  test 2.8136
+[05:16:28] done: final stage refined  fitness 2.8283  test 2.8136  483 s  peak 9.36 GB
+[05:16:29] step elite-5M exit 0 in 484 s; artifact ok
+[05:16:29] step sem05-E2-5M: scripts/spore_life.py --name sem05-E2-5M --budget 5000000 --D 2048 --eta-sem 0.5 --E 2
+[05:16:30] genome 942d03fa43eeef86 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 2, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[05:16:30] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[05:16:34] birth: innate memory-only predictor tau_m 25.96  test 7.5673
+[05:16:49] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[05:16:59] wave 1: kept 512 of 4096 (mode select); score kept 0.0192 vs all 0.0124; F -> 15873
+[05:17:15] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[05:17:25] wave 2: kept 512 of 4096 (mode select); score kept 0.0192 vs all 0.0126; F -> 16385
+[05:17:28]   batch 100/306  1.64M tokens  547 ms/batch
+[05:17:54] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[05:18:05] wave 3: kept 512 of 4096 (mode select); score kept 0.0201 vs all 0.0125; F -> 16897
+[05:18:18]   batch 200/306  3.28M tokens  521 ms/batch
+[05:19:00]   batch 300/306  4.92M tokens  487 ms/batch
+[05:19:15] ridge linear head: tau_s 1.00 tau_m 49.67 mu 0.033 nu 0.042  fitness 3.8231  test 3.8124  (F 16897)
+[05:19:24] ridge softmax head: tau_s 30.24 tau_m 12.28 mu 0.033 nu 0.042  fitness 5.6707  test 5.6595  (F 16897)
+[05:20:08]   refine pass 1/2 batch 100/306  train CE 3.6444
+[05:20:52]   refine pass 1/2 batch 200/306  train CE 3.3140
+[05:21:37]   refine pass 1/2 batch 300/306  train CE 3.1923
+[05:21:40] refine pass 1/2: mean train CE 3.1867
+[05:22:24]   refine pass 2/2 batch 100/306  train CE 2.9841
+[05:23:08]   refine pass 2/2 batch 200/306  train CE 2.9131
+[05:23:53]   refine pass 2/2 batch 300/306  train CE 2.9280
+[05:23:56] refine pass 2/2: mean train CE 2.9205
+[05:24:00] refined: fitness 2.8179  test 2.8006
+[05:24:00] done: final stage refined  fitness 2.8179  test 2.8006  450 s  peak 9.53 GB
+[05:24:01] step sem05-E2-5M exit 0 in 452 s; artifact ok
+[05:24:01] step sw-base-1M: scripts/spore_life.py --name sw-base-1M --budget 1000000 --D 2048 --eta-sem 0.5 --k-wave 256 --score-tokens 65536 --refine-lr 0.01
+[05:24:02] genome 92605860b6ec45cf {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 256, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[05:24:02] cfg LifeConfig(budget=1000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.01, calib_windows=64, score_tokens=65536, tf32=False, eval_batch=16, device='cuda')
+[05:24:05] birth: innate memory-only predictor tau_m 25.01  test 7.7225
+[05:24:11] wave opened at 98304 tokens: 2048 candidates over F_in 15360
+[05:24:14] wave 1: kept 256 of 2048 (mode select); score kept 0.0171 vs all 0.0118; F -> 15617
+[05:24:20] wave opened at 245760 tokens: 2048 candidates over F_in 15616
+[05:24:22] wave 2: kept 256 of 2048 (mode select); score kept 0.0188 vs all 0.0127; F -> 15873
+[05:24:32] wave opened at 507904 tokens: 2048 candidates over F_in 15872
+[05:24:34] wave 3: kept 256 of 2048 (mode select); score kept 0.0190 vs all 0.0130; F -> 16129
+[05:24:56] ridge linear head: tau_s 1.00 tau_m 41.03 mu 0.062 nu 0.061  fitness 4.1042  test 4.0922  (F 16129)
+[05:25:05] ridge softmax head: tau_s 29.84 tau_m 11.44 mu 0.062 nu 0.061  fitness 5.7820  test 5.7692  (F 16129)
+[05:25:31] refine pass 1/1: mean train CE 3.6059
+[05:25:35] refined: fitness 3.4438  test 3.4352
+[05:25:35] done: final stage refined  fitness 3.4438  test 3.4352  93 s  peak 9.09 GB
+[05:25:35] step sw-base-1M exit 0 in 95 s; artifact ok
+[05:25:35] step sw-E2-1M: scripts/spore_life.py --name sw-E2-1M --budget 1000000 --D 2048 --eta-sem 0.5 --k-wave 256 --score-tokens 65536 --refine-lr 0.01 --E 2
+[05:25:37] genome a7aa4a06a4e0163a {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 2, 'waves': [0.1, 0.25, 0.5], 'k_wave': 256, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[05:25:37] cfg LifeConfig(budget=1000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.01, calib_windows=64, score_tokens=65536, tf32=False, eval_batch=16, device='cuda')
+[05:25:39] birth: innate memory-only predictor tau_m 25.01  test 7.7225
+[05:25:46] wave opened at 98304 tokens: 2048 candidates over F_in 15360
+[05:25:48] wave 1: kept 256 of 2048 (mode select); score kept 0.0171 vs all 0.0118; F -> 15617
+[05:25:55] wave opened at 245760 tokens: 2048 candidates over F_in 15616
+[05:25:57] wave 2: kept 256 of 2048 (mode select); score kept 0.0188 vs all 0.0127; F -> 15873
+[05:26:06] wave opened at 507904 tokens: 2048 candidates over F_in 15872
+[05:26:09] wave 3: kept 256 of 2048 (mode select); score kept 0.0190 vs all 0.0130; F -> 16129
+[05:26:30] ridge linear head: tau_s 1.00 tau_m 41.10 mu 0.061 nu 0.061  fitness 4.1043  test 4.0918  (F 16129)
+[05:26:39] ridge softmax head: tau_s 29.83 tau_m 11.44 mu 0.061 nu 0.061  fitness 5.7820  test 5.7693  (F 16129)
+[05:27:05] refine pass 1/2: mean train CE 3.5694
+[05:27:31] refine pass 2/2: mean train CE 3.2114
+[05:27:36] refined: fitness 3.1700  test 3.1487
+[05:27:36] done: final stage refined  fitness 3.1700  test 3.1487  119 s  peak 9.09 GB
+[05:27:36] step sw-E2-1M exit 0 in 121 s; artifact ok
+[05:27:36] step sw-gb083-1M: scripts/spore_life.py --name sw-gb083-1M --budget 1000000 --D 2048 --eta-sem 0.5 --k-wave 256 --score-tokens 65536 --refine-lr 0.01 --gamma-b 0.83
+[05:27:37] genome b4cdaa60d1338cb2 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.83, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 256, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[05:27:37] cfg LifeConfig(budget=1000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.01, calib_windows=64, score_tokens=65536, tf32=False, eval_batch=16, device='cuda')
+[05:27:40] birth: innate memory-only predictor tau_m 25.01  test 7.7225
+[05:27:47] wave opened at 98304 tokens: 2048 candidates over F_in 15360
+[05:27:49] wave 1: kept 256 of 2048 (mode select); score kept 0.0171 vs all 0.0119; F -> 15617
+[05:27:55] wave opened at 245760 tokens: 2048 candidates over F_in 15616
+[05:27:58] wave 2: kept 256 of 2048 (mode select); score kept 0.0191 vs all 0.0129; F -> 15873
+[05:28:07] wave opened at 507904 tokens: 2048 candidates over F_in 15872
+[05:28:09] wave 3: kept 256 of 2048 (mode select); score kept 0.0191 vs all 0.0131; F -> 16129
+[05:28:31] ridge linear head: tau_s 1.00 tau_m 40.23 mu 0.067 nu 0.062  fitness 4.1179  test 4.1072  (F 16129)
+[05:28:40] ridge softmax head: tau_s 29.55 tau_m 11.56 mu 0.067 nu 0.062  fitness 5.7908  test 5.7778  (F 16129)
+[05:29:06] refine pass 1/1: mean train CE 3.6235
+[05:29:10] refined: fitness 3.4559  test 3.4481
+[05:29:10] done: final stage refined  fitness 3.4559  test 3.4481  93 s  peak 9.09 GB
+[05:29:10] step sw-gb083-1M exit 0 in 95 s; artifact ok
+[05:29:10] step sw-E2-gb083-1M: scripts/spore_life.py --name sw-E2-gb083-1M --budget 1000000 --D 2048 --eta-sem 0.5 --k-wave 256 --score-tokens 65536 --refine-lr 0.01 --E 2 --gamma-b 0.83
+[05:29:12] genome bdde3b3c2ffb086f {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.83, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 2, 'waves': [0.1, 0.25, 0.5], 'k_wave': 256, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': False, 'rho_res': 0.9}
+[05:29:12] cfg LifeConfig(budget=1000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.01, calib_windows=64, score_tokens=65536, tf32=False, eval_batch=16, device='cuda')
+[05:29:14] birth: innate memory-only predictor tau_m 25.01  test 7.7225
+[05:29:21] wave opened at 98304 tokens: 2048 candidates over F_in 15360
+[05:29:23] wave 1: kept 256 of 2048 (mode select); score kept 0.0171 vs all 0.0119; F -> 15617
+[05:29:30] wave opened at 245760 tokens: 2048 candidates over F_in 15616
+[05:29:32] wave 2: kept 256 of 2048 (mode select); score kept 0.0192 vs all 0.0129; F -> 15873
+[05:29:41] wave opened at 507904 tokens: 2048 candidates over F_in 15872
+[05:29:44] wave 3: kept 256 of 2048 (mode select); score kept 0.0190 vs all 0.0131; F -> 16129
+[05:30:05] ridge linear head: tau_s 1.00 tau_m 40.27 mu 0.067 nu 0.062  fitness 4.1173  test 4.1068  (F 16129)
+[05:30:14] ridge softmax head: tau_s 29.54 tau_m 11.56 mu 0.067 nu 0.062  fitness 5.7911  test 5.7783  (F 16129)
+[05:30:40] refine pass 1/2: mean train CE 3.5901
+[05:31:06] refine pass 2/2: mean train CE 3.2339
+[05:31:10] refined: fitness 3.1933  test 3.1731
+[05:31:10] done: final stage refined  fitness 3.1933  test 3.1731  119 s  peak 9.09 GB
+[05:31:11] step sw-E2-gb083-1M exit 0 in 120 s; artifact ok
+[05:31:11] step sw-res-1M: scripts/spore_life.py --name sw-res-1M --budget 1000000 --D 2048 --eta-sem 0.5 --k-wave 256 --score-tokens 65536 --refine-lr 0.01 --reservoir --rho-res 0.61
+[05:31:12] genome 27e232a303df6b08 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 256, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': True, 'lro': False, 'rho_res': 0.61}
+[05:31:12] cfg LifeConfig(budget=1000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.01, calib_windows=64, score_tokens=65536, tf32=False, eval_batch=16, device='cuda')
+[05:31:17] birth: innate memory-only predictor tau_m 25.01  test 7.7225
+[05:31:25] wave opened at 98304 tokens: 2048 candidates over F_in 17408
+[05:31:28] wave 1: kept 256 of 2048 (mode select); score kept 0.0175 vs all 0.0120; F -> 17665
+[05:31:35] wave opened at 245760 tokens: 2048 candidates over F_in 17664
+[05:31:38] wave 2: kept 256 of 2048 (mode select); score kept 0.0190 vs all 0.0129; F -> 17921
+[05:31:49] wave opened at 507904 tokens: 2048 candidates over F_in 17920
+[05:31:52] wave 3: kept 256 of 2048 (mode select); score kept 0.0193 vs all 0.0132; F -> 18177
+[05:32:19] ridge linear head: tau_s 1.00 tau_m 41.00 mu 0.061 nu 0.062  fitness 4.1038  test 4.0931  (F 18177)
+[05:32:30] ridge softmax head: tau_s 29.79 tau_m 11.52 mu 0.061 nu 0.062  fitness 5.7772  test 5.7637  (F 18177)
+[05:33:01] refine pass 1/1: mean train CE 3.5766
+[05:33:07] refined: fitness 3.4121  test 3.4031
+[05:33:07] done: final stage refined  fitness 3.4121  test 3.4031  115 s  peak 9.82 GB
+[05:33:08] step sw-res-1M exit 0 in 117 s; artifact ok
+[05:33:08] step sw-E2-res-dk512-1M: scripts/spore_life.py --name sw-E2-res-dk512-1M --budget 1000000 --D 2048 --eta-sem 0.5 --k-wave 256 --score-tokens 65536 --refine-lr 0.01 --E 2 --reservoir --rho-res 0.61 --d-k 512
+[05:33:09] genome d2735fdded6bb72b {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 512, 'lam': 0.01, 'E': 2, 'waves': [0.1, 0.25, 0.5], 'k_wave': 256, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': True, 'lro': False, 'rho_res': 0.61}
+[05:33:09] cfg LifeConfig(budget=1000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.01, calib_windows=64, score_tokens=65536, tf32=False, eval_batch=16, device='cuda')
+[05:33:14] birth: innate memory-only predictor tau_m 49.99  test 7.8080
+[05:33:21] wave opened at 98304 tokens: 2048 candidates over F_in 16896
+[05:33:24] wave 1: kept 256 of 2048 (mode select); score kept 0.0172 vs all 0.0120; F -> 17153
+[05:33:31] wave opened at 245760 tokens: 2048 candidates over F_in 17152
+[05:33:34] wave 2: kept 256 of 2048 (mode select); score kept 0.0193 vs all 0.0131; F -> 17409
+[05:33:44] wave opened at 507904 tokens: 2048 candidates over F_in 17408
+[05:33:47] wave 3: kept 256 of 2048 (mode select); score kept 0.0187 vs all 0.0130; F -> 17665
+[05:34:12] ridge linear head: tau_s 1.00 tau_m 60.00 mu 0.055 nu 0.053  fitness 4.1119  test 4.1038  (F 17665)
+[05:34:23] ridge softmax head: tau_s 29.79 tau_m 24.64 mu 0.055 nu 0.053  fitness 5.7914  test 5.7756  (F 17665)
+[05:34:52] refine pass 1/2: mean train CE 3.6242
+[05:35:20] refine pass 2/2: mean train CE 3.2467
+[05:35:26] refined: fitness 3.1943  test 3.1739
+[05:35:26] done: final stage refined  fitness 3.1943  test 3.1739  137 s  peak 9.36 GB
+[05:35:26] step sw-E2-res-dk512-1M exit 0 in 139 s; artifact ok
+[05:35:26] queue complete

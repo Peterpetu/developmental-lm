@@ -1,0 +1,14 @@
+[14:35:46] TRANSFER  source meta-free (meta-free-tinystories-s0-seed0, ratio None, state final)  target heldout  5,000,000 tokens/arm  seed 0  noise seeds 3
+[14:38:22]   random-s0      birth tgt 8.6083 src 10.2955  ->  final tgt 0.5869 src 9.0808   curve [8.608, 0.668, 0.634, 0.609, 0.612, 0.599, 0.598, 0.595, 0.594, 0.59, 0.587]   155s
+[14:40:36]   random-s1      birth tgt 9.0135 src 10.2672  ->  final tgt 0.5863 src 9.1738   curve [9.014, 0.672, 0.638, 0.62, 0.601, 0.598, 0.598, 0.596, 0.594, 0.59, 0.586]   132s
+[14:42:38]   random-s2      birth tgt 8.5010 src 10.2672  ->  final tgt 0.5867 src 9.1191   curve [8.501, 0.663, 0.629, 0.608, 0.604, 0.6, 0.595, 0.596, 0.593, 0.59, 0.587]   121s
+[14:42:38]   target sigma_e 0.0003 over 3 random seeds (3 sigma_e = 0.0009)
+[14:42:38]   source has no genome (free arm): copy arms only
+[14:44:40]   copy-all       birth tgt 6.5965 src 9.0508  ->  final tgt 1.9150 src 9.0625   curve [6.597, 3.649, 2.329, 2.178, 2.121, 2.033, 1.974, 1.947, 1.927, 1.919, 1.915]   120s
+[14:46:42]   copy-low       birth tgt 9.1474 src 9.0117  ->  final tgt 2.2957 src 9.1105   curve [9.147, 9.014, 9.012, 9.011, 9.011, 7.622, 3.375, 2.757, 2.598, 2.408, 2.296]   121s
+[14:48:51]   copy-high      birth tgt 8.7900 src 9.1850  ->  final tgt 0.5897 src 9.0964   curve [8.79, 0.731, 0.653, 0.634, 0.614, 0.609, 0.603, 0.601, 0.598, 0.593, 0.59]   128s
+[14:48:51] contrasts (target CE, positive = worse than the reference):
+[14:48:51]   copy-all                   vs_random_at_25 +1.6951  vs_random_at_50 +1.4344  vs_random_at_100 +1.3281  vs_random_at_birth -2.0118
+[14:48:51]   copy-low                   vs_random_at_25 +8.3777  vs_random_at_50 +7.0234  vs_random_at_100 +1.7088  vs_random_at_birth +0.5390
+[14:48:51]   copy-high                  vs_random_at_25 +0.0190  vs_random_at_50 +0.0102  vs_random_at_100 +0.0028  vs_random_at_birth +0.1817
+[14:48:51] wrote runs\bottleneck\xfer-heldout-from-meta-free-tinystories-s0-seed0\transfer.json

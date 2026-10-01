@@ -1,0 +1,174 @@
+[13:15:11] META meta-free  120 tasks x 1,000,000 tokens  pool ceadfaf0a206e63892b247a25511bf65  (sequential multi-task, no genome)
+[13:15:45]     step    200  tokens      819,200  train 1.7720  lr_M 6.74e-03  B 8  155 ms
+[13:15:52]   gen    1  tokens    1,003,520  before 3.3160  -> task MODCOUNT n_len 6
+[13:16:16]     step    400  tokens    1,638,400  train 0.4810  lr_M 1.35e-02  B 8  148 ms
+[13:16:30]   gen    2  tokens    2,002,944  before 3.6940  -> task PARITY n_len 4
+[13:16:48]     step    600  tokens    2,895,872  train 0.3735  lr_M 2.00e-02  B 16  157 ms
+[13:16:50]   gen    3  tokens    3,002,368  before 4.5817  -> task MODCOUNT n_len 12
+[13:17:10]   gen    4  tokens    4,001,792  before 3.4340  -> task MQAR n_len 8
+[13:17:21]     step    800  tokens    4,534,272  train 1.6353  lr_M 2.00e-02  B 16  153 ms
+[13:17:30]   gen    5  tokens    5,001,216  before 3.1539  -> task MQAR n_len 8
+[13:17:50]   gen    6  tokens    6,000,640  before 3.2416  -> task DYCK n_len 8
+[13:17:55]     step   1000  tokens    6,230,016  train 1.1882  lr_M 2.00e-02  B 24  258 ms
+[13:18:12]   gen    7  tokens    7,004,160  before 3.5965  -> task MODCOUNT n_len 12
+[13:18:34]   gen    8  tokens    8,011,776  before 2.8767  -> task PARITY n_len 6
+[13:18:49]     step   1200  tokens    8,687,616  train 0.5600  lr_M 2.00e-02  B 24  258 ms
+[13:18:56]   gen    9  tokens    9,007,104  before 3.5116  -> task MQAR n_len 8
+[13:19:19]   eval tokens   10,002,432  held-out 4.3956
+[13:19:20]   gen   10  tokens   10,002,432  before 4.3956  -> task COPY n_len 8
+[13:19:37]   gen   11  tokens   11,005,952  before 3.9150  -> task MODCOUNT n_len 4
+[13:19:46]     step   1400  tokens   11,497,472  train 0.6374  lr_M 2.00e-02  B 32  270 ms
+[13:19:55]   gen   12  tokens   12,005,376  before 3.8682  -> task PARITY n_len 8
+[13:20:13]   gen   13  tokens   13,004,800  before 3.2844  -> task PARITY n_len 6
+[13:20:32]   gen   14  tokens   14,004,224  before 3.3884  -> task PERM n_len 6
+[13:20:47]     step   1600  tokens   14,774,272  train 0.8191  lr_M 2.00e-02  B 32  280 ms
+[13:20:52]   gen   15  tokens   15,003,648  before 3.6567  -> task PARITY n_len 4
+[13:21:13]   gen   16  tokens   16,003,072  before 3.5698  -> task PARITY n_len 4
+[13:21:49]   gen   17  tokens   17,002,496  before 4.0565  -> task COPY n_len 8
+[13:22:25]   gen   18  tokens   18,001,920  before 3.8762  -> task MODCOUNT n_len 8
+[13:22:27]     step   1800  tokens   18,051,072  train 0.6300  lr_M 2.00e-02  B 32  594 ms
+[13:23:01]   gen   19  tokens   19,001,344  before 3.4198  -> task PERM n_len 6
+[13:23:38]   eval tokens   20,000,768  held-out 3.7820
+[13:23:39]   gen   20  tokens   20,000,768  before 3.7820  -> task COPY n_len 12
+[13:24:14]   gen   21  tokens   21,000,192  before 3.8587  -> task COPY n_len 12
+[13:24:25]     step   2000  tokens   21,327,872  train 0.7055  lr_M 2.00e-02  B 32  514 ms
+[13:24:49]   gen   22  tokens   22,016,000  before 3.4484  -> task MQAR n_len 8
+[13:25:17]   gen   23  tokens   23,015,424  before 3.1462  -> task PERM n_len 12
+[13:25:45]   gen   24  tokens   24,014,848  before 3.6819  -> task DYCK n_len 8
+[13:26:01]     step   2200  tokens   24,604,672  train 1.3432  lr_M 2.00e-02  B 32  444 ms
+[13:26:13]   gen   25  tokens   25,014,272  before 3.8192  -> task DYCK n_len 6
+[13:26:40]   gen   26  tokens   26,013,696  before 3.9144  -> task PERM n_len 6
+[13:27:07]   gen   27  tokens   27,013,120  before 3.5422  -> task MQAR n_len 4
+[13:27:31]     step   2400  tokens   27,881,472  train 3.5512  lr_M 2.00e-02  B 32  401 ms
+[13:27:36]   gen   28  tokens   28,012,544  before 2.9022  -> task DYCK n_len 6
+[13:28:03]   gen   29  tokens   29,011,968  before 3.7818  -> task DYCK n_len 6
+[13:28:32]   eval tokens   30,011,392  held-out 4.1836
+[13:28:32]   gen   30  tokens   30,011,392  before 4.1836  -> task COPY n_len 8
+[13:29:00]   gen   31  tokens   31,010,816  before 3.0019  -> task PERM n_len 12
+[13:29:05]     step   2600  tokens   31,158,272  train 1.0069  lr_M 2.00e-02  B 32  391 ms
+[13:29:28]   gen   32  tokens   32,010,240  before 3.2723  -> task MODCOUNT n_len 12
+[13:29:55]   gen   33  tokens   33,009,664  before 2.8347  -> task MODCOUNT n_len 8
+[13:30:24]   gen   34  tokens   34,009,088  before 3.3809  -> task PARITY n_len 4
+[13:30:36]     step   2800  tokens   34,435,072  train 0.6051  lr_M 2.00e-02  B 32  471 ms
+[13:30:52]   gen   35  tokens   35,008,512  before 3.8389  -> task PERM n_len 12
+[13:31:19]   gen   36  tokens   36,007,936  before 3.5236  -> task COPY n_len 6
+[13:31:46]   gen   37  tokens   37,007,360  before 3.5996  -> task COPY n_len 12
+[13:32:05]     step   3000  tokens   37,711,872  train 0.7024  lr_M 2.00e-02  B 32  361 ms
+[13:32:15]   gen   38  tokens   38,006,784  before 3.5831  -> task PARITY n_len 8
+[13:32:42]   gen   39  tokens   39,006,208  before 3.3771  -> task PERM n_len 8
+[13:33:08]   eval tokens   40,005,632  held-out 3.7861
+[13:33:09]   gen   40  tokens   40,005,632  before 3.7861  -> task MQAR n_len 6
+[13:33:35]     step   3200  tokens   40,988,672  train 4.4717  lr_M 2.00e-02  B 32  427 ms
+[13:33:36]   gen   41  tokens   41,005,056  before 3.7254  -> task COPY n_len 8
+[13:34:03]   gen   42  tokens   42,004,480  before 3.5358  -> task COPY n_len 4
+[13:34:29]   gen   43  tokens   43,003,904  before 3.9029  -> task PERM n_len 12
+[13:34:56]   gen   44  tokens   44,003,328  before 3.5813  -> task MQAR n_len 4
+[13:35:04]     step   3400  tokens   44,265,472  train 2.8020  lr_M 2.00e-02  B 32  415 ms
+[13:35:24]   gen   45  tokens   45,002,752  before 2.6796  -> task DYCK n_len 12
+[13:35:51]   gen   46  tokens   46,002,176  before 4.2542  -> task MQAR n_len 8
+[13:36:19]   gen   47  tokens   47,001,600  before 3.3759  -> task MODCOUNT n_len 12
+[13:36:33]     step   3600  tokens   47,542,272  train 1.3823  lr_M 2.00e-02  B 32  491 ms
+[13:36:46]   gen   48  tokens   48,001,024  before 2.6077  -> task PARITY n_len 6
+[13:37:14]   gen   49  tokens   49,000,448  before 3.2729  -> task DYCK n_len 4
+[13:37:42]   eval tokens   50,016,256  held-out 4.2304
+[13:37:42]   gen   50  tokens   50,016,256  before 4.2304  -> task DYCK n_len 12
+[13:38:04]     step   3800  tokens   50,819,072  train 0.5358  lr_M 2.00e-02  B 32  429 ms
+[13:38:10]   gen   51  tokens   51,015,680  before 3.3339  -> task PERM n_len 6
+[13:38:40]   gen   52  tokens   52,015,104  before 3.1874  -> task MQAR n_len 4
+[13:39:13]   gen   53  tokens   53,014,528  before 3.8461  -> task PARITY n_len 6
+[13:39:44]   gen   54  tokens   54,013,952  before 3.3636  -> task MQAR n_len 8
+[13:39:47]     step   4000  tokens   54,095,872  train 0.6176  lr_M 2.00e-02  B 32  478 ms
+[13:40:15]   gen   55  tokens   55,013,376  before 3.9832  -> task MQAR n_len 8
+[13:40:47]   gen   56  tokens   56,012,800  before 2.5663  -> task PARITY n_len 6
+[13:41:19]   gen   57  tokens   57,012,224  before 3.0799  -> task MQAR n_len 12
+[13:41:31]     step   4200  tokens   57,372,672  train 0.8433  lr_M 2.00e-02  B 32  462 ms
+[13:41:51]   gen   58  tokens   58,011,648  before 3.4531  -> task PERM n_len 6
+[13:42:22]   gen   59  tokens   59,011,072  before 2.9862  -> task MODCOUNT n_len 12
+[13:42:53]   eval tokens   60,010,496  held-out 3.0889
+[13:42:54]   gen   60  tokens   60,010,496  before 3.0889  -> task PERM n_len 6
+[13:43:12]     step   4400  tokens   60,649,472  train 1.2719  lr_M 2.00e-02  B 32  455 ms
+[13:43:23]   gen   61  tokens   61,009,920  before 2.7925  -> task COPY n_len 8
+[13:43:51]   gen   62  tokens   62,009,344  before 3.2121  -> task MQAR n_len 4
+[13:44:16]   gen   63  tokens   63,008,768  before 3.9029  -> task PARITY n_len 8
+[13:44:38]     step   4600  tokens   63,926,272  train 0.5710  lr_M 2.00e-02  B 32  373 ms
+[13:44:41]   gen   64  tokens   64,008,192  before 3.1403  -> task MQAR n_len 12
+[13:45:06]   gen   65  tokens   65,007,616  before 3.1792  -> task MQAR n_len 12
+[13:45:32]   gen   66  tokens   66,007,040  before 4.2554  -> task PARITY n_len 12
+[13:45:56]   gen   67  tokens   67,006,464  before 2.9589  -> task PARITY n_len 12
+[13:46:01]     step   4800  tokens   67,203,072  train 0.7858  lr_M 2.00e-02  B 32  431 ms
+[13:46:21]   gen   68  tokens   68,005,888  before 3.1674  -> task COPY n_len 12
+[13:46:45]   gen   69  tokens   69,005,312  before 3.5455  -> task PARITY n_len 8
+[13:47:15]   eval tokens   70,004,736  held-out 3.1519
+[13:47:16]   gen   70  tokens   70,004,736  before 3.1519  -> task MQAR n_len 6
+[13:47:34]     step   5000  tokens   70,479,872  train 2.0616  lr_M 2.00e-02  B 32  615 ms
+[13:47:52]   gen   71  tokens   71,004,160  before 2.9980  -> task PERM n_len 12
+[13:48:29]   gen   72  tokens   72,003,584  before 2.8565  -> task PERM n_len 6
+[13:49:04]   gen   73  tokens   73,003,008  before 3.0014  -> task MQAR n_len 12
+[13:49:31]     step   5200  tokens   73,756,672  train 0.6410  lr_M 2.00e-02  B 32  610 ms
+[13:49:41]   gen   74  tokens   74,002,432  before 3.6954  -> task MQAR n_len 12
+[13:50:18]   gen   75  tokens   75,001,856  before 4.0064  -> task PERM n_len 8
+[13:50:55]   gen   76  tokens   76,001,280  before 2.9160  -> task PERM n_len 4
+[13:51:32]   gen   77  tokens   77,000,704  before 3.6093  -> task COPY n_len 4
+[13:51:34]     step   5400  tokens   77,033,472  train 0.8958  lr_M 2.00e-02  B 32  608 ms
+[13:52:09]   gen   78  tokens   78,000,128  before 4.0774  -> task COPY n_len 4
+[13:52:47]   gen   79  tokens   79,015,936  before 3.9022  -> task DYCK n_len 4
+[13:53:25]   eval tokens   80,015,360  held-out 4.6221
+[13:53:26]   gen   80  tokens   80,015,360  before 4.6221  -> task COPY n_len 6
+[13:53:36]     step   5600  tokens   80,310,272  train 0.7304  lr_M 2.00e-02  B 32  543 ms
+[13:54:03]   gen   81  tokens   81,014,784  before 3.4700  -> task PARITY n_len 12
+[13:54:41]   gen   82  tokens   82,014,208  before 3.2689  -> task PARITY n_len 8
+[13:55:17]   gen   83  tokens   83,013,632  before 3.6076  -> task MQAR n_len 12
+[13:55:37]     step   5800  tokens   83,587,072  train 0.5874  lr_M 2.00e-02  B 32  571 ms
+[13:55:54]   gen   84  tokens   84,013,056  before 5.1296  -> task PARITY n_len 6
+[13:56:32]   gen   85  tokens   85,012,480  before 5.1007  -> task MQAR n_len 8
+[13:57:09]   gen   86  tokens   86,011,904  before 5.0183  -> task DYCK n_len 6
+[13:57:39]     step   6000  tokens   86,863,872  train 0.7242  lr_M 2.00e-02  B 32  635 ms
+[13:57:46]   gen   87  tokens   87,011,328  before 4.9532  -> task PERM n_len 12
+[13:58:24]   gen   88  tokens   88,010,752  before 2.9260  -> task PARITY n_len 8
+[13:59:02]   gen   89  tokens   89,010,176  before 3.5086  -> task COPY n_len 6
+[13:59:41]   eval tokens   90,009,600  held-out 3.6493
+[13:59:42]   gen   90  tokens   90,009,600  before 3.6493  -> task MODCOUNT n_len 4
+[13:59:47]     step   6200  tokens   90,140,672  train 1.1647  lr_M 2.00e-02  B 32  626 ms
+[14:00:13]   gen   91  tokens   91,009,024  before 3.9034  -> task MODCOUNT n_len 4
+[14:00:38]   gen   92  tokens   92,008,448  before 4.3403  -> task PARITY n_len 12
+[14:01:04]   gen   93  tokens   93,007,872  before 3.8437  -> task MODCOUNT n_len 12
+[14:01:14]     step   6400  tokens   93,417,472  train 0.7147  lr_M 2.00e-02  B 32  397 ms
+[14:01:30]   gen   94  tokens   94,007,296  before 3.2036  -> task MQAR n_len 8
+[14:01:56]   gen   95  tokens   95,006,720  before 2.6098  -> task COPY n_len 4
+[14:02:21]   gen   96  tokens   96,006,144  before 3.6980  -> task PERM n_len 6
+[14:02:38]     step   6600  tokens   96,694,272  train 1.5034  lr_M 2.00e-02  B 32  408 ms
+[14:02:47]   gen   97  tokens   97,005,568  before 2.9607  -> task PERM n_len 6
+[14:03:12]   gen   98  tokens   98,004,992  before 3.8021  -> task COPY n_len 8
+[14:03:36]   gen   99  tokens   99,004,416  before 3.5592  -> task MQAR n_len 8
+[14:04:01]     step   6800  tokens   99,971,072  train 0.6350  lr_M 2.00e-02  B 32  390 ms
+[14:04:02]   eval tokens  100,003,840  held-out 4.4080
+[14:04:03]   gen  100  tokens  100,003,840  before 4.4080  -> task PARITY n_len 8
+[14:04:28]   gen  101  tokens  101,003,264  before 2.8585  -> task MODCOUNT n_len 8
+[14:04:53]   gen  102  tokens  102,002,688  before 3.1420  -> task MQAR n_len 12
+[14:05:19]   gen  103  tokens  103,002,112  before 4.0313  -> task COPY n_len 6
+[14:05:25]     step   7000  tokens  103,247,872  train 0.7766  lr_M 2.00e-02  B 32  362 ms
+[14:05:45]   gen  104  tokens  104,001,536  before 3.6608  -> task MQAR n_len 12
+[14:06:10]   gen  105  tokens  105,000,960  before 4.6877  -> task DYCK n_len 12
+[14:06:37]   gen  106  tokens  106,000,384  before 4.0741  -> task PERM n_len 12
+[14:06:50]     step   7200  tokens  106,524,672  train 1.9913  lr_M 2.00e-02  B 32  396 ms
+[14:07:03]   gen  107  tokens  107,016,192  before 2.9501  -> task PARITY n_len 4
+[14:07:31]   gen  108  tokens  108,015,616  before 3.4147  -> task PARITY n_len 6
+[14:07:59]   gen  109  tokens  109,015,040  before 3.0803  -> task PARITY n_len 4
+[14:08:21]     step   7400  tokens  109,801,472  train 0.4962  lr_M 2.00e-02  B 32  476 ms
+[14:08:27]   eval tokens  110,014,464  held-out 3.3456
+[14:08:27]   gen  110  tokens  110,014,464  before 3.3456  -> task MODCOUNT n_len 8
+[14:08:55]   gen  111  tokens  111,013,888  before 2.8141  -> task MODCOUNT n_len 12
+[14:09:22]   gen  112  tokens  112,013,312  before 2.8639  -> task DYCK n_len 12
+[14:09:50]   gen  113  tokens  113,012,736  before 3.2404  -> task PARITY n_len 4
+[14:09:52]     step   7600  tokens  113,078,272  train 0.7493  lr_M 2.00e-02  B 32  399 ms
+[14:10:17]   gen  114  tokens  114,012,160  before 3.0404  -> task MQAR n_len 6
+[14:10:45]   gen  115  tokens  115,011,584  before 4.0444  -> task PERM n_len 6
+[14:11:12]   gen  116  tokens  116,011,008  before 2.9644  -> task PERM n_len 6
+[14:11:21]     step   7800  tokens  116,355,072  train 0.8837  lr_M 2.00e-02  B 32  391 ms
+[14:11:40]   gen  117  tokens  117,010,432  before 3.5634  -> task PERM n_len 12
+[14:12:07]   gen  118  tokens  118,009,856  before 3.1016  -> task COPY n_len 4
+[14:12:35]   gen  119  tokens  119,009,280  before 3.7523  -> task MQAR n_len 6
+[14:12:53]     step   8000  tokens  119,631,872  train 3.9399  lr_M 2.00e-02  B 32  477 ms
+[14:13:04]   eval tokens  120,008,704  held-out 3.4160
+[14:13:05]   gen  120  tokens  120,008,704  before 3.4160  -> task MQAR n_len 8
+[14:13:35] final train-dist 3.1693  held-out 6.6241  0.97 h  wrote runs\bottleneck\meta-free-tinystories-s0-seed0\loop.json

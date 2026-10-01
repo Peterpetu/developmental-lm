@@ -1,0 +1,94 @@
+{
+  "what": "lr and d_z at 512x12, d_ff 2048, V 8192, T 256, batch 48",
+  "steps": 400,
+  "rule": "adam",
+  "token_code": "freq",
+  "genomes": 1,
+  "seeds": 1,
+  "eval_split": "fitness",
+  "unigram_entropy_ts8192": 5.9645,
+  "ln_V": 9.0109,
+  "note": "the reference line is the UNIGRAM ENTROPY, not ln V: a model that has learned only token frequencies scores 5.9645, and against ln V that looks like 3.05 nats of progress",
+  "rows": [
+    {
+      "d_z": 16,
+      "lr": 0.006,
+      "final": 6.0699
+    },
+    {
+      "d_z": 16,
+      "lr": 0.06,
+      "final": 5.5349
+    },
+    {
+      "d_z": 16,
+      "lr": 0.12,
+      "final": 5.2902
+    },
+    {
+      "d_z": 16,
+      "lr": 0.25,
+      "final": 5.8089
+    },
+    {
+      "d_z": 16,
+      "lr": 0.4,
+      "final": 6.0318
+    },
+    {
+      "d_z": 64,
+      "lr": 0.006,
+      "final": 6.123
+    },
+    {
+      "d_z": 64,
+      "lr": 0.06,
+      "final": 5.8836
+    },
+    {
+      "d_z": 64,
+      "lr": 0.12,
+      "final": 6.3072
+    },
+    {
+      "d_z": 64,
+      "lr": 0.25,
+      "final": 6.1498
+    },
+    {
+      "d_z": 64,
+      "lr": 0.4,
+      "final": 6.0375
+    },
+    {
+      "d_z": 512,
+      "lr": 0.006,
+      "final": 6.146
+    }
+  ],
+  "best": {
+    "d_z": 16,
+    "lr": 0.12,
+    "final": 5.2902,
+    "gap_to_unigram": -0.6743000000000006
+  },
+  "turns_inside_grid": true,
+  "controls": [
+    {
+      "label": "m-pico 128x4 d_z16 lr0.06 V4096",
+      "final": 5.5257,
+      "unigram": 6.0129,
+      "gap": -0.4872
+    },
+    {
+      "label": "512x4 d_z16 lr0.06",
+      "final": 5.8747,
+      "gap": -0.0898
+    },
+    {
+      "label": "128x4 d_z16 lr0.006 V8192",
+      "final": 6.0564,
+      "gap": 0.0919
+    }
+  ]
+}

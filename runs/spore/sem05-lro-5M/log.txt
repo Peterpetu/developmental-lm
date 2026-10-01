@@ -1,0 +1,20 @@
+[23:39:18] genome 8b2e401239f81ce0 {'s_A': 0, 's_rho': 1, 's_M': 2, 's_U': 3, 'D': 2048, 'orders': [1, 2, 3, 4, 6], 'gamma_b': 0.95, 'gamma_e': 0.7, 'J_e': 24, 'n_k': 2, 'beta': 1.0, 'd_k': 1024, 'lam': 0.01, 'E': 1, 'waves': [0.1, 0.25, 0.5], 'k_wave': 512, 'cand_mult': 8, 'psi': 'relu', 'k_w': 64, 'eta_ri': 0.0, 'onehot': False, 'eta_sem': 0.5, 'd_sem': 256, 'sem_frac': 1.0, 'reservoir': False, 'lro': True, 'rho_res': 0.9}
+[23:39:18] cfg LifeConfig(budget=5000000, offset=0, batch_windows=32, T=512, binding=True, memory=True, growth='select', readout='ridge', refine=None, refine_lr=0.005, calib_windows=64, score_tokens=262144, tf32=False, eval_batch=16, device='cuda')
+[23:39:21] birth: innate memory-only predictor tau_m 26.09  test 7.5594
+[23:39:36] wave opened at 507904 tokens: 4096 candidates over F_in 15360
+[23:39:46] wave 1: kept 512 of 4096 (mode select); score kept 0.0184 vs all 0.0121; F -> 15873
+[23:40:01] wave opened at 1245184 tokens: 4096 candidates over F_in 15872
+[23:40:12] wave 2: kept 512 of 4096 (mode select); score kept 0.0193 vs all 0.0126; F -> 16385
+[23:40:15]   batch 100/306  1.64M tokens  536 ms/batch
+[23:40:40] wave opened at 2506752 tokens: 4096 candidates over F_in 16384
+[23:40:51] wave 3: kept 512 of 4096 (mode select); score kept 0.0199 vs all 0.0124; F -> 16897
+[23:41:04]   batch 200/306  3.28M tokens  514 ms/batch
+[23:41:46]   batch 300/306  4.92M tokens  482 ms/batch
+[23:42:00] ridge linear head: tau_s 1.00 tau_m 48.16 mu 0.032 nu 0.042  fitness 3.8240  test 3.8127  (F 16897)
+[23:42:09] ridge softmax head: tau_s 30.14 tau_m 12.60 mu 0.032 nu 0.042  fitness 5.6608  test 5.6495  (F 16897)
+[23:42:52]   refine pass 1/1 batch 100/306  train CE 3.6569
+[23:43:36]   refine pass 1/1 batch 200/306  train CE 3.3318
+[23:44:19]   refine pass 1/1 batch 300/306  train CE 3.2171
+[23:44:22] refine pass 1/1: mean train CE 3.2124
+[23:44:26] refined: fitness 2.9815  test 2.9644
+[23:44:27] done: final stage refined  fitness 2.9815  test 2.9644  309 s  peak 9.50 GB

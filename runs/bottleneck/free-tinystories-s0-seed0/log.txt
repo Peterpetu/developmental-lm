@@ -1,0 +1,89 @@
+[20:12:25] BOTTLENECK free  tinystories s0:d256/L8/h4/kv2/F1024  tokens 201,000,000  (the tabula-rasa control)
+[20:13:00]     step    200  tokens      819,200  train 4.3064  lr_M 4.06e-03  B 8  160 ms
+[20:13:33]     step    400  tokens    1,638,400  train 3.2048  lr_M 8.13e-03  B 8  164 ms
+[20:14:06]     step    600  tokens    2,457,600  train 2.8545  lr_M 1.22e-02  B 8  165 ms
+[20:14:38]     step    800  tokens    3,276,800  train 2.7541  lr_M 1.63e-02  B 8  173 ms
+[20:15:17]     step   1000  tokens    4,841,472  train 2.4928  lr_M 2.00e-02  B 16  171 ms
+[20:15:52]     step   1200  tokens    6,479,872  train 2.3751  lr_M 2.00e-02  B 16  170 ms
+[20:16:26]     step   1400  tokens    8,118,272  train 2.3087  lr_M 2.00e-02  B 16  181 ms
+[20:17:01]     step   1600  tokens    9,756,672  train 2.2810  lr_M 2.00e-02  B 16  171 ms
+[20:17:07]   eval tokens   10,002,432  held-out 2.2255
+[20:17:56]     step   1800  tokens   12,066,816  train 2.1772  lr_M 2.00e-02  B 24  288 ms
+[20:19:09]     step   2000  tokens   14,524,416  train 2.1411  lr_M 2.00e-02  B 24  437 ms
+[20:20:39]     step   2200  tokens   17,055,744  train 2.1028  lr_M 2.00e-02  B 32  316 ms
+[20:21:34]   eval tokens   20,004,864  held-out 1.9975
+[20:21:40]     step   2400  tokens   20,332,544  train 2.0487  lr_M 2.00e-02  B 32  290 ms
+[20:22:38]     step   2600  tokens   23,609,344  train 2.0185  lr_M 2.00e-02  B 32  290 ms
+[20:23:37]     step   2800  tokens   26,886,144  train 2.0002  lr_M 2.00e-02  B 32  288 ms
+[20:24:34]   eval tokens   30,015,488  held-out 1.9509
+[20:24:37]     step   3000  tokens   30,162,944  train 1.9952  lr_M 2.00e-02  B 32  307 ms
+[20:25:36]     step   3200  tokens   33,439,744  train 1.9924  lr_M 2.00e-02  B 32  296 ms
+[20:26:35]     step   3400  tokens   36,716,544  train 1.9703  lr_M 2.00e-02  B 32  293 ms
+[20:27:34]     step   3600  tokens   39,993,344  train 1.9751  lr_M 2.00e-02  B 32  295 ms
+[20:27:34]   eval tokens   40,009,728  held-out 1.9234
+[20:28:33]     step   3800  tokens   43,270,144  train 1.9604  lr_M 2.00e-02  B 32  294 ms
+[20:29:32]     step   4000  tokens   46,546,944  train 1.9549  lr_M 2.00e-02  B 32  342 ms
+[20:30:31]     step   4200  tokens   49,823,744  train 1.9461  lr_M 2.00e-02  B 32  285 ms
+[20:30:34]   eval tokens   50,003,968  held-out 1.9048
+[20:31:30]     step   4400  tokens   53,100,544  train 1.9414  lr_M 2.00e-02  B 32  298 ms
+[20:32:29]     step   4600  tokens   56,377,344  train 1.9321  lr_M 2.00e-02  B 32  289 ms
+[20:33:28]     step   4800  tokens   59,654,144  train 1.9399  lr_M 2.00e-02  B 32  290 ms
+[20:33:35]   eval tokens   60,014,592  held-out 1.8864
+[20:34:27]     step   5000  tokens   62,930,944  train 1.9271  lr_M 2.00e-02  B 32  330 ms
+[20:35:26]     step   5200  tokens   66,207,744  train 1.9217  lr_M 2.00e-02  B 32  290 ms
+[20:36:25]     step   5400  tokens   69,484,544  train 1.9214  lr_M 2.00e-02  B 32  301 ms
+[20:36:35]   eval tokens   70,008,832  held-out 1.8795
+[20:37:24]     step   5600  tokens   72,761,344  train 1.9196  lr_M 2.00e-02  B 32  292 ms
+[20:38:24]     step   5800  tokens   76,038,144  train 1.9200  lr_M 2.00e-02  B 32  290 ms
+[20:39:23]     step   6000  tokens   79,314,944  train 1.9143  lr_M 2.00e-02  B 32  293 ms
+[20:39:36]   eval tokens   80,003,072  held-out 1.8705
+[20:40:22]     step   6200  tokens   82,591,744  train 1.9044  lr_M 2.00e-02  B 32  295 ms
+[20:41:21]     step   6400  tokens   85,868,544  train 1.9059  lr_M 2.00e-02  B 32  291 ms
+[20:42:20]     step   6600  tokens   89,145,344  train 1.8997  lr_M 2.00e-02  B 32  292 ms
+[20:42:36]   eval tokens   90,013,696  held-out 1.8632
+[20:43:20]     step   6800  tokens   92,422,144  train 1.8934  lr_M 2.00e-02  B 32  293 ms
+[20:44:19]     step   7000  tokens   95,698,944  train 1.8929  lr_M 2.00e-02  B 32  291 ms
+[20:45:18]     step   7200  tokens   98,975,744  train 1.9063  lr_M 2.00e-02  B 32  300 ms
+[20:45:37]   eval tokens  100,007,936  held-out 1.8568
+[20:46:17]     step   7400  tokens  102,252,544  train 1.8938  lr_M 2.00e-02  B 32  290 ms
+[20:47:16]     step   7600  tokens  105,529,344  train 1.8933  lr_M 2.00e-02  B 32  296 ms
+[20:48:15]     step   7800  tokens  108,806,144  train 1.8988  lr_M 2.00e-02  B 32  286 ms
+[20:48:37]   eval tokens  110,002,176  held-out 1.8519
+[20:49:15]     step   8000  tokens  112,082,944  train 1.8824  lr_M 2.00e-02  B 32  292 ms
+[20:50:13]     step   8200  tokens  115,359,744  train 1.8986  lr_M 2.00e-02  B 32  293 ms
+[20:51:12]     step   8400  tokens  118,636,544  train 1.8926  lr_M 2.00e-02  B 32  290 ms
+[20:51:37]   eval tokens  120,012,800  held-out 1.8466
+[20:52:11]     step   8600  tokens  121,913,344  train 1.8900  lr_M 2.00e-02  B 32  295 ms
+[20:53:10]     step   8800  tokens  125,190,144  train 1.8931  lr_M 2.00e-02  B 32  288 ms
+[20:54:09]     step   9000  tokens  128,466,944  train 1.8796  lr_M 2.00e-02  B 32  300 ms
+[20:54:37]   eval tokens  130,007,040  held-out 1.8447
+[20:55:09]     step   9200  tokens  131,743,744  train 1.8851  lr_M 2.00e-02  B 32  297 ms
+[20:56:08]     step   9400  tokens  135,020,544  train 1.8939  lr_M 2.00e-02  B 32  303 ms
+[20:57:14]     step   9600  tokens  138,297,344  train 1.8819  lr_M 2.00e-02  B 32  334 ms
+[20:57:50]   eval tokens  140,001,280  held-out 1.8421
+[20:58:23]     step   9800  tokens  141,574,144  train 1.8841  lr_M 2.00e-02  B 32  354 ms
+[20:59:25]     step  10000  tokens  144,850,944  train 1.8753  lr_M 2.00e-02  B 32  310 ms
+[21:00:26]     step  10200  tokens  148,127,744  train 1.8794  lr_M 2.00e-02  B 32  304 ms
+[21:01:00]   eval tokens  150,011,904  held-out 1.8362
+[21:01:25]     step  10400  tokens  151,404,544  train 1.8749  lr_M 2.00e-02  B 32  295 ms
+[21:02:26]     step  10600  tokens  154,681,344  train 1.8717  lr_M 2.00e-02  B 32  305 ms
+[21:03:26]     step  10800  tokens  157,958,144  train 1.8789  lr_M 2.00e-02  B 32  294 ms
+[21:04:03]   eval tokens  160,006,144  held-out 1.8336
+[21:04:25]     step  11000  tokens  161,234,944  train 1.8760  lr_M 2.00e-02  B 32  293 ms
+[21:05:24]     step  11200  tokens  164,511,744  train 1.8649  lr_M 2.00e-02  B 32  287 ms
+[21:06:23]     step  11400  tokens  167,788,544  train 1.8738  lr_M 2.00e-02  B 32  286 ms
+[21:07:03]   eval tokens  170,000,384  held-out 1.8344
+[21:07:22]     step  11600  tokens  171,065,344  train 1.8746  lr_M 2.00e-02  B 32  293 ms
+[21:08:21]     step  11800  tokens  174,342,144  train 1.8635  lr_M 2.00e-02  B 32  315 ms
+[21:09:19]     step  12000  tokens  177,618,944  train 1.8635  lr_M 2.00e-02  B 32  291 ms
+[21:10:01]   eval tokens  180,011,008  held-out 1.8310
+[21:10:17]     step  12200  tokens  180,895,744  train 1.8562  lr_M 2.00e-02  B 32  282 ms
+[21:11:15]     step  12400  tokens  184,172,544  train 1.8721  lr_M 2.00e-02  B 32  284 ms
+[21:12:13]     step  12600  tokens  187,449,344  train 1.8519  lr_M 2.00e-02  B 32  289 ms
+[21:12:59]   eval tokens  190,005,248  held-out 1.8274
+[21:13:12]     step  12800  tokens  190,726,144  train 1.8581  lr_M 2.00e-02  B 32  297 ms
+[21:14:11]     step  13000  tokens  194,002,944  train 1.8587  lr_M 2.00e-02  B 32  295 ms
+[21:15:11]     step  13200  tokens  197,279,744  train 1.8574  lr_M 2.00e-02  B 32  290 ms
+[21:16:01]   eval tokens  200,015,872  held-out 1.8272
+[21:16:11]     step  13400  tokens  200,556,544  train 1.8649  lr_M 2.00e-02  B 32  304 ms
+[21:16:21] final test 1.8039  fit 1.8272  1.07 h  wrote runs\bottleneck\free-tinystories-s0-seed0\loop.json

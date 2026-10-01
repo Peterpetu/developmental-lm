@@ -1,0 +1,23 @@
+{
+  "s0:d512/L12/h8/kv4/F2048": {
+    "params": 73804289,
+    "nonemb": 65415681,
+    "latents": 765024,
+    "ratio_genome": 176.44371581302835,
+    "ratio_genome_latents": 62.37094612409914
+  },
+  "s1:d768/L18/h12/kv4/F3072": {
+    "params": 207116033,
+    "nonemb": 194533121,
+    "latents": 1387408,
+    "ratio_genome": 495.1517447309031,
+    "ratio_genome_latents": 114.70149626515206
+  },
+  "s2:d1024/L24/h16/kv4/F4096": {
+    "params": 461186049,
+    "nonemb": 444408833,
+    "latents": 2257088,
+    "ratio_genome": 1102.5562507172092,
+    "ratio_genome_latents": 172.38176951576153
+  }
+}

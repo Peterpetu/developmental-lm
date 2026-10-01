@@ -1,0 +1,28 @@
+[17:56:42] environments ['stories', 'code'] loaded in 0s; phases [['stories', 1000, 1005], ['code', 1010, 1015], ['stories', 1020, 1025], ['code', 1030, 1035]]
+[17:56:43] phase 1/4: stories  pool 1000 (e310796f)  order 1005  8,000,000 tokens  arm sieve-fresh
+[17:56:53]     step     50  tokens      274,432  train 7.0883  lr_M 2.00e-02  B 16  175 ms
+[17:57:03]   eval @0.10  stories 3.1914  code 8.3228
+[17:57:04]     step    100  tokens      872,448  train 4.7577  lr_M 2.00e-02  B 32  210 ms
+[17:57:14]     step    150  tokens    1,691,648  train 3.6268  lr_M 2.00e-02  B 32  209 ms
+[17:57:19]   eval @0.25  stories 2.7037  code 8.6543
+[17:57:25]     step    200  tokens    2,510,848  train 3.0493  lr_M 2.00e-02  B 32  206 ms
+[17:57:36]     step    250  tokens    3,330,048  train 2.7467  lr_M 2.00e-02  B 32  205 ms
+[17:57:45]   eval @0.50  stories 2.4017  code 8.9029
+[17:57:47]     step    300  tokens    4,149,248  train 2.5691  lr_M 2.00e-02  B 32  201 ms
+[17:57:57]     step    350  tokens    4,968,448  train 2.4624  lr_M 2.00e-02  B 32  210 ms
+[17:58:07]     step    400  tokens    5,787,648  train 2.3718  lr_M 2.00e-02  B 32  203 ms
+[17:58:18]     step    450  tokens    6,606,848  train 2.3238  lr_M 1.76e-02  B 32  199 ms
+[17:58:28]     step    500  tokens    7,426,048  train 2.2561  lr_M 7.38e-03  B 32  213 ms
+[17:58:36]   eval @1.00  stories 2.0904  code 8.7065
+[17:58:47]     distil step 25/244  D_data 2.4431
+[17:58:56]     distil step 50/244  D_data 1.6341
+[17:59:05]     distil step 75/244  D_data 1.2348
+[17:59:14]     distil step 100/244  D_data 1.0012
+[17:59:23]     distil step 125/244  D_data 0.8280
+[17:59:32]     distil step 150/244  D_data 0.7011
+[17:59:41]     distil step 175/244  D_data 0.6119
+[17:59:51]     distil step 200/244  D_data 0.5246
+[18:00:00]     distil step 225/244  D_data 0.4763
+[18:00:07]   core after phase 1: stories 2.5819  code 8.6678
+[18:00:09] phase 2: birth {'birth': 'expand', 'new': 'fresh', 'core': 's0:d64/L8/h1/kv1/F256', 'k': 2, 'evals': {'stories': 2.58210760205111, 'code': 8.668144219365786}}
+[18:00:10] phase 2/4: code  pool 1010 (a48cadc5)  order 1015  8,000,000 tokens  arm sieve-fresh

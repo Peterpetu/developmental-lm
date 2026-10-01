@@ -1,0 +1,21 @@
+[07:53:59] R7 POP  tinystories  from runs/anlage/noise-tinystories-s0/seed0.pt  K 8  tokens/sib 6,250,000  alphas [200.0, 50.0, 10.0]  sigma_test(protocol) 0.0034
+[07:54:29]     merge fit step 50: CE 1.8362
+[07:54:56]     merge fit step 100: CE 1.8352
+[07:55:24]     merge fit step 150: CE 1.8345
+[07:55:51]     merge fit step 200: CE 1.8337
+[07:58:04]   alpha 200: parents ['a200 k3', 'a200 k5', 'a200 k7']  chosen merge  child test 1.7879  best sibling a200 k7 1.8845  centre 1.8881  merge-all 1.7971 (merge)
+[07:58:32]     merge fit step 50: CE 1.8399
+[07:59:00]     merge fit step 100: CE 1.8379
+[07:59:27]     merge fit step 150: CE 1.8370
+[07:59:54]     merge fit step 200: CE 1.8368
+[08:02:06]   alpha 50: parents ['a50 k5', 'a50 k7']  chosen merge  child test 1.7879  best sibling a50 k1 1.8803  centre 1.8881  merge-all 1.7961 (merge)
+[08:02:35]     merge fit step 50: CE 1.8364
+[08:03:03]     merge fit step 100: CE 1.8345
+[08:03:31]     merge fit step 150: CE 1.8343
+[08:03:59]     merge fit step 200: CE 1.8332
+[08:06:10]   alpha 10: parents ['centre s0', 'a10 k4', 'a10 k6']  chosen merge  child test 1.7857  best sibling a10 k4 1.8842  centre 1.8881  merge-all 1.7964 (merge)
+[08:18:35]   SINGLE (50,000,000 tokens at mu_0): test 1.6713  fit 1.6979
+[08:18:35]   alpha 200: child - best -0.0967 (-28.2 sigma)  child - SINGLE +0.1166 (+34.0 sigma)  K-POP FIRES
+[08:18:35]   alpha 50: child - best -0.0924 (-27.0 sigma)  child - SINGLE +0.1166 (+34.0 sigma)  K-POP FIRES
+[08:18:35]   alpha 10: child - best -0.0985 (-28.8 sigma)  child - SINGLE +0.1143 (+33.4 sigma)  K-POP FIRES
+[08:18:35] wrote runs\anlage\pop2-tinystories-s0\pop.json

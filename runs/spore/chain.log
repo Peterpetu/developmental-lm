@@ -1,0 +1,96 @@
+[22:25:56] chain started
+[22:25:56] step base-5M-s0: scripts/spore_life.py --name base-5M-s0 --budget 5000000 --D 2048 --seed 0
+[22:32:39] chain started
+[22:32:39] step base-5M-s0: scripts/spore_life.py --name base-5M-s0 --budget 5000000 --D 2048 --seed 0
+[22:37:49] step base-5M-s0 exit 0 in 309 s; artifact ok
+[22:37:49] step onehot-5M: scripts/spore_life.py --name onehot-5M --budget 5000000 --D 2048 --onehot
+[23:18:16] step onehot-5M exit 0 in 2428 s; artifact ok
+[23:18:16] step sem05-5M: scripts/spore_life.py --name sem05-5M --budget 5000000 --D 2048 --onehot --eta-sem 0.5
+[23:19:20] chain started
+[23:19:20] step sem05-5M: scripts/spore_life.py --name sem05-5M --budget 5000000 --D 2048 --eta-sem 0.5
+[23:24:29] step sem05-5M exit 0 in 309 s; artifact ok
+[23:24:29] step sem1-5M: scripts/spore_life.py --name sem1-5M --budget 5000000 --D 2048 --eta-sem 1.0
+[23:29:40] step sem1-5M exit 0 in 311 s; artifact ok
+[23:29:40] step E3-5M: scripts/spore_life.py --name E3-5M --budget 5000000 --D 2048 --E 3
+[23:39:16] step E3-5M exit 0 in 576 s; artifact ok
+[23:39:16] step sem05-lro-5M: scripts/spore_life.py --name sem05-lro-5M --budget 5000000 --D 2048 --eta-sem 0.5 --lro
+[23:44:27] step sem05-lro-5M exit 0 in 311 s; artifact ok
+[23:44:27] step sem05-d512-5M: scripts/spore_life.py --name sem05-d512-5M --budget 5000000 --D 2048 --eta-sem 0.5 --d-sem 512
+[23:49:38] step sem05-d512-5M exit 0 in 311 s; artifact ok
+[23:49:38] step sem05-dk2048-5M: scripts/spore_life.py --name sem05-dk2048-5M --budget 5000000 --D 2048 --eta-sem 0.5 --d-k 2048
+[23:55:55] step sem05-dk2048-5M exit 0 in 378 s; artifact ok
+[23:55:55] step sem05-E3-5M: scripts/spore_life.py --name sem05-E3-5M --budget 5000000 --D 2048 --eta-sem 0.5 --E 3
+[00:05:33] step sem05-E3-5M exit 0 in 578 s; artifact ok
+[00:05:33] step lr1e-2-5M: scripts/spore_life.py --name lr1e-2-5M --budget 5000000 --D 2048 --refine-lr 0.01
+[00:10:44] step lr1e-2-5M exit 0 in 310 s; artifact ok
+[00:10:44] step D4096o123-05M: scripts/spore_life.py --name D4096o123-05M --budget 500000 --D 4096 --orders 1,2,3 --k-wave 128 --score-tokens 65536
+[00:13:18] step D4096o123-05M exit 0 in 155 s; artifact ok
+[00:13:18] step s-nomem-5M: scripts/spore_life.py --name s-nomem-5M --budget 5000000 --D 2048 --eta-sem 0.5 --no-memory
+[00:17:31] step s-nomem-5M exit 0 in 253 s; artifact ok
+[00:17:31] step s-nobind-5M: scripts/spore_life.py --name s-nobind-5M --budget 5000000 --D 2048 --eta-sem 0.5 --no-binding
+[00:22:42] step s-nobind-5M exit 0 in 311 s; artifact ok
+[00:22:42] step s-D1024-5M: scripts/spore_life.py --name s-D1024-5M --budget 5000000 --D 1024 --eta-sem 0.5
+[00:25:44] step s-D1024-5M exit 0 in 182 s; artifact ok
+[00:25:44] step s-growoff-5M: scripts/spore_life.py --name s-growoff-5M --budget 5000000 --D 2048 --eta-sem 0.5 --growth off
+[00:29:53] step s-growoff-5M exit 0 in 248 s; artifact ok
+[00:29:53] step s-growrand-5M: scripts/spore_life.py --name s-growrand-5M --budget 5000000 --D 2048 --eta-sem 0.5 --growth random
+[00:35:03] step s-growrand-5M exit 0 in 311 s; artifact ok
+[00:35:03] step sem05-5M-s1: scripts/spore_life.py --name sem05-5M-s1 --budget 5000000 --D 2048 --eta-sem 0.5 --seed 10
+[00:40:14] step sem05-5M-s1 exit 0 in 311 s; artifact ok
+[00:40:14] step sem05-5M-s2: scripts/spore_life.py --name sem05-5M-s2 --budget 5000000 --D 2048 --eta-sem 0.5 --seed 20
+[00:45:25] step sem05-5M-s2 exit 0 in 311 s; artifact ok
+[00:45:25] step lr2e-2-5M: scripts/spore_life.py --name lr2e-2-5M --budget 5000000 --D 2048 --refine-lr 0.02
+[00:50:35] step lr2e-2-5M exit 0 in 310 s; artifact ok
+[00:50:35] step sem05-E3-25M: scripts/spore_life.py --name sem05-E3-25M --budget 25000000 --D 2048 --eta-sem 0.5 --E 3
+[01:34:58] step sem05-E3-25M exit 0 in 2664 s; artifact ok
+[01:34:58] step counts-25M: scripts/spore_baselines.py --name counts-25M --budget 25000000
+[01:35:09] step counts-25M exit 0 in 11 s; artifact ok
+[01:35:09] step sem05-E3-lr1e-2-5M: scripts/spore_life.py --name sem05-E3-lr1e-2-5M --budget 5000000 --D 2048 --eta-sem 0.5 --E 3 --refine-lr 0.01
+[01:44:47] step sem05-E3-lr1e-2-5M exit 0 in 578 s; artifact ok
+[01:44:47] step lr4e-2-5M: scripts/spore_life.py --name lr4e-2-5M --budget 5000000 --D 2048 --refine-lr 0.04
+[01:49:57] step lr4e-2-5M exit 0 in 310 s; artifact ok
+[01:49:57] step s-gridge-5M: scripts/spore_life.py --name s-gridge-5M --budget 5000000 --D 2048 --eta-sem 0.5 --growth ridge
+[01:54:43] step s-gridge-5M exit 0 in 286 s; artifact ok
+[01:54:43] step det-05M: scripts/spore_life.py --name det-05M --budget 500000 --D 2048 --k-wave 128 --score-tokens 65536
+[01:55:48] step det-05M exit 0 in 65 s; artifact ok
+[01:55:48] step final-25M: scripts/spore_life.py --name final-25M --budget 25000000 --D 2048 --eta-sem 0.5 --d-k 2048 --E 3 --refine-lr 0.01 --growth ridge
+[02:49:21] step final-25M exit 0 in 3212 s; artifact ok
+[02:49:21] step sem05-05M: scripts/spore_life.py --name sem05-05M --budget 500000 --D 2048 --eta-sem 0.5 --k-wave 128 --score-tokens 65536
+[02:50:26] step sem05-05M exit 0 in 65 s; artifact ok
+[02:50:26] step sem05-det-05M: scripts/spore_life.py --name sem05-det-05M --budget 500000 --D 2048 --eta-sem 0.5 --k-wave 128 --score-tokens 65536
+[02:51:31] step sem05-det-05M exit 0 in 65 s; artifact ok
+[02:51:31] step det2a-05M: scripts/spore_life.py --name det2a-05M --budget 500000 --D 2048 --k-wave 128 --score-tokens 65536
+[02:52:36] step det2a-05M exit 0 in 65 s; artifact ok
+[02:52:36] step det2b-05M: scripts/spore_life.py --name det2b-05M --budget 500000 --D 2048 --k-wave 128 --score-tokens 65536
+[02:53:43] step det2b-05M exit 0 in 67 s; artifact ok
+[02:53:43] step det3a-05M: scripts/spore_life.py --name det3a-05M --budget 500000 --D 2048 --k-wave 128 --score-tokens 65536
+[02:54:50] step det3a-05M exit 0 in 67 s; artifact ok
+[02:54:50] step det3b-05M: scripts/spore_life.py --name det3b-05M --budget 500000 --D 2048 --k-wave 128 --score-tokens 65536
+[02:55:57] step det3b-05M exit 0 in 67 s; artifact ok
+[02:55:57] step s-kw2048-5M: scripts/spore_life.py --name s-kw2048-5M --budget 5000000 --D 2048 --eta-sem 0.5 --k-w 2048
+[03:01:14] step s-kw2048-5M exit 0 in 317 s; artifact ok
+[03:01:14] step s-kw2048-rand-5M: scripts/spore_life.py --name s-kw2048-rand-5M --budget 5000000 --D 2048 --eta-sem 0.5 --k-w 2048 --growth random
+[03:06:30] step s-kw2048-rand-5M exit 0 in 316 s; artifact ok
+[03:06:30] step s-cos-kw2048-5M: scripts/spore_life.py --name s-cos-kw2048-5M --budget 5000000 --D 2048 --eta-sem 0.5 --k-w 2048 --psi cos
+[03:11:39] step s-cos-kw2048-5M exit 1 in 309 s; artifact MISSING
+[03:11:39] step evo-1M: scripts/spore_evolve.py --name evo-1M --budget 1000000 --D 2048 --eta-sem 0.5 --k-wave 256 --score-tokens 65536 --refine-lr 0.01 --pop 8 --elites 2 --generations 12 --wall-hours 1.5
+[05:01:55] step evo-1M exit 0 in 6616 s; artifact ok
+[05:01:55] step s-res-5M: scripts/spore_life.py --name s-res-5M --budget 5000000 --D 2048 --eta-sem 0.5 --reservoir
+[05:08:24] step s-res-5M exit 0 in 390 s; artifact ok
+[05:08:24] step elite-5M: scripts/spore_life.py --name elite-5M --budget 5000000 --genome-json runs/spore/evo-1M/elite_genome.json
+[05:16:29] step elite-5M exit 0 in 484 s; artifact ok
+[05:16:29] step sem05-E2-5M: scripts/spore_life.py --name sem05-E2-5M --budget 5000000 --D 2048 --eta-sem 0.5 --E 2
+[05:24:01] step sem05-E2-5M exit 0 in 452 s; artifact ok
+[05:24:01] step sw-base-1M: scripts/spore_life.py --name sw-base-1M --budget 1000000 --D 2048 --eta-sem 0.5 --k-wave 256 --score-tokens 65536 --refine-lr 0.01
+[05:25:35] step sw-base-1M exit 0 in 95 s; artifact ok
+[05:25:35] step sw-E2-1M: scripts/spore_life.py --name sw-E2-1M --budget 1000000 --D 2048 --eta-sem 0.5 --k-wave 256 --score-tokens 65536 --refine-lr 0.01 --E 2
+[05:27:36] step sw-E2-1M exit 0 in 121 s; artifact ok
+[05:27:36] step sw-gb083-1M: scripts/spore_life.py --name sw-gb083-1M --budget 1000000 --D 2048 --eta-sem 0.5 --k-wave 256 --score-tokens 65536 --refine-lr 0.01 --gamma-b 0.83
+[05:29:10] step sw-gb083-1M exit 0 in 95 s; artifact ok
+[05:29:10] step sw-E2-gb083-1M: scripts/spore_life.py --name sw-E2-gb083-1M --budget 1000000 --D 2048 --eta-sem 0.5 --k-wave 256 --score-tokens 65536 --refine-lr 0.01 --E 2 --gamma-b 0.83
+[05:31:11] step sw-E2-gb083-1M exit 0 in 120 s; artifact ok
+[05:31:11] step sw-res-1M: scripts/spore_life.py --name sw-res-1M --budget 1000000 --D 2048 --eta-sem 0.5 --k-wave 256 --score-tokens 65536 --refine-lr 0.01 --reservoir --rho-res 0.61
+[05:33:08] step sw-res-1M exit 0 in 117 s; artifact ok
+[05:33:08] step sw-E2-res-dk512-1M: scripts/spore_life.py --name sw-E2-res-dk512-1M --budget 1000000 --D 2048 --eta-sem 0.5 --k-wave 256 --score-tokens 65536 --refine-lr 0.01 --E 2 --reservoir --rho-res 0.61 --d-k 512
+[05:35:26] step sw-E2-res-dk512-1M exit 0 in 139 s; artifact ok
+[05:35:26] queue complete

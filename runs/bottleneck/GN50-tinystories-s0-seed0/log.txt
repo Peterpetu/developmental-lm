@@ -1,0 +1,290 @@
+[16:55:31] BOTTLENECK GN50  tinystories s0:d256/L8/h4/kv2/F1024  H 50 H2 10  genome 122,089 params  ratio 106.6x  generations 200 x 1,000,000 tokens  lambda 20.0  refit 50 steps on 0.167 of entries (cap 65,536)
+[16:55:32]   random genome at birth: 9.0110   (L_null = 9.0109)
+[16:56:11]     step    200  tokens      819,200  train 4.3064  lr_M 4.06e-03  B 8  196 ms
+[16:56:27]   gen    1  tokens    1,003,520  eps 0.9512  before 3.3895  birth 9.0488  after 3.4363  shuffle 9.0042  resid 0.837 (max 1.000)  7.7s
+[16:56:58]     step    400  tokens    1,638,400  train 3.2114  lr_M 8.13e-03  B 8  186 ms
+[16:57:22]   gen    2  tokens    2,002,944  eps 0.9048  before 2.8964  birth 10.3524  after 2.9460  shuffle nan  resid 0.793 (max 1.000)  7.3s
+[16:57:43]     step    600  tokens    2,457,600  train 2.8686  lr_M 1.22e-02  B 8  193 ms
+[16:58:16]   gen    3  tokens    3,002,368  eps 0.8607  before 2.6914  birth 12.0636  after 2.7600  shuffle nan  resid 0.788 (max 1.000)  6.8s
+[16:58:29]     step    800  tokens    3,276,800  train 2.7727  lr_M 1.63e-02  B 8  184 ms
+[16:58:56]   gen    4  tokens    4,005,888  eps 0.8187  before 2.4951  birth 13.9602  after 2.5961  shuffle nan  resid 0.784 (max 0.999)  7.5s
+[16:59:16]     step   1000  tokens    4,841,472  train 2.5257  lr_M 2.00e-02  B 16  219 ms
+[16:59:28]   gen    5  tokens    5,005,312  eps 0.7788  before 2.4204  birth 13.7192  after 2.5553  shuffle nan  resid 0.779 (max 0.999)  7.6s
+[16:59:59]   gen    6  tokens    6,004,736  eps 0.7408  before 2.3860  birth 13.2680  after 2.5489  shuffle nan  resid 0.776 (max 0.998)  7.4s
+[17:00:11]     step   1200  tokens    6,479,872  train 2.4675  lr_M 2.00e-02  B 16  214 ms
+[17:00:30]   gen    7  tokens    7,004,160  eps 0.7047  before 2.3687  birth 12.8651  after 2.5814  shuffle nan  resid 0.772 (max 0.997)  6.9s
+[17:01:02]   gen    8  tokens    8,003,584  eps 0.6703  before 2.3752  birth 12.1378  after 2.6689  shuffle nan  resid 0.770 (max 0.996)  6.7s
+[17:01:05]     step   1400  tokens    8,118,272  train 2.4558  lr_M 2.00e-02  B 16  194 ms
+[17:01:34]   gen    9  tokens    9,003,008  eps 0.6376  before 2.3731  birth 11.7428  after 2.7300  shuffle nan  resid 0.767 (max 0.994)  6.7s
+[17:01:53]     step   1600  tokens    9,756,672  train 2.4861  lr_M 2.00e-02  B 16  211 ms
+[17:02:00]   eval tokens   10,002,432  held-out 2.3930
+[17:02:07]   gen   10  tokens   10,002,432  eps 0.6065  before 2.3930  birth 10.6693  after 2.8402  shuffle 9.2597  resid 0.765 (max 0.994)  7.2s
+[17:02:42]   gen   11  tokens   11,010,048  eps 0.5769  before 2.3085  birth 10.3303  after 2.9250  shuffle nan  resid 0.758 (max 0.992)  6.8s
+[17:03:18]   gen   12  tokens   12,005,376  eps 0.5488  before 2.3320  birth 9.9821  after 3.0517  shuffle nan  resid 0.754 (max 0.991)  7.0s
+[17:03:19]     step   1800  tokens   12,066,816  train 2.4638  lr_M 2.00e-02  B 24  346 ms
+[17:03:52]   gen   13  tokens   13,000,704  eps 0.5220  before 2.3400  birth 10.0295  after 3.2125  shuffle nan  resid 0.751 (max 0.990)  6.9s
+[17:04:27]   gen   14  tokens   14,008,320  eps 0.4966  before 2.3457  birth 9.6770  after 3.3614  shuffle nan  resid 0.749 (max 0.990)  6.8s
+[17:04:40]     step   2000  tokens   14,524,416  train 2.5375  lr_M 2.00e-02  B 24  304 ms
+[17:05:01]   gen   15  tokens   15,003,648  eps 0.4724  before 2.3720  birth 9.5649  after 3.3337  shuffle nan  resid 0.748 (max 0.990)  7.3s
+[17:05:37]   gen   16  tokens   16,011,264  eps 0.4493  before 2.3706  birth 9.4231  after 3.7466  shuffle nan  resid 0.745 (max 0.991)  7.5s
+[17:06:10]   gen   17  tokens   17,006,592  eps 0.4274  before 2.3639  birth 9.2867  after 3.9498  shuffle nan  resid 0.741 (max 0.990)  7.6s
+[17:06:11]     step   2200  tokens   17,055,744  train 2.5783  lr_M 2.00e-02  B 32  359 ms
+[17:06:37]   gen   18  tokens   18,006,016  eps 0.4066  before 2.3551  birth 9.1427  after 4.1041  shuffle nan  resid 0.734 (max 0.987)  7.2s
+[17:07:06]   gen   19  tokens   19,005,440  eps 0.3867  before 2.3772  birth 9.1256  after 4.2818  shuffle nan  resid 0.731 (max 0.987)  6.9s
+[17:07:28]   eval tokens   20,004,864  held-out 2.3851
+[17:07:35]   gen   20  tokens   20,004,864  eps 0.3679  before 2.3851  birth 9.1532  after 4.3891  shuffle 9.0079  resid 0.728 (max 0.987)  7.3s
+[17:07:42]     step   2400  tokens   20,332,544  train 2.7329  lr_M 2.00e-02  B 32  360 ms
+[17:08:04]   gen   21  tokens   21,004,288  eps 0.3499  before 2.4002  birth 9.1052  after 4.9490  shuffle nan  resid 0.726 (max 0.986)  7.9s
+[17:08:32]   gen   22  tokens   22,003,712  eps 0.3329  before 2.4141  birth 9.0972  after 5.0751  shuffle nan  resid 0.725 (max 0.986)  6.9s
+[17:09:01]   gen   23  tokens   23,003,136  eps 0.3166  before 2.4288  birth 9.0965  after 5.1947  shuffle nan  resid 0.724 (max 0.985)  7.1s
+[17:09:14]     step   2600  tokens   23,609,344  train 2.8080  lr_M 2.00e-02  B 32  388 ms
+[17:09:29]   gen   24  tokens   24,002,560  eps 0.3012  before 2.4408  birth 9.0521  after 5.4046  shuffle nan  resid 0.720 (max 0.985)  7.1s
+[17:09:58]   gen   25  tokens   25,001,984  eps 0.2865  before 2.4559  birth 9.1118  after 5.7659  shuffle nan  resid 0.718 (max 0.983)  7.7s
+[17:10:26]   gen   26  tokens   26,001,408  eps 0.2725  before 2.4776  birth 9.0523  after 5.9433  shuffle nan  resid 0.717 (max 0.983)  6.9s
+[17:10:46]     step   2800  tokens   26,886,144  train 2.8784  lr_M 2.00e-02  B 32  358 ms
+[17:10:55]   gen   27  tokens   27,000,832  eps 0.2592  before 2.5002  birth 9.0784  after 5.8783  shuffle nan  resid 0.714 (max 0.983)  6.8s
+[17:11:24]   gen   28  tokens   28,000,256  eps 0.2466  before 2.5170  birth 9.0432  after 6.3936  shuffle nan  resid 0.714 (max 0.982)  7.0s
+[17:11:52]   gen   29  tokens   29,016,064  eps 0.2346  before 2.5433  birth 9.0458  after 6.2187  shuffle nan  resid 0.711 (max 0.982)  8.1s
+[17:12:13]   eval tokens   30,015,488  held-out 2.5874
+[17:12:21]   gen   30  tokens   30,015,488  eps 0.2231  before 2.5874  birth 9.0584  after 6.2268  shuffle 9.0112  resid 0.710 (max 0.981)  7.9s
+[17:12:25]     step   3000  tokens   30,162,944  train 3.4102  lr_M 2.00e-02  B 32  468 ms
+[17:12:49]   gen   31  tokens   31,014,912  eps 0.2122  before 2.6146  birth 9.0464  after 6.4809  shuffle nan  resid 0.706 (max 0.980)  6.8s
+[17:13:18]   gen   32  tokens   32,014,336  eps 0.2019  before 2.6701  birth 9.0526  after 6.5417  shuffle nan  resid 0.705 (max 0.981)  7.0s
+[17:13:47]   gen   33  tokens   33,013,760  eps 0.1920  before 2.7605  birth 9.0705  after 6.6627  shuffle nan  resid 0.705 (max 0.982)  7.5s
+[17:13:55]     step   3200  tokens   33,439,744  train 3.8822  lr_M 2.00e-02  B 32  303 ms
+[17:14:14]   gen   34  tokens   34,013,184  eps 0.1827  before 2.7653  birth 9.0609  after 6.7947  shuffle nan  resid 0.703 (max 0.982)  7.0s
+[17:14:42]   gen   35  tokens   35,012,608  eps 0.1738  before 2.8750  birth 9.1627  after 6.6548  shuffle nan  resid 0.704 (max 0.982)  7.1s
+[17:15:10]   gen   36  tokens   36,012,032  eps 0.1653  before 2.7839  birth 9.0495  after 6.6634  shuffle nan  resid 0.696 (max 0.982)  6.9s
+[17:15:25]     step   3400  tokens   36,716,544  train 3.8556  lr_M 2.00e-02  B 32  347 ms
+[17:15:39]   gen   37  tokens   37,011,456  eps 0.1572  before 2.8859  birth 9.1610  after 6.5893  shuffle nan  resid 0.700 (max 0.983)  7.8s
+[17:16:08]   gen   38  tokens   38,010,880  eps 0.1496  before 2.8464  birth 9.1818  after 6.5867  shuffle nan  resid 0.697 (max 0.983)  7.2s
+[17:16:36]   gen   39  tokens   39,010,304  eps 0.1423  before 2.8662  birth 9.1713  after 6.7122  shuffle nan  resid 0.698 (max 0.983)  6.7s
+[17:16:57]     step   3600  tokens   39,993,344  train 3.6688  lr_M 2.00e-02  B 32  360 ms
+[17:16:58]   eval tokens   40,009,728  held-out 2.8968
+[17:17:05]   gen   40  tokens   40,009,728  eps 0.1353  before 2.8968  birth 9.2146  after 6.7169  shuffle 9.0110  resid 0.696 (max 0.983)  7.7s
+[17:17:33]   gen   41  tokens   41,009,152  eps 0.1287  before 2.9042  birth 9.2865  after 6.6236  shuffle nan  resid 0.695 (max 0.982)  7.6s
+[17:18:00]   gen   42  tokens   42,008,576  eps 0.1225  before 3.0756  birth 9.2863  after 6.7585  shuffle nan  resid 0.696 (max 0.983)  7.0s
+[17:18:29]   gen   43  tokens   43,008,000  eps 0.1165  before 3.0099  birth 9.2431  after 6.6663  shuffle nan  resid 0.690 (max 0.982)  6.8s
+[17:18:34]     step   3800  tokens   43,270,144  train 4.3060  lr_M 2.00e-02  B 32  305 ms
+[17:18:58]   gen   44  tokens   44,007,424  eps 0.1108  before 2.9682  birth 9.3289  after 6.7450  shuffle nan  resid 0.689 (max 0.984)  6.9s
+[17:19:26]   gen   45  tokens   45,006,848  eps 0.1054  before 2.9655  birth 8.8289  after 6.6594  shuffle nan  resid 0.687 (max 0.983)  7.7s
+[17:19:54]   gen   46  tokens   46,006,272  eps 0.1003  before 3.0006  birth 9.0981  after 6.6743  shuffle nan  resid 0.684 (max 0.982)  7.5s
+[17:20:06]     step   4000  tokens   46,546,944  train 4.2661  lr_M 2.00e-02  B 32  326 ms
+[17:20:22]   gen   47  tokens   47,005,696  eps 0.0954  before 3.0120  birth 9.3236  after 7.1871  shuffle nan  resid 0.684 (max 0.982)  6.7s
+[17:20:51]   gen   48  tokens   48,005,120  eps 0.0907  before 3.1023  birth 9.7947  after 7.1025  shuffle nan  resid 0.684 (max 0.979)  7.0s
+[17:21:20]   gen   49  tokens   49,004,544  eps 0.0863  before 3.1176  birth 9.4466  after 7.2001  shuffle nan  resid 0.681 (max 0.976)  7.6s
+[17:21:37]     step   4200  tokens   49,823,744  train 4.2163  lr_M 2.00e-02  B 32  377 ms
+[17:21:42]   eval tokens   50,003,968  held-out 3.1513
+[17:21:49]   gen   50  tokens   50,003,968  eps 0.0821  before 3.1513  birth 9.5451  after 6.8584  shuffle 9.0110  resid 0.681 (max 0.975)  7.7s
+[17:22:18]   gen   51  tokens   51,003,392  eps 0.0781  before 3.0811  birth 9.3783  after 7.2447  shuffle nan  resid 0.675 (max 0.975)  6.9s
+[17:22:46]   gen   52  tokens   52,002,816  eps 0.0743  before 3.2013  birth 9.4712  after 6.9656  shuffle nan  resid 0.678 (max 0.974)  7.4s
+[17:23:15]   gen   53  tokens   53,002,240  eps 0.0707  before 3.0944  birth 9.4948  after 7.1584  shuffle nan  resid 0.672 (max 0.975)  7.2s
+[17:23:17]     step   4400  tokens   53,100,544  train 4.2492  lr_M 2.00e-02  B 32  359 ms
+[17:23:43]   gen   54  tokens   54,001,664  eps 0.0672  before 3.1568  birth 9.5115  after 7.0845  shuffle nan  resid 0.668 (max 0.972)  7.3s
+[17:24:12]   gen   55  tokens   55,001,088  eps 0.0639  before 3.1938  birth 8.6810  after 6.9254  shuffle nan  resid 0.667 (max 0.970)  6.8s
+[17:24:41]   gen   56  tokens   56,000,512  eps 0.0608  before 3.1124  birth 9.5943  after 7.6553  shuffle nan  resid 0.664 (max 0.971)  6.9s
+[17:24:48]     step   4600  tokens   56,377,344  train 4.5256  lr_M 2.00e-02  B 32  341 ms
+[17:25:09]   gen   57  tokens   57,016,320  eps 0.0578  before 3.1679  birth 9.1498  after 7.1674  shuffle nan  resid 0.664 (max 0.972)  7.6s
+[17:25:36]   gen   58  tokens   58,015,744  eps 0.0550  before 3.1486  birth 9.0958  after 7.1796  shuffle nan  resid 0.661 (max 0.970)  7.3s
+[17:26:05]   gen   59  tokens   59,015,168  eps 0.0523  before 3.2431  birth 9.3400  after 7.6877  shuffle nan  resid 0.656 (max 0.969)  6.6s
+[17:26:19]     step   4800  tokens   59,654,144  train 4.5511  lr_M 2.00e-02  B 32  342 ms
+[17:26:27]   eval tokens   60,014,592  held-out 3.2420
+[17:26:34]   gen   60  tokens   60,014,592  eps 0.0498  before 3.2420  birth 8.8938  after 7.0462  shuffle 9.0110  resid 0.657 (max 0.968)  7.4s
+[17:27:03]   gen   61  tokens   61,014,016  eps 0.0474  before 3.1851  birth 9.1383  after 8.3423  shuffle nan  resid 0.653 (max 0.970)  7.3s
+[17:27:31]   gen   62  tokens   62,013,440  eps 0.0450  before 3.3457  birth 8.1382  after 7.1551  shuffle nan  resid 0.655 (max 0.970)  7.6s
+[17:27:50]     step   5000  tokens   62,930,944  train 4.3089  lr_M 2.00e-02  B 32  333 ms
+[17:27:59]   gen   63  tokens   63,012,864  eps 0.0429  before 3.2790  birth 8.2976  after 7.1604  shuffle nan  resid 0.649 (max 0.969)  7.1s
+[17:28:27]   gen   64  tokens   64,012,288  eps 0.0408  before 3.2881  birth 8.6711  after 7.1961  shuffle nan  resid 0.642 (max 0.968)  6.6s
+[17:28:56]   gen   65  tokens   65,011,712  eps 0.0388  before 3.2283  birth 8.7614  after 7.0885  shuffle nan  resid 0.643 (max 0.969)  7.2s
+[17:29:24]   gen   66  tokens   66,011,136  eps 0.0369  before 3.3945  birth 9.2693  after 8.1462  shuffle nan  resid 0.648 (max 0.971)  7.5s
+[17:29:29]     step   5200  tokens   66,207,744  train 4.7541  lr_M 2.00e-02  B 32  320 ms
+[17:29:52]   gen   67  tokens   67,010,560  eps 0.0351  before 3.3086  birth 9.0993  after 7.5431  shuffle nan  resid 0.633 (max 0.969)  6.6s
+[17:30:21]   gen   68  tokens   68,009,984  eps 0.0334  before 3.2736  birth 9.3687  after 8.0805  shuffle nan  resid 0.633 (max 0.969)  7.3s
+[17:30:49]   gen   69  tokens   69,009,408  eps 0.0317  before 3.3467  birth 8.7057  after 7.4671  shuffle nan  resid 0.624 (max 0.970)  7.5s
+[17:30:59]     step   5400  tokens   69,484,544  train 4.8273  lr_M 2.00e-02  B 32  317 ms
+[17:31:10]   eval tokens   70,008,832  held-out 3.3582
+[17:31:18]   gen   70  tokens   70,008,832  eps 0.0302  before 3.3582  birth 9.2661  after 8.8045  shuffle 9.0109  resid 0.625 (max 0.972)  7.7s
+[17:31:46]   gen   71  tokens   71,008,256  eps 0.0287  before 3.4189  birth 8.2644  after 7.3264  shuffle nan  resid 0.615 (max 0.972)  6.8s
+[17:32:15]   gen   72  tokens   72,007,680  eps 0.0273  before 3.4492  birth 7.8208  after 7.2549  shuffle nan  resid 0.618 (max 0.974)  6.9s
+[17:32:29]     step   5600  tokens   72,761,344  train 4.7398  lr_M 2.00e-02  B 32  383 ms
+[17:32:43]   gen   73  tokens   73,007,104  eps 0.0260  before 3.4108  birth 8.4446  after 7.6652  shuffle nan  resid 0.607 (max 0.971)  7.3s
+[17:33:10]   gen   74  tokens   74,006,528  eps 0.0247  before 3.4044  birth 7.7397  after 7.3490  shuffle nan  resid 0.600 (max 0.965)  7.6s
+[17:33:38]   gen   75  tokens   75,005,952  eps 0.0235  before 3.4344  birth 8.0362  after 7.3986  shuffle nan  resid 0.602 (max 0.971)  6.6s
+[17:34:06]   gen   76  tokens   76,005,376  eps 0.0224  before 3.3755  birth 8.3621  after 7.8120  shuffle nan  resid 0.600 (max 0.972)  7.0s
+[17:34:07]     step   5800  tokens   76,038,144  train 4.5178  lr_M 2.00e-02  B 32  302 ms
+[17:34:35]   gen   77  tokens   77,004,800  eps 0.0213  before 3.4074  birth 7.5158  after 7.2298  shuffle nan  resid 0.601 (max 0.969)  7.3s
+[17:35:02]   gen   78  tokens   78,004,224  eps 0.0202  before 3.4406  birth 8.0114  after 7.5653  shuffle nan  resid 0.597 (max 0.965)  7.1s
+[17:35:30]   gen   79  tokens   79,003,648  eps 0.0193  before 3.4830  birth 7.9444  after 7.5677  shuffle nan  resid 0.592 (max 0.968)  7.0s
+[17:35:37]     step   6000  tokens   79,314,944  train 5.0483  lr_M 2.00e-02  B 32  346 ms
+[17:35:52]   eval tokens   80,003,072  held-out 3.4763
+[17:35:59]   gen   80  tokens   80,003,072  eps 0.0183  before 3.4763  birth 7.7446  after 7.4575  shuffle 9.0109  resid 0.586 (max 0.967)  7.3s
+[17:36:27]   gen   81  tokens   81,002,496  eps 0.0174  before 3.4074  birth 7.4562  after 7.2580  shuffle nan  resid 0.585 (max 0.965)  7.3s
+[17:36:56]   gen   82  tokens   82,001,920  eps 0.0166  before 3.4039  birth 7.5700  after 7.2940  shuffle nan  resid 0.586 (max 0.968)  7.5s
+[17:37:08]     step   6200  tokens   82,591,744  train 4.8592  lr_M 2.00e-02  B 32  388 ms
+[17:37:24]   gen   83  tokens   83,001,344  eps 0.0158  before 3.4445  birth 7.4729  after 7.3041  shuffle nan  resid 0.591 (max 0.970)  6.6s
+[17:37:52]   gen   84  tokens   84,000,768  eps 0.0150  before 3.3795  birth 7.4903  after 7.3923  shuffle nan  resid 0.573 (max 0.972)  6.9s
+[17:38:21]   gen   85  tokens   85,000,192  eps 0.0143  before 3.4083  birth 8.2676  after 7.7959  shuffle nan  resid 0.587 (max 0.972)  7.6s
+[17:38:39]     step   6400  tokens   85,868,544  train 4.6590  lr_M 2.00e-02  B 32  321 ms
+[17:38:49]   gen   86  tokens   86,016,000  eps 0.0136  before 3.4826  birth 7.4649  after 7.3587  shuffle nan  resid 0.590 (max 0.976)  7.4s
+[17:39:18]   gen   87  tokens   87,015,424  eps 0.0129  before 3.4982  birth 7.4411  after 7.2954  shuffle nan  resid 0.581 (max 0.974)  6.8s
+[17:39:47]   gen   88  tokens   88,014,848  eps 0.0123  before 3.3886  birth 7.8554  after 7.5758  shuffle nan  resid 0.579 (max 0.975)  7.1s
+[17:40:16]   gen   89  tokens   89,014,272  eps 0.0117  before 3.4688  birth 7.4406  after 7.2886  shuffle nan  resid 0.580 (max 0.976)  7.3s
+[17:40:19]     step   6600  tokens   89,145,344  train 4.6959  lr_M 2.00e-02  B 32  374 ms
+[17:40:37]   eval tokens   90,013,696  held-out 3.4458
+[17:40:46]   gen   90  tokens   90,013,696  eps 0.0111  before 3.4458  birth 7.4812  after 7.3389  shuffle 9.0109  resid 0.575 (max 0.979)  8.6s
+[17:41:13]   gen   91  tokens   91,013,120  eps 0.0106  before 3.4398  birth 7.8407  after 7.6495  shuffle nan  resid 0.567 (max 0.979)  7.0s
+[17:41:42]   gen   92  tokens   92,012,544  eps 0.0101  before 3.4357  birth 7.5895  after 7.4651  shuffle nan  resid 0.563 (max 0.974)  6.6s
+[17:41:51]     step   6800  tokens   92,422,144  train 4.9309  lr_M 2.00e-02  B 32  338 ms
+[17:42:11]   gen   93  tokens   93,011,968  eps 0.0096  before 3.3609  birth 7.5782  after 7.4175  shuffle nan  resid 0.550 (max 0.972)  6.9s
+[17:42:39]   gen   94  tokens   94,011,392  eps 0.0091  before 3.6495  birth 7.6437  after 7.4957  shuffle nan  resid 0.558 (max 0.976)  7.8s
+[17:43:08]   gen   95  tokens   95,010,816  eps 0.0087  before 3.4346  birth 7.8539  after 7.6513  shuffle nan  resid 0.547 (max 0.968)  6.8s
+[17:43:23]     step   7000  tokens   95,698,944  train 4.9138  lr_M 2.00e-02  B 32  328 ms
+[17:43:37]   gen   96  tokens   96,010,240  eps 0.0082  before 3.5607  birth 7.7626  after 7.6680  shuffle nan  resid 0.546 (max 0.971)  7.3s
+[17:44:05]   gen   97  tokens   97,009,664  eps 0.0078  before 3.4679  birth 8.1408  after 7.8572  shuffle nan  resid 0.541 (max 0.969)  7.1s
+[17:44:34]   gen   98  tokens   98,009,088  eps 0.0074  before 3.5456  birth 7.6058  after 7.5009  shuffle nan  resid 0.544 (max 0.965)  7.8s
+[17:44:54]     step   7200  tokens   98,975,744  train 4.7600  lr_M 2.00e-02  B 32  350 ms
+[17:45:02]   gen   99  tokens   99,008,512  eps 0.0071  before 3.6220  birth 8.1994  after 8.1334  shuffle nan  resid 0.539 (max 0.960)  6.9s
+[17:45:24]   eval tokens  100,007,936  held-out 3.4899
+[17:45:32]   gen  100  tokens  100,007,936  eps 0.0067  before 3.4899  birth 7.8337  after 7.7001  shuffle 9.0109  resid 0.531 (max 0.959)  7.3s
+[17:46:00]   gen  101  tokens  101,007,360  eps 0.0064  before 3.5424  birth 7.6205  after 7.5254  shuffle nan  resid 0.534 (max 0.957)  7.0s
+[17:46:28]   gen  102  tokens  102,006,784  eps 0.0061  before 3.5115  birth 8.0644  after 8.0452  shuffle nan  resid 0.535 (max 0.954)  8.0s
+[17:46:34]     step   7400  tokens  102,252,544  train 5.0355  lr_M 2.00e-02  B 32  349 ms
+[17:46:56]   gen  103  tokens  103,006,208  eps 0.0058  before 3.5523  birth 7.4601  after 7.4022  shuffle nan  resid 0.521 (max 0.957)  6.8s
+[17:47:25]   gen  104  tokens  104,005,632  eps 0.0055  before 3.4518  birth 7.6468  after 7.5887  shuffle nan  resid 0.525 (max 0.959)  6.9s
+[17:47:54]   gen  105  tokens  105,005,056  eps 0.0052  before 3.4188  birth 8.4678  after 8.3313  shuffle nan  resid 0.529 (max 0.966)  7.2s
+[17:48:04]     step   7600  tokens  105,529,344  train 5.0474  lr_M 2.00e-02  B 32  307 ms
+[17:48:22]   gen  106  tokens  106,004,480  eps 0.0050  before 3.5471  birth 7.4456  after 7.3894  shuffle nan  resid 0.529 (max 0.966)  7.6s
+[17:48:50]   gen  107  tokens  107,003,904  eps 0.0047  before 3.4037  birth 7.4262  after 7.3706  shuffle nan  resid 0.525 (max 0.966)  7.5s
+[17:49:18]   gen  108  tokens  108,003,328  eps 0.0045  before 3.3950  birth 7.2874  after 7.2401  shuffle nan  resid 0.531 (max 0.970)  7.0s
+[17:49:35]     step   7800  tokens  108,806,144  train 4.6649  lr_M 2.00e-02  B 32  371 ms
+[17:49:46]   gen  109  tokens  109,002,752  eps 0.0043  before 3.4559  birth 7.4422  after 7.4109  shuffle nan  resid 0.529 (max 0.970)  6.8s
+[17:50:08]   eval tokens  110,002,176  held-out 3.4016
+[17:50:16]   gen  110  tokens  110,002,176  eps 0.0041  before 3.4016  birth 7.5304  after 7.4895  shuffle 9.0109  resid 0.520 (max 0.964)  8.1s
+[17:50:44]   gen  111  tokens  111,001,600  eps 0.0039  before 3.4542  birth 7.5282  after 7.4783  shuffle nan  resid 0.521 (max 0.966)  7.0s
+[17:51:12]   gen  112  tokens  112,001,024  eps 0.0037  before 3.3830  birth 7.5450  after 7.5008  shuffle nan  resid 0.520 (max 0.970)  6.8s
+[17:51:13]     step   8000  tokens  112,082,944  train 4.6195  lr_M 2.00e-02  B 32  332 ms
+[17:51:39]   gen  113  tokens  113,000,448  eps 0.0035  before 3.4551  birth 7.6404  after 7.5928  shuffle nan  resid 0.514 (max 0.972)  7.1s
+[17:52:08]   gen  114  tokens  114,016,256  eps 0.0033  before 3.5068  birth 8.1575  after 8.0268  shuffle nan  resid 0.513 (max 0.974)  7.5s
+[17:52:36]   gen  115  tokens  115,015,680  eps 0.0032  before 3.4798  birth 7.8855  after 7.7723  shuffle nan  resid 0.515 (max 0.970)  7.0s
+[17:52:44]     step   8200  tokens  115,359,744  train 5.0207  lr_M 2.00e-02  B 32  443 ms
+[17:53:05]   gen  116  tokens  116,015,104  eps 0.0030  before 3.4083  birth 7.9647  after 7.9441  shuffle nan  resid 0.516 (max 0.971)  7.0s
+[17:53:34]   gen  117  tokens  117,014,528  eps 0.0029  before 3.6048  birth 7.8451  after 7.7910  shuffle nan  resid 0.513 (max 0.975)  6.9s
+[17:54:03]   gen  118  tokens  118,013,952  eps 0.0027  before 3.4554  birth 7.6753  after 7.6433  shuffle nan  resid 0.495 (max 0.972)  7.8s
+[17:54:16]     step   8400  tokens  118,636,544  train 4.8979  lr_M 2.00e-02  B 32  328 ms
+[17:54:31]   gen  119  tokens  119,013,376  eps 0.0026  before 3.4013  birth 8.2323  after 8.1729  shuffle nan  resid 0.490 (max 0.973)  7.3s
+[17:54:53]   eval tokens  120,012,800  held-out 3.4954
+[17:55:00]   gen  120  tokens  120,012,800  eps 0.0025  before 3.4954  birth 7.9928  after 7.9669  shuffle 9.0109  resid 0.500 (max 0.977)  7.1s
+[17:55:29]   gen  121  tokens  121,012,224  eps 0.0024  before 3.5500  birth 8.0060  after 7.9521  shuffle nan  resid 0.500 (max 0.974)  7.1s
+[17:55:48]     step   8600  tokens  121,913,344  train 4.7985  lr_M 2.00e-02  B 32  358 ms
+[17:55:58]   gen  122  tokens  122,011,648  eps 0.0022  before 3.5515  birth 7.8956  after 7.8729  shuffle nan  resid 0.488 (max 0.964)  7.7s
+[17:56:25]   gen  123  tokens  123,011,072  eps 0.0021  before 3.5248  birth 7.7404  after 7.7134  shuffle nan  resid 0.482 (max 0.968)  6.9s
+[17:56:53]   gen  124  tokens  124,010,496  eps 0.0020  before 3.4609  birth 8.0878  after 8.0446  shuffle nan  resid 0.485 (max 0.971)  7.3s
+[17:57:22]   gen  125  tokens  125,009,920  eps 0.0019  before 3.4548  birth 7.5650  after 7.5377  shuffle nan  resid 0.484 (max 0.976)  6.8s
+[17:57:26]     step   8800  tokens  125,190,144  train 4.8872  lr_M 2.00e-02  B 32  396 ms
+[17:57:51]   gen  126  tokens  126,009,344  eps 0.0018  before 3.4684  birth 7.8160  after 7.7794  shuffle nan  resid 0.481 (max 0.977)  7.4s
+[17:58:19]   gen  127  tokens  127,008,768  eps 0.0017  before 3.4623  birth 8.5499  after 8.5051  shuffle nan  resid 0.481 (max 0.979)  7.3s
+[17:58:48]   gen  128  tokens  128,008,192  eps 0.0017  before 3.5079  birth 7.8331  after 7.8009  shuffle nan  resid 0.476 (max 0.971)  6.9s
+[17:58:57]     step   9000  tokens  128,466,944  train 5.1035  lr_M 2.00e-02  B 32  333 ms
+[17:59:17]   gen  129  tokens  129,007,616  eps 0.0016  before 3.4243  birth 7.5870  after 7.5633  shuffle nan  resid 0.470 (max 0.967)  7.0s
+[17:59:37]   eval tokens  130,007,040  held-out 3.4724
+[17:59:46]   gen  130  tokens  130,007,040  eps 0.0015  before 3.4724  birth 7.6340  after 7.6113  shuffle 9.0109  resid 0.466 (max 0.971)  8.3s
+[18:00:14]   gen  131  tokens  131,006,464  eps 0.0014  before 3.6089  birth 7.7758  after 7.7592  shuffle nan  resid 0.485 (max 0.966)  7.2s
+[18:00:30]     step   9200  tokens  131,743,744  train 4.9243  lr_M 2.00e-02  B 32  331 ms
+[18:00:42]   gen  132  tokens  132,005,888  eps 0.0014  before 3.4837  birth 7.5432  after 7.5256  shuffle nan  resid 0.469 (max 0.966)  6.7s
+[18:01:11]   gen  133  tokens  133,005,312  eps 0.0013  before 3.4558  birth 7.6706  after 7.6597  shuffle nan  resid 0.461 (max 0.968)  7.0s
+[18:01:40]   gen  134  tokens  134,004,736  eps 0.0012  before 3.4708  birth 7.4734  after 7.4593  shuffle nan  resid 0.462 (max 0.958)  7.2s
+[18:02:08]   gen  135  tokens  135,004,160  eps 0.0012  before 3.3999  birth 7.5586  after 7.5472  shuffle nan  resid 0.470 (max 0.959)  7.9s
+[18:02:09]     step   9400  tokens  135,020,544  train 4.5084  lr_M 2.00e-02  B 32  431 ms
+[18:02:36]   gen  136  tokens  136,003,584  eps 0.0011  before 3.4267  birth 7.5212  after 7.5049  shuffle nan  resid 0.458 (max 0.956)  7.1s
+[18:03:05]   gen  137  tokens  137,003,008  eps 0.0011  before 3.4325  birth 8.1134  after 8.1030  shuffle nan  resid 0.470 (max 0.964)  6.9s
+[18:03:34]   gen  138  tokens  138,002,432  eps 0.0010  before 3.5760  birth 7.9820  after 7.9658  shuffle nan  resid 0.468 (max 0.961)  7.4s
+[18:03:40]     step   9600  tokens  138,297,344  train 5.1304  lr_M 2.00e-02  B 32  322 ms
+[18:04:03]   gen  139  tokens  139,001,856  eps 0.0010  before 3.4756  birth 7.6470  after 7.6363  shuffle nan  resid 0.461 (max 0.954)  7.5s
+[18:04:24]   eval tokens  140,001,280  held-out 3.4247
+[18:04:31]   gen  140  tokens  140,001,280  eps 0.0009  before 3.4247  birth 7.3598  after 7.3491  shuffle 9.0109  resid 0.460 (max 0.956)  7.0s
+[18:05:00]   gen  141  tokens  141,000,704  eps 0.0009  before 3.3879  birth 7.4986  after 7.4870  shuffle nan  resid 0.458 (max 0.959)  7.4s
+[18:05:12]     step   9800  tokens  141,574,144  train 4.8794  lr_M 2.00e-02  B 32  344 ms
+[18:05:28]   gen  142  tokens  142,000,128  eps 0.0008  before 3.4545  birth 7.6245  after 7.6121  shuffle nan  resid 0.457 (max 0.965)  7.0s
+[18:05:56]   gen  143  tokens  143,015,936  eps 0.0008  before 3.3617  birth 7.8748  after 7.8635  shuffle nan  resid 0.456 (max 0.968)  7.3s
+[18:06:24]   gen  144  tokens  144,015,360  eps 0.0007  before 3.4406  birth 7.8509  after 7.8371  shuffle nan  resid 0.454 (max 0.966)  6.7s
+[18:06:42]     step  10000  tokens  144,850,944  train 4.7174  lr_M 2.00e-02  B 32  379 ms
+[18:06:52]   gen  145  tokens  145,014,784  eps 0.0007  before 3.4879  birth 8.4462  after 8.4055  shuffle nan  resid 0.460 (max 0.964)  6.7s
+[18:07:20]   gen  146  tokens  146,014,208  eps 0.0007  before 3.4509  birth 7.4545  after 7.4493  shuffle nan  resid 0.466 (max 0.960)  7.5s
+[18:07:47]   gen  147  tokens  147,013,632  eps 0.0006  before 3.5628  birth 7.3937  after 7.3892  shuffle nan  resid 0.476 (max 0.962)  7.5s
+[18:08:15]   gen  148  tokens  148,013,056  eps 0.0006  before 3.4212  birth 7.8182  after 7.8102  shuffle nan  resid 0.464 (max 0.958)  6.6s
+[18:08:17]     step  10200  tokens  148,127,744  train 4.7813  lr_M 2.00e-02  B 32  318 ms
+[18:08:44]   gen  149  tokens  149,012,480  eps 0.0006  before 3.4425  birth 7.7689  after 7.7615  shuffle nan  resid 0.466 (max 0.961)  7.1s
+[18:09:06]   eval tokens  150,011,904  held-out 3.4367
+[18:09:13]   gen  150  tokens  150,011,904  eps 0.0006  before 3.4367  birth 8.0877  after 8.0757  shuffle 9.0109  resid 0.458 (max 0.967)  7.6s
+[18:09:42]   gen  151  tokens  151,011,328  eps 0.0005  before 3.4405  birth 7.5050  after 7.4995  shuffle nan  resid 0.456 (max 0.969)  7.6s
+[18:09:50]     step  10400  tokens  151,404,544  train 5.0663  lr_M 2.00e-02  B 32  333 ms
+[18:10:10]   gen  152  tokens  152,010,752  eps 0.0005  before 3.4605  birth 7.5906  after 7.5845  shuffle nan  resid 0.453 (max 0.968)  7.2s
+[18:10:39]   gen  153  tokens  153,010,176  eps 0.0005  before 3.4222  birth 7.5256  after 7.5210  shuffle nan  resid 0.462 (max 0.970)  6.9s
+[18:11:08]   gen  154  tokens  154,009,600  eps 0.0005  before 3.5116  birth 7.8648  after 7.8606  shuffle nan  resid 0.460 (max 0.966)  7.2s
+[18:11:22]     step  10600  tokens  154,681,344  train 4.8179  lr_M 2.00e-02  B 32  319 ms
+[18:11:37]   gen  155  tokens  155,009,024  eps 0.0004  before 3.4222  birth 7.6433  after 7.6393  shuffle nan  resid 0.459 (max 0.968)  7.6s
+[18:12:05]   gen  156  tokens  156,008,448  eps 0.0004  before 3.3527  birth 8.0709  after 8.0598  shuffle nan  resid 0.461 (max 0.965)  6.7s
+[18:12:34]   gen  157  tokens  157,007,872  eps 0.0004  before 3.3877  birth 7.7643  after 7.7597  shuffle nan  resid 0.460 (max 0.974)  7.2s
+[18:12:53]     step  10800  tokens  157,958,144  train 4.3472  lr_M 2.00e-02  B 32  339 ms
+[18:13:02]   gen  158  tokens  158,007,296  eps 0.0004  before 3.3531  birth 9.5180  after 9.5161  shuffle nan  resid 0.452 (max 0.975)  7.4s
+[18:13:29]   gen  159  tokens  159,006,720  eps 0.0004  before 3.9176  birth 9.0557  after 9.0554  shuffle nan  resid 0.476 (max 0.972)  7.3s
+[18:13:52]   eval tokens  160,006,144  held-out 3.5605
+[18:13:59]   gen  160  tokens  160,006,144  eps 0.0003  before 3.5605  birth 9.1801  after 9.1754  shuffle 9.0109  resid 0.448 (max 0.952)  7.2s
+[18:14:28]   gen  161  tokens  161,005,568  eps 0.0003  before 3.4973  birth 7.8322  after 7.8282  shuffle nan  resid 0.456 (max 0.951)  7.1s
+[18:14:33]     step  11000  tokens  161,234,944  train 5.0857  lr_M 2.00e-02  B 32  323 ms
+[18:14:56]   gen  162  tokens  162,004,992  eps 0.0003  before 3.4803  birth 7.9586  after 7.9531  shuffle nan  resid 0.448 (max 0.954)  7.0s
+[18:15:24]   gen  163  tokens  163,004,416  eps 0.0003  before 3.3789  birth 7.7761  after 7.7722  shuffle nan  resid 0.448 (max 0.959)  7.7s
+[18:15:52]   gen  164  tokens  164,003,840  eps 0.0003  before 3.4151  birth 8.0031  after 8.0017  shuffle nan  resid 0.449 (max 0.963)  6.9s
+[18:16:04]     step  11200  tokens  164,511,744  train 4.8110  lr_M 2.00e-02  B 32  360 ms
+[18:16:20]   gen  165  tokens  165,003,264  eps 0.0003  before 3.3584  birth 7.6599  after 7.6562  shuffle nan  resid 0.447 (max 0.967)  6.8s
+[18:16:49]   gen  166  tokens  166,002,688  eps 0.0002  before 3.4956  birth 7.9354  after 7.9351  shuffle nan  resid 0.470 (max 0.972)  7.3s
+[18:17:18]   gen  167  tokens  167,002,112  eps 0.0002  before 3.4029  birth 8.7221  after 8.7226  shuffle nan  resid 0.459 (max 0.966)  7.6s
+[18:17:34]     step  11400  tokens  167,788,544  train 4.5470  lr_M 2.00e-02  B 32  393 ms
+[18:17:46]   gen  168  tokens  168,001,536  eps 0.0002  before 3.3625  birth 7.9334  after 7.9257  shuffle nan  resid 0.452 (max 0.966)  6.7s
+[18:18:15]   gen  169  tokens  169,000,960  eps 0.0002  before 3.4637  birth 8.2460  after 8.2362  shuffle nan  resid 0.456 (max 0.968)  7.6s
+[18:18:36]   eval tokens  170,000,384  held-out 3.3810
+[18:18:44]   gen  170  tokens  170,000,384  eps 0.0002  before 3.3810  birth 7.7507  after 7.7484  shuffle 9.0109  resid 0.451 (max 0.963)  7.5s
+[18:19:13]   gen  171  tokens  171,016,192  eps 0.0002  before 3.3557  birth 7.9308  after 7.9261  shuffle nan  resid 0.474 (max 0.969)  7.6s
+[18:19:14]     step  11600  tokens  171,065,344  train 4.4369  lr_M 2.00e-02  B 32  366 ms
+[18:19:41]   gen  172  tokens  172,015,616  eps 0.0002  before 3.3871  birth 8.8247  after 8.8181  shuffle nan  resid 0.466 (max 0.972)  7.2s
+[18:20:10]   gen  173  tokens  173,015,040  eps 0.0002  before 3.3606  birth 8.2459  after 8.2421  shuffle nan  resid 0.465 (max 0.974)  6.8s
+[18:20:39]   gen  174  tokens  174,014,464  eps 0.0002  before 3.3810  birth 8.4374  after 8.4312  shuffle nan  resid 0.453 (max 0.978)  7.0s
+[18:20:46]     step  11800  tokens  174,342,144  train 4.8551  lr_M 2.00e-02  B 32  359 ms
+[18:21:07]   gen  175  tokens  175,013,888  eps 0.0002  before 3.4101  birth 8.1205  after 8.1184  shuffle nan  resid 0.460 (max 0.982)  8.3s
+[18:21:35]   gen  176  tokens  176,013,312  eps 0.0002  before 3.3599  birth 8.2963  after 8.2907  shuffle nan  resid 0.452 (max 0.985)  6.7s
+[18:22:04]   gen  177  tokens  177,012,736  eps 0.0001  before 3.3463  birth 7.9709  after 7.9678  shuffle nan  resid 0.444 (max 0.988)  6.8s
+[18:22:17]     step  12000  tokens  177,618,944  train 4.6216  lr_M 2.00e-02  B 32  397 ms
+[18:22:32]   gen  178  tokens  178,012,160  eps 0.0001  before 3.3223  birth 8.1761  after 8.1731  shuffle nan  resid 0.449 (max 0.990)  6.8s
+[18:23:00]   gen  179  tokens  179,011,584  eps 0.0001  before 3.3538  birth 8.1088  after 8.1058  shuffle nan  resid 0.450 (max 0.991)  7.5s
+[18:23:21]   eval tokens  180,011,008  held-out 3.3111
+[18:23:29]   gen  180  tokens  180,011,008  eps 0.0001  before 3.3111  birth 9.1547  after 9.1486  shuffle 9.0109  resid 0.459 (max 0.994)  7.5s
+[18:23:48]     step  12200  tokens  180,895,744  train 4.3613  lr_M 2.00e-02  B 32  331 ms
+[18:23:57]   gen  181  tokens  181,010,432  eps 0.0001  before 3.3477  birth 8.2434  after 8.2409  shuffle nan  resid 0.460 (max 0.995)  7.0s
+[18:24:26]   gen  182  tokens  182,009,856  eps 0.0001  before 3.3629  birth 8.5833  after 8.5803  shuffle nan  resid 0.460 (max 0.994)  6.8s
+[18:24:56]   gen  183  tokens  183,009,280  eps 0.0001  before 3.3328  birth 8.1075  after 8.1074  shuffle nan  resid 0.454 (max 0.996)  7.9s
+[18:25:24]   gen  184  tokens  184,008,704  eps 0.0001  before 3.3478  birth 7.7792  after 7.7759  shuffle nan  resid 0.456 (max 0.996)  7.3s
+[18:25:28]     step  12400  tokens  184,172,544  train 4.6807  lr_M 2.00e-02  B 32  323 ms
+[18:25:53]   gen  185  tokens  185,008,128  eps 0.0001  before 3.3454  birth 8.5947  after 8.5920  shuffle nan  resid 0.461 (max 0.995)  6.9s
+[18:26:21]   gen  186  tokens  186,007,552  eps 0.0001  before 3.3382  birth 7.6548  after 7.6531  shuffle nan  resid 0.469 (max 0.995)  7.2s
+[18:26:50]   gen  187  tokens  187,006,976  eps 0.0001  before 3.3195  birth 7.7731  after 7.7717  shuffle nan  resid 0.480 (max 0.995)  7.5s
+[18:27:00]     step  12600  tokens  187,449,344  train 4.6621  lr_M 2.00e-02  B 32  347 ms
+[18:27:18]   gen  188  tokens  188,006,400  eps 0.0001  before 3.3274  birth 8.0270  after 8.0249  shuffle nan  resid 0.453 (max 0.996)  7.1s
+[18:27:48]   gen  189  tokens  189,005,824  eps 0.0001  before 3.4351  birth 8.2360  after 8.2350  shuffle nan  resid 0.453 (max 0.994)  7.1s
+[18:28:11]   eval tokens  190,005,248  held-out 3.3279
+[18:28:18]   gen  190  tokens  190,005,248  eps 0.0001  before 3.3279  birth 9.0791  after 9.0780  shuffle 9.0109  resid 0.442 (max 0.994)  7.6s
+[18:28:33]     step  12800  tokens  190,726,144  train 4.4951  lr_M 2.00e-02  B 32  406 ms
+[18:28:47]   gen  191  tokens  191,004,672  eps 0.0001  before 3.3164  birth 8.2840  after 8.2811  shuffle nan  resid 0.455 (max 0.994)  7.6s
+[18:29:15]   gen  192  tokens  192,004,096  eps 0.0001  before 3.3438  birth 8.0537  after 8.0515  shuffle nan  resid 0.448 (max 0.992)  7.7s
+[18:29:44]   gen  193  tokens  193,003,520  eps 0.0001  before 3.3410  birth 8.3022  after 8.2998  shuffle nan  resid 0.443 (max 0.993)  6.7s
+[18:30:05]     step  13000  tokens  194,002,944  train 4.2184  lr_M 2.00e-02  B 32  311 ms
+[18:30:11]   gen  194  tokens  194,002,944  eps 0.0001  before 3.3059  birth 8.4279  after 8.4225  shuffle nan  resid 0.440 (max 0.993)  6.3s
+[18:30:36]   gen  195  tokens  195,002,368  eps 0.0001  before 3.3266  birth 9.7738  after 9.7748  shuffle nan  resid 0.433 (max 0.993)  6.1s
+[18:31:00]   gen  196  tokens  196,001,792  eps 0.0001  before 3.4266  birth 9.5187  after 9.5176  shuffle nan  resid 0.455 (max 0.994)  6.1s
+[18:31:25]   gen  197  tokens  197,001,216  eps 0.0001  before 3.3579  birth 9.1939  after 9.1940  shuffle nan  resid 0.444 (max 0.986)  6.1s
+[18:31:30]     step  13200  tokens  197,279,744  train 5.6297  lr_M 2.00e-02  B 32  301 ms
+[18:31:49]   gen  198  tokens  198,000,640  eps 0.0001  before 3.7056  birth 9.0110  after 9.0110  shuffle nan  resid 0.459 (max 0.982)  6.2s
+[18:32:14]   gen  199  tokens  199,000,064  eps 0.0000  before 3.4880  birth 9.0147  after 9.0147  shuffle nan  resid 0.445 (max 0.972)  6.0s
+[18:32:33]   eval tokens  200,015,872  held-out 3.5080
+[18:32:40]   gen  200  tokens  200,015,872  eps 0.0000  before 3.5080  birth 9.0025  after 9.0024  shuffle 9.0109  resid 0.453 (max 0.967)  6.5s
+[18:32:50]     step  13400  tokens  200,556,544  train 5.7187  lr_M 2.00e-02  B 32  293 ms
+[18:33:00] final test 3.6173  fit 3.6305  birth(final decode) 9.0027  shuffle 9.0109  1.62 h  wrote runs\bottleneck\GN50-tinystories-s0-seed0\loop.json

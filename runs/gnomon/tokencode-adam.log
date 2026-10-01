@@ -1,0 +1,8 @@
+m-pico  N_life 300  lr 0.09  rule adam  12 paired lifetimes per code
+
+bijection (§2.4)     5.5374 +/- 0.1689
+freq rank (§2.9)     5.4375 +/- 0.1313
+
+bijection - freq-rank  mean +0.0999 nats  95% BCa [+0.0288, +0.2647]
+  the frequency-ordered code is better
+wrote runs/gnomon/tokencode.json

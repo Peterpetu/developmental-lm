@@ -1,0 +1,1165 @@
+{
+  "partial": true,
+  "rows": [
+    {
+      "plan": "a4/512/winf/b0 a4/512/winf/b1 a4/512/winf/b2 a4/512/winf/b3",
+      "seed": 0,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.9219497740268707,
+      "curve": [
+        [
+          0,
+          8.341752886772156
+        ],
+        [
+          1000,
+          3.2225131392478943
+        ],
+        [
+          2000,
+          2.9219497740268707
+        ]
+      ],
+      "ms_per_step_median": 129.96607971191406,
+      "ms_per_step_iqr": 197.3370819091797,
+      "seconds": 313.0426814556122,
+      "n_unique_params": 984208,
+      "flops_per_token": 3146752,
+      "train_flops": 77334577152000,
+      "backend": "compile:default",
+      "arm": "base"
+    },
+    {
+      "plan": "a4/512/winf/b0 a4/512/winf/b1 a4/512/winf/b2 a4/512/winf/b3",
+      "seed": 1,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.9011242389678955,
+      "curve": [
+        [
+          0,
+          8.326053500175476
+        ],
+        [
+          1000,
+          3.2062871754169464
+        ],
+        [
+          2000,
+          2.9011242389678955
+        ]
+      ],
+      "ms_per_step_median": 23.211520195007324,
+      "ms_per_step_iqr": 9.196542739868164,
+      "seconds": 81.61833071708679,
+      "n_unique_params": 984208,
+      "flops_per_token": 3146752,
+      "train_flops": 77334577152000,
+      "backend": "compile:default",
+      "arm": "base"
+    },
+    {
+      "plan": "a4/512/winf/b0 a4/512/winf/b1 a4/512/winf/b2 a4/512/winf/b3",
+      "seed": 2,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.909042239189148,
+      "curve": [
+        [
+          0,
+          8.3339262008667
+        ],
+        [
+          1000,
+          3.205554097890854
+        ],
+        [
+          2000,
+          2.909042239189148
+        ]
+      ],
+      "ms_per_step_median": 24.781248092651367,
+      "ms_per_step_iqr": 20.785985946655273,
+      "seconds": 95.86835646629333,
+      "n_unique_params": 984208,
+      "flops_per_token": 3146752,
+      "train_flops": 77334577152000,
+      "backend": "compile:default",
+      "arm": "base"
+    },
+    {
+      "plan": "a4/512/winf/b0 a4/512/winf/b1 a4/512/winf/b2 a4/512/winf/b3",
+      "seed": 3,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.92461895942688,
+      "curve": [
+        [
+          0,
+          8.348321557044983
+        ],
+        [
+          1000,
+          3.230695128440857
+        ],
+        [
+          2000,
+          2.92461895942688
+        ]
+      ],
+      "ms_per_step_median": 32.8436336517334,
+      "ms_per_step_iqr": 30.378047943115234,
+      "seconds": 110.09121060371399,
+      "n_unique_params": 984208,
+      "flops_per_token": 3146752,
+      "train_flops": 77334577152000,
+      "backend": "compile:default",
+      "arm": "base"
+    },
+    {
+      "plan": "d4/512/winf/b0 d4/512/winf/b1 d4/512/winf/b2 d4/512/winf/b3",
+      "seed": 0,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.7285655736923218,
+      "curve": [
+        [
+          0,
+          8.334330677986145
+        ],
+        [
+          1000,
+          2.981616824865341
+        ],
+        [
+          2000,
+          2.7285655736923218
+        ]
+      ],
+      "ms_per_step_median": 131.99615478515625,
+      "ms_per_step_iqr": 147.72736358642578,
+      "seconds": 322.6558825969696,
+      "n_unique_params": 988288,
+      "flops_per_token": 3121152,
+      "train_flops": 76705431552000,
+      "backend": "compile:default",
+      "arm": "dddd"
+    },
+    {
+      "plan": "d4/512/winf/b0 d4/512/winf/b1 d4/512/winf/b2 d4/512/winf/b3",
+      "seed": 1,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.7288471460342407,
+      "curve": [
+        [
+          0,
+          8.344857215881348
+        ],
+        [
+          1000,
+          2.9780953228473663
+        ],
+        [
+          2000,
+          2.7288471460342407
+        ]
+      ],
+      "ms_per_step_median": 71.20537567138672,
+      "ms_per_step_iqr": 70.2534065246582,
+      "seconds": 216.36307621002197,
+      "n_unique_params": 988288,
+      "flops_per_token": 3121152,
+      "train_flops": 76705431552000,
+      "backend": "compile:default",
+      "arm": "dddd"
+    },
+    {
+      "plan": "d4/512/winf/b0 d4/512/winf/b1 d4/512/winf/b2 d4/512/winf/b3",
+      "seed": 2,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.7256340086460114,
+      "curve": [
+        [
+          0,
+          8.334565162658691
+        ],
+        [
+          1000,
+          2.977972626686096
+        ],
+        [
+          2000,
+          2.7256340086460114
+        ]
+      ],
+      "ms_per_step_median": 109.51679992675781,
+      "ms_per_step_iqr": 147.6949691772461,
+      "seconds": 300.9701280593872,
+      "n_unique_params": 988288,
+      "flops_per_token": 3121152,
+      "train_flops": 76705431552000,
+      "backend": "compile:default",
+      "arm": "dddd"
+    },
+    {
+      "plan": "d4/512/winf/b0 d4/512/winf/b1 d4/512/winf/b2 d4/512/winf/b3",
+      "seed": 3,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.7340271174907684,
+      "curve": [
+        [
+          0,
+          8.35797381401062
+        ],
+        [
+          1000,
+          2.985204756259918
+        ],
+        [
+          2000,
+          2.7340271174907684
+        ]
+      ],
+      "ms_per_step_median": 58.35804748535156,
+      "ms_per_step_iqr": 36.002811431884766,
+      "seconds": 165.21941876411438,
+      "n_unique_params": 988288,
+      "flops_per_token": 3121152,
+      "train_flops": 76705431552000,
+      "backend": "compile:default",
+      "arm": "dddd"
+    },
+    {
+      "plan": "a4/512/winf/b0 d4/512/winf/b1 a4/512/winf/b2 d4/512/winf/b3",
+      "seed": 0,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.772515505552292,
+      "curve": [
+        [
+          0,
+          8.337936282157898
+        ],
+        [
+          1000,
+          3.039301484823227
+        ],
+        [
+          2000,
+          2.772515505552292
+        ]
+      ],
+      "ms_per_step_median": 74.3818244934082,
+      "ms_per_step_iqr": 186.13786125183105,
+      "seconds": 258.3577094078064,
+      "n_unique_params": 986248,
+      "flops_per_token": 3133952,
+      "train_flops": 77020004352000,
+      "backend": "compile:default",
+      "arm": "adad"
+    },
+    {
+      "plan": "a4/512/winf/b0 d4/512/winf/b1 a4/512/winf/b2 d4/512/winf/b3",
+      "seed": 1,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.769788533449173,
+      "curve": [
+        [
+          0,
+          8.353888034820557
+        ],
+        [
+          1000,
+          3.03851580619812
+        ],
+        [
+          2000,
+          2.769788533449173
+        ]
+      ],
+      "ms_per_step_median": 30.707200050354004,
+      "ms_per_step_iqr": 5.473981857299805,
+      "seconds": 63.53402042388916,
+      "n_unique_params": 986248,
+      "flops_per_token": 3133952,
+      "train_flops": 77020004352000,
+      "backend": "compile:default",
+      "arm": "adad"
+    },
+    {
+      "plan": "a4/512/winf/b0 d4/512/winf/b1 a4/512/winf/b2 d4/512/winf/b3",
+      "seed": 2,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.7749907672405243,
+      "curve": [
+        [
+          0,
+          8.344790816307068
+        ],
+        [
+          1000,
+          3.0312751829624176
+        ],
+        [
+          2000,
+          2.7749907672405243
+        ]
+      ],
+      "ms_per_step_median": 30.683648109436035,
+      "ms_per_step_iqr": 5.451967239379883,
+      "seconds": 63.34982895851135,
+      "n_unique_params": 986248,
+      "flops_per_token": 3133952,
+      "train_flops": 77020004352000,
+      "backend": "compile:default",
+      "arm": "adad"
+    },
+    {
+      "plan": "a4/512/winf/b0 d4/512/winf/b1 a4/512/winf/b2 d4/512/winf/b3",
+      "seed": 3,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.761938989162445,
+      "curve": [
+        [
+          0,
+          8.340843200683594
+        ],
+        [
+          1000,
+          3.0256931483745575
+        ],
+        [
+          2000,
+          2.761938989162445
+        ]
+      ],
+      "ms_per_step_median": 30.829999923706055,
+      "ms_per_step_iqr": 5.400798797607422,
+      "seconds": 63.78325939178467,
+      "n_unique_params": 986248,
+      "flops_per_token": 3133952,
+      "train_flops": 77020004352000,
+      "backend": "compile:default",
+      "arm": "adad"
+    },
+    {
+      "plan": "a4/512/w64/b0 a4/512/w64/b1 a4/512/w64/b2 a4/512/w64/b3",
+      "seed": 0,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.928895264863968,
+      "curve": [
+        [
+          0,
+          8.340910196304321
+        ],
+        [
+          1000,
+          3.2334041595458984
+        ],
+        [
+          2000,
+          2.928895264863968
+        ]
+      ],
+      "ms_per_step_median": 21.014528274536133,
+      "ms_per_step_iqr": 3.9109764099121094,
+      "seconds": 43.552125215530396,
+      "n_unique_params": 984208,
+      "flops_per_token": 3113472,
+      "train_flops": 76516687872000,
+      "backend": "compile:default",
+      "arm": "w64"
+    },
+    {
+      "plan": "a4/512/w64/b0 a4/512/w64/b1 a4/512/w64/b2 a4/512/w64/b3",
+      "seed": 1,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.9041941165924072,
+      "curve": [
+        [
+          0,
+          8.325374960899353
+        ],
+        [
+          1000,
+          3.2022361159324646
+        ],
+        [
+          2000,
+          2.9041941165924072
+        ]
+      ],
+      "ms_per_step_median": 20.827343940734863,
+      "ms_per_step_iqr": 4.093696594238281,
+      "seconds": 43.494532108306885,
+      "n_unique_params": 984208,
+      "flops_per_token": 3113472,
+      "train_flops": 76516687872000,
+      "backend": "compile:default",
+      "arm": "w64"
+    },
+    {
+      "plan": "a4/512/w64/b0 a4/512/w64/b1 a4/512/w64/b2 a4/512/w64/b3",
+      "seed": 2,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.91099214553833,
+      "curve": [
+        [
+          0,
+          8.333510994911194
+        ],
+        [
+          1000,
+          3.2039711475372314
+        ],
+        [
+          2000,
+          2.91099214553833
+        ]
+      ],
+      "ms_per_step_median": 20.964655876159668,
+      "ms_per_step_iqr": 3.6444149017333984,
+      "seconds": 43.37096095085144,
+      "n_unique_params": 984208,
+      "flops_per_token": 3113472,
+      "train_flops": 76516687872000,
+      "backend": "compile:default",
+      "arm": "w64"
+    },
+    {
+      "plan": "a4/512/w64/b0 a4/512/w64/b1 a4/512/w64/b2 a4/512/w64/b3",
+      "seed": 3,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.916806399822235,
+      "curve": [
+        [
+          0,
+          8.34800672531128
+        ],
+        [
+          1000,
+          3.2254064083099365
+        ],
+        [
+          2000,
+          2.916806399822235
+        ]
+      ],
+      "ms_per_step_median": 20.939775466918945,
+      "ms_per_step_iqr": 4.097024917602539,
+      "seconds": 43.48797106742859,
+      "n_unique_params": 984208,
+      "flops_per_token": 3113472,
+      "train_flops": 76516687872000,
+      "backend": "compile:default",
+      "arm": "w64"
+    },
+    {
+      "plan": "a4/512/w32/b0 a4/512/w32/b1 a4/512/w32/b2 a4/512/w32/b3",
+      "seed": 0,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.943020284175873,
+      "curve": [
+        [
+          0,
+          8.340361833572388
+        ],
+        [
+          1000,
+          3.220177859067917
+        ],
+        [
+          2000,
+          2.943020284175873
+        ]
+      ],
+      "ms_per_step_median": 20.980607986450195,
+      "ms_per_step_iqr": 3.817472457885742,
+      "seconds": 43.768463373184204,
+      "n_unique_params": 984208,
+      "flops_per_token": 3072256,
+      "train_flops": 75503763456000,
+      "backend": "compile:default",
+      "arm": "w32"
+    },
+    {
+      "plan": "a4/512/w32/b0 a4/512/w32/b1 a4/512/w32/b2 a4/512/w32/b3",
+      "seed": 1,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.9186742901802063,
+      "curve": [
+        [
+          0,
+          8.325218796730042
+        ],
+        [
+          1000,
+          3.2019430100917816
+        ],
+        [
+          2000,
+          2.9186742901802063
+        ]
+      ],
+      "ms_per_step_median": 21.129231452941895,
+      "ms_per_step_iqr": 3.8977279663085938,
+      "seconds": 43.72059679031372,
+      "n_unique_params": 984208,
+      "flops_per_token": 3072256,
+      "train_flops": 75503763456000,
+      "backend": "compile:default",
+      "arm": "w32"
+    },
+    {
+      "plan": "a4/512/w32/b0 a4/512/w32/b1 a4/512/w32/b2 a4/512/w32/b3",
+      "seed": 2,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.915287047624588,
+      "curve": [
+        [
+          0,
+          8.333617210388184
+        ],
+        [
+          1000,
+          3.197309732437134
+        ],
+        [
+          2000,
+          2.915287047624588
+        ]
+      ],
+      "ms_per_step_median": 20.99518394470215,
+      "ms_per_step_iqr": 4.150655746459961,
+      "seconds": 43.86577105522156,
+      "n_unique_params": 984208,
+      "flops_per_token": 3072256,
+      "train_flops": 75503763456000,
+      "backend": "compile:default",
+      "arm": "w32"
+    },
+    {
+      "plan": "a4/512/w32/b0 a4/512/w32/b1 a4/512/w32/b2 a4/512/w32/b3",
+      "seed": 3,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.9243263602256775,
+      "curve": [
+        [
+          0,
+          8.348093032836914
+        ],
+        [
+          1000,
+          3.208623081445694
+        ],
+        [
+          2000,
+          2.9243263602256775
+        ]
+      ],
+      "ms_per_step_median": 20.920127868652344,
+      "ms_per_step_iqr": 3.5607357025146484,
+      "seconds": 43.33593130111694,
+      "n_unique_params": 984208,
+      "flops_per_token": 3072256,
+      "train_flops": 75503763456000,
+      "backend": "compile:default",
+      "arm": "w32"
+    },
+    {
+      "plan": "a4/512/winf/b0 a4/512/winf/b0 a4/512/winf/b1 a4/512/winf/b1",
+      "seed": 0,
+      "steps": 2000,
+      "batch": 32,
+      "final": 3.0342040061950684,
+      "curve": [
+        [
+          0,
+          8.338756680488586
+        ],
+        [
+          1000,
+          3.3338308930397034
+        ],
+        [
+          2000,
+          3.0342040061950684
+        ]
+      ],
+      "ms_per_step_median": 19.808768272399902,
+      "ms_per_step_iqr": 3.469024658203125,
+      "seconds": 41.13912105560303,
+      "n_unique_params": 492168,
+      "flops_per_token": 3146752,
+      "train_flops": 77334577152000,
+      "backend": "compile:default",
+      "arm": "share_adj"
+    },
+    {
+      "plan": "a4/512/winf/b0 a4/512/winf/b0 a4/512/winf/b1 a4/512/winf/b1",
+      "seed": 1,
+      "steps": 2000,
+      "batch": 32,
+      "final": 3.0458560585975647,
+      "curve": [
+        [
+          0,
+          8.349978566169739
+        ],
+        [
+          1000,
+          3.344577193260193
+        ],
+        [
+          2000,
+          3.0458560585975647
+        ]
+      ],
+      "ms_per_step_median": 19.58903980255127,
+      "ms_per_step_iqr": 3.664703369140625,
+      "seconds": 40.83317494392395,
+      "n_unique_params": 492168,
+      "flops_per_token": 3146752,
+      "train_flops": 77334577152000,
+      "backend": "compile:default",
+      "arm": "share_adj"
+    },
+    {
+      "plan": "a4/512/winf/b0 a4/512/winf/b0 a4/512/winf/b1 a4/512/winf/b1",
+      "seed": 2,
+      "steps": 2000,
+      "batch": 32,
+      "final": 3.0247248113155365,
+      "curve": [
+        [
+          0,
+          8.34592354297638
+        ],
+        [
+          1000,
+          3.319788634777069
+        ],
+        [
+          2000,
+          3.0247248113155365
+        ]
+      ],
+      "ms_per_step_median": 19.65398406982422,
+      "ms_per_step_iqr": 3.679231643676758,
+      "seconds": 40.94072484970093,
+      "n_unique_params": 492168,
+      "flops_per_token": 3146752,
+      "train_flops": 77334577152000,
+      "backend": "compile:default",
+      "arm": "share_adj"
+    },
+    {
+      "plan": "a4/512/winf/b0 a4/512/winf/b0 a4/512/winf/b1 a4/512/winf/b1",
+      "seed": 3,
+      "steps": 2000,
+      "batch": 32,
+      "final": 3.0685881972312927,
+      "curve": [
+        [
+          0,
+          8.342193722724915
+        ],
+        [
+          1000,
+          3.3684073388576508
+        ],
+        [
+          2000,
+          3.0685881972312927
+        ]
+      ],
+      "ms_per_step_median": 19.693967819213867,
+      "ms_per_step_iqr": 3.7884788513183594,
+      "seconds": 40.988587856292725,
+      "n_unique_params": 492168,
+      "flops_per_token": 3146752,
+      "train_flops": 77334577152000,
+      "backend": "compile:default",
+      "arm": "share_adj"
+    },
+    {
+      "plan": "a4/512/winf/b0 a4/512/winf/b1 a4/512/winf/b0 a4/512/winf/b1",
+      "seed": 0,
+      "steps": 2000,
+      "batch": 32,
+      "final": 3.059380888938904,
+      "curve": [
+        [
+          0,
+          8.346518516540527
+        ],
+        [
+          1000,
+          3.356881022453308
+        ],
+        [
+          2000,
+          3.059380888938904
+        ]
+      ],
+      "ms_per_step_median": 19.710320472717285,
+      "ms_per_step_iqr": 3.996671676635742,
+      "seconds": 41.383970499038696,
+      "n_unique_params": 492168,
+      "flops_per_token": 3146752,
+      "train_flops": 77334577152000,
+      "backend": "compile:default",
+      "arm": "share_alt"
+    },
+    {
+      "plan": "a4/512/winf/b0 a4/512/winf/b1 a4/512/winf/b0 a4/512/winf/b1",
+      "seed": 1,
+      "steps": 2000,
+      "batch": 32,
+      "final": 3.0509541034698486,
+      "curve": [
+        [
+          0,
+          8.349897861480713
+        ],
+        [
+          1000,
+          3.354362815618515
+        ],
+        [
+          2000,
+          3.0509541034698486
+        ]
+      ],
+      "ms_per_step_median": 19.63764762878418,
+      "ms_per_step_iqr": 3.5356807708740234,
+      "seconds": 40.91518759727478,
+      "n_unique_params": 492168,
+      "flops_per_token": 3146752,
+      "train_flops": 77334577152000,
+      "backend": "compile:default",
+      "arm": "share_alt"
+    },
+    {
+      "plan": "a4/512/winf/b0 a4/512/winf/b1 a4/512/winf/b0 a4/512/winf/b1",
+      "seed": 2,
+      "steps": 2000,
+      "batch": 32,
+      "final": 3.0606848895549774,
+      "curve": [
+        [
+          0,
+          8.341952562332153
+        ],
+        [
+          1000,
+          3.370529919862747
+        ],
+        [
+          2000,
+          3.0606848895549774
+        ]
+      ],
+      "ms_per_step_median": 19.55784034729004,
+      "ms_per_step_iqr": 3.6609268188476562,
+      "seconds": 40.841756105422974,
+      "n_unique_params": 492168,
+      "flops_per_token": 3146752,
+      "train_flops": 77334577152000,
+      "backend": "compile:default",
+      "arm": "share_alt"
+    },
+    {
+      "plan": "a4/512/winf/b0 a4/512/winf/b1 a4/512/winf/b0 a4/512/winf/b1",
+      "seed": 3,
+      "steps": 2000,
+      "batch": 32,
+      "final": 3.0794598162174225,
+      "curve": [
+        [
+          0,
+          8.342019200325012
+        ],
+        [
+          1000,
+          3.3731812238693237
+        ],
+        [
+          2000,
+          3.0794598162174225
+        ]
+      ],
+      "ms_per_step_median": 19.51523208618164,
+      "ms_per_step_iqr": 3.8543052673339844,
+      "seconds": 40.91231989860535,
+      "n_unique_params": 492168,
+      "flops_per_token": 3146752,
+      "train_flops": 77334577152000,
+      "backend": "compile:default",
+      "arm": "share_alt"
+    },
+    {
+      "plan": "a4/1152/winf/b0 a4/1152/winf/b0 a4/1152/winf/b1 a4/1152/winf/b1",
+      "seed": 0,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.9441886246204376,
+      "curve": [
+        [
+          0,
+          8.34757149219513
+        ],
+        [
+          1000,
+          3.2548786103725433
+        ],
+        [
+          2000,
+          2.9441886246204376
+        ]
+      ],
+      "ms_per_step_median": 19.614096641540527,
+      "ms_per_step_iqr": 4.02208137512207,
+      "seconds": 41.03397798538208,
+      "n_unique_params": 983688,
+      "flops_per_token": 5112832,
+      "train_flops": 125652959232000,
+      "backend": "compile:default",
+      "arm": "share_adj_wide"
+    },
+    {
+      "plan": "a4/1152/winf/b0 a4/1152/winf/b0 a4/1152/winf/b1 a4/1152/winf/b1",
+      "seed": 1,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.951807200908661,
+      "curve": [
+        [
+          0,
+          8.345269083976746
+        ],
+        [
+          1000,
+          3.257838010787964
+        ],
+        [
+          2000,
+          2.951807200908661
+        ]
+      ],
+      "ms_per_step_median": 20.022783279418945,
+      "ms_per_step_iqr": 3.7816333770751953,
+      "seconds": 41.397196531295776,
+      "n_unique_params": 983688,
+      "flops_per_token": 5112832,
+      "train_flops": 125652959232000,
+      "backend": "compile:default",
+      "arm": "share_adj_wide"
+    },
+    {
+      "plan": "a4/1152/winf/b0 a4/1152/winf/b0 a4/1152/winf/b1 a4/1152/winf/b1",
+      "seed": 2,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.9484169483184814,
+      "curve": [
+        [
+          0,
+          8.3414466381073
+        ],
+        [
+          1000,
+          3.261682838201523
+        ],
+        [
+          2000,
+          2.9484169483184814
+        ]
+      ],
+      "ms_per_step_median": 19.57108783721924,
+      "ms_per_step_iqr": 3.616352081298828,
+      "seconds": 40.96020793914795,
+      "n_unique_params": 983688,
+      "flops_per_token": 5112832,
+      "train_flops": 125652959232000,
+      "backend": "compile:default",
+      "arm": "share_adj_wide"
+    },
+    {
+      "plan": "a4/1152/winf/b0 a4/1152/winf/b0 a4/1152/winf/b1 a4/1152/winf/b1",
+      "seed": 3,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.9533505141735077,
+      "curve": [
+        [
+          0,
+          8.34135639667511
+        ],
+        [
+          1000,
+          3.270338296890259
+        ],
+        [
+          2000,
+          2.9533505141735077
+        ]
+      ],
+      "ms_per_step_median": 19.454800605773926,
+      "ms_per_step_iqr": 3.6485118865966797,
+      "seconds": 40.778467416763306,
+      "n_unique_params": 983688,
+      "flops_per_token": 5112832,
+      "train_flops": 125652959232000,
+      "backend": "compile:default",
+      "arm": "share_adj_wide"
+    },
+    {
+      "plan": "a4/1024/winf/b0 a4/256/winf/b1 a4/1024/winf/b2 a4/256/winf/b3",
+      "seed": 0,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.907539039850235,
+      "curve": [
+        [
+          0,
+          8.339105129241943
+        ],
+        [
+          1000,
+          3.1983780562877655
+        ],
+        [
+          2000,
+          2.907539039850235
+        ]
+      ],
+      "ms_per_step_median": 20.174848556518555,
+      "ms_per_step_iqr": 3.878782272338867,
+      "seconds": 42.16282343864441,
+      "n_unique_params": 1180816,
+      "flops_per_token": 3539968,
+      "train_flops": 86998253568000,
+      "backend": "compile:default",
+      "arm": "wideA"
+    },
+    {
+      "plan": "a4/1024/winf/b0 a4/256/winf/b1 a4/1024/winf/b2 a4/256/winf/b3",
+      "seed": 1,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.897398740053177,
+      "curve": [
+        [
+          0,
+          8.347182035446167
+        ],
+        [
+          1000,
+          3.203181356191635
+        ],
+        [
+          2000,
+          2.897398740053177
+        ]
+      ],
+      "ms_per_step_median": 20.202832221984863,
+      "ms_per_step_iqr": 3.527679443359375,
+      "seconds": 42.38527584075928,
+      "n_unique_params": 1180816,
+      "flops_per_token": 3539968,
+      "train_flops": 86998253568000,
+      "backend": "compile:default",
+      "arm": "wideA"
+    },
+    {
+      "plan": "a4/1024/winf/b0 a4/256/winf/b1 a4/1024/winf/b2 a4/256/winf/b3",
+      "seed": 2,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.9038434624671936,
+      "curve": [
+        [
+          0,
+          8.344861149787903
+        ],
+        [
+          1000,
+          3.2087979316711426
+        ],
+        [
+          2000,
+          2.9038434624671936
+        ]
+      ],
+      "ms_per_step_median": 20.403728485107422,
+      "ms_per_step_iqr": 3.84521484375,
+      "seconds": 42.64852046966553,
+      "n_unique_params": 1180816,
+      "flops_per_token": 3539968,
+      "train_flops": 86998253568000,
+      "backend": "compile:default",
+      "arm": "wideA"
+    },
+    {
+      "plan": "a4/1024/winf/b0 a4/256/winf/b1 a4/1024/winf/b2 a4/256/winf/b3",
+      "seed": 3,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.9113206565380096,
+      "curve": [
+        [
+          0,
+          8.34623372554779
+        ],
+        [
+          1000,
+          3.2083654403686523
+        ],
+        [
+          2000,
+          2.9113206565380096
+        ]
+      ],
+      "ms_per_step_median": 20.334495544433594,
+      "ms_per_step_iqr": 4.054046630859375,
+      "seconds": 42.670976400375366,
+      "n_unique_params": 1180816,
+      "flops_per_token": 3539968,
+      "train_flops": 86998253568000,
+      "backend": "compile:default",
+      "arm": "wideA"
+    },
+    {
+      "plan": "a4/256/winf/b0 a4/1024/winf/b1 a4/256/winf/b2 a4/1024/winf/b3",
+      "seed": 0,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.9038499295711517,
+      "curve": [
+        [
+          0,
+          8.331002473831177
+        ],
+        [
+          1000,
+          3.1986806988716125
+        ],
+        [
+          2000,
+          2.9038499295711517
+        ]
+      ],
+      "ms_per_step_median": 20.635135650634766,
+      "ms_per_step_iqr": 3.8338871002197266,
+      "seconds": 42.650036096572876,
+      "n_unique_params": 1180816,
+      "flops_per_token": 3539968,
+      "train_flops": 86998253568000,
+      "backend": "compile:default",
+      "arm": "wideB"
+    },
+    {
+      "plan": "a4/256/winf/b0 a4/1024/winf/b1 a4/256/winf/b2 a4/1024/winf/b3",
+      "seed": 1,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.8956761956214905,
+      "curve": [
+        [
+          0,
+          8.367230534553528
+        ],
+        [
+          1000,
+          3.2061289250850677
+        ],
+        [
+          2000,
+          2.8956761956214905
+        ]
+      ],
+      "ms_per_step_median": 20.545536041259766,
+      "ms_per_step_iqr": 4.047967910766602,
+      "seconds": 42.7401077747345,
+      "n_unique_params": 1180816,
+      "flops_per_token": 3539968,
+      "train_flops": 86998253568000,
+      "backend": "compile:default",
+      "arm": "wideB"
+    },
+    {
+      "plan": "a4/256/winf/b0 a4/1024/winf/b1 a4/256/winf/b2 a4/1024/winf/b3",
+      "seed": 2,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.894410401582718,
+      "curve": [
+        [
+          0,
+          8.340563178062439
+        ],
+        [
+          1000,
+          3.19697967171669
+        ],
+        [
+          2000,
+          2.894410401582718
+        ]
+      ],
+      "ms_per_step_median": 20.426544189453125,
+      "ms_per_step_iqr": 3.640127182006836,
+      "seconds": 42.425395488739014,
+      "n_unique_params": 1180816,
+      "flops_per_token": 3539968,
+      "train_flops": 86998253568000,
+      "backend": "compile:default",
+      "arm": "wideB"
+    },
+    {
+      "plan": "a4/256/winf/b0 a4/1024/winf/b1 a4/256/winf/b2 a4/1024/winf/b3",
+      "seed": 3,
+      "steps": 2000,
+      "batch": 32,
+      "final": 2.8988724648952484,
+      "curve": [
+        [
+          0,
+          8.327016234397888
+        ],
+        [
+          1000,
+          3.203476697206497
+        ],
+        [
+          2000,
+          2.8988724648952484
+        ]
+      ],
+      "ms_per_step_median": 20.73182487487793,
+      "ms_per_step_iqr": 3.7603511810302734,
+      "seconds": 42.7153754234314,
+      "n_unique_params": 1180816,
+      "flops_per_token": 3539968,
+      "train_flops": 86998253568000,
+      "backend": "compile:default",
+      "arm": "wideB"
+    }
+  ]
+}

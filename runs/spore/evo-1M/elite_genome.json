@@ -1,0 +1,39 @@
+{
+ "s_A": 0,
+ "s_rho": 1,
+ "s_M": 1627464175,
+ "s_U": 3,
+ "D": 2048,
+ "orders": [
+  1,
+  2,
+  3,
+  4,
+  6
+ ],
+ "gamma_b": 0.95,
+ "gamma_e": 0.7,
+ "J_e": 24,
+ "n_k": 2,
+ "beta": 1.0,
+ "d_k": 512,
+ "lam": 0.01,
+ "E": 2,
+ "waves": [
+  0.1,
+  0.25,
+  0.5
+ ],
+ "k_wave": 256,
+ "cand_mult": 8,
+ "psi": "relu",
+ "k_w": 64,
+ "eta_ri": 0.0,
+ "onehot": false,
+ "eta_sem": 0.5,
+ "d_sem": 256,
+ "sem_frac": 1.0,
+ "reservoir": true,
+ "lro": false,
+ "rho_res": 0.6136620644477747
+}

@@ -1,0 +1,13 @@
+[06:12:23]     regress step   100  J 14.1075  mean residual 0.0101  lr 1.83e-03
+[06:12:25]     regress step   200  J 10.8761  mean residual 0.0053  lr 1.38e-03
+[06:12:27]     regress step   300  J 9.0818  mean residual 0.0039  lr 8.24e-04
+[06:12:29]     regress step   400  J 8.2197  mean residual 0.0031  lr 3.73e-04
+[06:12:31]     regress step   500  J 7.8441  mean residual 0.0027  lr 2.00e-04
+[06:12:31] R4 INIT  tinystories s0:d256/L8/h4/kv2/F1024  s fit on runs/anlage/noise-tinystories-s0/seed0.pt: residual per role {'NORM_MIX': 0.0039, 'NORM_FFN': 0.0021, 'NORM_FINAL': 0.0013, 'LOGIT_SCALE': 0.0}  mean 0.0027  11s
+[06:14:43]   seed 1: at birth free 10.2710 / s 11.3050;  after 2,500,000 tokens free 2.5360 / s 2.5213  (d -0.0147)
+[06:17:20]   seed 2: at birth free 10.2659 / s 11.2003;  after 2,500,000 tokens free 2.5307 / s 2.5151  (d -0.0156)
+[06:20:20]   seed 3: at birth free 10.2365 / s 11.2375;  after 2,500,000 tokens free 2.5243 / s 2.5143  (d -0.0100)
+[06:24:10]   seed 4: at birth free 10.2353 / s 11.1465;  after 2,500,000 tokens free 2.5212 / s 2.5050  (d -0.0162)
+[06:24:10]   at birth: s - free = +0.9702 [+0.8794, +1.0609]
+[06:24:10]   after 2,500,000 tokens: s - free = -0.0141 [-0.0186, -0.0096] = -2.3 sigma_e(R1)  K-INIT FIRES
+[06:24:10] wrote runs\anlage\init-tinystories-s0\init.json

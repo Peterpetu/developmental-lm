@@ -1,0 +1,10 @@
+m-pico  N_life 300  lr 0.09  12 paired lifetimes per field
+
+uniform      5.5374 +/- 0.1689
+freq^-0.25   5.4755 +/- 0.0831
+freq^-0.10   5.5013 +/- 0.2357
+
+uniform - freq^-0.25   mean +0.0619 nats  95% BCa [+0.0165, +0.2103]  REAL
+uniform - freq^-0.10   mean +0.0361 nats  95% BCa [-0.0387, +0.1355]  not distinguishable from zero
+
+wrote runs/gnomon/lrfield-confirm.json

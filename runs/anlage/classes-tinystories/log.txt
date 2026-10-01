@@ -1,0 +1,9 @@
+[05:25:22] R2 CLASSES  tinystories  rule length_tercile_x_rarity_half  length edges [168.0, 208.0]  rarity median 0.0913  train doc counts [373267, 323449, 335576, 357206, 341067, 368924]
+[05:25:26]   pool windows per class [23843, 20666, 27472, 29704, 49931, 48384]  corpus mixture [0.1192, 0.1033, 0.1374, 0.1485, 0.2497, 0.2419]  same windows as the plain pool: True
+[05:25:26]   fitness windows per class [27, 38, 41, 55, 37, 58]  test windows per class [58, 43, 52, 48, 20, 35]
+[05:25:29]   seed0: fitness per class [1.9501, 2.0325, 2.0077, 2.1606, 2.0656, 2.199]  test per class [1.6848, 1.9225, 1.7823, 1.9345, 1.8669, 2.0614]
+[05:25:30]   seed1: fitness per class [1.9459, 2.0349, 2.0053, 2.1605, 2.0647, 2.1921]  test per class [1.6843, 1.9151, 1.7843, 1.9228, 1.866, 2.0545]
+[05:25:32]   seed2: fitness per class [1.9435, 2.0303, 2.0045, 2.1507, 2.059, 2.1867]  test per class [1.6697, 1.9031, 1.7763, 1.923, 1.8594, 2.0376]
+[05:25:34]   seed3: fitness per class [1.9526, 2.038, 2.0, 2.1516, 2.0601, 2.1966]  test per class [1.6785, 1.9154, 1.7747, 1.9212, 1.8575, 2.0487]
+[05:25:34]   class means (fitness) [1.948, 2.0339, 2.0044, 2.1558, 2.0624, 2.1936]  range 0.2456  = 40.7 sigma_e
+[05:25:34] wrote runs\anlage\classes-tinystories\classes.json

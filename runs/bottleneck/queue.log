@@ -1,0 +1,14 @@
+[queue runner begins] 11:28:27
+[run ] xfer GN50-E -> tasks  11:28:27
+[done] xfer GN50-E -> tasks in 2619s (rc=0)
+[run ] xfer GN50-E -> tinystories  12:12:06
+[done] xfer GN50-E -> tinystories in 938s (rc=0)
+[run ] meta-GN30-E  12:27:44
+[done] meta-GN30-E in 2843s (rc=0)
+[run ] meta-free  13:15:07
+[done] meta-free in 3509s (rc=0)
+[run ] xfer meta-GN30-E -> heldout  14:13:35
+[done] xfer meta-GN30-E -> heldout in 1322s (rc=0)
+[run ] xfer meta-free -> heldout  14:35:38
+[done] xfer meta-free -> heldout in 794s (rc=0)
+[run ] xfer GN50-E -> heldout  14:48:52
