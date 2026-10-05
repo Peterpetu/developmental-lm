@@ -69,6 +69,21 @@ scripts/                   training loops, analysers, data preparation, gates
 archive/soma/              SOMA's specification, gates and run reports; archive/tempo/ holds TEMPO's documents and ledger
 ```
 
-## License
+## License and citation
 
-MIT.
+The code and any released weights are licensed under the Apache License 2.0 (`LICENSE`); the documentation, figures and data under CC BY 4.0. Both require attribution: a copy or derivative of the code keeps the `NOTICE` file, and any reuse of the text, figures or data credits the author and links to the source.
+
+If you use this work, build on it, or report results obtained with it, cite it:
+
+> Lahtinen, P. (2026). *developmental-lm: six pre-registered attempts to make a compact genome load-bearing in a small language model.* https://github.com/Peterpetu/developmental-lm
+
+```bibtex
+@misc{lahtinen2026developmental,
+  author = {Lahtinen, Peter},
+  title  = {developmental-lm: six pre-registered attempts to make a compact genome load-bearing in a small language model},
+  year   = {2026},
+  url    = {https://github.com/Peterpetu/developmental-lm}
+}
+```
+
+`CITATION.cff` carries the same reference for GitHub's "Cite this repository" button and for reference managers.

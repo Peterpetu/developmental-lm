@@ -1,9 +1,13 @@
 cff-version: 1.2.0
-message: "If you use this code or these results, please cite this repository."
+message: "If you use this work, build on it, or report results obtained with it, please cite it as below."
+type: software
 title: "developmental-lm: six pre-registered attempts to make a compact genome load-bearing in a small language model"
 authors:
   - family-names: Lahtinen
     given-names: Peter
-year: 2026
+date-released: 2026-10-05
 url: "https://github.com/Peterpetu/developmental-lm"
-license: MIT
+repository-code: "https://github.com/Peterpetu/developmental-lm"
+license:
+  - Apache-2.0
+  - CC-BY-4.0
